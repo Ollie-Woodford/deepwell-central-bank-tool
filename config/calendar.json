@@ -1,0 +1,20 @@
+{
+  "_note": "Policy meeting dates. BoE dates are announcement days (minutes published the same day). BoJ dates are two-day meetings; the decision is announced on the second day. Verified from official pages on 19 Oct 2026. Update once a year when the banks publish the next year's dates.",
+  "BoE": {
+    "source_2026": "https://www.bankofengland.co.uk/news/2024/december/mpc-dates-for-2026",
+    "source_2027": "https://www.bankofengland.co.uk/news/2026/september/mpc-dates-for-2027",
+    "announcements": [
+      "2026-02-05", "2026-03-19", "2026-04-30", "2026-06-18", "2026-07-30", "2026-09-17", "2026-11-05", "2026-12-17",
+      "2027-02-04", "2027-03-18", "2027-04-29", "2027-06-17", "2027-07-29", "2027-09-16", "2027-11-04", "2027-12-16"
+    ]
+  },
+  "BoJ": {
+    "source": "https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm",
+    "meetings": [
+      ["2026-01-22", "2026-01-23"], ["2026-03-18", "2026-03-19"], ["2026-04-27", "2026-04-28"], ["2026-06-15", "2026-06-16"],
+      ["2026-07-30", "2026-07-31"], ["2026-09-17", "2026-09-18"], ["2026-10-29", "2026-10-30"], ["2026-12-17", "2026-12-18"],
+      ["2027-01-21", "2027-01-22"], ["2027-03-17", "2027-03-18"], ["2027-04-27", "2027-04-28"], ["2027-06-10", "2027-06-11"],
+      ["2027-07-21", "2027-07-22"], ["2027-09-21", "2027-09-22"], ["2027-10-28", "2027-10-29"], ["2027-12-16", "2027-12-17"]
+    ]
+  }
+}

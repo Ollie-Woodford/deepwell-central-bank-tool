@@ -44,7 +44,7 @@ sites, every run         rubric.md, write JSONL             per member          
 | `docs/SOURCES.md` | Every source, URL, format, cadence, network allowlist | Done, some URLs unverified |
 | `config/members.json` | 18 members: roles, terms, name variants, Japanese names | Done, several dates to verify |
 | `config/calendar.json` | Meeting dates 2026 and 2027, both banks | Verified |
-| `engine/decay.py` | Time decay (linear to zero over 10 months, hold when silent), weights, stance, momentum, timeline | Built, 14 tests pass |
+| `engine/decay.py` | Time decay (linear to zero over 10 months, hold when silent), weights, stance, momentum, timeline | Built, 16 tests pass |
 | `engine/test_decay.py` | Tests, including that weights match the agreed ratios | Passing |
 | `engine/baseline.py` | Bloomberg OIS CSV to market-implied path | Built |
 | `data/baseline/` | OIS pulls from BQNT, one CSV per date | One file (16 Oct 2026) |

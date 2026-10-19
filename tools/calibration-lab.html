@@ -1,0 +1,342 @@
+<title>Hawk-Dove Calibration Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;0,500;1,400&display=swap">
+<style>
+/* Layout: one statement card, an 11-step dove-to-hawk scale beneath it, progress up top. Terminal-adjacent, quiet, fast. */
+:root {
+  --bg: #F3F5F7;
+  --surface: #FFFFFF;
+  --surface-2: #E9EDF1;
+  --fg: #141A21;
+  --muted: #56636F;
+  --line: #D3DAE1;
+  --dove: #2F6D99;
+  --dove-soft: #DCE8F1;
+  --hawk: #B4721C;
+  --hawk-soft: #F4E6D2;
+  --neutral: #6B7782;
+  --focus: #2F6D99;
+  --ok: #2E7D5B;
+  --f-sans: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-serif: "IBM Plex Serif", Georgia, "Times New Roman", serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1116; --surface: #161B22; --surface-2: #1F2630; --fg: #E6EBF0; --muted: #96A3AF; --line: #2B333D;
+    --dove: #6FA8D4; --dove-soft: #1C2F40; --hawk: #E3A64F; --hawk-soft: #3A2A14; --neutral: #8A96A1; --focus: #6FA8D4; --ok: #5FBF92;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1116; --surface: #161B22; --surface-2: #1F2630; --fg: #E6EBF0; --muted: #96A3AF; --line: #2B333D;
+  --dove: #6FA8D4; --dove-soft: #1C2F40; --hawk: #E3A64F; --hawk-soft: #3A2A14; --neutral: #8A96A1; --focus: #6FA8D4; --ok: #5FBF92;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font-family: var(--f-sans); font-size: 15px; line-height: 1.5; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 24px 48px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: flex; flex-direction: column; gap: 18px; }
+header { display: flex; flex-direction: column; gap: 12px; }
+.toprow { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 10px; }
+h1 { margin: 0; font-size: 22px; font-weight: 700; letter-spacing: -0.01em; text-wrap: balance; }
+.eyebrow { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+.controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg button { border: 0; background: transparent; color: var(--muted); font: 500 13px var(--f-sans); padding: 7px 12px; min-height: 36px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--surface-2); color: var(--fg); }
+.progress { display: flex; align-items: center; gap: 12px; }
+.bar { flex: 1; height: 6px; background: var(--surface-2); border-radius: 3px; overflow: hidden; }
+.bar > span { display: block; height: 100%; width: 0; background: var(--ok); transition: width .25s ease; }
+.count { font-family: var(--f-mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 22px 24px; display: flex; flex-direction: column; gap: 14px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; }
+.chip { font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; background: var(--surface-2); color: var(--muted); }
+.chip.bank { color: var(--fg); font-weight: 600; }
+.chip.vote { background: var(--hawk-soft); color: var(--hawk); }
+.chip.news { background: var(--dove-soft); color: var(--dove); }
+.who { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.who strong { font-size: 18px; }
+.who span { color: var(--muted); font-size: 14px; }
+.when { color: var(--muted); font-size: 13px; }
+blockquote { margin: 4px 0; font-family: var(--f-serif); font-size: 21px; line-height: 1.5; max-width: 68ch; }
+.ctx { font-size: 13px; color: var(--muted); background: var(--surface-2); border-radius: 8px; padding: 9px 12px; }
+.ctx b { color: var(--fg); font-weight: 600; }
+.src a { font-size: 13px; color: var(--dove); }
+.existing { font-size: 13px; color: var(--ok); font-weight: 500; }
+
+.scale { display: flex; flex-direction: column; gap: 8px; }
+.ends { display: flex; justify-content: space-between; font-family: var(--f-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; }
+.ends .d { color: var(--dove); } .ends .h { color: var(--hawk); }
+.steps { display: grid; grid-template-columns: repeat(11, minmax(0, 1fr)); gap: 5px; }
+.steps button { min-height: 52px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); font: 600 16px var(--f-mono); cursor: pointer; font-variant-numeric: tabular-nums; transition: transform .08s ease, background .12s ease; }
+.steps button:hover { transform: translateY(-1px); }
+.steps button.dv { border-color: color-mix(in srgb, var(--dove) calc(var(--k) * 18%), var(--line)); background: color-mix(in srgb, var(--dove-soft) calc(var(--k) * 20%), var(--surface)); }
+.steps button.hk { border-color: color-mix(in srgb, var(--hawk) calc(var(--k) * 18%), var(--line)); background: color-mix(in srgb, var(--hawk-soft) calc(var(--k) * 20%), var(--surface)); }
+.steps button[aria-pressed="true"] { outline: 3px solid var(--fg); outline-offset: 1px; }
+.anchor { min-height: 42px; font-size: 13px; color: var(--muted); }
+.anchor b { color: var(--fg); font-family: var(--f-mono); }
+.row2 { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.btn { border: 1px solid var(--line); background: var(--surface); color: var(--fg); font: 500 13px var(--f-sans); padding: 8px 12px; min-height: 40px; border-radius: 8px; cursor: pointer; }
+.btn[aria-pressed="true"] { background: var(--surface-2); border-color: var(--fg); }
+.btn.ghost { background: transparent; }
+.note { flex: 1 1 260px; min-width: 0; }
+.note input { width: 100%; min-height: 40px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--fg); font: 14px var(--f-sans); padding: 8px 12px; }
+.keys { font-size: 12px; color: var(--muted); }
+.keys kbd { font-family: var(--f-mono); font-size: 11px; border: 1px solid var(--line); border-bottom-width: 2px; border-radius: 4px; padding: 0 5px; background: var(--surface); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.status { font-size: 13px; color: var(--muted); min-height: 20px; }
+.status.err { color: var(--hawk); }
+
+.empty { text-align: center; padding: 48px 24px; color: var(--muted); }
+.review { display: flex; flex-direction: column; gap: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.review button.item { display: grid; grid-template-columns: 48px minmax(0, 1fr); gap: 12px; text-align: left; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--fg); padding: 12px 16px; cursor: pointer; font: inherit; }
+.review button.item:last-child { border-bottom: 0; }
+.review .sc { font: 600 15px var(--f-mono); font-variant-numeric: tabular-nums; }
+.review .sc.dv { color: var(--dove); } .review .sc.hk { color: var(--hawk); }
+.review .t { font-size: 14px; min-width: 0; }
+.review .t small { display: block; color: var(--muted); font-size: 12px; }
+@media (max-width: 560px) {
+  .steps { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  blockquote { font-size: 18px; }
+  .card { padding: 18px 16px; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="toprow">
+      <div>
+        <div class="eyebrow">Central bank hawk / dove monitor</div>
+        <h1>Calibration Lab</h1>
+      </div>
+      <div class="controls">
+        <div class="seg" role="group" aria-label="Bank filter">
+          <button type="button" data-bank="all" aria-pressed="true">Both</button>
+          <button type="button" data-bank="BoE" aria-pressed="false">BoE</button>
+          <button type="button" data-bank="BoJ" aria-pressed="false">BoJ</button>
+        </div>
+        <div class="seg" role="group" aria-label="View">
+          <button type="button" data-view="label" aria-pressed="true">Label</button>
+          <button type="button" data-view="review" aria-pressed="false">Review</button>
+        </div>
+      </div>
+    </div>
+    <div class="progress">
+      <div class="bar"><span id="bar"></span></div>
+      <div class="count" id="count">Loading</div>
+    </div>
+  </header>
+
+  <main id="labelView">
+    <section class="card" id="card" aria-live="polite">
+      <div class="empty" id="loading">Loading statements. Your labels save automatically as you go.</div>
+    </section>
+  </main>
+
+  <section id="scaleWrap" class="card" hidden>
+    <div class="scale">
+      <div class="ends"><span class="d">Dovish</span><span class="h">Hawkish</span></div>
+      <div class="steps" id="steps"></div>
+      <div class="anchor" id="anchor">Score relative to what markets expected at the time. Hover a score to see its anchor.</div>
+    </div>
+    <div class="row2">
+      <button type="button" class="btn" id="flagNP" data-flag="not_policy">Not a policy signal</button>
+      <button type="button" class="btn" id="flagNC" data-flag="need_context">Need more context</button>
+      <div class="note"><label class="eyebrow" for="note" style="display:block;margin-bottom:4px">Why (optional, one line)</label><input id="note" type="text" maxlength="300" autocomplete="off" placeholder="e.g. conditional, so half strength"></div>
+    </div>
+    <div class="row2" style="justify-content:space-between">
+      <div class="row2">
+        <button type="button" class="btn ghost" id="back">Back</button>
+        <button type="button" class="btn ghost" id="skip">Skip</button>
+      </div>
+      <div class="keys"><kbd>0</kbd>-<kbd>5</kbd> hawkish &middot; <kbd>Shift</kbd>+<kbd>1</kbd>-<kbd>5</kbd> dovish &middot; <kbd>N</kbd> not policy &middot; <kbd>C</kbd> context &middot; <kbd>&larr;</kbd> back</div>
+    </div>
+    <div class="status" id="status"></div>
+  </section>
+
+  <section id="reviewView" hidden>
+    <div class="review" id="reviewList"></div>
+  </section>
+</div>
+
+<script>
+const ANCHORS = {
+  "5": "Calls for immediate or larger-than-expected tightening; dissents for a hike",
+  "4": "Argues for tightening at the next meeting or very soon, without dissenting",
+  "3": "Argues further tightening is likely needed, or sooner than the market expects",
+  "2": "Clear hawkish tilt: inflation persistence is the main concern, high bar for easing",
+  "1": "Leans hawkish: flags upside inflation risks, urges patience before easing",
+  "0": "Balanced, purely data-dependent, or boilerplate",
+  "-1": "Leans dovish: flags downside growth risks, sees inflation pressures fading",
+  "-2": "Clear dovish tilt: growth or labour weakness is the main concern, open to easing",
+  "-3": "Argues policy is too tight, or easing should come sooner than the market expects",
+  "-4": "Argues for easing (or no hike) at the next meeting or very soon, without dissenting",
+  "-5": "Calls for immediate or larger easing; dissents for a cut or against a hike",
+};
+const TYPE_LABEL = {
+  speech: "Speech", press_conference: "Press conference", comment: "Comment", interview: "Interview",
+  minutes_statement: "Minutes statement", dissent_vote: "Dissenting vote", news_speculation: "News / paraphrase",
+};
+
+let db = null, items = [], labels = {}, bank = "all", view = "label", order = [], pos = 0, history = [];
+const $ = (id) => document.getElementById(id);
+
+function hash(s) { let h = 2166136261; for (const c of s) { h ^= c.charCodeAt(0); h = Math.imul(h, 16777619); } return h >>> 0; }
+function visible() { return order.filter((i) => bank === "all" || i.bank === bank); }
+function fmtDate(d) { return new Date(d + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" }); }
+function fmtScore(s) { return s > 0 ? "+" + s : String(s); }
+function setStatus(t, err) { const el = $("status"); el.textContent = t || ""; el.className = "status" + (err ? " err" : ""); }
+
+function buildSteps() {
+  const wrap = $("steps");
+  for (let s = -5; s <= 5; s++) {
+    const b = document.createElement("button");
+    b.type = "button"; b.dataset.score = s; b.textContent = fmtScore(s);
+    b.setAttribute("aria-pressed", "false");
+    b.setAttribute("aria-label", `Score ${fmtScore(s)}: ${ANCHORS[s]}`);
+    if (s < 0) { b.className = "dv"; b.style.setProperty("--k", -s); }
+    if (s > 0) { b.className = "hk"; b.style.setProperty("--k", s); }
+    b.addEventListener("mouseenter", () => showAnchor(s));
+    b.addEventListener("focus", () => showAnchor(s));
+    b.addEventListener("click", () => record({ score: s, flag: null }));
+    wrap.appendChild(b);
+  }
+}
+function showAnchor(s) { $("anchor").innerHTML = ""; const b = document.createElement("b"); b.textContent = fmtScore(s) + "  "; $("anchor").append(b, ANCHORS[s]); }
+
+function current() { const v = visible(); return v[pos] || null; }
+
+function updateProgress() {
+  const v = visible();
+  const done = v.filter((i) => labels[i.id]).length;
+  $("count").textContent = `${done} / ${v.length} labelled`;
+  $("bar").style.width = v.length ? (done / v.length * 100) + "%" : "0";
+}
+
+function render() {
+  updateProgress();
+  $("labelView").hidden = view !== "label";
+  $("scaleWrap").hidden = view !== "label" || !current();
+  $("reviewView").hidden = view !== "review";
+  if (view === "review") return renderReview();
+  const card = $("card");
+  const it = current();
+  card.innerHTML = "";
+  if (!items.length) { card.innerHTML = '<div class="empty">No statements loaded yet. Ask Claude to load the starter set.</div>'; return; }
+  if (!it) { card.innerHTML = '<div class="empty">All statements in this view are labelled. Switch to Review to check or change any of them, then tell Claude you are done.</div>'; return; }
+
+  const meta = document.createElement("div"); meta.className = "meta";
+  const c1 = document.createElement("span"); c1.className = "chip bank"; c1.textContent = it.bank;
+  const c2 = document.createElement("span"); c2.className = "chip" + (it.source_type === "dissent_vote" ? " vote" : it.source_type === "news_speculation" ? " news" : ""); c2.textContent = TYPE_LABEL[it.source_type] || it.source_type;
+  const c3 = document.createElement("span"); c3.className = "chip"; c3.textContent = `#${pos + 1} of ${visible().length}`;
+  meta.append(c1, c2, c3);
+
+  const who = document.createElement("div"); who.className = "who";
+  const n = document.createElement("strong"); n.textContent = it.speaker;
+  const r = document.createElement("span"); r.textContent = it.role;
+  who.append(n, r);
+
+  const when = document.createElement("div"); when.className = "when"; when.textContent = `${fmtDate(it.date)} · ${it.venue}`;
+  const q = document.createElement("blockquote"); q.textContent = it.text;
+  const ctx = document.createElement("div"); ctx.className = "ctx";
+  const cb = document.createElement("b"); cb.textContent = "Context: "; ctx.append(cb, it.context);
+  const src = document.createElement("div"); src.className = "src";
+  const a = document.createElement("a"); a.href = it.url; a.target = "_blank"; a.rel = "noopener"; a.textContent = "Source"; src.append(a);
+  card.append(meta, who, when, q, ctx, src);
+
+  const lab = labels[it.id];
+  if (lab) {
+    const ex = document.createElement("div"); ex.className = "existing";
+    ex.textContent = lab.flag === "not_policy" ? "Labelled: not a policy signal" : lab.flag === "need_context" ? "Labelled: need more context" : `Labelled: ${fmtScore(lab.score)}`;
+    card.append(ex);
+  }
+  document.querySelectorAll("#steps button").forEach((b) => b.setAttribute("aria-pressed", String(!!lab && lab.flag == null && Number(b.dataset.score) === lab.score)));
+  $("flagNP").setAttribute("aria-pressed", String(lab?.flag === "not_policy"));
+  $("flagNC").setAttribute("aria-pressed", String(lab?.flag === "need_context"));
+  $("note").value = lab?.note || "";
+}
+
+function renderReview() {
+  const list = $("reviewList"); list.innerHTML = "";
+  const done = visible().filter((i) => labels[i.id]);
+  if (!done.length) { list.innerHTML = '<div class="empty">Nothing labelled yet in this view.</div>'; return; }
+  done.forEach((it) => {
+    const lab = labels[it.id];
+    const b = document.createElement("button"); b.type = "button"; b.className = "item";
+    const sc = document.createElement("span");
+    sc.className = "sc" + (lab.flag ? "" : lab.score < 0 ? " dv" : lab.score > 0 ? " hk" : "");
+    sc.textContent = lab.flag === "not_policy" ? "N/P" : lab.flag === "need_context" ? "?" : fmtScore(lab.score);
+    const t = document.createElement("span"); t.className = "t"; t.textContent = it.text;
+    const sm = document.createElement("small"); sm.textContent = `${it.speaker} · ${fmtDate(it.date)}${lab.note ? " · " + lab.note : ""}`;
+    t.append(sm);
+    b.append(sc, t);
+    b.addEventListener("click", () => { pos = visible().indexOf(it); setView("label"); });
+    list.append(b);
+  });
+}
+
+async function record({ score, flag }) {
+  const it = current(); if (!it || !db) return;
+  const body = { statement_id: it.id, bank: it.bank, speaker: it.speaker, score: flag ? null : score, flag: flag || null,
+                 note: $("note").value.trim(), labelled_at: new Date().toISOString(), labeller: "ollie" };
+  labels[it.id] = body;
+  history.push(pos);
+  render();
+  setStatus("Saving");
+  try { await db.collection("labels").doc(it.id).set(body); setStatus("Saved"); }
+  catch (e) {
+    try { await new Promise((r) => setTimeout(r, 400 + Math.random() * 400)); await db.collection("labels").doc(it.id).set(body); setStatus("Saved"); }
+    catch (e2) { setStatus("Couldn't save that label. Check your connection and label it again.", true); return; }
+  }
+  setTimeout(advance, 180);
+}
+
+function advance() {
+  const v = visible();
+  for (let k = 1; k <= v.length; k++) { const j = (pos + k) % v.length; if (!labels[v[j].id]) { pos = j; render(); return; } }
+  pos = v.length; render();
+}
+function back() { if (history.length) { pos = history.pop(); } else if (pos > 0) { pos--; } render(); }
+function skip() { const v = visible(); pos = Math.min(pos + 1, v.length - 1); render(); }
+function setView(v) { view = v; document.querySelectorAll("[data-view]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.view === v))); render(); }
+
+document.querySelectorAll("[data-bank]").forEach((b) => b.addEventListener("click", () => {
+  bank = b.dataset.bank; document.querySelectorAll("[data-bank]").forEach((x) => x.setAttribute("aria-pressed", String(x === b)));
+  pos = 0; history = []; const v = visible(); const f = v.findIndex((i) => !labels[i.id]); pos = f < 0 ? v.length : f; render();
+}));
+document.querySelectorAll("[data-view]").forEach((b) => b.addEventListener("click", () => setView(b.dataset.view)));
+$("flagNP").addEventListener("click", () => record({ flag: "not_policy" }));
+$("flagNC").addEventListener("click", () => record({ flag: "need_context" }));
+$("back").addEventListener("click", back);
+$("skip").addEventListener("click", skip);
+document.addEventListener("keydown", (e) => {
+  if (view !== "label" || e.target.tagName === "INPUT" || e.metaKey || e.ctrlKey || e.altKey) return;
+  const m = /^Digit([0-5])$/.exec(e.code);
+  if (m) { const d = Number(m[1]); if (e.shiftKey && d === 0) return; e.preventDefault(); record({ score: e.shiftKey ? -d : d, flag: null }); return; }
+  if (e.key === "n" || e.key === "N") { e.preventDefault(); record({ flag: "not_policy" }); }
+  else if (e.key === "c" || e.key === "C") { e.preventDefault(); record({ flag: "need_context" }); }
+  else if (e.key === "ArrowLeft") { e.preventDefault(); back(); }
+  else if (e.key === "ArrowRight") { e.preventDefault(); skip(); }
+});
+
+buildSteps();
+
+(async () => {
+  db = await claude.use("db");
+  if (!db) { $("card").innerHTML = '<div class="empty">Saving isn’t available in this view, so labelling is switched off. Open the page from your Claude gallery to label.</div>'; $("count").textContent = ""; return; }
+  try {
+    const snap = await db.doc("statements/starter").get();
+    items = snap.exists ? (snap.data().items || []) : [];
+  } catch (e) { $("card").innerHTML = '<div class="empty">Couldn’t load the statements. Reload the page to try again.</div>'; return; }
+  order = [...items].sort((a, b) => hash(a.id) - hash(b.id));
+  let first = true;
+  db.collection("labels").onSnapshot((qs) => {
+    labels = {}; qs.docs.forEach((d) => { labels[d.id] = d.data(); });
+    if (first) { first = false; const v = visible(); const f = v.findIndex((i) => !labels[i.id]); pos = f < 0 ? v.length : f; }
+    render();
+  }, () => setStatus("Live sync stopped. Reload the page to keep labelling.", true));
+})();
+</script>
