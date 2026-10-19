@@ -63,7 +63,7 @@ sites, every run         rubric.md, write JSONL             per member          
 | `pipeline/validate.py` | `python -m pipeline.validate [--append FILE]`: schema, verbatim passages, weight shares | Built, tested |
 | `data/decisions/` | Every policy decision with each member's vote | BoE 2026 |
 | `eval/compare.py` | Scorer vs Ollie: exact, within 1, average gap, bias, rank agreement | Built, tested |
-| `data/calibration/blind_v1_statements.json` | Fresh blind test for rubric v1: 21 BoE, 9 BoJ; loaded into the Calibration Lab | Waiting for Ollie's labels |
+| `data/calibration/blind_v1_statements.json` | Fresh blind test for rubric v1: 21 BoE, 9 BoJ; labels in `blind_v1_labels.json`, scores in `blind_v1_scores.json` | Scored: 77% within 1, target missed (`reports/blind_v1.md`) |
 
 ## Decisions (do not change without asking Ollie)
 
