@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Energy prices have been volatile since June. For monetary policy, what matters is the scale and duration of these shocks and how they propagate through the economy. Incoming data show underlying disinflation to have been firmly on track, consistent with weak demand and a loose labour market. Neither staff’s new granular measure of underlying inflation (Box C) nor broad money developments (Box E) signal upside inflation risks. Together with staff’s monitoring of second-round effects (Box B), that gives me greater confidence that such effects should be limited, although it remains early days. While my confidence around the domestic inflationary environment has increased, risks to global prices have shifted to the upside. Geopolitical tensions remain unresolved, gas and refined fuel prices are high, and global supply shocks – including those related to climate and AI (Box D) – could reinforce one another, increasing the likelihood of more material second-round effects. Financial conditions facing households and businesses have tightened materially since the onset of the conflict, and consistent with the baseline, provide sufficient restrictiveness for now. Looking ahead, I will continue to focus on how second-round effects are likely to evolve.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

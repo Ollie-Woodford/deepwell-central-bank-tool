@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Events in the Middle East mean that the short-run path of inflation is uncertain owing to volatile energy prices. The possibility of repeated resumptions of conflict, combined with lower than usual European gas stock levels and a fall in global refining output, mean that risks to energy prices lie to the upside. Set against that, the process of underlying disinflation that was intact prior to the conflict remains in train. That provides some tentative evidence that inherited inflation persistence may be weaker than had been presumed. Alongside this, the labour market continues to ease, and the demand environment remains soft. There is little evidence yet of second-round effects (Boxes A and B), although it is too early to take much comfort from that. Financial conditions have tightened since the onset of the conflict (Box F). These conditions and the upward sloping yield curve, which in part reflects the energy-related upside risks to inflation, are weighing on any nascent inflation pressures. Holding Bank Rate is appropriate as global conditions look to be more uncertain and inflationary, while domestic conditions are on balance more benign as regards the prospects for inflation.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

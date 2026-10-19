@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The near-term outlook for inflation has shifted significantly since July. Oil, gas and refined products prices have risen further as tensions in the Middle East have re-escalated with little sign of a rapid or durable resolution. Set against this, indirect energy pass-through has been weaker than expected so far and, although early days, there has been little sign yet of material second-round effects taking hold. What matters is the outlook for such effects. While recent data suggest activity and the labour market have proved more resilient than expected, domestic slack and the restrictiveness of financial conditions should continue to lean against inflationary dynamics becoming embedded. But the scale and likely duration of the energy price shock has increased and there is the potential for more global shocks – related to climate, food prices and AI. These make material second-round effects more likely, particularly if inflation approaches levels associated with non-linear effects. The tightening in financial conditions seen since the onset of the conflict has so far given us time to observe how the shock plays out. Material uncertainty is likely to continue, but if risks to the outlook for second-round effects crystallise, it becomes increasingly appropriate for Bank Rate to respond.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

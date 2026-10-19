@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The inflation outlook is shaped by opposing forces: benign, disinflationary background trends in domestic conditions versus incoming, volatile global shocks of unclear magnitude and duration. On the latter, especially conflict-related energy shocks, there is no evidence so far of second-round effects, but we continue to monitor them. These external risks are important and justify an upside-skewed scenario. But they are not the only risks that matter for policy thinking. In contrast, domestic inflation pressures continue to abate, with wage and private-sector AWE growth reaching target-consistent rates and recent CPI numbers surprising to the downside. The backdrop is one of greater slack, restrictive monetary conditions, cautious households and firms, and limited fiscal space. The economy is drifting further toward deficient demand, with material risk of larger output gaps, labour-market scarring, and a slowdown in growth over the next year or two. In that context, the possibility of downside surprises, and painful trade-offs, remains relevant. For me, the more likely outcomes sit between the baseline and milder scenario, albeit with a long right tail; keeping Bank rate on hold, at a higher level now than the pre-conflict implied path, gives insurance for now, before resuming cuts when and if geopolitical uncertainty clears.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

@@ -1,0 +1,125 @@
+{
+ "seen": {
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-07-30-bailey",
+    "boe-minutes-2026-07-30-breeden",
+    "boe-minutes-2026-07-30-dhingra",
+    "boe-minutes-2026-07-30-lombardelli",
+    "boe-minutes-2026-07-30-ramsden",
+    "boe-minutes-2026-07-30-taylor",
+    "boe-minutes-2026-07-30-greene",
+    "boe-minutes-2026-07-30-mann",
+    "boe-minutes-2026-07-30-pill"
+   ],
+   "first_seen": "2026-10-19T15:22:07Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-09-17-bailey",
+    "boe-minutes-2026-09-17-breeden",
+    "boe-minutes-2026-09-17-dhingra",
+    "boe-minutes-2026-09-17-lombardelli",
+    "boe-minutes-2026-09-17-ramsden",
+    "boe-minutes-2026-09-17-taylor",
+    "boe-minutes-2026-09-17-mann",
+    "boe-minutes-2026-09-17-greene",
+    "boe-minutes-2026-09-17-pill"
+   ],
+   "first_seen": "2026-10-19T15:22:08Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/july/nathanael-benjamin-speech-at-omfif": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:27Z",
+   "note": "not an MPC member: Nathanaël Benjamin"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul": {
+   "doc_ids": [
+    "boe-speech-2026-10-08-andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbu"
+   ],
+   "first_seen": "2026-10-19T15:22:15Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/catherine-mann-nomura-investor-conference": {
+   "doc_ids": [
+    "boe-speech-2026-10-01-catherine-mann-nomura-investor-conference"
+   ],
+   "first_seen": "2026-10-19T15:22:18Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/financial-innovation-dollar-dominance-and-their-uk-monetary-policy-implications": {
+   "doc_ids": [
+    "boe-speech-2026-10-16-financial-innovation-dollar-dominance-and-their-uk-monetary-policy-implications"
+   ],
+   "first_seen": "2026-10-19T15:22:14Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/manuel-sales-speech-at-the-association-of-financial-mutuals-annual-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:16Z",
+   "note": "not an MPC member: no speaker named"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/nathanael-benjamin-speech-at-isda-derivatives-trading-and-treasury-forum": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:19Z",
+   "note": "not an MPC member: Nathanaël Benjamin"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/sasha-mills-speech-at-hogan-lovells-and-global-digital-finance-digital-assets-summit": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:17Z",
+   "note": "not an MPC member: Sasha Mills"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/october/victoria-cleland-intergraf-currency-identity-conference-demark": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:14Z",
+   "note": "not an MPC member: Victoria Cleland"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/andrew-bailey-keynote-speech-at-lse-trium-anniversary-conference": {
+   "doc_ids": [
+    "boe-speech-2026-09-04-andrew-bailey-keynote-speech-at-lse-trium-anniversary-conference"
+   ],
+   "first_seen": "2026-10-19T15:22:25Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/carolyn-wilkins-speech-at-queens-university-belfast": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:24Z",
+   "note": "not an MPC member: Carolyn A. Wilkins"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/clare-lombardelli-speech-at-the-sixth-biennial-conference-poland": {
+   "doc_ids": [
+    "boe-speech-2026-09-24-clare-lombardelli-speech-at-the-sixth-biennial-conference-poland"
+   ],
+   "first_seen": "2026-10-19T15:22:22Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/dave-ramsden-speech-on-quantitative-tightening": {
+   "doc_ids": [
+    "boe-speech-2026-09-28-dave-ramsden-speech-on-quantitative-tightening"
+   ],
+   "first_seen": "2026-10-19T15:22:21Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/remarks-at-the-edinburgh-chamber-of-commerce": {
+   "doc_ids": [
+    "boe-speech-2026-09-03-remarks-at-the-edinburgh-chamber-of-commerce"
+   ],
+   "first_seen": "2026-10-19T15:22:27Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/ruth-smith-speech-florence-school-of-banking-and-finance-european-university-institute-florence": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:22:23Z",
+   "note": "not an MPC member: Ruth Smith"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/september/searching-for-signposts-speech-by-alan-taylor": {
+   "doc_ids": [
+    "boe-speech-2026-09-29-searching-for-signposts-speech-by-alan-taylor"
+   ],
+   "first_seen": "2026-10-19T15:22:20Z",
+   "note": ""
+  }
+ }
+}

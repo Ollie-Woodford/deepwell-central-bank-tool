@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "There has been a material increase in energy prices since July, with a consequent effect on the near-term inflation outlook. The risk for energy prices, and thus inflation, continues to be on the upside. The geopolitics of the situation makes the upside risk more prominent with a seeming loss of urgency to find solutions. Indirect energy pass-through has so far been weaker than we had expected, however, and there continues to be very limited evidence of emerging second-round effect though it is still early days. Domestic inflationary pressures have continued to ease. The labour market continues to be soft, with pay in line with expectations, though some forward-looking indicators of hiring have picked up. Weather conditions are likely to push up food price inflation. With risks to energy and food prices more to the upside, second-round effects could materialise more strongly. Financial conditions will continue to work to push down on inflation, and holding Bank Rate is appropriate at this meeting. But if the conflict in the Middle East persists for an extended period, as appears to be the case, and the risk of second-round effects emerging increases, it is likely that policy may have to tighten.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

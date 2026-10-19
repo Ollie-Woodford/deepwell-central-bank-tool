@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The eventual size, persistence and propagation of the energy shock remain highly uncertain. So far, evidence suggests that inflationary pressures are more upstream, concentrated in a limited number of sectors, and do not yet appear to be broadening materially (Boxes B and C). The domestic economy is unlikely to amplify second-round effects as demand remains subdued, the labour market continues to loosen with vacancies below pre-pandemic levels and margins are not expanding in a way that magnifies the shock. An increase in Bank Rate now would be disproportionate as, unlike 2022, the starting point for this shock is much softer and the policy stance is more restrictive. I continue to see value in waiting for a clearer read on the energy shock in the coming months before deciding whether a change in policy is required, given the broad range of possible outcomes. We will learn more about first-round energy effects and 2027 wage-setting towards the end of this year. This would still allow time for monetary policy to mitigate second-round effects as needed at that point.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "A 25-basis point increase in Bank Rate now sends a clear signal of the MPC’s commitment to achieving its price stability mandate amidst the fog of geopolitical conflict and data noise. Admittedly, energy price developments since our previous meeting have been significant. The magnitude and persistence of the inflationary impulse stemming from events in the Middle East have proved stronger than expected in July, swelling the risk of second-round effects in a context of more resilient UK activity. But these immediate developments are only part of my motivation to increase Bank Rate. Responding to lower frequency inflationary pressures inherent in the current uncertain and volatile environment remains the key driver of my policy choice, with broader global threats (stemming from adverse weather, fiscal dynamics and AI build-out) magnifying the obvious energy price risks to the inflation outlook. Raising Bank Rate would put the MPC in a better place to address risks to price stability as these uncertainties unfold, especially since any resulting second-round effects, once entrenched, are costly to overcome. Acting decisively now cuts through in a way that bolsters the clarity and effectiveness of policy choices, thereby heading off inflationary pressures rather having to reverse them once they become ingrained.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

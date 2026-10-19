@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Most indicators of nominal conditions have continued to moderate, although near-term inflation estimates skirt the inflation attentiveness threshold at which research suggests stronger second-round effects, which would build on an inflation rate that has remained above target for five years. That said, the key change in the environment for my decision is the collapse of the US-Iran Memorandum of Understanding, the widening of the Middle East conflict, and the associated volatility in energy prices. This ‘sporadic continuance’ of the conflict that I hypothesised last month appears to be the state of play. The shocks and volatility transmit through salience and production costs to affect expectations and price setting behaviours to impart an upward ratchet to CPI inflation. A variety of research methods concludes that Bank Rate should be higher than 3.75% to return inflation to the 2% target sustainably. Other research emphasises that the costs of leaning against upside risks that fail to materialise would be smaller than the cost of leaning too little against upside risks. Notwithstanding moderately restrictive nominal financial conditions, reinforcing policy credibility when faced with inflationary shocks implies that a 25 basis point increase in Bank Rate is appropriate at this time.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

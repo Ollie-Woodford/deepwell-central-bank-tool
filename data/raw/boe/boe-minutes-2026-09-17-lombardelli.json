@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Continued volatility in energy markets dominates the inflation outlook. Oil and gas prices are currently closer to those in the July adverse scenario, leading to a higher and more uncertain future path for inflation. The impact of the conflict to date has been more limited than expected on both sides of the inflation and activity trade-off. Pass-through to indirect effects of higher energy prices has been slower, and growth and the labour market have been more resilient than expected. Financial conditions are restrictive and that is leaning against the risks to inflation. But the longer high and volatile energy prices persist, the more inflationary pressure is building: indirect effects will be higher and the risk of second-round effects in price and wage-setting increases. The balance of risks to inflation has shifted more to the upside since our last policy decision. The outlook for energy prices is uncertain and could change in the coming weeks, but the case for raising Bank Rate is building the longer the conflict continues without lasting resolution.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

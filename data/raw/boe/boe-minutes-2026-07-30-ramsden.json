@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "There are two distinct aspects to the outlook, pulling in different directions. On the one hand, I see clear upside risks to inflation from the global environment, with the potential for a prolonged disruption to energy prices from repeated energy shocks, though perhaps smaller in amplitude than first considered in March and April. Alongside that, bottlenecks in AI supply chains and the impact of El Niño on food prices may add to inflationary pressures (Box D). On the other hand, domestic developments point to a more benign inflationary outlook (Box C), where inflation would have been likely to return to target absent the shocks from the conflict in the Middle East. And an early assessment of second-round effects (Box B) suggests they are more likely than not to be limited. The policy stance is currently delivering the restrictiveness necessary to weigh against the upside risks posed by the global environment. I will keep the degree of restrictiveness under review as we continue to learn more about the upside risks to inflation. If they were to crystallise, a hike in Bank Rate may be warranted. If the risks were to subside and the underlying disinflation process continued, I would consider resuming the cutting cycle.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

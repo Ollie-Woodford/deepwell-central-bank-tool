@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "There remains considerable uncertainty about the evolution of the conflict in Iran and its impact on the UK economy. Incoming data suggests the disinflation process has continued and the real side of the economy remains soft. Some recent forward-looking surveys have been collected during a peace deal and a conflict, making it difficult to parse signal from noise. Unsurprisingly, there has been scant evidence of second-round effects, but I expect some to emerge. There have been successive negative supply shocks, inflation has remained above target for roughly five years and inflation is likely to reach the threshold at which business and household expectations are more sensitive to outturns. Other supply risks loom as well, including a second energy choke point in the Red Sea, El Niño and supply constraints for AI-related hardware. As in June, there is significant uncertainty about which projection or scenario is most likely and I believe a risk management strategy is appropriate. Staff analysis illustrates that setting policy as if there are stronger second-round effects and course correcting if they prove to be smaller is less costly than vice versa. Furthermore, a proactive hike in Bank Rate may reduce the probability that second-round effects set in.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

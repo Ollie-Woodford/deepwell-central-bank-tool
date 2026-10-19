@@ -3,6 +3,8 @@
 Every source the scrapers collect, per bank. "Verified" means the URL was
 opened and its structure checked on 19 Oct 2026. "Unverified" means the
 pattern is expected but must be checked in the build before relying on it.
+All "Unverified" rows were checked in Phase 1 (19 Oct 2026); results are in the
+Status column.
 
 All times are stored in UTC. Display converts to London or Tokyo time.
 
@@ -24,11 +26,11 @@ Add later, for the news tier: `news.google.com`, `api.gdeltproject.org`.
 
 | Source | URL | Format | Cadence | Weight type | Status |
 |---|---|---|---|---|---|
-| Speeches feed | https://www.bankofengland.co.uk/rss/speeches | RSS, latest 50 items, links to HTML page; full text is usually a linked PDF | Check every run | `speech` (or `comment` for fireside chats and panels) | Verified |
-| Speech page | https://www.bankofengland.co.uk/speech/YYYY/month/slug | HTML summary plus PDF link | On new feed item | as above | Verified |
-| Monetary Policy Summary and Minutes | https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/YYYY/month-YYYY (PDF: /-/media/boe/files/monetary-policy-summary-and-minutes/YYYY/monetary-policy-summary-and-minutes-month-YYYY.pdf) | HTML and PDF | 8 times a year, see `config/calendar.json` | Votes (`dissent_vote`, `majority_vote`) plus each member's written statement (`minutes_statement`) | Verified |
+| Speeches feed | https://www.bankofengland.co.uk/rss/speeches | RSS, latest 50 items (about 8 months), links to HTML page | Check every run | `speech` (or `comment` for fireside chats and panels) | Verified |
+| Speech page | https://www.bankofengland.co.uk/speech/YYYY/month/slug | Full text usually in the HTML; when the page body is only a "Read the speech" button, the text is in that PDF. Other PDF links are footnote references. Speaker box links to the biography page | On new feed item | as above | Verified, collector built |
+| Monetary Policy Summary and Minutes | https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/YYYY/month-YYYY (PDF: /-/media/boe/files/monetary-policy-summary-and-minutes/YYYY/monetary-policy-summary-and-minutes-month-YYYY.pdf) | HTML and PDF | 8 times a year, see `config/calendar.json` | Votes (`dissent_vote`, `majority_vote`) plus each member's written statement (`minutes_statement`) | Verified, collector built (parses the HTML) |
 | MPR press conference opening remarks | https://www.bankofengland.co.uk/-/media/boe/files/monetary-policy-report/YYYY/month/opening-remarks-month-YYYY.pdf | PDF | 4 times a year (Feb, Apr or May, Jul or Aug, Nov) | `press_conference` | Verified (July 2026) |
-| Treasury Select Committee hearings | https://committees.parliament.uk/work/8621/ (inquiry page; transcripts under /oralevidence/{id}/html) | HTML transcript | After each MPR, published days later | `testimony` | Verified (inquiry page) |
+| Treasury Select Committee hearings | https://committees.parliament.uk/work/8621/ (inquiry page; transcripts under /oralevidence/{id}/html) | HTML transcript | After each MPR, published days later | `testimony` | Verified (inquiry page). Blocks automated requests (Cloudflare challenge, 19 Oct 2026); needs another route before it can be collected |
 
 **Fields to extract:** speaker, date, title, venue, URL, full text. For
 minutes: meeting end date, decision, vote split, each member's vote and the
@@ -48,8 +50,8 @@ rate they voted for, and each member's written statement.
 | Speeches index (English) | https://www.boj.or.jp/en/about/press/koen_YYYY/index.htm | HTML list | Check every run | `speech` | Verified |
 | Speech full text (English) | https://www.boj.or.jp/en/about/press/koen_YYYY/data/koYYMMDDa1.pdf | PDF | On new index item | `speech` | Verified |
 | Statement on Monetary Policy | https://www.boj.or.jp/en/mopo/mpmdeci/state_YYYY/index.htm (files: /en/mopo/mpmdeci/mpr_YYYY/kYYMMDDa.pdf) | PDF (occasionally HTML) | 8 meetings a year | Votes; names dissenters and what each proposed | Verified |
-| Governor's press conference | Expected under https://www.boj.or.jp/en/about/press/kaiken_YYYY/ | HTML | Day after each meeting (English translation later) | `press_conference` | Unverified |
-| Board member press conferences after regional speeches | Expected on the same speech pages or in Japanese only | HTML | After regional speeches | `press_conference` | Unverified, often Japanese only |
+| Governor's press conference | Japanese: https://www.boj.or.jp/about/press/kaiken_YYYY/index.htm (files: /about/press/kaiken_YYYY/kkYYMMDDa.pdf, dated by publication, a few days after the conference) | PDF | After each meeting | `press_conference` | Verified (Japanese). No English index: /en/about/press/kaiken_YYYY/ is 404 for 2024 to 2026. Find any English translation in Phase 6 |
+| Board member press conferences after regional speeches | Same Japanese index as the Governor's (e.g. 小枝審議委員記者会見) | PDF | After regional speeches | `press_conference` | Verified (Japanese only) |
 | Summary of Opinions | https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_YYYY/ | PDF | About 8 working days after each meeting | Not attributed to members. Use for context only, never as a member's data point | Verified (index) |
 | Minutes | https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_YYYY/ | PDF | After the following meeting | Votes and proposals, already captured from the Statement | Verified (index) |
 

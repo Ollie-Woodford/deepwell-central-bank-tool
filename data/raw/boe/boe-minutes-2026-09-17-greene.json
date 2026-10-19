@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Since the conflict in Iran started more than six months ago, we have faced uncertainty around the path for energy prices and, relatedly, uncertainty about the extent of second-round effects. The news since July suggests a greater risk of second-round effects and inflation persistence. Energy prices remain closest to our adverse scenario, contributing to inflation already within the threshold at which business and household expectations are more attentive to inflation outcomes. Previous arguments around a limited risk of second-round effects from the conflict have hinged on economic slack. But resilience in labour demand and activity suggest slack may have already peaked. And forward-looking indicators from the DMP and Agents point to wage and price disinflation stalling above target-consistent levels – all before the recent energy price rise has really hit consumers (given the Ofgem price cap) and firms (given hedging). Beyond the conflict in Iran, persistent inflationary pressures could come from El Niño, AI-related supply constraints and the reversal of a multi-decade disinflation in global goods. Waiting for definitive evidence of second-round effects before acting would leave policy behind the curve, and we cannot rely on premia to do our work for us. I continue to think a risk-management strategy is appropriate.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

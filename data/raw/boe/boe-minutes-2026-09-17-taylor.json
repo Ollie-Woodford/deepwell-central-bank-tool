@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "My view is that additional tightening is not warranted at present. Monetary policy is already firmly restrictive: Bank Rate remains materially above my estimate of neutral at 3%, while an elevated curve bears down via mortgage and other lending rates. (The curve is now higher, at all maturities at and beyond the two-year point, than at the final hike of the 2022-23 cycle when inflation stood at 6.8%.) These conditions provide meaningful insurance against the risk that the energy shock becomes embedded in wages and prices. The shock is real, and risks are skewed upwards. But policy should respond to evidence of propagation rather than mechanically to volatile ticks in headline energy prices. So far, that evidence is limited. We see subdued domestic demand, substantial slack, normalising wages, and steady underlying inflation. I therefore favour holding while monitoring closely whether expectations, wages, prices, and margins begin to react. Clearly, any evidence of emergent second-round effects would build the case for tightening. Equally, if geopolitical tensions abate and inflation pressures ease, an easing of policy should be in sight. The right approach is therefore vigilant, conditional, and disciplined, with the burden of proof resting on clear evidence that second-round effects are en route.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

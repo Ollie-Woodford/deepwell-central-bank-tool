@@ -41,8 +41,8 @@ sites, every run         rubric.md, write JSONL             per member          
 | `rubric.md` | Scoring rules. The scorer follows this exactly. | v1, calibrated |
 | `docs/WEIGHTING.md` | Source weights and how to classify each data point | Done |
 | `docs/EXTRACTION.md` | Raw document to scored passages; vote scoring rules | Done, 2 decisions open |
-| `docs/SOURCES.md` | Every source, URL, format, cadence, network allowlist | Done, some URLs unverified |
-| `config/members.json` | 18 members: roles, terms, name variants, Japanese names | Done, several dates to verify |
+| `docs/SOURCES.md` | Every source, URL, format, cadence, network allowlist | Done, all URLs checked 19 Oct 2026 |
+| `config/members.json` | 18 members: roles, terms, name variants, Japanese names | Done, all terms verified 19 Oct 2026 |
 | `config/calendar.json` | Meeting dates 2026 and 2027, both banks | Verified |
 | `engine/decay.py` | Time decay (linear to zero over 10 months, hold when silent), weights, stance, momentum, timeline | Built, 16 tests pass |
 | `engine/test_decay.py` | Tests, including that weights match the agreed ratios | Passing |
@@ -52,6 +52,11 @@ sites, every run         rubric.md, write JSONL             per member          
 | `data/calibration/scores_v0.json` | Blind test of rubric v0 on the holdout | 78% within 1 point |
 | `tools/calibration-lab.html` | Source of the labelling page (live at https://claude.ai/artifact/NAgbLfJ94jJNGsC1cq45Re) | Live |
 | `tools/bqnt/` | BQNT feasibility notebook | Done |
+| `pipeline/collect.py` | `python -m pipeline.collect [--since YYYY-MM-DD]`: BoE speeches feed and MPC minutes to `data/raw/`, votes scored by rule to `data/scores/` | Built (BoE) |
+| `pipeline/boe.py` | BoE feed, speech page and minutes parsers | Built, tested on saved pages |
+| `pipeline/votes.py` | Vote scoring rule from `EXTRACTION.md` | Built, tested |
+| `pipeline/report.py` | Markdown list of collected documents and votes | Built |
+| `reports/` | Phase check reports | BoE collection, 19 Jul to 19 Oct 2026 |
 
 ## Decisions (do not change without asking Ollie)
 
@@ -163,6 +168,11 @@ Settle these with Ollie when the phase that needs them comes up:
 6. Passage weighting: split each document's weight equally between its passages (proposed), or by confidence?
 7. Are Deepwell colleagues in Ollie's claude.ai organisation? (Phase 4.)
 8. BIS dataset licence for internal commercial use. (Phase 7.)
+9. Vote rule gaps in `EXTRACTION.md`, filled in `pipeline/votes.py` pending
+   confirmation: cut-side dissents mirror the hike side (against a cut +5,
+   larger cut -3, smaller cut +3); a split-meeting majority vote is +/-2 on the
+   side opposite the dissenters (so a 25bp hike majority against 50bp hike
+   dissent is -2); if dissenters sit on both sides, majority votes are not recorded.
 
 ## Working with Ollie
 

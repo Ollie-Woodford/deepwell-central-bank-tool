@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "My view of the outlook remains largely unchanged since July, though recent events have amplified the adverse supply shock. Rolling re-escalation of conflict in the Middle East underscores the continuing uncertainty around the size, persistence and transmission of higher energy prices. Monetary policy needs to respond in a timely way to the emergence of self-sustaining second-round effects. Several factors provide insurance against such effects building imminently. Bank Rate remains materially higher than in peer European economies, financial conditions have tightened rapidly since the conflict began, and domestic demand remains subdued. I therefore continue to see value in waiting for a clearer read on the durable scale of the shock over the coming months, including evidence on first-round energy effects and the conditions for 2027 wage and price-setting. This would still allow time to adjust Bank Rate appropriately to mitigate second-round effects, while avoiding pre-emptive tightening before there is greater clarity on first-round effects. So far, there are limited signs that upstream price pressures are broadening materially, despite sharp increases in imported input prices. With consumption subdued, vacancies below pre-pandemic levels and margins not expanding, the domestic economy appears unlikely to sustain second-round effects that would magnify the initial impulse.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

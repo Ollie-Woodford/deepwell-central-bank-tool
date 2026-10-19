@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Protracted conflict in the Middle East continues to be the predominant driver of the near-term inflation outlook. Energy price paths as embodied in the July adverse scenario appear more likely the longer the conflict continues. External risks from global conflicts, extreme weather events and AI supply chain pressures have the potential to combine to generate more volatile and longer-lasting above-target inflation. Meanwhile, domestically generated inflationary pressures continue to appear to be relatively benign and slack is still evident in a range of indicators, with little to suggest second-round effects are imminent. At the same time, food price inflation has been weaker than expected in recent months. Nevertheless, there do seem to be some tentative indications of a bottoming out in labour market easing, activity continues to be surprisingly resilient, and external pressures may start to push up on food prices. So there is more risk that domestically generated price pressures could start to emerge in the near future. Overall, the risks to the inflation outlook have tilted more to the upside. Whilst the policy stance continues to provide restrictiveness, were upside pressures on the inflation outlook to continue to build, there could be a case for increasing Bank Rate.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}

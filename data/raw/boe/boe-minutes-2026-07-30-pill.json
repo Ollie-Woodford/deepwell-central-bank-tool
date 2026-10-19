@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "While energy prices remain volatile, risks to achieving the inflation target lie firmly to the upside. It is comforting that, so far, staff analysis has identified neither a broad money overhang (Box E) nor second-round effects associated with the de-anchoring of longer-term inflation expectations. Nonetheless, I remain concerned about more insidious second-round effects driven by catch-up dynamics in wage and price setting. While these may be slower to emerge, they could prove more lasting and create greater intrinsic inflation persistence. Structural shifts in the economy have rendered the UK more vulnerable to such catch-up effects and are also associated with a less benign view of pre-conflict underlying inflation. The profound uncertainty surrounding the energy price outlook is likely to be prolonged and of unknown duration, rendering efforts to fine-tune the economy with monetary policy hazardous. As a result, it is appropriate to raise Bank Rate now, thereby cutting through noise in commodity and asset price developments to offer a clear and unambiguous signal of our willingness and ability to address upside risks to inflation stemming from events in the Gulf. This would place us in the best position to manage risks to the inflation target as they emerge.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

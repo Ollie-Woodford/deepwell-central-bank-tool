@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-07-30-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes July 2026: written statement",
+ "description": "Meeting ending 2026-07-29; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+ "published": "2026-07-30T11:00:00Z",
+ "delivered_date": "2026-07-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The outlook for UK inflation is being driven by global factors interacting with a weakening domestic environment. Indirect and second-round effects of previous higher energy prices remain a concern, exacerbated by the reemergence of elevated energy prices. Second-round effects take time to appear (Boxes A and B) but could be significant. Their current absence is informative but not conclusive. Recent data show underlying disinflation continuing and the looser labour market and weak pricing power should help limit propagation. The stance of monetary policy is restrictive, more so once broader financial conditions and the further underlying disinflation are factored in. This provides sensible risk management given the inflationary impulse from higher energy prices. Policy would need to be adjusted were there to be evidence of risks of significant second-round effects, including from persistently higher energy prices.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:22:07Z"
+}

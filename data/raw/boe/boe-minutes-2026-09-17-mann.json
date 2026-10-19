@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-09-17-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes September 2026: written statement",
+ "description": "Meeting ending 2026-09-16; decision hold 6-3",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+ "published": "2026-09-17T11:00:00Z",
+ "delivered_date": "2026-09-17",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Since my vote to increase Bank Rate in July, upside risks to inflation have increased as the ‘sporadic continuance’ of conflict has ratcheted up energy prices well above the baseline from the July Report. Our short-term inflation forecast projects CPI reaching somewhat over 4% early next year, mechanically driven by energy prices and expected increases in food price inflation. Both of these are salient for households' inflation attentiveness and both will be uncomfortably high ahead of wage negotiations next spring. Core goods inflation is projected to be well above its target-consistent historical average. Activity has been stronger than expected in the first half of 2026, as investment and government spending have increased. Collectively, this suggests that financial conditions have not been particularly restrictive. However, financial conditions, particularly as measured by the OIS curve, have tightened since July. But, up until last week’s escalation in the Middle East, market participants had expected a prolonged Bank Rate hold, which was hard to square with achieving the 2% target. Raising Bank Rate is a better risk-management strategy when faced with uncertainty about inflation dynamics and second-round effects. Doing so avoids a worse outcome whereby inflation becomes embedded, which requires even tighter policy later.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:22:08Z"
+}
