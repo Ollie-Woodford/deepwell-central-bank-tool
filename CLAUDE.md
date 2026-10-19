@@ -38,7 +38,7 @@ sites, every run         rubric.md, write JSONL             per member          
 
 | Path | What it is | Status |
 |---|---|---|
-| `rubric.md` | Scoring rules. The scorer follows this exactly. | v1, calibrated |
+| `rubric.md` | Scoring rules. The scorer follows this exactly. | v2 (19 Oct 2026), not yet blind-tested |
 | `docs/WEIGHTING.md` | Source weights and how to classify each data point | Done |
 | `docs/EXTRACTION.md` | Raw document to scored passages; vote scoring rules | Done, 2 decisions open |
 | `docs/SOURCES.md` | Every source, URL, format, cadence, network allowlist | Done, all URLs checked 19 Oct 2026 |
@@ -64,6 +64,7 @@ sites, every run         rubric.md, write JSONL             per member          
 | `data/decisions/` | Every policy decision with each member's vote | BoE 2026 |
 | `eval/compare.py` | Scorer vs Ollie: exact, within 1, average gap, bias, rank agreement | Built, tested |
 | `data/calibration/blind_v1_statements.json` | Fresh blind test for rubric v1: 21 BoE, 9 BoJ; labels in `blind_v1_labels.json`, scores in `blind_v1_scores.json` | Scored: 77% within 1, target missed (`reports/blind_v1.md`) |
+| `data/calibration/blind_v2_statements.json` | Fresh blind test for rubric v2: 16 BoE, 4 BoJ; loaded into the Calibration Lab | Waiting for Ollie's labels |
 
 ## Decisions (do not change without asking Ollie)
 
@@ -168,7 +169,7 @@ BQNT); more banks (Fed next, then ECB).
 Settle these with Ollie when the phase that needs them comes up:
 
 1. Rubric: should every dissent be +/-5? (Asada's June dissent is labelled -4.)
-2. Rubric: should a hawk's reassuring caveat count at -3, or cap at -1?
+2. ~~Rubric: should a hawk's reassuring caveat count at -3, or cap at -1?~~ Settled: no cap (rubric v2, rule 14).
 3. Rubric: Dhingra's "very hard to say, depends on energy prices" headline, +2 or 0?
 4. Rubric: do deputy governors count as board members under rule 7?
 5. `minutes_statement` weight: 6 proposed.

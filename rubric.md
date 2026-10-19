@@ -1,8 +1,8 @@
 # Hawk/Dove Scoring Rubric
 
-**Version:** v1 (19 Oct 2026)
+**Version:** v2 (19 Oct 2026)
 **Built from:** 126 statements labelled by Ollie (gold set v1.1), 99 train / 24 holdout / 3 retired
-**Tested:** v0 blind test on 27 holdout statements: 37% exact, 78% within 1 point, average gap 1.0, scorer 0.6 points too dovish
+**Tested:** v0 blind test on 27 holdout statements: 37% exact, 78% within 1 point, average gap 1.0, scorer 0.6 points too dovish. v1 blind test on 30 fresh statements: 33% exact, 77% within 1, average gap 1.1, scorer nearer 0 than Ollie on 13 of 16 same-side statements (87% within 1 after Ollie corrected 2 slips and relabelled 3, not blind). v2 not yet tested.
 **Applies to:** Bank of England MPC, Bank of Japan Policy Board
 
 This file is the instruction set the scorer follows for every statement. Anchor
@@ -44,7 +44,10 @@ The same words can score differently in different contexts.
 ## 3. The scale
 
 Whole numbers only. If torn between two levels, choose the one closer to 0 and
-lower the confidence.
+lower the confidence. This is for genuine ties only, when two levels fit equally
+well; it is not a general lean toward 0. When the words clearly support a level,
+use it: in the v1 blind test the scorer's misses were almost all one or more
+levels nearer 0 than Ollie, never further out on the same side.
 
 | Score | Meaning | Example from the gold set |
 |---|---|---|
@@ -120,6 +123,23 @@ These come from the calibration round. Each one fixes a mistake made at least on
     subject is unclear ("if it were to materialise"), score it from the clear
     part at lower confidence. Use `need_context` only when the direction itself
     cannot be read.
+13. **Score the position, not the shift.** Score where the speaker now wants
+    rates to go relative to market expectations, not the direction they have
+    moved from an earlier vote or speech. Ramsden holding only because of the
+    conflict ("would have otherwise voted for a 25 basis point cut") states a
+    preference for easing that the shock merely delays: -4. Dhingra conceding
+    that worse news "may warrant some further tightening" while seeing "no
+    compelling case to increase Bank Rate pre-emptively" stands against a hike:
+    -2. Pill favouring "a cautious withdrawal of policy restriction" when the
+    market and four colleagues wanted cuts sooner wants tighter policy than
+    expected: +3. The direction of the move a speaker backs does not set the
+    sign; its pace against the market does.
+14. **Caveats count on their own words.** A reassurance from a hawk, or a
+    warning from a dove, scores as what it says, with no cap for the speaker's
+    usual side (this extends rule 10). Tamura, who had dissented for a hike,
+    saying the Bank should not "immediately raise the policy interest rate to a
+    restrictive level": -3. Pill's "events in the Gulf have not triggered a
+    de-anchoring": -3.
 
 ## 6. Bank glossaries
 
@@ -175,19 +195,25 @@ Return exactly this JSON for each statement:
 |---|---|---|---|
 | v0 | 2026-10-19 | First draft. Scale anchors, rules 1 to 9, glossaries. +/-5 reserved for votes and explicit calls. | Ollie's 126 labels and corrections to 9 of them |
 | v1 | 2026-10-19 | Rule 5: conditionals one level below, not half. Rule 7: Governor restating path = 0, others arguing for it = +/-2. New rules 10 (words not reputation), 11 (stopping short of neutral = -2), 12 (fragments). -2 and -4 anchors updated. | v0 blind test: scorer too dovish on BoJ hike language and conditionals; disagreements on Takata and Sato |
+| v2 | 2026-10-19 | New rule 13 (score the position against the market, not the shift from an earlier stance). New rule 14 (caveats count on their own words, no cap), settling open question 2. Section 3: the tie rule is for genuine ties only. Blind items v1b-boe-04, -06, -12 and v1b-boj-08 are now anchors, so they leave the holdout. | v1 blind test (77% within 1): scorer compressed toward 0; opposite signs on Ramsden, Dhingra and Pill, which Ollie relabelled by position (Ramsden -4, Dhingra -2, Pill +3); Tamura caveat labelled -3 |
 
 ## Open questions for v2
 
 Settled in v1: the same words from different speakers (now rule 7).
+Settled in v2: balancing caveats (now rule 14, no cap); position versus shift
+(now rule 13).
 
 Still open:
 
 1. **Asada's June dissent** is labelled -4, but rule 6 makes a dissent against
    a hike -5. Should every dissent be +/-5?
-2. **Balancing caveats inside a hawk's speech.** Pill's "events in the Gulf
-   have not triggered a de-anchoring" is labelled -3. Should a reassurance
-   clause from a hawk count that strongly, or cap at -1?
+2. *(Settled in v2 by rule 14.)*
 3. **Dhingra headline** ("very hard to say... it depends on energy prices") is
    labelled +2. It reads as 0. Keep or change?
 4. **Deputy governors under rule 7.** v1 treats deputies like board members
    (arguing for the path = +2) because Himino's labels support it. Confirm.
+5. **Two-way conditionals against the market.** Ramsden's "If they were to
+   crystallise, a hike in Bank Rate may be warranted. If the risks were to
+   subside... I would consider resuming the cutting cycle" (Jul 2026) is
+   labelled -2; rule 5 gives 0 or +/-1. Probably depends on what the market was
+   pricing, which needs the OIS history before it can be settled.
