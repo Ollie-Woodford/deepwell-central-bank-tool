@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Conflict in the Middle East has severely disrupted energy markets, with significant global and domestic economic implications. Prior to the conflict, domestic inflationary pressures had reduced but were lingering. Consumers and businesses have faced sustained above-target inflation in recent years, which will affect behaviour, expectations and reactions to price rises. Agency intelligence and the DMP Survey indicate that firms will look to pass on cost rises given previous margin squeezes (Box B). However, there are downside risks to activity. Faced with uncertainty, I place more weight on the economy evolving as in Scenario B, given its more realistic outlook for both energy prices and second-round inflationary effects than Scenario A. A tightening in monetary and financial conditions relative to before the war is warranted. Holding rates provides an appropriate degree of restrictiveness while we learn more about the scale of the shock and its propagation. While I do not view Scenario C as a central case, it is plausible, and would require policy to respond more forcefully to inflationary pressures.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

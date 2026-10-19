@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Despite recent developments, the outlook for energy prices remains highly uncertain. Monetary policy should look through the direct effects of the energy shock, partially through the indirect effects and act forcefully and early against any material second-round effects. The economic environment means the chance of material second-round effects is small and, although it is early days, there has been nothing in the news since April to change that assessment. Recent releases suggest that, absent the shock, disinflation was firmly on track, and the weak demand outlook should continue to feed through to firms’ pricing decisions. The financing conditions facing households and firms have tightened materially since the conflict, leaning against inflationary pressures and leaving us well placed to monitor how the economy evolves. There are risks around this. Household inflation expectations have risen materially, and although their impact on wage growth should be moderated by the loose labour market, they pose an upside risk to inflation. On the other side, weak demand might pull inflation below target in the medium term. In my view, the current stance of financial conditions balances these risks, but I remain committed to acting early and decisively should material second‑round effects become likely.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "There has been a marked fall in energy prices in recent days, reflecting progress on talks involving US and Iran. But the situation remains unpredictable, and there is clearly a risk that energy prices remain elevated for an extended duration. Recent inflation outturns give greater confidence that gradual underlying disinflation has continued. Labour market data show some further softening, and there are further signs of demand weakness. Our remit recognises that attempting to bring inflation back to the target too quickly may cause undesirable volatility in output. Given the context at present of softness in the real economy and uncertainty around the scale and duration of the shock to energy prices, tolerating temporarily above-target inflation as part of a return to target is an appropriate way to approach the trade-off, providing inflation expectations remain contained. I am content at the present time with holding, while accepting that risks to inflation and interest rates are on the upside, as reflected in the upward slope in the sterling yield curve, which appears to be accounted for more by risk premia than expected rates. I would respond promptly to any signals that an extended period of elevated energy prices could be leading to stronger possible second-round effects.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

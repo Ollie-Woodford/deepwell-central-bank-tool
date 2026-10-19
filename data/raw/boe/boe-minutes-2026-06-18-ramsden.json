@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Events in the Middle East remain the key determinant for inflation, and there remain upside risks from continued energy supply disruption as well as downside risks from subdued activity. There has been a material tightening in financial conditions, which is providing necessary restrictiveness, weighing against the upside balance of risks in the near term. I continue to place about equal weight on Scenarios A and B materialising after the summer, but even less weight than before on Scenario C. The evidence so far on how the economy will be impacted by the energy price shock is uncertain. Data outturns continue to confirm our understanding of the pre-conflict economy. The labour market has continued to loosen steadily, and the domestic disinflation process has also continued. Early, necessarily tentative, indications suggest that second-round effects might be limited, absent further escalation of the energy cost shock. Holding Bank Rate at this meeting keeps options open as we continue to learn more about the path of the conflict. My reaction function will remain state-contingent on both the development of the conflict, and what that means for the outlook for the economy.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

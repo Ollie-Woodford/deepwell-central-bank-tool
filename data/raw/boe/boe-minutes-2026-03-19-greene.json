@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The risk of inflation persistence has risen, perhaps significantly, in light of the negative supply shock from the war in the Middle East. Pre-conflict data showed a mixed picture for the underlying disinflationary process: the Agents revised expected average pay settlements up to 3.6% in 2026; but households’ inflation expectations, while still elevated, had dropped significantly. With this new energy shock, preliminary Bank staff estimates suggest CPI inflation will rise above 3% for much of this year, above the threshold at which households are more sensitive to inflation outturns in their expectation setting. There could also be increases in fertiliser and food prices, and both energy and food prices are particularly salient for households’ inflation expectations. Inflation has been above target for the best part of five years, and households and businesses are likely to be more sensitive to upside surprises in inflation given successive negative supply shocks. I believe there may be a larger trade-off now than in 2022, but that the impact of this energy shock on inflation is paramount. It is appropriate to hold Bank Rate to learn more about the size and duration of the shock, and the extent of potential second-round effects.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Upside risks to the lasting achievement of the 2% inflation target have increased in recent months on account of events in the Gulf and their implications for commodity prices and supply chains. Recognising the significant uncertainty that surrounds the UK inflation outlook, raising Bank Rate to 4% continues to be the most robust monetary policy response to the intensification of these risks. Global energy prices remain volatile, and elevated compared with their pre-hostilities level, despite the announcement of a new ceasefire. Even with a looser labour market, the risk that second-round effects will create greater intrinsic persistence in UK inflation remains. One potentially pernicious channel of second-round effects is catch-up dynamics in pricing decisions as firms and households seek to defend their margins and purchasing power in the face of higher food and energy prices. While overall UK financial conditions have tightened since the conflict began, I continue to favour prompt but modest action on Bank Rate now. This would establish a stance of monetary policy that is well-placed to address the significant uncertainties the MPC faces. It will also put the MPC in a good place from which to respond to the evolution of events from here.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Due to the conflict, the tension between rising inflation and softening activity – a configuration of data that had been relevant for my decisions earlier last year, but which had lessened sufficiently for me to consider monetary easing – has re-emerged and could easily worsen. Sustained pressure on energy prices could re-embed the inflation persistence of the last few years, through households’ salience to energy prices, firms’ state-dependent pricing, staggered wage contracts, and attentiveness thresholds. Significant volatility in oil and gas prices will increase volatility in other prices, putting systematic upward pressure on inflation. On the activity side, while the Ofgem price cap limits household exposure now, a further weakening in consumer sentiment and demand could result from an increase in their precautionary saving buffers. Financial conditions have tightened considerably in nominal terms, but relatively less so in real terms, complicating assessment of restrictiveness. The new forecast and high-frequency data arriving over the coming weeks will help inform my next decision. Since the conflict may yield a sustained inflation shock, I see the balance between inflation and activity to have shifted away from considering a cut towards considering a longer hold, or even a hike at some point to lean against inflation persistence.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

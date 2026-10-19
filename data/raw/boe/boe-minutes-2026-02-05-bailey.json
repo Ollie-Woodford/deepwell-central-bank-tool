@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "My policy decision is based on accumulating evidence. Despite all the uncertainties in the world, we are not currently facing a situation in which monetary policy is being hit by big new shocks. Activity is subdued against a background of inflation returning to the target. I can see the case for the output gap having widened, but by how much is uncertain. Although survey evidence on activity is pointing to a slightly more positive short-term picture, my central outlook is aligned with the staff’s view of weaker demand, leaving the risks more balanced. The supply side story remains uncertain (Box C). I expect to see quite a sharp drop in inflation over coming months. While I am more confident in the overall path of wage disinflation, it is naturally less clear when and how much the expected upcoming drop in inflation will influence wage settlements (Box B). Overall, the risks from inflation persistence appear to have continued to reduce. I therefore see scope for some further easing of policy. This does not mean that I expect to cut Bank Rate at any particular meeting. I will go into the coming meetings asking whether a cut is justified.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

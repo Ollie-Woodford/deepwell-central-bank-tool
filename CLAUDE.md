@@ -57,6 +57,13 @@ sites, every run         rubric.md, write JSONL             per member          
 | `pipeline/votes.py` | Vote scoring rule from `EXTRACTION.md` | Built, tested |
 | `pipeline/report.py` | Markdown list of collected documents and votes | Built |
 | `reports/` | Phase check reports | BoE collection, 19 Jul to 19 Oct 2026 |
+| `prompts/score.md` | Scorer instructions: find work, split, score by `rubric.md`, write and validate records | Built |
+| `pipeline/pending.py` | `python -m pipeline.pending`: documents not yet scored under the current rubric, with context blocks | Built |
+| `pipeline/context.py` | Context block per statement (rate, last decision, OIS path, speaker's last vote) | Built |
+| `pipeline/validate.py` | `python -m pipeline.validate [--append FILE]`: schema, verbatim passages, weight shares | Built, tested |
+| `data/decisions/` | Every policy decision with each member's vote | BoE 2026 |
+| `eval/compare.py` | Scorer vs Ollie: exact, within 1, average gap, bias, rank agreement | Built, tested |
+| `data/calibration/blind_v1_statements.json` | Fresh blind test for rubric v1: 21 BoE, 9 BoJ; loaded into the Calibration Lab | Waiting for Ollie's labels |
 
 ## Decisions (do not change without asking Ollie)
 
@@ -173,6 +180,10 @@ Settle these with Ollie when the phase that needs them comes up:
    larger cut -3, smaller cut +3); a split-meeting majority vote is +/-2 on the
    side opposite the dissenters (so a 25bp hike majority against 50bp hike
    dissent is -2); if dissenters sit on both sides, majority votes are not recorded.
+10. OIS history: only one baseline (16 Oct 2026) exists, so every earlier
+    statement is scored with "market-implied path: not available". Backfill
+    weekly pulls from BQNT for the scoring window (at least 2026, ideally the
+    two-year backfill window).
 
 ## Working with Ollie
 

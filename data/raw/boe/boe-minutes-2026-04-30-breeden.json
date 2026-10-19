@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Conflict in the Middle East represents a significant shock to the inflation outlook. Monetary policy cannot influence energy prices and so should generally look through their direct effects on inflation. But it can, and should, lean against the second-round effects as households and firms respond (Box G). The magnitude of such effects is state-contingent (Box C). In contrast to 2022, slack in the labour market should provide a meaningful restraint, particularly given weak demand. Absent the conflict, underlying disinflation remained on track. This counterfactual matters because financial conditions have tightened significantly since. This provides sufficient restrictiveness to guard against the current risk of second-round effects and gives us some time to learn more about the conflict and how it propagates. My vote balances the uncertainty around second-round effects. Firms and workers may be more attuned to salient prices, especially after a period of above-target inflation. But similarly, demand may weaken further, particularly given risks to consumption (Box E). At present, I place most weight on Scenario B. I do not judge Scenario C as likely, but if it were to materialise, I would stand ready to react, forcefully if necessary, to return inflation to target sustainably.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

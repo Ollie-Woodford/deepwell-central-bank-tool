@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "I see risks to the latest central projection for inflation as now tilted to the downside, reflecting the latest evidence and, in particular, the analysis presented in the February Report. Core disinflation is clearly progressing with cumulative weakening in the labour market and subdued activity, consistent with a slightly larger output gap relative to November. This outlook could be weaker if savings and consumption do not normalise, as a result of recent shocks and geopolitical uncertainty, and if there is greater loosening in the labour market than expected. I am increasingly confident that wage growth will fall to target-consistent rates this year (Box A). Falls in headline inflation (Box D) should help cool inflation expectations and ease wage growth further, with little evidence of structural changes affecting wage-setting (Box B). Additionally, productivity growth may pick up to near its long-run trend (Box C). I do not discount upside risks to inflation nor various ongoing uncertainties. However, with my starting point for an estimate of the neutral rate of around 3%, I judge that policy should be less restrictive in order to meet the 2% target sustainably in the medium term.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.5
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

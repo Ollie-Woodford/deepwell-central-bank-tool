@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "This is a substantial forecast revision, but the continued drift is more notable. Since February 2025, cumulative revisions for 2026–27 have delivered lower central paths for inflation and greater slack, even as the Bank Rate path on which they were conditioned drifted lower. If the inflation persistence scenario were materialising, the opposite should have happened. This supports my previous outlook, as do other developments. Firstly, inflation is now expected to return to the target this year; some higher-frequency measures suggest we are already close. Secondly, we reach the target much earlier than previously expected (Box D), and falling inflation means that elevated inflation expectations are likely to moderate significantly this year. Thirdly, this is not all due to the one-time shocks dropping out or new fiscal measures kicking in; softer price-wage dynamics and emerging slack also contribute across the forecast period. Together with normalising wages (Boxes A and B), all this reduces or even eliminates the risk of the inflation persistence scenario. I now place even more weight on the central and downside scenarios. If we expect to be at or below the target with significant slack emerging in about six months, a neutral rate of 3% should be in our sights now.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.5
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

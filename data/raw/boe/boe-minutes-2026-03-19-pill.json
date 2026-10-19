@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Events in the Middle East have imparted an inflationary impulse to the UK economy via their impact on global energy prices. In the first instance, this impulse transmits through higher fuel and utilities prices (direct effects) and the pass-through of higher input costs into other consumer prices (indirect effects). Owing to lags in transmission, monetary policy can do little to dampen the resulting short-term volatility in inflation. But monetary policy must contain potential second-round effects that would otherwise exert a more lasting impact on CPI inflation. I continue to believe structural change in price and wage-setting behaviour over the past decade has made the propagation of inflationary impulses more persistent than in the past. This assessment has been reinforced by upward revisions to the Agents’ pay survey, with settlements in 2026 now expected at 3.6%. As such, the potential for second-round effects following recent events in the Middle East remains substantial, justifying caution in monetary policy setting. While financial conditions have tightened in recent weeks, whether this proves sufficient to contain potential upside risks to price stability stemming from energy prices is an open question. I remain alert to those risks and stand ready to act if they intensify.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

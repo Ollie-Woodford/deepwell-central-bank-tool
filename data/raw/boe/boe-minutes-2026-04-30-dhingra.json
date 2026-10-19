@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The balance of risks around the inflation outlook has shifted to the upside. The UK economy will face higher energy prices, though how much higher and for how long makes all the difference. I am not strongly attached to any one of the energy price scenarios and A, B, and C all remain in play. In the event of a swift resolution and materially lower energy prices, further reduction in Bank Rate would be warranted, and possibly quickly. Alternatively, we could be faced with a sharper policy trade-off under a larger and longer energy shock. Labour market slack, weak demand and restrictiveness from the previous tightening cycle should already be weighing against sustained momentum in second-round effects under scenarios closer to B (Boxes C and E). If the situation were to worsen, this may warrant some tightening, but there is a limit to how much output loss should be acceptable.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

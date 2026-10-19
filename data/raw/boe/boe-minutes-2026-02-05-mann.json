@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "New analysis and current developments have moved the appropriate time for a cut in Bank Rate closer. This will partly depend on how various one-off policies (Box D) – which account for half of the projected disinflation between 2025 H2 and 2026 H2 – affect the underlying disinflation process. Wage and price moderation is in train, with one-year ahead expected inflation of income-elastic and discretionary consumer-facing products particularly notable. Some components of CPI inflation have remained above target-consistent rates (Box E), most likely because wage growth is not target-consistent either (Box A). Bank staff analysis on different categories of wage setters suggests that lower inflation should push down on settlements for a significant proportion of private sector workers (Box B). Private sector activity and employment continue to be soft. Consumers have been scarred by high and volatile inflation, which poses a risk to the projected decrease in the saving rate in the central projection. The degree of restrictiveness varies over the time horizon and whether the focus is on real or nominal rates. A cut now would overweight the importance of the near-term mechanical disinflation and risk higher term premia. I look forward to incoming assessments of the constellation of surveys and data ahead of upcoming meetings.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

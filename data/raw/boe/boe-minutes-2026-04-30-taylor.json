@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "At this stage, the historical example of 2011 is a better comparison for this shock than 2022; this is true both in terms of magnitude and the starting point of a weak economy (Boxes C and E). Wage growth has softened to target-consistent rates in the presence of slack. Inflation is above our February forecast through direct effects, with early signs of cost pass-through. With wage settlements largely agreed for this year, we are unlikely to learn quickly about the important question of second-round effects. The scenarios in the Report should communicate that our strategy is state-contingent. I currently place more weight in the zone between Scenario A and the path with standard treatment, where conflict subsides and energy prices moderate to year-end, with legacy damage to the UK and other economies. This would entail a hold for some time, then a move to a neutral or accommodative stance. We will know more by June or July about the likely conflict scenario. Given neutral at 3%, it makes sense to hold, for risk-management reasons and because the tighter financial conditions since the conflict began are amply restrictive to provide insurance against inflation risks if we eventually face the not-implausible Scenario B or the more extreme Scenario C.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

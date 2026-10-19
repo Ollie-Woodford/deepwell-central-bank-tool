@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Events in the Gulf have left the outlook for global energy prices elevated and more uncertain. That uncertainty is unlikely to dissipate soon, but it is nonetheless clear that higher energy prices represent an inflationary shock to the UK economy. Second-round effects in price and wage-setting stemming from this shock have the potential to raise UK inflation beyond the near term in a persistent manner. Our scenarios illustrate how a stronger impulse to inflation may strengthen second-round effects. But I see the risk of second-round effects in each of these scenarios as skewed to the upside. I recognise that second-round effects may be more modest with a looser labour market (Box C). But structural change in price and wage-setting, and the impact on inflation expectations of greater attentiveness to, and salience of, energy and food prices, may strengthen second-round effects beyond what is captured in those scenarios. As someone already concerned about a stalling of the underlying disinflation process even before the latest energy price shock, a prompt but modest hike in Bank Rate will help mitigate upside risks to price stability stemming from a re-emergence of intrinsic inflation persistence.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

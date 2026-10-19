@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Developments since our last meeting point in different directions for inflation. Disruption to energy prices and supply chains from events in the Middle East has persisted. This will prolong the time that inflation will remain above target due to direct and indirect effects, increasing the risk of second-round effects. Whereas the economic data has continued to show that, absent the energy shock, disinflation was gradually continuing. It is too early to draw any conclusions on second-round effects from the energy shock. So far, evidence has been mixed and the signal is broadly consistent with standard pass‑through. To date there is also no evidence of a rapid deterioration in demand. There are risks for inflation in both directions. Consumers and businesses have faced sustained above-target inflation in recent years which will affect behaviour, expectations and reactions to price rises. They also report negative sentiment which risks further weakening demand. Financing costs have risen since before the conflict, which continues to weigh against the greater inflation pressures. Holding Bank Rate remains appropriate as we learn more about the scale and duration of the shock and its propagation. Were signals to indicate inflation would persist above target, this would require policy to respond more forcefully to inflationary pressures.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

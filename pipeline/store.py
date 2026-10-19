@@ -3,6 +3,7 @@ Where collected material lives.
 
 data/raw/<bank>/<doc id>.json   one file per document (speech, minutes statement)
 data/scores/YYYY-MM.jsonl       scored data points; votes are written here by rule
+data/decisions/<bank>.json      every policy decision with each member's vote, for context blocks
 data/state.json                 what has been seen, so each run only fetches new items
 """
 
@@ -17,6 +18,7 @@ DATA = ROOT / "data"
 RAW = DATA / "raw"
 SCORES = DATA / "scores"
 STATE_FILE = DATA / "state.json"
+DECISIONS = DATA / "decisions"
 
 
 def utc_now_iso() -> str:
@@ -75,3 +77,18 @@ def append_scores(records: list[dict], scores_dir: Path = SCORES) -> int:
         with open(scores_dir / f"{r['timestamp'][:7]}.jsonl", "a", encoding="utf-8") as f:
             f.write(json.dumps(r, ensure_ascii=False) + "\n")
     return len(new)
+
+
+def load_decisions(bank: str, decisions_dir: Path = DECISIONS) -> list[dict]:
+    path = decisions_dir / f"{bank.lower()}.json"
+    return json.loads(path.read_text()) if path.exists() else []
+
+
+def save_decision(decision: dict, decisions_dir: Path = DECISIONS) -> None:
+    """Add or replace the decision for its bank and date, keeping the file sorted."""
+    rows = [d for d in load_decisions(decision["bank"], decisions_dir) if d["date"] != decision["date"]]
+    rows.append(decision)
+    rows.sort(key=lambda d: d["date"])
+    decisions_dir.mkdir(parents=True, exist_ok=True)
+    (decisions_dir / f"{decision['bank'].lower()}.json").write_text(
+        json.dumps(rows, indent=1, ensure_ascii=False) + "\n")

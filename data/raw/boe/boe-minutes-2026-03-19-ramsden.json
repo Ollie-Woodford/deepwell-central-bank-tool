@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The damaging economic shock resulting from the Middle East conflict has caused me to revisit my policy position. Data releases since the February Report have broadly been in line with my expectations, and suggested continuing disinflation, so I would have otherwise voted for a 25 basis point cut in Bank Rate at this meeting. The conflict has now led me to vote for a hold in Bank Rate. There is a high degree of uncertainty around the scale and duration of the conflict, as well as its economic impact and any subsequent second-round effects. However, I agree with our current collective assessment of the economic outlook, including the risks to inflation and to activity, as set out in the Monetary Policy Summary and minutes. I stand ready to act as necessary to ensure that CPI inflation remains on track to meet the 2% target in the medium term.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

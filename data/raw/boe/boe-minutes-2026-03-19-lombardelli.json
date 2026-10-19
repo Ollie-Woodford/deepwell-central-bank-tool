@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The conflict in the Middle East will be damaging for the UK economy, increasing inflation and reducing output. We are early in the process of assessment. The shock will have direct effects such as higher fuel and utility prices; indirect effects on business energy and transport costs; and broader second-round effects as the shock transmits through the economy impacting demand, supply, expectations of inflation, wage-setting and pricing behaviour. Policy coming into this shock may have been broadly neutral or mildly restrictive and there has since been some tightening of financial conditions. We will learn more in coming weeks about the shock itself and its effects. I am prepared to act as needed to address any persistent inflationary effects that may emerge.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

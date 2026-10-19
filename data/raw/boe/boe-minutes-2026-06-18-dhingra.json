@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Although the likelihood of extreme outcomes on both sides appears to have receded, I continue to see the uncertainty around the size of the global commodity shock as dominating the degree to which inflationary pressures risk getting embedded in domestic sources of inflation. Absent the shock, monetary policy would be too restrictive for the cyclical position. Disinflation appeared on track pre-conflict, with nominal indicators trending consistently in the right direction, and broad-based evidence of emerging slack and cumulative weakness in the economy. While these initial conditions would dampen momentum in second-round effects, there remain significant risks from overlapping adjustments to the subsequent supply shocks that have occurred in the recent past. I see the balance of risks to the upside on prices and downside on activity. Maintaining current restrictiveness would weigh against second-round effects and provide time to learn more about the size and duration of the first-round energy and commodity price shocks in the near term. If the situation were to worsen, this may warrant some further tightening. But I do not see a compelling case to increase Bank Rate pre-emptively without new evidence of more intense first-round shocks.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

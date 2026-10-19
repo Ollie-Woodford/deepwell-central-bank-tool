@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The risks to inflation from this energy shock are to the upside, even if the conflict ends soon, given the size of the shock and extent of infrastructure damage. Before the conflict, I was already concerned that the disinflationary process might be slowing and our policy stance was not meaningfully restrictive. Since then, PMI data show increased input and output prices. The DMP Survey and Agency intelligence suggest businesses intend to pass some rising costs onto consumers (Box B). Household inflation expectations rose this March more than in March 2022 (following Russia’s invasion of Ukraine), suggesting household attentiveness to inflation is heightened after five years of above-target inflation. Given slack in the labour market, I am more worried about the price-setting than wage-setting channel of second-round effects (Box C). In my view, second-round effects in Scenario B represent a lower bound for what is likely. We may end up with inflation somewhere between Scenarios B and C, necessitating a tighter stance. For now, the yield curve has tightened enough to give us time to hold and learn, if not much about second-round effects soon then at least about the nature of the shock. An increase in Bank Rate may be necessary in upcoming meetings.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

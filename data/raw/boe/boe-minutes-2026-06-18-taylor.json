@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The conflict and its implications for energy prices remain of central importance, even as a deal emerges. Potential second-round effects are an endogenous consequence of the shock. That does not negate a key role for the starting position of slack in the economy and of our restrictive policy stance. Recent data point further against a need for tightening. Absent mechanical direct and indirect energy effects from the conflict, CPI inflation would have been at target in April. Backward-looking wage data suggest that pay growth did not get stuck at elevated levels. Material second-round effects require changes in price and wage-setting behaviour. I believe this channel is likely to be weak given the slack that has accumulated. Policy is restrictive, 75 basis points above my estimate of neutral and where we might have been quite soon. The yield curve shows we have tightened a lot just by holding. One could articulate a case for tightening in risk space, but that is far from my assessment given my own scenario probabilities and trade-offs. Absent worse news, I cannot see a case for tightening now, and an active hold is reasonable. If the conflict resolution holds, and risks diminish, lower rates could be preferred.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

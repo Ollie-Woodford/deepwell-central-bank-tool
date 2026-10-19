@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The economic outlook is at a crossroads following hostilities in the Middle East. The UK economy will face higher energy prices, though how much higher and for how long makes all the difference. In one scenario, we could see a more modest increase in energy prices which probably slows rather than derails disinflation as limited scope exists for significant pass-through and second-round effects, given the state of the labour market and broader domestic demand environment. In another scenario, severe and longer-lasting constraints on oil and gas supply, alongside broader trade disruptions, could overwhelm orderly market adjustment. This could warrant a hold or increase in Bank Rate to stabilise price-setting dynamics albeit creating a difficult trade-off with activity following a prolonged period of weakness. If we see something resembling the lower-inflation scenario, I would expect to reduce Bank Rate, possibly quickly, over the rest of the year. For now, there is value in pausing to reassess the balance of risks to inflation from the terms-of-trade deterioration.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "I continue to place more weight on the risk of inflation persistence, preferring to wait for clearer evidence that inflation will settle sustainably at the target before easing policy further. I find it difficult to justify our significant downward revision to slack in this forecast, given year-on-year headline GDP growth surprised to the upside for much of 2025. I also think it unlikely that potential productivity will pick up as assumed (Box C) and put more weight on Bank staff’s smaller output gap sensitivity (Section 3.2). Our central projection requires underlying inflation and wage growth to decline further for inflation to stabilise at the target. I have three primary concerns: forward-looking indicators of wage growth remain above target-consistent rates; firms in the DMP Survey expect little change in their own-price inflation over the next year; and household inflation expectations remain elevated. I would prefer to wait to see that firms and households revise down their inflation expectations in response to lower realised inflation. I continue to think the monetary policy stance is not materially restrictive. Finally, I believe the cost of a policy error is greater if Bank Rate follows the market path and we end up with inflation persistence versus weaker demand.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

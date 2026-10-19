@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Conflict in the Middle East has significantly shifted the outlook for inflation. Absent this shock, the underlying disinflation process had continued broadly as I expected and, consistent with my vote in February, I would have expected to vote for a cut again in March. But the conflict will have a significant, though at this point highly uncertain, impact on inflation. I associate myself strongly with the MPC’s collective assessment and communications at this meeting. Monetary policy cannot influence global energy and commodity prices, but it can and it must aim to ensure that the economic adjustment to them occurs in a way that achieves the 2% target sustainably. How that adjustment occurs is hugely uncertain, with risks to both sides, and I vote to hold at this meeting. The Committee will learn more by its April meeting about the scale and duration of the shock, as well as its possible second-round effects, and so the implications for monetary policy.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

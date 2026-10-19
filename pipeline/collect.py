@@ -21,7 +21,7 @@ import requests
 
 from . import boe, http
 from .members import load_members
-from .store import ROOT, State, append_scores, iso_utc, utc_now_iso, write_raw
+from .store import ROOT, State, append_scores, iso_utc, save_decision, utc_now_iso, write_raw
 from .votes import VOTE_RULE_VERSION, Vote, score_meeting, split_label
 
 CALENDAR_FILE = ROOT / "config" / "calendar.json"
@@ -141,6 +141,13 @@ def collect_boe_minutes(state: State, since: date, today: date, log: list) -> No
             # rather than record a meeting with a member missing.
             log.append(f"ERROR     {url}: unknown members {minutes.unmatched}; update config/members.json")
             continue
+        save_decision({
+            "bank": "BoE", "date": d, "announced": iso_utc(boe.minutes_release_time(announcement)),
+            "url": url, "previous_rate": minutes.previous_rate, "decision_rate": minutes.decision_rate,
+            "label": split_label(minutes.previous_rate, minutes.decision_rate,
+                                 [Vote(v.member.id, v.voted_rate) for v in minutes.votes]),
+            "votes": {v.member.id: v.voted_rate for v in minutes.votes},
+        })
         docs = boe_statement_docs(announcement, url, minutes)
         for doc in docs:
             write_raw(doc)

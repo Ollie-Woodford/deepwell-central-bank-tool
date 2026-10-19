@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "I think it appropriate to see us pausing to take stock, but inappropriate to infer a directional shift from this meeting. Before events in the Middle East, the disinflation process was nearly complete. Slack was worsening, with inflation set to reach target, making the case for a cut. However, the energy shock perturbs the near-term environment, with uncertain consequences contingent on its magnitude and duration. In a benign scenario, we might look through a milder shock, as in 2011 when the MPC faced an energy shock against the backdrop of a weak labour market. In this scenario, inflation would be higher and then lower in the near term, but largely unchanged in the medium term (when monetary policy has traction) with activity weakening. This could imply faster and potentially deeper rate cuts, once inflation risks subside, to avoid being behind the curve. In a less benign scenario, where supply disruptions persist, the MPC faces a tougher policy trade-off between elevated inflation and even weaker activity. Given massive uncertainty around future energy prices, I currently see a high bar to hiking. I prefer to hold while we better gauge the shock. Policy can then be calibrated to deliver our 2% target, and we can take activist steps whenever needed.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

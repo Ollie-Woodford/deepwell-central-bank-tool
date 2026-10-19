@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "My inflation outlook is broadly consistent with the central projection, pointing to continued disinflation. The inflation persistence scenario is less compelling given the prevailing weakness in activity and higher-than-expected unemployment. The return of inflation to near-target this year alleviates previous concerns about threshold effects. I expect inflation expectations to reduce once prices and wages have normalised, with little evidence of structural change to the wage-setting process (Box B), especially now that previous cost-push shocks are at some distance. While my central case has the risks around activity broadly balanced, I still find the downside scenario to be a useful exploration of a weaker demand recovery. The impact of weaker demand on slack could nevertheless be limited if the prolonged demand weakness has also weighed on supply growth (Box C), potentially counteracting the risk of an inflation undershoot. But, overall, I still expect monetary policy to contribute to disinflation over the next year. The market-implied path for Bank Rate looks too tight. The costs of making a policy mistake seem much higher on the downside, especially given weak labour demand. And the reverse strategy of holding Bank Rate then cutting aggressively would be no panacea were there to be a sharp downturn in activity and employment.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.5
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

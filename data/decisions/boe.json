@@ -1,0 +1,122 @@
+[
+ {
+  "bank": "BoE",
+  "date": "2026-02-05",
+  "announced": "2026-02-05T12:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "label": "hold 5-4",
+  "votes": {
+   "bailey": 3.75,
+   "greene": 3.75,
+   "lombardelli": 3.75,
+   "mann": 3.75,
+   "pill": 3.75,
+   "breeden": 3.5,
+   "dhingra": 3.5,
+   "ramsden": 3.5,
+   "taylor": 3.5
+  }
+ },
+ {
+  "bank": "BoE",
+  "date": "2026-03-19",
+  "announced": "2026-03-19T12:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "label": "hold unanimous",
+  "votes": {
+   "bailey": 3.75,
+   "breeden": 3.75,
+   "dhingra": 3.75,
+   "greene": 3.75,
+   "lombardelli": 3.75,
+   "mann": 3.75,
+   "pill": 3.75,
+   "ramsden": 3.75,
+   "taylor": 3.75
+  }
+ },
+ {
+  "bank": "BoE",
+  "date": "2026-04-30",
+  "announced": "2026-04-30T11:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "label": "hold 8-1",
+  "votes": {
+   "bailey": 3.75,
+   "breeden": 3.75,
+   "dhingra": 3.75,
+   "greene": 3.75,
+   "lombardelli": 3.75,
+   "mann": 3.75,
+   "ramsden": 3.75,
+   "taylor": 3.75,
+   "pill": 4.0
+  }
+ },
+ {
+  "bank": "BoE",
+  "date": "2026-06-18",
+  "announced": "2026-06-18T11:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "label": "hold 7-2",
+  "votes": {
+   "bailey": 3.75,
+   "breeden": 3.75,
+   "dhingra": 3.75,
+   "lombardelli": 3.75,
+   "mann": 3.75,
+   "ramsden": 3.75,
+   "taylor": 3.75,
+   "greene": 4.0,
+   "pill": 4.0
+  }
+ },
+ {
+  "bank": "BoE",
+  "date": "2026-07-30",
+  "announced": "2026-07-30T11:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "label": "hold 6-3",
+  "votes": {
+   "bailey": 3.75,
+   "breeden": 3.75,
+   "dhingra": 3.75,
+   "lombardelli": 3.75,
+   "ramsden": 3.75,
+   "taylor": 3.75,
+   "greene": 4.0,
+   "mann": 4.0,
+   "pill": 4.0
+  }
+ },
+ {
+  "bank": "BoE",
+  "date": "2026-09-17",
+  "announced": "2026-09-17T11:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "label": "hold 6-3",
+  "votes": {
+   "bailey": 3.75,
+   "breeden": 3.75,
+   "dhingra": 3.75,
+   "lombardelli": 3.75,
+   "ramsden": 3.75,
+   "taylor": 3.75,
+   "mann": 4.0,
+   "greene": 4.0,
+   "pill": 4.0
+  }
+ }
+]

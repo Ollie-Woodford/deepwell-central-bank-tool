@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Overall the data continue broadly to show strength in wages and underlying inflation, weak activity and softening employment. While the near-term fall in CPI inflation should reduce second-round effects, it is not assured that wage growth will return to target-consistent rates (Box A). The recent recovery in productivity is likely cyclical. Structural productivity growth, which has been weak since the financial crisis, may not recover to the extent that Bank staff estimate (Box C). I remain concerned about both upside and downside risks to inflation. The labour market has loosened materially, from an extremely tight starting point, but it is unclear how much downward pressure this is putting on inflation. The current degree of restrictiveness is uncertain (Box E), although evidence on credit does not suggest monetary policy is weighing heavily on the economy. Taken together, I prefer to hold Bank Rate at its current level. I am more concerned about the costs of cutting rates too quickly than too slowly, including the risks to credibility from any potential policy reversal that is not in response to a new shock.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

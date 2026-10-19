@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-03-19-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes March 2026: written statement",
+ "description": "Meeting ending 2026-03-18; decision hold unanimous",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026",
+ "published": "2026-03-19T12:00:00Z",
+ "delivered_date": "2026-03-19",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Large movements in energy prices have resulted from events in the Middle East and uncertainty over the duration of supply disruptions. Monetary policy cannot reverse this shock to supply. Its resolution depends on action taken at its source to restore the safe passage of shipping through the Strait of Hormuz. Monetary policy must, however, respond to the risk of a more persistent effect on UK CPI inflation. A prolonged disruption to the supply of oil, natural gas and other commodities such as fertiliser and helium footnote [2] gas increases the upside risk to inflation. The recent experience of high inflation may also make households and businesses more sensitive to a new inflationary shock. At the same time, the starting point for this shock is a real economy with limited pricing power. Holding Bank Rate at this meeting is appropriate. I will be monitoring developments extremely closely and stand ready to act as necessary to ensure that inflation remains on track to meet the 2% target in the medium term.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

@@ -1,5 +1,35 @@
 {
  "seen": {
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-04-30-bailey",
+    "boe-minutes-2026-04-30-breeden",
+    "boe-minutes-2026-04-30-dhingra",
+    "boe-minutes-2026-04-30-greene",
+    "boe-minutes-2026-04-30-lombardelli",
+    "boe-minutes-2026-04-30-mann",
+    "boe-minutes-2026-04-30-ramsden",
+    "boe-minutes-2026-04-30-taylor",
+    "boe-minutes-2026-04-30-pill"
+   ],
+   "first_seen": "2026-10-19T15:29:27Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-02-05-bailey",
+    "boe-minutes-2026-02-05-greene",
+    "boe-minutes-2026-02-05-lombardelli",
+    "boe-minutes-2026-02-05-mann",
+    "boe-minutes-2026-02-05-pill",
+    "boe-minutes-2026-02-05-breeden",
+    "boe-minutes-2026-02-05-dhingra",
+    "boe-minutes-2026-02-05-ramsden",
+    "boe-minutes-2026-02-05-taylor"
+   ],
+   "first_seen": "2026-10-19T15:29:26Z",
+   "note": ""
+  },
   "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026": {
    "doc_ids": [
     "boe-minutes-2026-07-30-bailey",
@@ -12,7 +42,37 @@
     "boe-minutes-2026-07-30-mann",
     "boe-minutes-2026-07-30-pill"
    ],
-   "first_seen": "2026-10-19T15:22:07Z",
+   "first_seen": "2026-10-19T15:29:29Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-06-18-bailey",
+    "boe-minutes-2026-06-18-breeden",
+    "boe-minutes-2026-06-18-dhingra",
+    "boe-minutes-2026-06-18-lombardelli",
+    "boe-minutes-2026-06-18-mann",
+    "boe-minutes-2026-06-18-ramsden",
+    "boe-minutes-2026-06-18-taylor",
+    "boe-minutes-2026-06-18-greene",
+    "boe-minutes-2026-06-18-pill"
+   ],
+   "first_seen": "2026-10-19T15:29:28Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/march-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-03-19-bailey",
+    "boe-minutes-2026-03-19-breeden",
+    "boe-minutes-2026-03-19-dhingra",
+    "boe-minutes-2026-03-19-greene",
+    "boe-minutes-2026-03-19-lombardelli",
+    "boe-minutes-2026-03-19-mann",
+    "boe-minutes-2026-03-19-pill",
+    "boe-minutes-2026-03-19-ramsden",
+    "boe-minutes-2026-03-19-taylor"
+   ],
+   "first_seen": "2026-10-19T15:29:26Z",
    "note": ""
   },
   "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026": {
@@ -27,13 +87,230 @@
     "boe-minutes-2026-09-17-greene",
     "boe-minutes-2026-09-17-pill"
    ],
-   "first_seen": "2026-10-19T15:22:08Z",
+   "first_seen": "2026-10-19T15:29:30Z",
    "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/april/alan-taylor-at-a-joint-conference-at-the-banque-de-france": {
+   "doc_ids": [
+    "boe-speech-2026-04-13-alan-taylor-at-a-joint-conference-at-the-banque-de-france"
+   ],
+   "first_seen": "2026-10-19T15:30:01Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/april/andrew-bailey-panellist-at-columbia-university-new-york": {
+   "doc_ids": [
+    "boe-speech-2026-04-14-andrew-bailey-panellist-at-columbia-university-new-york"
+   ],
+   "first_seen": "2026-10-19T15:30:00Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/april/charlotte-gerken-speech-and-panel-at-the-building-societies-annual-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:57Z",
+   "note": "not an MPC member: Charlotte Gerken"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/april/david-bailey-speech-jp-morgan-uk-banks-asset-and-liability-mgmt-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:58Z",
+   "note": "not an MPC member: David Bailey"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/april/gareth-truran-the-23rd-conference-on-bulk-annuities": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:56Z",
+   "note": "not an MPC member: Gareth Truran"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/april/sarah-breeden-at-the-program-on-international-financial-systems-and-harvard-law-school": {
+   "doc_ids": [
+    "boe-speech-2026-04-17-sarah-breeden-at-the-program-on-international-financial-systems-and-harvard-law-school"
+   ],
+   "first_seen": "2026-10-19T15:29:59Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/february/andrew-bailey-speech-at-the-imf-saudi-ministry-of-finance": {
+   "doc_ids": [
+    "boe-speech-2026-02-08-andrew-bailey-speech-at-the-imf-saudi-ministry-of-finance"
+   ],
+   "first_seen": "2026-10-19T15:30:14Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/february/james-talbot-speech-at-the-london-school-of-economics": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:30:13Z",
+   "note": "not an MPC member: James Talbot"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/february/rebecca-jackson-speech-on-intraday-risk-management-and-principal-trading": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:30:15Z",
+   "note": "not an MPC member: Rebecca Jackson"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/february/sarah-breeden-keynote-speech-at-the-city-financial-annual-payments-regulation-and-innovation-summit": {
+   "doc_ids": [
+    "boe-speech-2026-02-02-sarah-breeden-keynote-speech-at-the-city-financial-annual-payments-regulation-and-innovation-summi"
+   ],
+   "first_seen": "2026-10-19T15:30:16Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/february/slides-from-huw-pill-fireside-chat-at-santander-event": {
+   "doc_ids": [
+    "boe-speech-2026-02-13-slides-from-huw-pill-fireside-chat-at-santander-event"
+   ],
+   "first_seen": "2026-10-19T15:30:12Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/july/andrew-bailey-speech-at-manison-house": {
+   "doc_ids": [
+    "boe-speech-2026-07-14-andrew-bailey-speech-at-manison-house"
+   ],
+   "first_seen": "2026-10-19T15:29:33Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/july/catherine-l-mann-fireside-chat-at-the-natixis-cib-conference-on-private-debt": {
+   "doc_ids": [
+    "boe-speech-2026-07-02-catherine-l-mann-fireside-chat-at-the-natixis-cib-conference-on-private-debt"
+   ],
+   "first_seen": "2026-10-19T15:29:36Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/july/david-bailey-speech-at-the-international-finance-and-banking-society-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:32Z",
+   "note": "not an MPC member: David Bailey"
   },
   "https://www.bankofengland.co.uk/speech/2026/july/nathanael-benjamin-speech-at-omfif": {
    "doc_ids": [],
    "first_seen": "2026-10-19T15:22:27Z",
    "note": "not an MPC member: Nathanaël Benjamin"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/july/ruth-smith-speech-at-uk-finance": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:34Z",
+   "note": "not an MPC member: Ruth Smith"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/june/alan-taylor-speech-at-the-barclays-and-centre-for-economic-policy-research": {
+   "doc_ids": [
+    "boe-speech-2026-06-23-alan-taylor-speech-at-the-barclays-and-centre-for-economic-policy-research"
+   ],
+   "first_seen": "2026-10-19T15:29:41Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/june/david-chaplin-speech-given-at-the-financial-law-and-regulation-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:37Z",
+   "note": "not an MPC member: no speaker named"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/june/megan-greene-speech-at-university-of-derby-business-school": {
+   "doc_ids": [
+    "boe-speech-2026-06-02-megan-greene-speech-at-university-of-derby-business-school"
+   ],
+   "first_seen": "2026-10-19T15:29:45Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/june/sarah-breeden-panel-at-the-european-central-bank-forum-on-central-banking-2026": {
+   "doc_ids": [
+    "boe-speech-2026-06-30-sarah-breeden-panel-at-the-european-central-bank-forum-on-central-banking-2026"
+   ],
+   "first_seen": "2026-10-19T15:29:37Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/june/shoib-khan-speech-at-the-airmic-annual-conference-2026": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:41Z",
+   "note": "not an MPC member: no speaker named"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/june/swati-dhingra-panel-at-the-world-resources-institute-workshop": {
+   "doc_ids": [
+    "boe-speech-2026-06-24-swati-dhingra-panel-at-the-world-resources-institute-workshop"
+   ],
+   "first_seen": "2026-10-19T15:29:40Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/march/alan-taylor-exante-datas-10-year-anniversary-macro-conference": {
+   "doc_ids": [
+    "boe-speech-2026-03-26-alan-taylor-exante-datas-10-year-anniversary-macro-conference"
+   ],
+   "first_seen": "2026-10-19T15:30:04Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/march/andrew-bailey-opening-remarks-at-financial-stability-board-payments-summit": {
+   "doc_ids": [
+    "boe-speech-2026-03-12-andrew-bailey-opening-remarks-at-financial-stability-board-payments-summit"
+   ],
+   "first_seen": "2026-10-19T15:30:09Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/march/huw-pill-speech-at-national-bank-of-the-republic-of-north-macedonia-and-suerf-conference": {
+   "doc_ids": [
+    "boe-speech-2026-03-24-huw-pill-speech-at-national-bank-of-the-republic-of-north-macedonia-and-suerf-conference"
+   ],
+   "first_seen": "2026-10-19T15:30:06Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/march/phil-evans-speech-at-the-university-of-leeds": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:30:07Z",
+   "note": "not an MPC member: no speaker named"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/march/speech-by-alan-taylor-getting-the-right-directions": {
+   "doc_ids": [
+    "boe-speech-2026-03-02-speech-by-alan-taylor-getting-the-right-directions"
+   ],
+   "first_seen": "2026-10-19T15:30:11Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/march/vicky-white-speech-at-connect-global-group-4th-annual-treasury-and-capital-markets-forum": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:30:08Z",
+   "note": "not an MPC member: no speaker named"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/andrew-bailey-speech-at-cutlers-feast-sheffield": {
+   "doc_ids": [
+    "boe-speech-2026-05-21-andrew-bailey-speech-at-cutlers-feast-sheffield"
+   ],
+   "first_seen": "2026-10-19T15:29:46Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/andrew-bailey-speech-at-the-reykjavik-2026-economic-conference": {
+   "doc_ids": [
+    "boe-speech-2026-05-29-andrew-bailey-speech-at-the-reykjavik-2026-economic-conference"
+   ],
+   "first_seen": "2026-10-19T15:29:45Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/catherine-l-mann-speech-at-the-london-school-of-economics": {
+   "doc_ids": [
+    "boe-speech-2026-05-13-catherine-l-mann-speech-at-the-london-school-of-economics"
+   ],
+   "first_seen": "2026-10-19T15:29:54Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/liz-oakes-speech-and-panel-at-the-kpmg-and-fitch-ratings-london-banking-summit": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:49Z",
+   "note": "not an MPC member: Liz Oakes"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/sam-woods-speech-at-the-henry-thornton-lecture-bayes-business-school": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:55Z",
+   "note": "not an MPC member: Sam Woods"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/sarah-breeden-speech-at-city-week-the-future-of-money-in-a-digital-world": {
+   "doc_ids": [
+    "boe-speech-2026-05-19-sarah-breeden-speech-at-city-week-the-future-of-money-in-a-digital-world"
+   ],
+   "first_seen": "2026-10-19T15:29:47Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/slides-from-huw-pill-fireside-chat-at-natwest": {
+   "doc_ids": [
+    "boe-speech-2026-05-14-slides-from-huw-pill-fireside-chat-at-natwest"
+   ],
+   "first_seen": "2026-10-19T15:29:48Z",
+   "note": ""
+  },
+  "https://www.bankofengland.co.uk/speech/2026/may/victoria-cleland-fireside-chat-at-the-currency-research-banknote-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-19T15:29:50Z",
+   "note": "not an MPC member: Victoria Cleland"
   },
   "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul": {
    "doc_ids": [

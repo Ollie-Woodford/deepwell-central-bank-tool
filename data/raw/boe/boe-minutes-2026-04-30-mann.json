@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Against the backdrop of Middle East conflict, and given the underlying model structure, the scenarios overestimate both the projected opening up of slack and the moderation of inflation. On labour market slack, Agency intelligence and staff analysis points to stagnation, not a broad-based weakening. On pricing power, Agency intelligence and the DMP Survey suggest that firms likely possess more pricing power than embodied in the scenarios. Household inflation expectations have risen notably, which could sustain firms’ pricing power, and could continue to rise given price increases in salient items like energy and food. Inflation continuing to rise through 2026 could be embedded in 2027 via wage bargaining and state-dependent pricing. On balance, I expect greater additional second-round effects than in the scenarios. Given this assessment, it is not surprising that the market-implied path for Bank Rate has increased since the conflict began, tightening financial conditions. An ‘active hold’ now – emphasising concerns over inflation persistence, while acknowledging implications for employment and activity – allows for more readings on salience, attentiveness, and threshold effects. Should I see continued rising inflation outturns and expectations, I would expect to increase Bank Rate so as to lean against inflation rising into 2027.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

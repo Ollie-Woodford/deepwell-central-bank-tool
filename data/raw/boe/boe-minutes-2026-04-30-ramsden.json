@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The outlook for the Middle East conflict remains highly uncertain, with upside risks to inflation from the energy shock, but also downside risks to medium-term inflation if demand weakens materially. Direct energy effects are already feeding through into CPI inflation and recent business surveys suggest the potential for sizeable indirect price impacts, though with some cost increases likely to be absorbed by firms’ margins (Box B). Set against that, the labour market continues to weaken and demand is subdued, such that second-round effects in wage and price-setting are likely to be limited (Boxes C and D). Holding Bank Rate continues for me to be the most appropriate response to the ongoing uncertainty. Looking ahead, my approach to managing any trade-off between inflation and output will be outlook and state-dependent (Box G). I see upside risks to energy prices relative to futures curves and so place equal weight on Scenarios A and B, though do not completely rule out Scenario C. Under Scenario B, I would consider raising Bank Rate and accepting a larger output gap as a result. If, however, some of the downside risks in Scenario A materialise, I would favour a less restrictive path.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

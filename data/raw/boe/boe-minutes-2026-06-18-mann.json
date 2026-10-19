@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Activity, labour market, and nominal pressures have moderated. However, there remain differences in pace across public and private sector, as well as between the most recent data and inflation expectations. Private sector wage growth is near target-consistent, but whole economy wage growth has increased. Market-sector services output is soft, although manufacturing and government have provided some momentum to GDP. Volatility in both inflation and financial markets has increased; both are headwinds for business investment. Higher inflation and volatility tend to encourage households to maintain high savings buffers. Hypotheticals for the Middle East conflict include resolution, sporadic continuance, and escalation. Consider the first two. With rapid resolution, activity rebounds, uncertainty clears, but energy prices remain high with infrastructure and inventory rebuild: an activist hike could be needed. With sporadic continuance, uncertainty weighs on activity, but energy prices increase, which could trigger threshold effects: a worsening trade-off, but needing an activist hike. Why wait? Research shows that a forceful Bank Rate decision can have a quick effect on inflation and inflation expectations. So I have time to continue to evaluate measures of inflation expectations and financial restrictiveness to determine whether firms’ pricing and 2027 wage negotiations are on a target-consistent path for the medium term.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}

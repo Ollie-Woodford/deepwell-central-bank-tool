@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "I do not see a need to reduce Bank Rate further at this meeting. This follows from distinguishing between the underlying disinflation process, which remains intact but incomplete, and the risks around that process, which shift through time but have on balance been in the direction of slower disinflation than expected a year or eighteen months ago. In explaining this slowing, I would emphasise the role of structural changes in wage-bargaining and productivity – notwithstanding the conclusions in Box B, where I draw different implications from the careful and important analysis – and a monetary policy stance that has been overly accommodative since the withdrawal of restriction started in August 2024. While I draw comfort about the medium-term inflation outlook from longer-term market inflation expectations and low-frequency broad money dynamics, I remain concerned that inflationary pressures stemming from an overly rapid withdrawal of policy restriction over the past two years still need to be contained and eliminated. In that light, I continue to favour a cautious withdrawal of policy restriction, guided by longer‑term trends rather than short‑term news.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

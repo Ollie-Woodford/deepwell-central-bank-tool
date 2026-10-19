@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-04-30-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes April 2026: written statement",
+ "description": "Meeting ending 2026-04-29; decision hold 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
+ "published": "2026-04-30T11:00:00Z",
+ "delivered_date": "2026-04-30",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The increase in energy prices from conflict in the Middle East represents a supply shock. So far, this shock differs from 2022 as the increase in energy prices has been smaller, monetary policy started more restrictive and the labour market is weaker. Pay pressures are continuing to ease gradually. Future higher pay demands could come up against firms’ margin constraints, a softer labour market and firms’ caution about passing on cost increases (Box B). This shock will induce a trade-off between higher inflation and softer output, and the appropriate policy response is state-contingent (Box G). If the shock appears to be short-lived or the economy weaker, policy should place relatively more weight on avoiding unnecessary contraction in activity. If second-round effects are likely to be greater, policy should focus on returning inflation back to target more quickly. At the moment, I place most weight on Scenario B, albeit with slightly reduced second-round effects. I place some weight on Scenario C, which would require a stronger monetary policy response. For now, the softer real economy makes it appropriate to maintain Bank Rate.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.75
+ },
+ "collected_at": "2026-10-19T15:29:27Z"
+}

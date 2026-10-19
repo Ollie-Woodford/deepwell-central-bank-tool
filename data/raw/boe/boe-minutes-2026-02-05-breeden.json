@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-02-05-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes February 2026: written statement",
+ "description": "Meeting ending 2026-02-04; decision hold 5-4",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
+ "published": "2026-02-05T12:00:00Z",
+ "delivered_date": "2026-02-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The significant amount of evidence since December has led to a finely balanced decision. New analysis, rather than new data, has further supported my view that upside risks to inflation have diminished: wage growth is set to end this year at target-consistent levels (Box A); structural change in the labour market now appears less likely to have occurred (Box B); and slack is judged to be a little wider both now and over the forecast. The improved near-term inflation outlook should support a swifter normalisation of wage and price-setting dynamics in an environment of weak demand and labour market slack, as firms and households adjust their expectations towards the target. Upside risks to inflation cannot however be ruled out: inflation expectations may not adjust and potential productivity growth could prove weaker than expected (Box C). But I place greater weight on downside risks, particularly in the near term, including those from an elevated household saving rate and a weakening labour market. I can see a case for taking out some insurance against these downside risks to inflation and think policy should be eased a little faster than implied by the current market path.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 3.5
+ },
+ "collected_at": "2026-10-19T15:29:26Z"
+}

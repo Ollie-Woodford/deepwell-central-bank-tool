@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-06-18-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes June 2026: written statement",
+ "description": "Meeting ending 2026-06-17; decision hold 7-2",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
+ "published": "2026-06-18T11:00:00Z",
+ "delivered_date": "2026-06-18",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The implementation of a reported peace deal and the evolution of energy prices remain uncertain. Slack should mitigate the extent of second-round effects triggered by the energy shock, but households and businesses are more attentive to rises in inflation today. This is reflected in households’ and firms’ inflation expectations and the sensitivity of long-term expectations to short-term inflation surprises, which suggest expectations may be less solidly anchored. Given significant uncertainty about the extent of second-round effects, we should pursue a risk management strategy. Analysis conducted using the Bank’s endogenous policy toolkit demonstrates that holding Bank Rate assuming lower second-round effects (Scenario B) but discovering next year they were greater (Scenario M, from my latest speech) and course-correcting results in inflation that peaks higher and remains above target the entire outlook. Hiking Bank Rate assuming greater second-round effects, then discovering they were smaller and course-correcting results in a very moderately lower output gap and inflation returns to target at the end of the forecast period. These risks are asymmetric, so we should insure against the possibility of larger second-round effects until we have evidence to determine they are not materialising. A proactive hike now in Bank Rate should help anchor inflation expectations.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-10-19T15:29:28Z"
+}
