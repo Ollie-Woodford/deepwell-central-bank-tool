@@ -1,0 +1,545 @@
+<link rel="stylesheet" href="fonts.css">
+<style>
+/* Terminal desk: one dark column, axis first, then votes and ticker side by side, member timeline below. */
+#dash-root { --dash-gutter: 0; }
+.hd {
+  --hd-bg: #0a0e13; --hd-panel: #10161e; --hd-raise: #161e28; --hd-line: #222d3a; --hd-grid: #18212c;
+  --hd-fg: #d5dde6; --hd-muted: #7f8c9b; --hd-faint: #4b5867;
+  --hd-hawk: #f2a93b; --hd-hawk-deep: #b8741a; --hd-dove: #4c9fff; --hd-dove-deep: #2563b8; --hd-mid: #8b96a3;
+  --hd-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --hd-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  color-scheme: dark;
+  background: var(--hd-bg); color: var(--hd-fg); font-family: var(--hd-sans); font-size: 14px; line-height: 1.45;
+  padding-block: 20px 28px; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 16px; border-radius: 6px;
+}
+.hd *, .hd *::before, .hd *::after { box-sizing: border-box; }
+.hd .mono { font-family: var(--hd-mono); font-variant-numeric: tabular-nums; }
+.hd a { color: var(--hd-fg); text-decoration-color: var(--hd-faint); text-underline-offset: 3px; }
+.hd a:hover { text-decoration-color: var(--hd-hawk); }
+.hd button { font: inherit; color: inherit; }
+.hd :focus-visible { outline: 2px solid var(--hd-hawk); outline-offset: 2px; }
+
+.hd-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; }
+.hd-brand { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.hd-brand h1 { margin: 0; font-family: var(--hd-mono); font-weight: 500; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--hd-muted); }
+.hd-brand h2 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
+.hd-tabs { display: flex; gap: 4px; }
+.hd-tab { border: 1px solid var(--hd-line); background: transparent; padding: 4px 10px; border-radius: 3px; font-family: var(--hd-mono); font-size: 12px; letter-spacing: .06em; cursor: pointer; }
+.hd-tab[aria-selected="true"] { background: var(--hd-raise); border-color: var(--hd-faint); }
+.hd-tab:disabled { cursor: not-allowed; color: var(--hd-faint); }
+.hd-asof { font-family: var(--hd-mono); font-size: 12px; color: var(--hd-muted); }
+.hd-take { margin: 0; max-width: 70ch; color: var(--hd-fg); font-size: 15px; }
+.hd-take b { font-family: var(--hd-mono); font-weight: 500; }
+.hd .up { color: var(--hd-hawk); } .hd .down { color: var(--hd-dove); }
+
+.hd-card { background: var(--hd-panel); border: 1px solid var(--hd-line); border-radius: 4px; padding: 14px 16px 16px; min-width: 0; }
+.hd-card-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; margin-bottom: 10px; }
+.hd-card-head h3 { margin: 0; font-family: var(--hd-mono); font-size: 12px; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--hd-muted); }
+.hd-note { font-size: 12px; color: var(--hd-muted); }
+.hd-row { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); }
+
+.hd-seg { display: inline-flex; border: 1px solid var(--hd-line); border-radius: 3px; overflow: hidden; }
+.hd-seg button { background: transparent; border: 0; padding: 3px 9px; font-family: var(--hd-mono); font-size: 11px; cursor: pointer; color: var(--hd-muted); }
+.hd-seg button[aria-pressed="true"] { background: var(--hd-raise); color: var(--hd-fg); }
+
+.hd-chart { position: relative; width: 100%; }
+.hd-chart svg { display: block; width: 100%; overflow: visible; }
+.hd-axis-chart { min-height: 240px; }
+.hd-tl-chart { min-height: 300px; }
+.hd svg text { font-family: var(--hd-mono); fill: var(--hd-muted); font-size: 11px; }
+.hd .m-group { cursor: pointer; }
+.hd .m-group text.m-name { fill: var(--hd-fg); font-family: var(--hd-sans); font-size: 12.5px; font-weight: 600; }
+.hd .m-group text.m-val { font-size: 11.5px; }
+.hd .m-group.sel text.m-name { fill: #fff; }
+.hd .m-group:focus { outline: none; }
+.hd .m-group:focus-visible rect.m-hit { stroke: var(--hd-hawk); stroke-width: 1.5; }
+
+.hd-tip { position: absolute; pointer-events: none; z-index: 5; background: var(--hd-raise); border: 1px solid var(--hd-faint); border-radius: 3px; padding: 6px 8px; font-size: 12px; max-width: 280px; box-shadow: 0 6px 18px rgba(0,0,0,.45); }
+.hd-tip .t-date { font-family: var(--hd-mono); color: var(--hd-muted); font-size: 11px; }
+
+.hd-votes { overflow-x: auto; }
+.hd-vgrid { display: grid; gap: 3px; min-width: 0; font-size: 12px; }
+.hd-vgrid .vh { font-family: var(--hd-mono); font-size: 10.5px; color: var(--hd-muted); text-align: center; line-height: 1.25; padding-bottom: 4px; }
+.hd-vgrid .vn { white-space: nowrap; padding-right: 8px; align-self: center; }
+.hd-vgrid .vc { font-family: var(--hd-mono); font-size: 11px; text-align: center; padding: 4px 2px; border-radius: 2px; background: var(--hd-grid); color: var(--hd-muted); }
+.hd-vgrid .vc.d-up { background: var(--hd-hawk); color: #1b1203; font-weight: 500; }
+.hd-vgrid .vc.d-down { background: var(--hd-dove); color: #04101f; font-weight: 500; }
+.hd-vgrid .vc.none { background: transparent; }
+
+.hd-tick { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; max-height: 26rem; overflow: auto; }
+.hd-tick li { display: grid; grid-template-columns: auto 1fr; gap: 4px 10px; padding: 9px 0; border-top: 1px solid var(--hd-grid); cursor: pointer; }
+.hd-tick li:first-child { border-top: 0; }
+.hd-tick li:hover .q { color: #fff; }
+.hd-tick .meta { grid-column: 2; display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; font-size: 12px; color: var(--hd-muted); }
+.hd-tick .meta strong { color: var(--hd-fg); font-weight: 600; }
+.hd-tick .q { grid-column: 2; font-size: 13px; color: var(--hd-fg); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.hd-chip { font-family: var(--hd-mono); font-size: 12px; font-weight: 500; min-width: 2.6em; text-align: center; padding: 2px 6px; border-radius: 2px; align-self: start; color: #0a0e13; }
+
+.hd-member { display: grid; gap: 14px; }
+.hd-mhead { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 22px; }
+.hd-mhead .who { display: flex; flex-direction: column; gap: 2px; }
+.hd-mhead .who strong { font-size: 20px; font-weight: 600; }
+.hd-mhead .who span { color: var(--hd-muted); font-size: 12.5px; }
+.hd-stats { display: flex; flex-wrap: wrap; gap: 6px 22px; }
+.hd-stat { display: flex; flex-direction: column; gap: 1px; }
+.hd-stat .k { font-family: var(--hd-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--hd-muted); }
+.hd-stat .v { font-family: var(--hd-mono); font-size: 17px; font-weight: 500; }
+.hd-badge { font-family: var(--hd-mono); font-size: 10.5px; letter-spacing: .08em; text-transform: uppercase; border: 1px solid var(--hd-faint); color: var(--hd-muted); padding: 1px 6px; border-radius: 2px; }
+.hd-topics { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.hd-topics .lab { font-family: var(--hd-mono); font-size: 10.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--hd-muted); margin-right: 4px; }
+.hd-topics button { border: 1px solid var(--hd-line); background: transparent; border-radius: 12px; padding: 2px 10px; font-size: 12px; cursor: pointer; color: var(--hd-muted); }
+.hd-topics button[aria-pressed="true"] { border-color: var(--hd-hawk); color: var(--hd-fg); }
+.hd-legend { display: flex; flex-wrap: wrap; gap: 4px 16px; font-size: 12px; color: var(--hd-muted); align-items: center; }
+.hd-legend svg { vertical-align: middle; margin-right: 5px; }
+
+.hd-detail { border-top: 1px solid var(--hd-line); padding-top: 12px; display: grid; gap: 8px; }
+.hd-detail .dmeta { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; font-size: 12.5px; color: var(--hd-muted); }
+.hd-detail blockquote { margin: 0; padding-left: 12px; border-left: 2px solid var(--hd-faint); font-size: 15px; max-width: 75ch; }
+.hd-detail .why { margin: 0; font-size: 13px; color: var(--hd-muted); max-width: 75ch; }
+.hd-foot { font-size: 12px; color: var(--hd-faint); max-width: 90ch; }
+.hd-fail { display: flex; align-items: center; justify-content: center; gap: 8px; min-height: inherit; color: var(--hd-muted); font-size: 12px; }
+.hd-fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad, #e5484d); }
+.hd [data-dash-source-state=refreshing] { opacity: .5; }
+@media (prefers-reduced-motion: no-preference) {
+  .hd .m-group circle.m-dot { transition: r .2s ease-out; }
+}
+</style>
+
+<div class="hd" id="hd">
+  <header class="hd-top" id="top">
+    <div class="hd-brand">
+      <h1>Hawk / Dove Monitor</h1>
+      <h2 id="bank-title">Bank of England MPC</h2>
+    </div>
+    <div class="hd-tabs" role="tablist" aria-label="Bank">
+      <button class="hd-tab" role="tab" aria-selected="true" id="tab-boe">BoE</button>
+      <button class="hd-tab" role="tab" aria-selected="false" id="tab-boj" disabled title="Bank of Japan collection comes in Phase 6">BoJ</button>
+    </div>
+  </header>
+
+  <p class="hd-take" id="takeaway">
+    Committee median <b data-source="committee" data-field="median">…</b>.
+    <span data-source="committee" data-field="hawk_name">…</span> is the most hawkish at <b class="up" data-source="committee" data-field="hawk_stance">…</b>,
+    <span data-source="committee" data-field="dove_name">…</span> the most dovish at <b class="down" data-source="committee" data-field="dove_stance">…</b>.
+    Biggest 90-day move: <span data-source="committee" data-field="mover_name">…</span> <b data-source="committee" data-field="mover_mom90">…</b>.
+    <span class="hd-asof">As of <span data-source="committee" data-field="as_of">…</span></span>
+  </p>
+
+  <section class="hd-card" id="axis-card">
+    <div class="hd-card-head">
+      <h3>Dove to hawk, relative to market pricing</h3>
+      <div class="hd-seg" role="group" aria-label="Momentum window">
+        <button type="button" id="mom-30" aria-pressed="true">30d</button>
+        <button type="button" id="mom-90" aria-pressed="false">90d</button>
+      </div>
+    </div>
+    <div class="hd-chart hd-axis-chart" id="axis" data-source="members committee"></div>
+    <div class="hd-legend" id="axis-legend">
+      <span><svg width="22" height="10" aria-hidden="true"><circle cx="5" cy="5" r="3" fill="none" stroke="#7f8c9b" stroke-dasharray="2 2"></circle><line x1="9" y1="5" x2="20" y2="5" stroke="#7f8c9b"></line></svg>Arrow: move over the momentum window</span>
+      <span><svg width="10" height="14" aria-hidden="true"><line x1="5" y1="0" x2="5" y2="14" stroke="#d5dde6" stroke-dasharray="3 2"></line></svg>Committee median</span>
+      <span>Faded: no new signal for 60+ days</span>
+      <span>Click a member for their timeline</span>
+    </div>
+  </section>
+
+  <div class="hd-row">
+    <section class="hd-card" id="votes-card">
+      <div class="hd-card-head">
+        <h3>Last 8 votes</h3>
+        <span class="hd-note">Rate each member voted for; dissents in colour</span>
+      </div>
+      <div class="hd-votes" id="votes" data-source="votes members"></div>
+    </section>
+    <section class="hd-card" id="ticker-card">
+      <div class="hd-card-head">
+        <h3>Newest scored statements</h3>
+        <span class="hd-note">Click to open in the timeline</span>
+      </div>
+      <ul class="hd-tick" id="ticker" data-source="points members"></ul>
+    </section>
+  </div>
+
+  <section class="hd-card hd-member" id="member-card">
+    <div class="hd-mhead">
+      <div class="who"><strong id="m-name">…</strong><span id="m-role">…</span></div>
+      <div class="hd-stats">
+        <div class="hd-stat"><span class="k">Stance</span><span class="v" id="m-stance" data-source="members" data-field="stance">…</span></div>
+        <div class="hd-stat"><span class="k">30d</span><span class="v" id="m-m30" data-source="members" data-field="momentum_30d">…</span></div>
+        <div class="hd-stat"><span class="k">90d</span><span class="v" id="m-m90" data-source="members" data-field="momentum_90d">…</span></div>
+        <div class="hd-stat"><span class="k">Signal strength</span><span class="v" id="m-str" data-source="members" data-field="signal_strength">…</span></div>
+        <div class="hd-stat"><span class="k">Live points</span><span class="v" id="m-live" data-source="members" data-field="live_points">…</span></div>
+      </div>
+      <span class="hd-badge" id="m-badge" hidden></span>
+    </div>
+    <div class="hd-topics" id="topics"><span class="lab">Topic</span></div>
+    <div class="hd-chart hd-tl-chart" id="timeline" data-source="series points"></div>
+    <div class="hd-legend">
+      <span><svg width="12" height="12" aria-hidden="true"><circle cx="6" cy="6" r="4" fill="#f2a93b"></circle></svg>Scored passage, coloured by score</span>
+      <span><svg width="12" height="12" aria-hidden="true"><rect x="2" y="2" width="8" height="8" transform="rotate(45 6 6)" fill="#8b96a3"></rect></svg>Vote with the majority (split meetings only)</span>
+      <span><svg width="14" height="14" aria-hidden="true"><rect x="3" y="3" width="8" height="8" transform="rotate(45 7 7)" fill="#f2a93b" stroke="#fff" stroke-width="1.5"></rect></svg>Dissent</span>
+      <span><svg width="22" height="10" aria-hidden="true"><line x1="0" y1="5" x2="22" y2="5" stroke="#d5dde6" stroke-width="2"></line></svg>Stance after decay</span>
+    </div>
+    <div class="hd-detail" id="detail">
+      <div class="dmeta">
+        <span class="hd-chip mono" id="d-score" data-source="points" data-field="score">…</span>
+        <span class="mono" id="d-date">…</span>
+        <span id="d-type">…</span>
+        <a id="d-link" href="#" target="_blank" rel="noopener">Source document</a>
+      </div>
+      <blockquote id="d-quote" data-source="points" data-field="quote">…</blockquote>
+      <p class="why" id="d-why" data-source="points" data-field="rationale">…</p>
+    </div>
+  </section>
+
+  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
+</div>
+
+<script>
+(function () {
+  const COLORS = { hawk: '#f2a93b', dove: '#4c9fff', mid: '#8b96a3', fg: '#d5dde6', muted: '#7f8c9b', faint: '#4b5867', grid: '#18212c', line: '#222d3a', bg: '#0a0e13' };
+  const TYPE = { speech: 'Speech', minutes_statement: 'Minutes statement', press_conference: 'Press conference', testimony: 'Testimony', comment: 'Comment', interview: 'Interview', podcast: 'Podcast', dissent_vote: 'Dissenting vote', majority_vote: 'Vote with majority', news_speculation: 'News' };
+  const state = { member: null, point: null, topic: null, mom: 30, picked: false };
+  window.hdState = state;
+
+  const fmt = (v, d) => (v === null || v === undefined || isNaN(v)) ? 'n/a' : (v > 0 ? '+' : v < 0 ? '-' : '') + Math.abs(v).toFixed(d);
+  const scoreColor = (s) => s > 0 ? d3.interpolateRgb(COLORS.mid, COLORS.hawk)(Math.min(1, s / 4))
+    : s < 0 ? d3.interpolateRgb(COLORS.mid, COLORS.dove)(Math.min(1, -s / 4)) : COLORS.mid;
+  const dayFmt = d3.utcFormat('%-d %b %Y');
+  const shortDay = d3.utcFormat('%-d %b');
+  const parse = (s) => new Date(s.length <= 10 ? s + 'T00:00:00Z' : s);
+  const esc = (s) => String(s).replace(/[&=%]/g, encodeURIComponent);
+
+  dash.calc('committee', {
+    inputs: ['members'],
+    title: 'Committee summary',
+    description: 'Median stance, most hawkish and most dovish member, and the biggest 90-day move.',
+    fn: (members) => {
+      const s = members.filter((m) => m.stance !== null).sort((a, b) => a.stance - b.stance);
+      const n = s.length;
+      if (!n) return [];
+      const med = n % 2 ? s[(n - 1) / 2].stance : (s[n / 2 - 1].stance + s[n / 2].stance) / 2;
+      const mover = [...s].sort((a, b) => Math.abs(b.momentum_90d || 0) - Math.abs(a.momentum_90d || 0))[0];
+      return [{ median: Math.round(med * 100) / 100, hawk_name: s[n - 1].name, hawk_stance: s[n - 1].stance,
+        dove_name: s[0].name, dove_stance: s[0].stance, mover_name: mover.name, mover_mom90: mover.momentum_90d,
+        as_of: s[0].as_of.slice(0, 10) }];
+    },
+  });
+
+  const tip = document.createElement('div');
+  tip.className = 'hd-tip'; tip.hidden = true;
+
+  function showTip(box, event, html) {
+    if (tip.parentNode !== box) box.appendChild(tip);
+    tip.replaceChildren(...html);
+    tip.hidden = false;
+    const r = box.getBoundingClientRect();
+    let x = event.clientX - r.left + 12, y = event.clientY - r.top + 12;
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    if (x + w > r.width) x = Math.max(0, event.clientX - r.left - w - 12);
+    if (y + h > r.height) y = Math.max(0, event.clientY - r.top - h - 12);
+    tip.style.left = x + 'px'; tip.style.top = y + 'px';
+  }
+  const hideTip = () => { tip.hidden = true; };
+  const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined) e.textContent = text; return e; };
+
+  function failed(box) { box.replaceChildren(el('div', 'hd-fail', 'Failed to load')); }
+
+  // ------------------------------------------------------------ axis
+  function drawAxis(members, committee) {
+    const box = document.getElementById('axis');
+    box.replaceChildren();
+    const W = Math.max(320, box.clientWidth);
+    const padL = 18, padR = 18;
+    const x = d3.scaleLinear([-5, 5], [padL, W - padR]);
+    const svg = d3.select(box).append('svg').attr('width', '100%');
+    const laneH = 34, gap = 10;
+    const g = svg.append('g');
+    const ms = members.filter((m) => m.stance !== null).sort((a, b) => a.stance - b.stance);
+
+    // Build labels first so their widths can be measured before placing lanes.
+    const groups = ms.map((m) => {
+      const grp = g.append('g').attr('class', 'm-group' + (state.member === m.id ? ' sel' : ''))
+        .attr('tabindex', 0).attr('role', 'button').attr('aria-label', `${m.name}, stance ${fmt(m.stance, 2)}`)
+        .style('opacity', m.stale ? 0.45 : 1);
+      const name = grp.append('text').attr('class', 'm-name').text(m.name.split(' ').slice(-1)[0]);
+      const mom = state.mom === 30 ? m.momentum_30d : m.momentum_90d;
+      const val = grp.append('text').attr('class', 'm-val').attr('fill', scoreColor(m.stance))
+        .text(`${fmt(m.stance, 2)}  ${mom === null ? '' : (mom > 0 ? '↑' : mom < 0 ? '↓' : '') + Math.abs(mom).toFixed(2)}`);
+      let held = null;
+      if (m.held) held = grp.append('text').attr('class', 'm-held').attr('fill', COLORS.muted).text(`HELD SINCE ${m.held_since}`);
+      const w = Math.max(name.node().getComputedTextLength(), val.node().getComputedTextLength(), held ? held.node().getComputedTextLength() : 0);
+      return { m, grp, name, val, held, w, mom };
+    });
+    // Greedy lanes: each label goes in the lowest lane where it clears the previous label.
+    const laneEnds = [];
+    groups.forEach((o) => {
+      const cx = x(o.m.stance);
+      let left = Math.max(padL, Math.min(cx - o.w / 2, W - padR - o.w));
+      let lane = laneEnds.findIndex((end) => left > end + gap);
+      if (lane < 0) { lane = laneEnds.length; laneEnds.push(-Infinity); }
+      laneEnds[lane] = left + o.w;
+      o.left = left; o.lane = lane; o.cx = cx;
+    });
+    const lanes = Math.max(1, laneEnds.length);
+    const top = 26, labelsH = lanes * laneH + (groups.some((o) => o.held) ? 12 : 0);
+    const axisY = top + labelsH + 22;
+    const H = axisY + 46;
+    svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    box.style.minHeight = H + 'px';
+
+    // Background band and ticks
+    const defs = svg.insert('defs', ':first-child');
+    const grad = defs.append('linearGradient').attr('id', 'hd-band').attr('x1', 0).attr('x2', 1);
+    [[0, COLORS.dove], [0.5, '#2a3340'], [1, COLORS.hawk]].forEach(([o, c]) => grad.append('stop').attr('offset', o).attr('stop-color', c));
+    const back = svg.insert('g', 'g');
+    back.append('rect').attr('x', x(-5)).attr('y', axisY - 3).attr('width', x(5) - x(-5)).attr('height', 6).attr('rx', 3).attr('fill', 'url(#hd-band)').attr('opacity', 0.85);
+    d3.range(-5, 6).forEach((t) => {
+      back.append('line').attr('x1', x(t)).attr('x2', x(t)).attr('y1', top - 6).attr('y2', axisY + 8)
+        .attr('stroke', t === 0 ? COLORS.line : COLORS.grid).attr('stroke-width', 1);
+      if (W > 520 || t % 5 === 0 || t === 0 || Math.abs(t) === 2.5) {
+        back.append('text').attr('x', x(t)).attr('y', axisY + 22).attr('text-anchor', 'middle').text(t > 0 ? '+' + t : t < 0 ? '-' + Math.abs(t) : '0');
+      }
+    });
+    back.append('text').attr('x', x(-5)).attr('y', axisY + 38).attr('fill', COLORS.dove).attr('letter-spacing', '.12em').text('DOVISH');
+    back.append('text').attr('x', x(5)).attr('y', axisY + 38).attr('text-anchor', 'end').attr('fill', COLORS.hawk).attr('letter-spacing', '.12em').text('HAWKISH');
+
+    // Median
+    const med = committee && committee.median;
+    if (med !== undefined && med !== null) {
+      back.append('line').attr('x1', x(med)).attr('x2', x(med)).attr('y1', top - 14).attr('y2', axisY + 10)
+        .attr('stroke', COLORS.fg).attr('stroke-dasharray', '3 3').attr('opacity', 0.7);
+      back.append('text').attr('x', x(med)).attr('y', top - 18).attr('text-anchor', 'middle').attr('fill', COLORS.fg)
+        .text(`MEDIAN ${fmt(med, 2)}`);
+    }
+
+    // Place members
+    groups.forEach((o) => {
+      const ly = top + (lanes - 1 - o.lane) * laneH + 12;
+      o.name.attr('x', o.left).attr('y', ly);
+      o.val.attr('x', o.left).attr('y', ly + 14);
+      if (o.held) o.held.attr('x', o.left).attr('y', ly + 26).attr('font-size', 9.5);
+      o.grp.insert('rect', ':first-child').attr('class', 'm-hit').attr('x', o.left - 4).attr('y', ly - 13)
+        .attr('width', o.w + 8).attr('height', axisY - ly + 20).attr('fill', 'transparent').attr('rx', 3);
+      o.grp.append('line').attr('x1', o.cx).attr('x2', o.cx).attr('y1', ly + (o.held ? 30 : 19)).attr('y2', axisY - 7)
+        .attr('stroke', COLORS.faint).attr('stroke-width', 1);
+      // Momentum arrow: from where the member stood at the start of the window to now.
+      if (o.mom !== null && Math.abs(o.mom) >= 0.005) {
+        const x0 = x(o.m.stance - o.mom), y = axisY - 12;
+        o.grp.append('circle').attr('cx', x0).attr('cy', y).attr('r', 3).attr('fill', 'none').attr('stroke', COLORS.muted).attr('stroke-dasharray', '2 2');
+        const dir = o.mom > 0 ? 1 : -1;
+        const x1 = o.cx - dir * 6;
+        if (Math.abs(x1 - x0) > 4) o.grp.append('line').attr('x1', x0 + dir * 3).attr('x2', x1).attr('y1', y).attr('y2', y).attr('stroke', scoreColor(o.mom * 4)).attr('stroke-width', 1.5);
+        o.grp.append('path').attr('d', `M${o.cx - dir * 6},${y - 3.5} L${o.cx - dir * 1},${y} L${o.cx - dir * 6},${y + 3.5} Z`).attr('fill', scoreColor(o.mom * 4));
+      }
+      o.grp.append('circle').attr('class', 'm-dot').attr('cx', o.cx).attr('cy', axisY).attr('r', state.member === o.m.id ? 8 : 6)
+        .attr('fill', scoreColor(o.m.stance)).attr('stroke', state.member === o.m.id ? '#fff' : COLORS.bg).attr('stroke-width', 2);
+      const pick = () => { selectMember(o.m.id, true); };
+      o.grp.on('click', pick).on('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pick(); } });
+    });
+  }
+
+  // ------------------------------------------------------------ votes
+  function drawVotes(votes, members) {
+    const box = document.getElementById('votes');
+    box.replaceChildren();
+    const dates = [...new Set(votes.map((v) => v.date))].sort().slice(-8);
+    const byKey = new Map(votes.map((v) => [v.date + '|' + v.member_id, v]));
+    const order = [...members].sort((a, b) => (b.stance ?? -9) - (a.stance ?? -9));
+    const grid = el('div', 'hd-vgrid');
+    grid.style.gridTemplateColumns = `minmax(6.5rem, auto) repeat(${dates.length}, minmax(2.6rem, 1fr))`;
+    grid.appendChild(el('div', 'vh', ''));
+    dates.forEach((d) => {
+      const v = votes.find((x) => x.date === d);
+      const h = el('div', 'vh');
+      h.append(shortDay(parse(d)), document.createElement('br'), (v.label || '').replace('unanimous', 'unan.'));
+      grid.appendChild(h);
+    });
+    order.forEach((m) => {
+      const n = el('div', 'vn', m.name.split(' ').slice(-1)[0]);
+      grid.appendChild(n);
+      dates.forEach((d) => {
+        const v = byKey.get(d + '|' + m.id);
+        const c = el('div', 'vc' + (!v ? ' none' : v.dissent ? (v.direction > 0 ? ' d-up' : ' d-down') : ''), v ? v.rate.toFixed(2) : '');
+        if (v) c.setAttribute('aria-label', `${m.name} ${shortDay(parse(d))}: voted ${v.rate.toFixed(2)}%${v.dissent ? ', dissent' : ''}`);
+        grid.appendChild(c);
+      });
+    });
+    box.appendChild(grid);
+  }
+
+  // ------------------------------------------------------------ ticker
+  function drawTicker(points, members) {
+    const box = document.getElementById('ticker');
+    box.replaceChildren();
+    const names = new Map(members.map((m) => [m.id, m.name]));
+    points.filter((p) => !p.is_vote).sort((a, b) => b.date.localeCompare(a.date) || a.id.localeCompare(b.id)).slice(0, 14).forEach((p) => {
+      const li = el('li');
+      const chip = el('span', 'hd-chip', fmt(p.score, 0).replace('+0', '0'));
+      chip.style.background = scoreColor(p.score);
+      const meta = el('div', 'meta');
+      meta.append(el('strong', '', names.get(p.member_id) || p.member_id), el('span', 'mono', shortDay(parse(p.date))), el('span', '', TYPE[p.source_type] || p.source_type));
+      li.append(chip, meta, el('div', 'q', p.quote));
+      li.tabIndex = 0;
+      const open = () => { state.topic = null; selectMember(p.member_id, true, p.id); document.getElementById('member-card').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+      li.addEventListener('click', open);
+      li.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') open(); });
+      box.appendChild(li);
+    });
+  }
+
+  // ------------------------------------------------------------ member
+  function drawMember(members, series, points) {
+    const m = members.find((x) => x.id === state.member);
+    if (!m) return;
+    const set = (id, text, where) => { const e = document.getElementById(id); e.textContent = text; if (where) e.setAttribute('data-where', where); return e; };
+    const w = 'id=' + esc(m.id);
+    set('m-name', m.name); set('m-role', m.role);
+    set('m-stance', fmt(m.stance, 2), w).style.color = scoreColor(m.stance);
+    set('m-m30', fmt(m.momentum_30d, 2), w);
+    set('m-m90', fmt(m.momentum_90d, 2), w);
+    set('m-str', m.signal_strength === null ? 'n/a' : m.signal_strength.toFixed(1), w);
+    set('m-live', String(m.live_points), w);
+    const badge = document.getElementById('m-badge');
+    badge.hidden = !(m.held || m.stale);
+    badge.textContent = m.held ? `Held since ${m.held_since}` : m.stale ? `No new signal for ${m.days_since_signal} days` : '';
+
+    const mine = points.filter((p) => p.member_id === m.id);
+    // Topic chips
+    const tbox = document.getElementById('topics');
+    const topics = [...new Set(mine.flatMap((p) => p.topics ? p.topics.split(',') : []))].sort();
+    if (state.topic && !topics.includes(state.topic)) state.topic = null;
+    tbox.replaceChildren(el('span', 'lab', 'Topic'));
+    [null, ...topics].forEach((t) => {
+      const b = el('button', '', t === null ? 'All' : t.replace(/_/g, ' '));
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(state.topic === t));
+      b.addEventListener('click', () => { state.topic = t; redraw(); });
+      tbox.appendChild(b);
+    });
+
+    // Timeline
+    const box = document.getElementById('timeline');
+    box.replaceChildren();
+    const ser = series.filter((s) => s.member_id === m.id).map((s) => ({ ...s, d: parse(s.date) }));
+    const pts = mine.map((p) => ({ ...p, d: parse(p.date) }));
+    const W = Math.max(320, box.clientWidth), H = 300;
+    const ml = 30, mr = 12, mt = 12, mb = 26;
+    const all = ser.map((s) => s.d).concat(pts.map((p) => p.d));
+    const x = d3.scaleUtc(d3.extent(all), [ml, W - mr]).nice();
+    const y = d3.scaleLinear([-5.5, 5.5], [H - mb, mt]);
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
+    const defs = svg.append('defs');
+    const bg = defs.append('linearGradient').attr('id', 'hd-tlbg').attr('x1', 0).attr('x2', 0).attr('y1', 0).attr('y2', 1);
+    [[0, COLORS.hawk, 0.10], [0.5, COLORS.hawk, 0], [0.5, COLORS.dove, 0], [1, COLORS.dove, 0.10]].forEach(([o, c, a]) => bg.append('stop').attr('offset', o).attr('stop-color', c).attr('stop-opacity', a));
+    svg.append('rect').attr('x', ml).attr('y', y(5.5)).attr('width', W - ml - mr).attr('height', y(-5.5) - y(5.5)).attr('fill', 'url(#hd-tlbg)');
+    [-5, -2.5, 0, 2.5, 5].forEach((t) => {
+      svg.append('line').attr('x1', ml).attr('x2', W - mr).attr('y1', y(t)).attr('y2', y(t)).attr('stroke', t === 0 ? COLORS.line : COLORS.grid);
+      svg.append('text').attr('x', ml - 6).attr('y', y(t) + 4).attr('text-anchor', 'end').text(t > 0 ? '+' + t : t < 0 ? '-' + Math.abs(t) : '0');
+    });
+    const xa = svg.append('g').attr('transform', `translate(0,${H - mb})`).call(d3.axisBottom(x).ticks(Math.max(3, Math.floor(W / 110))).tickFormat(d3.utcFormat('%b %y')).tickSizeOuter(0));
+    xa.attr('font-size', null).attr('font-family', null);
+    xa.selectAll('path,line').attr('stroke', COLORS.line);
+    xa.selectAll('text').attr('fill', COLORS.muted);
+
+    const line = d3.line().x((s) => x(s.d)).y((s) => y(s.stance));
+    svg.append('path').datum(ser.filter((s) => !s.held)).attr('d', line).attr('fill', 'none').attr('stroke', COLORS.fg).attr('stroke-width', 2).attr('stroke-linejoin', 'round').attr('stroke-linecap', 'round');
+    const heldSer = ser.filter((s) => s.held);
+    if (heldSer.length) svg.append('path').datum(heldSer).attr('d', line).attr('fill', 'none').attr('stroke', COLORS.fg).attr('stroke-dasharray', '4 4').attr('opacity', 0.6);
+
+    const showPoint = (ev, p) => {
+      const lines = [el('div', 't-date', `${dayFmt(p.d)} · ${TYPE[p.source_type] || p.source_type} · ${fmt(p.score, 0)}`), el('div', '', p.quote.length > 160 ? p.quote.slice(0, 157) + '...' : p.quote)];
+      showTip(box, ev, lines);
+    };
+    const dim = (p) => state.topic && !p.is_vote && !(p.topics || '').split(',').includes(state.topic);
+    const g = svg.append('g');
+    pts.sort((a, b) => (a.id === state.point) - (b.id === state.point)).forEach((p) => {
+      const cx = x(p.d), cy = y(p.score), sel = p.id === state.point;
+      let mark;
+      if (p.is_vote) {
+        const s = p.source_type === 'dissent_vote' ? 7 : 5.5;
+        mark = g.append('rect').attr('x', cx - s).attr('y', cy - s).attr('width', s * 2).attr('height', s * 2)
+          .attr('transform', `rotate(45 ${cx} ${cy})`).attr('fill', p.source_type === 'dissent_vote' ? scoreColor(p.score) : COLORS.mid)
+          .attr('stroke', p.source_type === 'dissent_vote' ? '#fff' : COLORS.bg).attr('stroke-width', p.source_type === 'dissent_vote' ? 1.5 : 1);
+      } else {
+        mark = g.append('circle').attr('cx', cx).attr('cy', cy).attr('r', sel ? 6.5 : 4.5).attr('fill', scoreColor(p.score))
+          .attr('stroke', sel ? '#fff' : COLORS.bg).attr('stroke-width', sel ? 2 : 1);
+      }
+      mark.style('cursor', 'pointer').attr('opacity', dim(p) ? 0.15 : 1)
+        .on('mousemove', (ev) => showPoint(ev, p)).on('mouseleave', hideTip)
+        .on('click', () => { state.point = p.id; redraw(); });
+    });
+    box.style.minHeight = H + 'px';
+
+    // Detail
+    const chosen = pts.find((p) => p.id === state.point) || [...pts].filter((p) => !p.is_vote).sort((a, b) => b.date.localeCompare(a.date))[0] || pts[pts.length - 1];
+    if (chosen) {
+      state.point = chosen.id;
+      const pw = 'id=' + esc(chosen.id);
+      const chip = set('d-score', fmt(chosen.score, 0).replace('+0', '0'), pw);
+      chip.style.background = scoreColor(chosen.score);
+      set('d-date', dayFmt(chosen.d));
+      set('d-type', (TYPE[chosen.source_type] || chosen.source_type) + (chosen.topics ? ' · ' + chosen.topics.split(',').map((t) => t.replace(/_/g, ' ')).join(', ') : ''));
+      set('d-quote', chosen.quote, pw);
+      set('d-why', chosen.rationale, pw);
+      const a = document.getElementById('d-link');
+      a.href = chosen.url || '#';
+      a.hidden = !chosen.url;
+    }
+  }
+
+  function selectMember(id, user, pointId) {
+    state.member = id; state.point = pointId || null; state.picked = state.picked || !!user;
+    if (user) dash.setLink('member-card');
+    redraw();
+  }
+
+  document.getElementById('mom-30').addEventListener('click', () => { state.mom = 30; redraw(); });
+  document.getElementById('mom-90').addEventListener('click', () => { state.mom = 90; redraw(); });
+
+  let last = null;
+  function redraw() { if (last) last(); }
+
+  dash.onData(() => {
+    const ids = ['members', 'series', 'points', 'votes', 'committee'];
+    const got = Object.fromEntries(ids.map((i) => [i, dash.data(i)]));
+    document.getElementById('mom-30').setAttribute('aria-pressed', String(state.mom === 30));
+    document.getElementById('mom-90').setAttribute('aria-pressed', String(state.mom === 90));
+    const ok = (i) => got[i].status === 'ok';
+    const num = (r, ks) => { ks.forEach((k) => { if (r[k] !== null && r[k] !== undefined && r[k] !== '') r[k] = Number(r[k]); }); return r; };
+    const bool = (v) => v === true || v === 'true';
+
+    const render = () => {
+      const members = ok('members') ? got.members.data.map((r) => num({ ...r, held: bool(r.held), stale: bool(r.stale) }, ['stance', 'signal_strength', 'days_since_signal', 'live_points', 'momentum_30d', 'momentum_90d'])) : null;
+      const series = ok('series') ? got.series.data.map((r) => num({ ...r, held: bool(r.held) }, ['stance'])) : null;
+      const points = ok('points') ? got.points.data.map((r) => num({ ...r, is_vote: bool(r.is_vote) }, ['score', 'confidence'])) : null;
+      const votes = ok('votes') ? got.votes.data.map((r) => num({ ...r, dissent: bool(r.dissent) }, ['rate', 'decision_rate', 'previous_rate', 'direction'])) : null;
+      const committee = ok('committee') && got.committee.data.length ? got.committee.data[0] : null;
+
+      if (committee) {
+        document.querySelectorAll('#takeaway [data-source="committee"]').forEach((e) => {
+          const f = e.getAttribute('data-field'); const v = committee[f];
+          e.textContent = typeof v === 'number' ? fmt(v, 2) : (v ?? 'n/a');
+        });
+      }
+      if (members && !state.member) {
+        const mover = [...members].filter((m) => m.momentum_90d !== null).sort((a, b) => Math.abs(b.momentum_90d) - Math.abs(a.momentum_90d))[0];
+        state.member = mover ? mover.id : members[0].id;
+      }
+      const axis = document.getElementById('axis');
+      if (members) drawAxis(members, committee); else if (got.members.status === 'error') failed(axis); else axis.replaceChildren();
+      const vb = document.getElementById('votes');
+      if (votes && members) drawVotes(votes, members); else if (got.votes.status === 'error') failed(vb); else vb.replaceChildren();
+      const tb = document.getElementById('ticker');
+      if (points && members) drawTicker(points, members); else tb.replaceChildren();
+      if (members && series && points) drawMember(members, series, points);
+      else if (got.series.status === 'error' || got.points.status === 'error') failed(document.getElementById('timeline'));
+    };
+    last = render;
+    render();
+  });
+
+  const named = document.getElementById(location.hash.slice(1));
+  if (named) setTimeout(() => named.scrollIntoView(), 0);
+})();
+</script>

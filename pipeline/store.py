@@ -61,7 +61,7 @@ def write_raw(doc: dict, raw_dir: Path = RAW) -> Path:
 
 def existing_score_ids(scores_dir: Path = SCORES) -> set[str]:
     ids = set()
-    for f in scores_dir.glob("*.jsonl"):
+    for f in scores_dir.glob("[0-9]*.jsonl"):  # monthly files only, never incoming.jsonl
         for line in f.read_text(encoding="utf-8").splitlines():
             if line.strip():
                 ids.add(json.loads(line)["id"])

@@ -1,4 +1,5 @@
 import copy
+import json
 
 import pytest
 
@@ -128,3 +129,13 @@ def test_compare_metrics():
 def test_spearman_handles_ties():
     assert spearman([1, 2, 3, 4], [10, 20, 30, 40]) == pytest.approx(1.0)
     assert spearman([1, 1, 2, 3], [3, 3, 2, 1]) == pytest.approx(-1.0)
+
+
+def test_append_ignores_the_incoming_file(tmp_path):
+    from pipeline.store import append_scores
+    incoming = tmp_path / "incoming.jsonl"
+    rec = dict(GOOD)
+    incoming.write_text(json.dumps(rec) + "\n")
+    assert append_scores([rec], scores_dir=tmp_path) == 1
+    assert (tmp_path / "2026-09.jsonl").exists()
+    assert append_scores([rec], scores_dir=tmp_path) == 0  # already stored
