@@ -25,6 +25,8 @@
 .hd-brand h1 { margin: 0; font-family: var(--hd-mono); font-weight: 500; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--hd-muted); }
 .hd-brand h2 { margin: 0; font-size: 22px; font-weight: 600; letter-spacing: -.01em; text-wrap: balance; }
 .hd-tabs { display: flex; gap: 4px; }
+.hd-top > .hd-seg { margin-left: auto; align-self: center; }
+.hd-trans { font-size: 11.5px; color: var(--hd-muted); font-style: italic; }
 .hd-tab { border: 1px solid var(--hd-line); background: transparent; padding: 4px 10px; border-radius: 3px; font-family: var(--hd-mono); font-size: 12px; letter-spacing: .06em; cursor: pointer; }
 .hd-tab[aria-selected="true"] { background: var(--hd-raise); border-color: var(--hd-faint); }
 .hd-boe { display: grid; gap: 16px; }
@@ -113,6 +115,10 @@
       <h1>Hawk / Dove Monitor</h1>
       <h2 id="bank-title">Bank of England MPC</h2>
     </div>
+    <div class="hd-seg" role="group" aria-label="Quote language" id="lang-seg" hidden>
+      <button type="button" id="lang-en" aria-pressed="true">English</button>
+      <button type="button" id="lang-ja" aria-pressed="false" lang="ja">日本語</button>
+    </div>
     <div class="hd-tabs" role="tablist" aria-label="Bank">
       <button class="hd-tab" role="tab" aria-selected="true" id="tab-boe">BoE</button>
       <button class="hd-tab" role="tab" aria-selected="false" id="tab-boj">BoJ</button>
@@ -174,6 +180,7 @@
         <a id="d-link" href="#" target="_blank" rel="noopener">Source document</a>
       </div>
       <blockquote id="d-quote" data-source="points" data-field="quote">…</blockquote>
+      <span class="hd-trans" id="d-trans" hidden>Translated from Japanese by Claude; not an official Bank of Japan translation. Switch to 日本語 for the original.</span>
       <p class="why" id="d-why" data-source="points" data-field="rationale">…</p>
     </div>
   </section>
@@ -198,14 +205,16 @@
 
   </div>
 
-  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Bank of Japan press conferences are published in Japanese only; their quotes are shown in Japanese with an English rationale. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
+  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Bank of Japan press conferences are published in Japanese only; their quotes are shown in English translation by default (use the 日本語 switch for the original), and scores are based on the Japanese. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
 </div>
 
 <script>
 (function () {
   const COLORS = { hawk: '#f2a93b', dove: '#4c9fff', mid: '#8b96a3', fg: '#d5dde6', muted: '#7f8c9b', faint: '#4b5867', grid: '#18212c', line: '#222d3a', bg: '#0a0e13' };
   const TYPE = { speech: 'Speech', minutes_statement: 'Minutes statement', press_conference: 'Press conference', testimony: 'Testimony', comment: 'Comment', interview: 'Interview', podcast: 'Podcast', dissent_vote: 'Dissenting vote', majority_vote: 'Vote with majority', news_speculation: 'News' };
-  const state = { bank: 'BoE', member: null, point: null, topic: null, mom: 30, picked: false };
+  const state = { bank: 'BoE', member: null, point: null, topic: null, mom: 30, picked: false, lang: 'en' };
+  const translated = (p) => state.lang === 'en' && p.language && p.language !== 'en' && !!p.quote_en;
+  const quoteOf = (p) => translated(p) ? p.quote_en : p.quote;
   window.hdState = state;
 
   const fmt = (v, d) => (v === null || v === undefined || isNaN(v)) ? 'n/a' : (v > 0 ? '+' : v < 0 ? '-' : '') + Math.abs(v).toFixed(d);
@@ -397,7 +406,9 @@
       chip.style.background = scoreColor(p.score);
       const meta = el('div', 'meta');
       meta.append(el('strong', '', names.get(p.member_id) || p.member_id), el('span', 'mono', shortDay(parse(p.date))), el('span', '', TYPE[p.source_type] || p.source_type));
-      li.append(chip, meta, el('div', 'q', p.quote));
+      const q = el('div', 'q', quoteOf(p));
+      if (!translated(p) && p.language && p.language !== 'en') q.lang = p.language;
+      li.append(chip, meta, q);
       li.tabIndex = 0;
       const open = () => { state.topic = null; selectMember(p.member_id, true, p.id); };
       li.addEventListener('click', open);
@@ -466,7 +477,7 @@
     if (heldSer.length) svg.append('path').datum(heldSer).attr('d', line).attr('fill', 'none').attr('stroke', COLORS.fg).attr('stroke-dasharray', '4 4').attr('opacity', 0.6);
 
     const showPoint = (ev, p) => {
-      const lines = [el('div', 't-date', `${dayFmt(p.d)} · ${TYPE[p.source_type] || p.source_type} · ${fmt(p.score, 0)}`), el('div', '', p.quote.length > 160 ? p.quote.slice(0, 157) + '...' : p.quote)];
+      const lines = [el('div', 't-date', `${dayFmt(p.d)} · ${TYPE[p.source_type] || p.source_type} · ${fmt(p.score, 0)}`), el('div', '', quoteOf(p).length > 160 ? quoteOf(p).slice(0, 157) + '...' : quoteOf(p))];
       showTip(box, ev, lines);
     };
     const dim = (p) => state.topic && !p.is_vote && !(p.topics || '').split(',').includes(state.topic);
@@ -498,7 +509,10 @@
       chip.style.background = scoreColor(chosen.score);
       set('d-date', dayFmt(chosen.d));
       set('d-type', (TYPE[chosen.source_type] || chosen.source_type) + (chosen.topics ? ' · ' + chosen.topics.split(',').map((t) => t.replace(/_/g, ' ')).join(', ') : ''));
-      set('d-quote', chosen.quote, pw);
+      const dq = set('d-quote', quoteOf(chosen), pw);
+      dq.setAttribute('data-field', translated(chosen) ? 'quote_en' : 'quote');
+      if (translated(chosen) || !chosen.language || chosen.language === 'en') dq.removeAttribute('lang'); else dq.lang = chosen.language;
+      document.getElementById('d-trans').hidden = !translated(chosen);
       set('d-why', chosen.rationale, pw);
       const a = document.getElementById('d-link');
       a.href = chosen.url || '#';
@@ -522,9 +536,18 @@
     document.getElementById('tab-boe').setAttribute('aria-selected', String(bank === 'BoE'));
     document.getElementById('tab-boj').setAttribute('aria-selected', String(bank === 'BoJ'));
     document.getElementById('bank-title').textContent = BANK_TITLE[bank];
+    document.getElementById('lang-seg').hidden = bank !== 'BoJ';
     dash.setLink(bank.toLowerCase());
     redraw();
   };
+  const setLang = (lang) => {
+    state.lang = lang;
+    document.getElementById('lang-en').setAttribute('aria-pressed', String(lang === 'en'));
+    document.getElementById('lang-ja').setAttribute('aria-pressed', String(lang === 'ja'));
+    redraw();
+  };
+  document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
+  document.getElementById('lang-ja').addEventListener('click', () => setLang('ja'));
   document.getElementById('tab-boe').addEventListener('click', () => showBank('BoE'));
   document.getElementById('tab-boj').addEventListener('click', () => showBank('BoJ'));
   document.getElementById('mom-30').addEventListener('click', () => { state.mom = 30; redraw(); });

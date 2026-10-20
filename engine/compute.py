@@ -99,6 +99,7 @@ def member_summary(member, records: list[dict], as_of: datetime) -> dict:
             "score": r["score"],
             "confidence": r.get("confidence"),
             "quote": r["passage"],
+            "language": r.get("language", "en"),
             "rationale": r.get("rationale", ""),
             "topics": r.get("topics", []),
             "url": r.get("document_url"),

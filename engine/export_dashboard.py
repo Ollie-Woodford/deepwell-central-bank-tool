@@ -17,11 +17,13 @@ import json
 from pipeline.store import DATA
 
 STANCES = DATA / "stances.json"
+TRANSLATIONS = DATA / "translations" / "ja_en.json"
 OUT_DIR = DATA / "dashboard"
 
 
 def export(bank: str) -> dict[str, list[dict]]:
     data = json.loads(STANCES.read_text())
+    translations = json.loads(TRANSLATIONS.read_text(encoding="utf-8")) if TRANSLATIONS.exists() else {}
     b = data["banks"][bank]
     members, series, points, votes = [], [], [], []
     for m in b["members"]:
@@ -37,6 +39,7 @@ def export(bank: str) -> dict[str, list[dict]]:
         points += [{
             "id": p["id"], "bank": bank, "member_id": m["id"], "date": p["date"], "source_type": p["source_type"],
             "score": p["score"], "confidence": p["confidence"], "quote": p["quote"],
+            "language": p.get("language", "en"), "quote_en": translations.get(p["id"], ""),
             "rationale": p["rationale"], "topics": ",".join(p["topics"]), "url": p["url"],
             "is_vote": p["is_vote"], "institutional": p["institutional"],
         } for p in m["points"]]
@@ -56,6 +59,9 @@ def main(argv=None) -> None:
     for bank in ("BoE", "BoJ"):
         for name, rows in export(bank).items():
             tables.setdefault(name, []).extend(rows)
+    missing = [p["id"] for p in tables["points"] if p["language"] != "en" and not p["quote_en"]]
+    if missing:
+        print(f"warning: {len(missing)} non-English passages have no translation in {TRANSLATIONS.name}: {missing[:5]}")
     for name, rows in tables.items():
         path = OUT_DIR / f"{name}.json"
         path.write_text(json.dumps(rows, ensure_ascii=False) + "\n")

@@ -126,6 +126,12 @@ incoming file. Fix and rerun on failure; never edit the monthly files by hand.
 - `novelty`: `repeated` if the speaker made the same point in one of the recent
   passages listed by `pipeline.pending`, otherwise `new`.
 - `rubric_version`: the version at the top of `rubric.md`.
+- `language`: from the document. For a Japanese document (`ja`, the BoJ press
+  conferences), keep the passage in Japanese, verbatim, and write the
+  rationale in English. Then add an English translation of each passage to
+  `data/translations/ja_en.json`, keyed by the record `id`, using the Bank's
+  own English terms ("adjust the degree of monetary accommodation",
+  "underlying inflation"). The dashboard shows the translation by default.
 - `topics`: short lower-case tags from this list where they fit, others only if
   none does: `inflation_persistence`, `second_round_effects`, `wages`,
   `labour_market`, `growth`, `energy`, `inflation_expectations`, `neutral_rate`,

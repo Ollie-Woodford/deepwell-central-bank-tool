@@ -1,6 +1,6 @@
 {
  "as_of": "2026-10-20T23:59:00Z",
- "generated_at": "2026-10-20T07:26:43Z",
+ "generated_at": "2026-10-20T07:36:34Z",
  "stale_days": 60,
  "banks": {
   "BoE": {
@@ -1319,6 +1319,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -1332,6 +1333,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "Overall, the risks from inflation persistence appear to have continued to reduce. I therefore see scope for some further easing of policy.",
+       "language": "en",
        "rationale": "Sees scope for further easing while voting to hold, a mild dovish lean against a market already pricing cuts.",
        "topics": [
         "inflation_persistence",
@@ -1348,6 +1350,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "This does not mean that I expect to cut Bank Rate at any particular meeting. I will go into the coming meetings asking whether a cut is justified.",
+       "language": "en",
        "rationale": "Meeting-by-meeting data dependence with no commitment either way.",
        "topics": [
         "rate_path"
@@ -1363,6 +1366,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "Monetary policy must, however, respond to the risk of a more persistent effect on UK CPI inflation.",
+       "language": "en",
        "rationale": "Commits to respond to persistence risk: leans hawkish.",
        "topics": [
         "inflation_persistence"
@@ -1378,6 +1382,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "Holding Bank Rate at this meeting is appropriate. I will be monitoring developments extremely closely and stand ready to act as necessary to ensure that inflation remains on track to meet the 2% target in the medium term.",
+       "language": "en",
        "rationale": "Hold now but ready to act: leans hawkish (the +1 anchor).",
        "topics": [
         "rate_path"
@@ -1393,6 +1398,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -1406,6 +1412,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "For now, the softer real economy makes it appropriate to maintain Bank Rate.",
+       "language": "en",
        "rationale": "Holds on activity grounds: leans dovish.",
        "topics": [
         "growth",
@@ -1422,6 +1429,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "I place some weight on Scenario C, which would require a stronger monetary policy response.",
+       "language": "en",
        "rationale": "Acknowledges a tail that would need tighter policy.",
        "topics": [
         "rate_path"
@@ -1437,6 +1445,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -1450,6 +1459,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Given the context at present of softness in the real economy and uncertainty around the scale and duration of the shock to energy prices, tolerating temporarily above-target inflation as part of a return to target is an appropriate way to approach the trade-off, providing inflation expectations remain contained.",
+       "language": "en",
        "rationale": "Tolerates above-target inflation given soft activity: dovish tilt.",
        "topics": [
         "growth",
@@ -1466,6 +1476,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "I would respond promptly to any signals that an extended period of elevated energy prices could be leading to stronger possible second-round effects.",
+       "language": "en",
        "rationale": "Readiness to respond: leans hawkish.",
        "topics": [
         "second_round_effects"
@@ -1481,6 +1492,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -1494,6 +1506,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "There is little evidence yet of second-round effects (Boxes A and B), although it is too early to take much comfort from that.",
+       "language": "en",
        "rationale": "Refuses comfort from benign data (rule 1): leans hawkish.",
        "topics": [
         "second_round_effects"
@@ -1509,6 +1522,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "Holding Bank Rate is appropriate as global conditions look to be more uncertain and inflationary, while domestic conditions are on balance more benign as regards the prospects for inflation.",
+       "language": "en",
        "rationale": "Balanced hold.",
        "topics": [
         "rate_path"
@@ -1524,6 +1538,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -1537,6 +1552,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "But if the conflict in the Middle East persists for an extended period, as appears to be the case, and the risk of second-round effects emerging increases, it is likely that policy may have to tighten.",
+       "language": "en",
        "rationale": "Conditional case for tightening (rule 5 anchor).",
        "topics": [
         "rate_path",
@@ -1553,6 +1569,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "Financial conditions will continue to work to push down on inflation, and holding Bank Rate is appropriate at this meeting.",
+       "language": "en",
        "rationale": "Conditions doing the work: leans dovish.",
        "topics": [
         "financial_conditions"
@@ -2877,6 +2894,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -2890,6 +2908,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Taken together, I prefer to hold Bank Rate at its current level. I am more concerned about the costs of cutting rates too quickly than too slowly, including the risks to credibility from any potential policy reversal that is not in response to a new shock.",
+       "language": "en",
        "rationale": "Prefers a hold and fears cutting too quickly, against a market pricing cuts.",
        "topics": [
         "rate_path"
@@ -2905,6 +2924,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "While the near-term fall in CPI inflation should reduce second-round effects, it is not assured that wage growth will return to target-consistent rates (Box A).",
+       "language": "en",
        "rationale": "Doubts wage growth will normalise: mild upside-risk language.",
        "topics": [
         "wages",
@@ -2921,6 +2941,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "I am prepared to act as needed to address any persistent inflationary effects that may emerge.",
+       "language": "en",
        "rationale": "Readiness to act against persistent effects: leans hawkish.",
        "topics": [
         "inflation_persistence"
@@ -2936,6 +2957,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "Policy coming into this shock may have been broadly neutral or mildly restrictive and there has since been some tightening of financial conditions.",
+       "language": "en",
        "rationale": "Describes policy as only neutral to mildly restrictive, implying limited cushion.",
        "topics": [
         "policy_stance",
@@ -2952,6 +2974,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -2965,6 +2988,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "A tightening in monetary and financial conditions relative to before the war is warranted. Holding rates provides an appropriate degree of restrictiveness while we learn more about the scale of the shock and its propagation.",
+       "language": "en",
        "rationale": "Endorses the market tightening and a hold: in line with expectations.",
        "topics": [
         "financial_conditions",
@@ -2981,6 +3005,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "While I do not view Scenario C as a central case, it is plausible, and would require policy to respond more forcefully to inflationary pressures.",
+       "language": "en",
        "rationale": "Conditional tightening in a non-central scenario.",
        "topics": [
         "rate_path"
@@ -2996,6 +3021,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -3009,6 +3035,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "Holding Bank Rate remains appropriate as we learn more about the scale and duration of the shock and its propagation. Were signals to indicate inflation would persist above target, this would require policy to respond more forcefully to inflationary pressures.",
+       "language": "en",
        "rationale": "Hold with a conditional forceful response: leans hawkish.",
        "topics": [
         "rate_path",
@@ -3025,6 +3052,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "There are risks for inflation in both directions.",
+       "language": "en",
        "rationale": "Two-sided risks.",
        "topics": [
         "balance_of_risks"
@@ -3040,6 +3068,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -3053,6 +3082,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Policy would need to be adjusted were there to be evidence of risks of significant second-round effects, including from persistently higher energy prices.",
+       "language": "en",
        "rationale": "Conditional case for tightening.",
        "topics": [
         "second_round_effects",
@@ -3069,6 +3099,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "The stance of monetary policy is restrictive, more so once broader financial conditions and the further underlying disinflation are factored in.",
+       "language": "en",
        "rationale": "Restrictive stance language: leans dovish.",
        "topics": [
         "policy_stance"
@@ -3084,6 +3115,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -3097,6 +3129,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "The outlook for energy prices is uncertain and could change in the coming weeks, but the case for raising Bank Rate is building the longer the conflict continues without lasting resolution.",
+       "language": "en",
        "rationale": "Case for a hike building: conditional tightening.",
        "topics": [
         "rate_path",
@@ -3113,6 +3146,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "The balance of risks to inflation has shifted more to the upside since our last policy decision.",
+       "language": "en",
        "rationale": "Upside risks stressed.",
        "topics": [
         "balance_of_risks"
@@ -3128,6 +3162,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "On that basis, policy is increasingly likely to need to tighten if elevated energy prices persist, absent clear evidence of disinflation or weaker activity.",
+       "language": "en",
        "rationale": "Conditional case for tightening if energy prices persist.",
        "topics": [
         "rate_path",
@@ -3144,6 +3179,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Finally, monetary policy should lean strongly against second-round effects, which risk de-anchoring inflation and preventing it from returning sustainably to target.",
+       "language": "en",
        "rationale": "Lean strongly against second-round effects: hawkish tilt.",
        "topics": [
         "second_round_effects"
@@ -3159,6 +3195,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "But this is by no means suggesting that monetary policy should respond mechanically to movements in energy prices.",
+       "language": "en",
        "rationale": "Balancing caveat against reacting to energy prices.",
        "topics": [
         "energy"
@@ -4483,6 +4520,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.5%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "dissent for a cut of 25bp to 3.5% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -4496,6 +4534,7 @@
        "score": -3,
        "confidence": 0.7,
        "quote": "I can see a case for taking out some insurance against these downside risks to inflation and think policy should be eased a little faster than implied by the current market path.",
+       "language": "en",
        "rationale": "Wants easing faster than the market path, the -3 definition.",
        "topics": [
         "rate_path",
@@ -4512,6 +4551,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "But I place greater weight on downside risks, particularly in the near term, including those from an elevated household saving rate and a weakening labour market.",
+       "language": "en",
        "rationale": "Downside risks weighted more heavily: clear dovish tilt.",
        "topics": [
         "balance_of_risks",
@@ -4528,6 +4568,7 @@
        "score": -4,
        "confidence": 0.6,
        "quote": "Absent this shock, the underlying disinflation process had continued broadly as I expected and, consistent with my vote in February, I would have expected to vote for a cut again in March.",
+       "language": "en",
        "rationale": "Rule 13 anchor: a preference for easing that the shock only delays.",
        "topics": [
         "rate_path"
@@ -4543,6 +4584,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "How that adjustment occurs is hugely uncertain, with risks to both sides, and I vote to hold at this meeting.",
+       "language": "en",
        "rationale": "Two-sided risks and a hold: balanced.",
        "topics": [
         "balance_of_risks"
@@ -4558,6 +4600,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -4571,6 +4614,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "This provides sufficient restrictiveness to guard against the current risk of second-round effects and gives us some time to learn more about the conflict and how it propagates.",
+       "language": "en",
        "rationale": "Sufficient restrictiveness implies no need to tighten.",
        "topics": [
         "financial_conditions",
@@ -4587,6 +4631,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "I do not judge Scenario C as likely, but if it were to materialise, I would stand ready to react, forcefully if necessary, to return inflation to target sustainably.",
+       "language": "en",
        "rationale": "Rubric anchor: stand ready to react, forcefully if necessary.",
        "topics": [
         "rate_path"
@@ -4602,6 +4647,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -4615,6 +4661,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Monetary policy should look through the direct effects of the energy shock, partially through the indirect effects and act forcefully and early against any material second-round effects. The economic environment means the chance of material second-round effects is small and, although it is early days, there has been nothing in the news since April to change that assessment.",
+       "language": "en",
        "rationale": "Look-through language and small second-round risk: dovish tilt.",
        "topics": [
         "energy",
@@ -4631,6 +4678,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "In my view, the current stance of financial conditions balances these risks, but I remain committed to acting early and decisively should material second‑round effects become likely.",
+       "language": "en",
        "rationale": "Balanced now, with a commitment to act early.",
        "topics": [
         "financial_conditions",
@@ -4647,6 +4695,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -4660,6 +4709,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Financial conditions facing households and businesses have tightened materially since the onset of the conflict, and consistent with the baseline, provide sufficient restrictiveness for now.",
+       "language": "en",
        "rationale": "Sufficient restrictiveness implies no tightening needed.",
        "topics": [
         "financial_conditions"
@@ -4675,6 +4725,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "While my confidence around the domestic inflationary environment has increased, risks to global prices have shifted to the upside.",
+       "language": "en",
        "rationale": "Global upside risks noted.",
        "topics": [
         "balance_of_risks",
@@ -4691,6 +4742,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -4704,6 +4756,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Material uncertainty is likely to continue, but if risks to the outlook for second-round effects crystallise, it becomes increasingly appropriate for Bank Rate to respond.",
+       "language": "en",
        "rationale": "Conditional case for a hike (rubric +2 anchor).",
        "topics": [
         "rate_path",
@@ -4720,6 +4773,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "These make material second-round effects more likely, particularly if inflation approaches levels associated with non-linear effects.",
+       "language": "en",
        "rationale": "Second-round risks rising: hawkish tilt.",
        "topics": [
         "second_round_effects"
@@ -6044,6 +6098,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.5%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "dissent for a cut of 25bp to 3.5% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -6057,6 +6112,7 @@
        "score": -3,
        "confidence": 0.7,
        "quote": "However, with my starting point for an estimate of the neutral rate of around 3%, I judge that policy should be less restrictive in order to meet the 2% target sustainably in the medium term.",
+       "language": "en",
        "rationale": "Policy should be less restrictive with neutral at 3%: argues for easing.",
        "topics": [
         "neutral_rate",
@@ -6073,6 +6129,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "I see risks to the latest central projection for inflation as now tilted to the downside, reflecting the latest evidence and, in particular, the analysis presented in the February Report.",
+       "language": "en",
        "rationale": "Inflation risks tilted down: clear dovish tilt.",
        "topics": [
         "balance_of_risks"
@@ -6088,6 +6145,7 @@
        "score": -4,
        "confidence": 0.6,
        "quote": "Data releases since the February Report have broadly been in line with my expectations, and suggested continuing disinflation, so I would have otherwise voted for a 25 basis point cut in Bank Rate at this meeting. The conflict has now led me to vote for a hold in Bank Rate.",
+       "language": "en",
        "rationale": "Rule 13 anchor: would have cut but for the shock.",
        "topics": [
         "rate_path"
@@ -6103,6 +6161,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "I stand ready to act as necessary to ensure that CPI inflation remains on track to meet the 2% target in the medium term.",
+       "language": "en",
        "rationale": "Generic readiness to act: leans hawkish.",
        "topics": [
         "rate_path"
@@ -6118,6 +6177,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -6131,6 +6191,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "Under Scenario B, I would consider raising Bank Rate and accepting a larger output gap as a result. If, however, some of the downside risks in Scenario A materialise, I would favour a less restrictive path.",
+       "language": "en",
        "rationale": "Two-way conditional, tilted hawkish because Scenario B carries equal weight in his central view.",
        "topics": [
         "rate_path"
@@ -6146,6 +6207,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "Holding Bank Rate continues for me to be the most appropriate response to the ongoing uncertainty.",
+       "language": "en",
        "rationale": "Hold under uncertainty.",
        "topics": [
         "rate_path"
@@ -6161,6 +6223,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -6174,6 +6237,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "Holding Bank Rate at this meeting keeps options open as we continue to learn more about the path of the conflict. My reaction function will remain state-contingent on both the development of the conflict, and what that means for the outlook for the economy.",
+       "language": "en",
        "rationale": "State-contingent hold.",
        "topics": [
         "rate_path"
@@ -6189,6 +6253,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "Early, necessarily tentative, indications suggest that second-round effects might be limited, absent further escalation of the energy cost shock.",
+       "language": "en",
        "rationale": "Second-round effects likely limited: leans dovish.",
        "topics": [
         "second_round_effects"
@@ -6204,6 +6269,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -6217,6 +6283,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "If they were to crystallise, a hike in Bank Rate may be warranted. If the risks were to subside and the underlying disinflation process continued, I would consider resuming the cutting cycle.",
+       "language": "en",
        "rationale": "Two-way conditional (rule 5).",
        "topics": [
         "rate_path"
@@ -6232,6 +6299,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "The policy stance is currently delivering the restrictiveness necessary to weigh against the upside risks posed by the global environment.",
+       "language": "en",
        "rationale": "Restrictiveness is enough for now: leans dovish.",
        "topics": [
         "policy_stance"
@@ -6247,6 +6315,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -6260,6 +6329,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Overall, the risks to the inflation outlook have tilted more to the upside.",
+       "language": "en",
        "rationale": "Rubric +2 anchor.",
        "topics": [
         "balance_of_risks"
@@ -6275,6 +6345,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "Whilst the policy stance continues to provide restrictiveness, were upside pressures on the inflation outlook to continue to build, there could be a case for increasing Bank Rate.",
+       "language": "en",
        "rationale": "Hedged conditional case for a hike.",
        "topics": [
         "rate_path"
@@ -7599,6 +7670,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -7612,6 +7684,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "I do not see a need to reduce Bank Rate further at this meeting.",
+       "language": "en",
        "rationale": "Rejects a cut the market and four colleagues wanted.",
        "topics": [
         "rate_path"
@@ -7627,6 +7700,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "In that light, I continue to favour a cautious withdrawal of policy restriction, guided by longer‑term trends rather than short",
+       "language": "en",
        "rationale": "Rule 13 anchor: slower cuts than the market wants scores hawkish.",
        "topics": [
         "rate_path"
@@ -7642,6 +7716,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "But monetary policy must contain potential second-round effects that would otherwise exert a more lasting impact on CPI inflation.",
+       "language": "en",
        "rationale": "Policy must lean against second-round effects: hawkish tilt.",
        "topics": [
         "second_round_effects"
@@ -7657,6 +7732,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "I remain alert to those risks and stand ready to act if they intensify.",
+       "language": "en",
        "rationale": "Readiness to act: leans hawkish.",
        "topics": [
         "rate_path"
@@ -7672,6 +7748,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -7685,6 +7762,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "As someone already concerned about a stalling of the underlying disinflation process even before the latest energy price shock, a prompt but modest hike in Bank Rate will help mitigate upside risks to price stability stemming from a re-emergence of intrinsic inflation persistence.",
+       "language": "en",
        "rationale": "Argues for a hike now, explaining his dissent.",
        "topics": [
         "rate_path",
@@ -7701,6 +7779,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "But I see the risk of second-round effects in each of these scenarios as skewed to the upside.",
+       "language": "en",
        "rationale": "Upside risks stressed.",
        "topics": [
         "second_round_effects",
@@ -7717,6 +7796,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -7730,6 +7810,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "Recognising the significant uncertainty that surrounds the UK inflation outlook, raising Bank Rate to 4% continues to be the most robust monetary policy response to the intensification of these risks.",
+       "language": "en",
        "rationale": "Argues for raising Bank Rate to 4% now.",
        "topics": [
         "rate_path"
@@ -7745,6 +7826,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "While overall UK financial conditions have tightened since the conflict began, I continue to favour prompt but modest action on Bank Rate now.",
+       "language": "en",
        "rationale": "Favours action on Bank Rate now.",
        "topics": [
         "rate_path"
@@ -7760,6 +7842,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -7773,6 +7856,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "As a result, it is appropriate to raise Bank Rate now, thereby cutting through noise in commodity and asset price developments to offer a clear and unambiguous signal of our willingness and ability to address upside risks to inflation stemming from events in the Gulf.",
+       "language": "en",
        "rationale": "Argues for a hike now.",
        "topics": [
         "rate_path"
@@ -7788,6 +7872,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "While energy prices remain volatile, risks to achieving the inflation target lie firmly to the upside.",
+       "language": "en",
        "rationale": "Upside risks stressed.",
        "topics": [
         "balance_of_risks"
@@ -7803,6 +7888,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Given all this, I am uncomfortable with a ‘wait-and-see’ framing of the MPC’s current decisions over Bank Rate.",
+       "language": "en",
        "rationale": "Rejects wait-and-see: argues tightening should come sooner than a hold implies.",
        "topics": [
         "rate_path"
@@ -7818,6 +7904,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "Turning to second-round effects, we should also be wary of believing uncertainties surrounding their strength will be resolved quickly.",
+       "language": "en",
        "rationale": "Warns second-round uncertainty will not clear soon: leans hawkish.",
        "topics": [
         "second_round_effects"
@@ -7833,6 +7920,7 @@
        "score": 3,
        "confidence": 0.7,
        "quote": "As reflected in my vote in recent policy rounds, I see benefit in acting clearly, promptly and decisively with Bank Rate.",
+       "language": "en",
        "rationale": "Backs acting promptly and decisively (rule 3 jargon), tying it to his hike votes.",
        "topics": [
         "rate_path"
@@ -7848,6 +7936,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -7861,6 +7950,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "A 25-basis point increase in Bank Rate now sends a clear signal of the MPC’s commitment to achieving its price stability mandate amidst the fog of geopolitical conflict and data noise.",
+       "language": "en",
        "rationale": "Argues for a hike now.",
        "topics": [
         "rate_path"
@@ -7876,6 +7966,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "Acting decisively now cuts through in a way that bolsters the clarity and effectiveness of policy choices, thereby heading off inflationary pressures rather having to reverse them once they become ingrained.",
+       "language": "en",
        "rationale": "Act decisively now (rule 3 jargon).",
        "topics": [
         "rate_path"
@@ -9200,6 +9291,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -9213,6 +9305,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "New analysis and current developments have moved the appropriate time for a cut in Bank Rate closer.",
+       "language": "en",
        "rationale": "A cut is coming closer, but not yet: leans dovish.",
        "topics": [
         "rate_path"
@@ -9228,6 +9321,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "A cut now would overweight the importance of the near-term mechanical disinflation and risk higher term premia.",
+       "language": "en",
        "rationale": "Argues against cutting now, a mild hawkish lean given the market pricing cuts.",
        "topics": [
         "rate_path"
@@ -9243,6 +9337,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Since the conflict may yield a sustained inflation shock, I see the balance between inflation and activity to have shifted away from considering a cut towards considering a longer hold, or even a hike at some point to lean against inflation persistence.",
+       "language": "en",
        "rationale": "Moved from considering a cut to a longer hold or a hike: conditional case for tightening.",
        "topics": [
         "rate_path",
@@ -9259,6 +9354,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Sustained pressure on energy prices could re-embed the inflation persistence of the last few years, through households’ salience to energy prices, firms’ state-dependent pricing, staggered wage contracts, and attentiveness thresholds.",
+       "language": "en",
        "rationale": "Persistence risk is the main concern.",
        "topics": [
         "inflation_persistence",
@@ -9275,6 +9371,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -9288,6 +9385,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Should I see continued rising inflation outturns and expectations, I would expect to increase Bank Rate so as to lean against inflation rising into 2027.",
+       "language": "en",
        "rationale": "Conditional hike: one level below an outright call.",
        "topics": [
         "rate_path",
@@ -9304,6 +9402,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "On balance, I expect greater additional second-round effects than in the scenarios.",
+       "language": "en",
        "rationale": "Expects more second-round effects than staff: hawkish tilt.",
        "topics": [
         "second_round_effects"
@@ -9319,6 +9418,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -9332,6 +9432,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "With sporadic continuance, uncertainty weighs on activity, but energy prices increase, which could trigger threshold effects: a worsening trade-off, but needing an activist hike.",
+       "language": "en",
        "rationale": "Scenario-conditional case for an activist hike.",
        "topics": [
         "rate_path",
@@ -9348,6 +9449,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "Research shows that a forceful Bank Rate decision can have a quick effect on inflation and inflation expectations. So I have time to continue to evaluate measures of inflation expectations and financial restrictiveness to determine whether firms’ pricing and 2027 wage negotiations are on a target-consistent path for the medium term.",
+       "language": "en",
        "rationale": "Holds for now while ready to act forcefully: balanced.",
        "topics": [
         "rate_path"
@@ -9363,6 +9465,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -9376,6 +9479,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "A variety of research methods concludes that Bank Rate should be higher than 3.75% to return inflation to the 2% target sustainably.",
+       "language": "en",
        "rationale": "Says Bank Rate should be higher now.",
        "topics": [
         "rate_path"
@@ -9391,6 +9495,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "Notwithstanding moderately restrictive nominal financial conditions, reinforcing policy credibility when faced with inflationary shocks implies that a 25 basis point increase in Bank Rate is appropriate at this time.",
+       "language": "en",
        "rationale": "Argues for a 25bp hike now.",
        "topics": [
         "rate_path"
@@ -9406,6 +9511,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -9419,6 +9525,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "Raising Bank Rate is a better risk-management strategy when faced with uncertainty about inflation dynamics and second-round effects.",
+       "language": "en",
        "rationale": "Argues for a hike now.",
        "topics": [
         "rate_path"
@@ -9434,6 +9541,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "up until last week’s escalation in the Middle East, market participants had expected a prolonged Bank Rate hold, which was hard to square with achieving the 2% target.",
+       "language": "en",
        "rationale": "Market path of a prolonged hold was too loose.",
        "topics": [
         "rate_path"
@@ -9449,6 +9557,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "In my view, our current monetary policy stance is not sufficiently tight, which is why I voted in the last two meetings for a 25 basis point increase in Bank Rate.",
+       "language": "en",
        "rationale": "Rubric +4 anchor: stance not tight enough.",
        "topics": [
         "policy_stance",
@@ -9465,6 +9574,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "At some point, we need to follow-through with Bank Rate rises – to maintain credibility, and to avoid policy expectations repricing downwards and inflation expectations repricing further upwards.",
+       "language": "en",
        "rationale": "Further hikes needed to keep credibility.",
        "topics": [
         "rate_path",
@@ -9481,6 +9591,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Given rising upside risks to inflation, a risk management strategy to monetary policy is appropriate.",
+       "language": "en",
        "rationale": "Risk management strategy points to tightening.",
        "topics": [
         "balance_of_risks"
@@ -10805,6 +10916,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.5%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "dissent for a cut of 25bp to 3.5% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -10818,6 +10930,7 @@
        "score": -3,
        "confidence": 0.7,
        "quote": "The market-implied path for Bank Rate looks too tight. The costs of making a policy mistake seem much higher on the downside, especially given weak labour demand.",
+       "language": "en",
        "rationale": "Says the market path is too tight, so wants easing sooner than priced.",
        "topics": [
         "rate_path",
@@ -10834,6 +10947,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "The inflation persistence scenario is less compelling given the prevailing weakness in activity and higher-than-expected unemployment.",
+       "language": "en",
        "rationale": "Dismisses inflation persistence on weak activity: clear dovish tilt.",
        "topics": [
         "inflation_persistence",
@@ -10850,6 +10964,7 @@
        "score": -3,
        "confidence": 0.6,
        "quote": "If we see something resembling the lower-inflation scenario, I would expect to reduce Bank Rate, possibly quickly, over the rest of the year.",
+       "language": "en",
        "rationale": "Conditional on the benign scenario, expects quick cuts: one level below an outright call for easing.",
        "topics": [
         "rate_path"
@@ -10865,6 +10980,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "This could warrant a hold or increase in Bank Rate to stabilise price-setting dynamics albeit creating a difficult trade-off with activity following a prolonged period of weakness.",
+       "language": "en",
        "rationale": "Conditional opening to a hike in the severe scenario, hedged by the trade-off.",
        "topics": [
         "rate_path",
@@ -10881,6 +10997,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -10894,6 +11011,7 @@
        "score": -3,
        "confidence": 0.6,
        "quote": "In the event of a swift resolution and materially lower energy prices, further reduction in Bank Rate would be warranted, and possibly quickly.",
+       "language": "en",
        "rationale": "Conditional on resolution, quick cuts.",
        "topics": [
         "rate_path"
@@ -10909,6 +11027,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "If the situation were to worsen, this may warrant some tightening, but there is a limit to how much output loss should be acceptable.",
+       "language": "en",
        "rationale": "Conditional tightening heavily capped by output concerns.",
        "topics": [
         "rate_path",
@@ -10925,6 +11044,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -10938,6 +11058,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "If the situation were to worsen, this may warrant some further tightening. But I do not see a compelling case to increase Bank Rate pre-emptively without new evidence of more intense first-round shocks.",
+       "language": "en",
        "rationale": "Rule 13 anchor: stands against a hike.",
        "topics": [
         "rate_path"
@@ -10953,6 +11074,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Absent the shock, monetary policy would be too restrictive for the cyclical position.",
+       "language": "en",
        "rationale": "Policy too tight absent the shock: dovish tilt.",
        "topics": [
         "policy_stance"
@@ -10968,6 +11090,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -10981,6 +11104,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "An increase in Bank Rate now would be disproportionate as, unlike 2022, the starting point for this shock is much softer and the policy stance is more restrictive.",
+       "language": "en",
        "rationale": "Argues against a hike now.",
        "topics": [
         "rate_path"
@@ -10996,6 +11120,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "I continue to see value in waiting for a clearer read on the energy shock in the coming months before deciding whether a change in policy is required, given the broad range of possible outcomes.",
+       "language": "en",
        "rationale": "Rubric -2 anchor phrase.",
        "topics": [
         "rate_path"
@@ -11011,6 +11136,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -11024,6 +11150,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "I therefore continue to see value in waiting for a clearer read on the durable scale of the shock over the coming months, including evidence on first-round energy effects and the conditions for 2027 wage and price-setting.",
+       "language": "en",
        "rationale": "Prefers waiting (rubric -2 anchor).",
        "topics": [
         "rate_path"
@@ -11039,6 +11166,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "With consumption subdued, vacancies below pre-pandemic levels and margins not expanding, the domestic economy appears unlikely to sustain second-round effects that would magnify the initial impulse.",
+       "language": "en",
        "rationale": "Dismisses second-round risk: dovish tilt.",
        "topics": [
         "second_round_effects",
@@ -12364,6 +12492,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -12377,6 +12506,7 @@
        "score": 3,
        "confidence": 0.7,
        "quote": "I continue to think the monetary policy stance is not materially restrictive. Finally, I believe the cost of a policy error is greater if Bank Rate follows the market path and we end up with inflation persistence versus weaker demand.",
+       "language": "en",
        "rationale": "Stance not restrictive and following the market path risks persistence: wants tighter than priced.",
        "topics": [
         "policy_stance",
@@ -12393,6 +12523,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "I would prefer to wait to see that firms and households revise down their inflation expectations in response to lower realised inflation.",
+       "language": "en",
        "rationale": "Prefers to delay cuts the market expects until expectations fall.",
        "topics": [
         "inflation_expectations",
@@ -12409,6 +12540,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "The risk of inflation persistence has risen, perhaps significantly, in light of the negative supply shock from the war in the Middle East.",
+       "language": "en",
        "rationale": "Persistence is the main concern: clear hawkish tilt.",
        "topics": [
         "inflation_persistence",
@@ -12425,6 +12557,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "It is appropriate to hold Bank Rate to learn more about the size and duration of the shock, and the extent of potential second-round effects.",
+       "language": "en",
        "rationale": "Data-dependent hold.",
        "topics": [
         "rate_path"
@@ -12440,6 +12573,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -12453,6 +12587,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "We may end up with inflation somewhere between Scenarios B and C, necessitating a tighter stance.",
+       "language": "en",
        "rationale": "Conditional case for a tighter stance.",
        "topics": [
         "policy_stance"
@@ -12468,6 +12603,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "An increase in Bank Rate may be necessary in upcoming meetings.",
+       "language": "en",
        "rationale": "Flags a likely hike soon.",
        "topics": [
         "rate_path"
@@ -12483,6 +12619,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "But I think it’s most likely that we’ll end up with second-round effects somewhere \nbetween Scenarios B and C: let’s call it Scenario M for Megan.",
+       "language": "en",
        "rationale": "Expects second-round effects above the central scenario: hawkish tilt.",
        "topics": [
         "second_round_effects"
@@ -12498,6 +12635,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "In addition to having a worse inflation outcome, I think a prolonged hold strategy lacks \ncredibility in Scenario M.",
+       "language": "en",
        "rationale": "A prolonged hold lacks credibility: argues for tightening.",
        "topics": [
         "rate_path"
@@ -12513,6 +12651,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -12526,6 +12665,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "These risks are asymmetric, so we should insure against the possibility of larger second-round effects until we have evidence to determine they are not materialising. A proactive hike now in Bank Rate should help anchor inflation expectations.",
+       "language": "en",
        "rationale": "Argues for a hike now.",
        "topics": [
         "rate_path",
@@ -12542,6 +12682,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Given significant uncertainty about the extent of second-round effects, we should pursue a risk management strategy.",
+       "language": "en",
        "rationale": "Risk management jargon points to tightening.",
        "topics": [
         "second_round_effects"
@@ -12557,6 +12698,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -12570,6 +12712,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "As in June, there is significant uncertainty about which projection or scenario is most likely and I believe a risk management strategy is appropriate.",
+       "language": "en",
        "rationale": "Risk management strategy points to tightening.",
        "topics": [
         "second_round_effects"
@@ -12585,6 +12728,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "Furthermore, a proactive hike in Bank Rate may reduce the probability that second-round effects set in.",
+       "language": "en",
        "rationale": "Argues for a proactive hike.",
        "topics": [
         "rate_path"
@@ -12600,6 +12744,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 4%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 4% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -12613,6 +12758,7 @@
        "score": 3,
        "confidence": 0.7,
        "quote": "Waiting for definitive evidence of second-round effects before acting would leave policy behind the curve, and we cannot rely on premia to do our work for us.",
+       "language": "en",
        "rationale": "Behind-the-curve argument (rubric +3 anchor).",
        "topics": [
         "rate_path"
@@ -12628,6 +12774,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "But resilience in labour demand and activity suggest slack may have already peaked.",
+       "language": "en",
        "rationale": "Slack may have peaked: hawkish tilt.",
        "topics": [
         "labour_market"
@@ -13952,6 +14099,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.5%; decision 3.75% (hold 5-4).",
+       "language": "en",
        "rationale": "dissent for a cut of 25bp to 3.5% against a majority hold at 3.75%",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/february-2026",
@@ -13965,6 +14113,7 @@
        "score": -3,
        "confidence": 0.7,
        "quote": "If we expect to be at or below the target with significant slack emerging in about six months, a neutral rate of 3% should be in our sights now.",
+       "language": "en",
        "rationale": "Wants rates moving to neutral now, easing sooner than priced.",
        "topics": [
         "neutral_rate",
@@ -13981,6 +14130,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Together with normalising wages (Boxes A and B), all this reduces or even eliminates the risk of the inflation persistence scenario.",
+       "language": "en",
        "rationale": "Says persistence risk is reduced or gone: clear dovish tilt.",
        "topics": [
         "inflation_persistence",
@@ -13997,6 +14147,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Given massive uncertainty around future energy prices, I currently see a high bar to hiking. I prefer to hold while we better gauge the shock.",
+       "language": "en",
        "rationale": "High bar to hiking and prefers to hold: dovish against a market moving toward hikes.",
        "topics": [
         "rate_path",
@@ -14013,6 +14164,7 @@
        "score": -3,
        "confidence": 0.6,
        "quote": "This could imply faster and potentially deeper rate cuts, once inflation risks subside, to avoid being behind the curve.",
+       "language": "en",
        "rationale": "Sees faster and deeper cuts once risks subside.",
        "topics": [
         "rate_path"
@@ -14028,6 +14180,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/april-2026",
@@ -14041,6 +14194,7 @@
        "score": -3,
        "confidence": 0.6,
        "quote": "This would entail a hold for some time, then a move to a neutral or accommodative stance.",
+       "language": "en",
        "rationale": "Expects to move to neutral or below after a hold.",
        "topics": [
         "rate_path",
@@ -14057,6 +14211,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Given neutral at 3%, it makes sense to hold, for risk-management reasons and because the tighter financial conditions since the conflict began are amply restrictive to provide insurance against inflation risks if we eventually face the not-implausible Scenario B or the more extreme Scenario C.",
+       "language": "en",
        "rationale": "Amply restrictive conditions mean no hike needed.",
        "topics": [
         "policy_stance",
@@ -14073,6 +14228,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/june-2026",
@@ -14086,6 +14242,7 @@
        "score": -3,
        "confidence": 0.6,
        "quote": "Absent worse news, I cannot see a case for tightening now, and an active hold is reasonable. If the conflict resolution holds, and risks diminish, lower rates could be preferred.",
+       "language": "en",
        "rationale": "No case to tighten and lower rates possible: argues policy is tight enough.",
        "topics": [
         "rate_path"
@@ -14101,6 +14258,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Policy is restrictive, 75 basis points above my estimate of neutral and where we might have been quite soon.",
+       "language": "en",
        "rationale": "Policy well above neutral: dovish.",
        "topics": [
         "policy_stance",
@@ -14117,6 +14275,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/july-2026",
@@ -14130,6 +14289,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "For me, the more likely outcomes sit between the baseline and milder scenario, albeit with a long right tail; keeping Bank rate on hold, at a higher level now than the pre-conflict implied path, gives insurance for now, before resuming cuts when and if geopolitical uncertainty clears.",
+       "language": "en",
        "rationale": "Hold as insurance, then resume cuts.",
        "topics": [
         "rate_path"
@@ -14145,6 +14305,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "The economy is drifting further toward deficient demand, with material risk of larger output gaps, labour-market scarring, and a slowdown in growth over the next year or two.",
+       "language": "en",
        "rationale": "Growth concerns dominate: dovish tilt.",
        "topics": [
         "growth",
@@ -14161,6 +14322,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for Bank Rate at 3.75%; decision 3.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 3.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
@@ -14174,6 +14336,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "My view is that additional tightening is not warranted at present.",
+       "language": "en",
        "rationale": "Against tightening now.",
        "topics": [
         "rate_path"
@@ -14189,6 +14352,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "Equally, if geopolitical tensions abate and inflation pressures ease, an easing of policy should be in sight.",
+       "language": "en",
        "rationale": "Conditional easing in sight.",
        "topics": [
         "rate_path"
@@ -14204,6 +14368,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "My view is that the current stance is also sufficiently restrictive, given the initial conditions of the economy in which the shock is hitting.",
+       "language": "en",
        "rationale": "Stance sufficiently restrictive: no tightening needed.",
        "topics": [
         "policy_stance"
@@ -14219,6 +14384,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "However, it does suggest, to me, that the burden of proof for additional tightening should rest on evidence that second-round effects are actually gaining traction, rather than on the existence of the energy shock alone.",
+       "language": "en",
        "rationale": "Sets a high bar for tightening.",
        "topics": [
         "rate_path",
@@ -14235,6 +14401,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "But symmetrically, if the economy evolves broadly as expected, with demand weakening and underlying domestic inflationary pressures continuing to moderate, then at some point, once energy risks abate, policy will need to move in the other direction",
+       "language": "en",
        "rationale": "Expects eventual easing once energy risks abate (conditional).",
        "topics": [
         "rate_path"
@@ -16187,6 +16354,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -16200,6 +16368,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "金融政策運営は、現在の実質金利がきわめて低い水準にあることを踏まえますと、以上のような経済・物価の見通しが実現していくとすれば、経済・物価情勢の改善に応じて引き続き政策金利を引き上げ、金融緩和度合いを調整していくことになると考えています。",
+       "language": "ja",
        "rationale": "Governor restating the committee's path of gradual hikes (rule 7).",
        "topics": [
         "rate_path"
@@ -16215,6 +16384,7 @@
        "score": -1,
        "confidence": 0.5,
        "quote": "こうした金融環境を介して、政策変更の影響が実体経済や物価に広く波及するまでにはかなりの時間を要すると考えられますが、日本銀行としては過去の利上げを含めて企業や家計の行動や経済・物価に及ぼす様々な影響を丁寧に点検してまいりたいと考えています。",
+       "language": "ja",
        "rationale": "Will check the effects of past hikes carefully: leans cautious.",
        "topics": [
         "rate_path"
@@ -16230,6 +16400,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -16243,6 +16414,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "金融政策運営は、現在の実質金利がきわめて低い水準にあることを踏まえますと、以上のような経済・物価の見通しが実現していくとすれば、経済・物価情勢の改善に応じて、引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+       "language": "ja",
        "rationale": "Governor restating the committee's path (rule 7).",
        "topics": [
         "rate_path"
@@ -16258,6 +16430,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "なお、原油価格上昇が基調的な物価上昇率の見通しに及ぼす影響についても留意が必要です。",
+       "language": "ja",
        "rationale": "Flags oil's effect on underlying inflation.",
        "topics": [
         "energy",
@@ -16274,6 +16447,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "そのうえで今後の決定会合等に向けてということでありますと、これは私いつも申し上げていることですけれども、今、原油価格が上がって、これがまず景気という意味では交易条件を悪化させるということを通じて景気に下押し圧力となる。",
+       "language": "ja",
        "rationale": "Balanced: oil weighs on activity and adds to inflation.",
        "topics": [
         "energy",
@@ -16290,6 +16464,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -16303,6 +16478,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "これらのリスクがともに高まることも考えられますが、基調的な物価上昇率が2%に近づいている中、企業の賃金・価格設定行動が積極化していることなどを踏まえますと、特に物価上昇率が大きく上振れていくリスクが顕在化し、それがその後の経済に悪影響を及ぼすことがないよう十分に留意する必要があります。",
+       "language": "ja",
        "rationale": "Stresses the risk of inflation overshooting.",
        "topics": [
         "balance_of_risks"
@@ -16318,6 +16494,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "物価面ですが、中東情勢に伴う景気減速は、需給ギャップの悪化などを通じて、基調的な物価上昇率を下押す方向に作用するものの、全体としてみれば上振れリスクの方が大きいと考えています。",
+       "language": "ja",
        "rationale": "Upside price risks larger overall.",
        "topics": [
         "balance_of_risks"
@@ -16333,6 +16510,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "日本銀行としては、基調的な物価上昇率が2%に近づいている中、現在の実質金利がきわめて低い水準にあることを踏まえますと、経済・物価・金融情勢に応じて、引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+       "language": "ja",
        "rationale": "Governor restating the committee's path (rule 7).",
        "topics": [
         "rate_path"
@@ -16348,6 +16526,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "それから、インフレ期待のところについても、まだ確たることは申し上げられませんが、少し古くなりますが、短観の企業の物価に対する見方とか、あるいは足元のブレーク・イーブン・インフレ率の動きとか、ちょっと上振れているところがありますので、これは注視してみていきたいなと思っております。",
+       "language": "ja",
        "rationale": "Inflation expectations edging up; watching closely.",
        "topics": [
         "inflation_expectations"
@@ -16363,6 +16542,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "If, for example, the Bank judges that the likelihood of realizing the baseline scenario will rise, in that tension over the situation in the Middle East will gradually ease and that underlying CPI inflation will gradually rise toward 2 percent on the back of moderate economic growth, I think the Bank will c ontinue to raise the policy interest rate at an appropriate pace.",
+       "language": "en",
        "rationale": "Governor restating the expected path of gradual hikes (rule 7).",
        "topics": [
         "rate_path"
@@ -16378,6 +16558,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "Meanwhile, even if the situation remains unclear, should it be judged that upside risks to prices outweigh downside risks to economic activity , it will be necessary to thoroughly discuss the pros and cons of raising the policy interest rate, from the perspective of preventing adverse effects on the economy and financial markets and achieving the price stability target of 2 percent in a sustainable and stable manner.",
+       "language": "en",
        "rationale": "Opens the door to a hike even under uncertainty if price risks dominate.",
        "topics": [
         "rate_path",
@@ -16394,6 +16575,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "A basic principle, therefore, is that monetary policy should not seek to address such inflation.",
+       "language": "en",
        "rationale": "Look through supply-shock inflation: leans dovish.",
        "topics": [
         "energy"
@@ -16409,6 +16591,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -16422,6 +16605,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "日本銀行としては、基調的な物価上昇率が2%に近づいている中、現在の金融環境が緩和的であることを踏まえますと、経済・物価・金融情勢に応じて、引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+       "language": "ja",
        "rationale": "Governor restating the committee's path (rule 7).",
        "topics": [
         "rate_path"
@@ -16437,6 +16621,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "特に、基調的な物価上昇率が2%の物価安定の目標を超えて上振れていくリスクが顕在化し、それがその後の経済に悪影響を及ぼすことがないよう、基調的な物価上昇率を2%程度の水準で安定させていくという観点が重要になると考えています。",
+       "language": "ja",
        "rationale": "Priority on keeping underlying inflation from overshooting 2%.",
        "topics": [
         "inflation_persistence"
@@ -16452,6 +16637,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "そのうえで、もう一度そのときお話ししたような基本的な考え方を繰り返させて頂きますと、そのとき申し上げた通りですが、金融緩和度合いの調整のタイミング、あるいはペースについては、そのとき申し上げた三つのポイント、中東情勢とそれからAI関連の動き、そして為替相場の変動の影響、これらを特に重視しつつ、経済・物価の中心的な見通しが実現する確度、あるいはその周りのリスクを点検しながら検討していくという基本的な考え方です。",
+       "language": "ja",
        "rationale": "Governor restating the approach; no pushback on market pricing of a September hike.",
        "topics": [
         "rate_path"
@@ -16467,6 +16653,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -16480,6 +16667,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "今後の金融政策運営については、基調的な物価上昇率が2%に近づいている中、現在の金融環境が緩和的であることを踏まえますと、経済・物価・金融情勢に応じて引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+       "language": "ja",
        "rationale": "Governor restating the committee's path (rule 7).",
        "topics": [
         "rate_path"
@@ -16495,6 +16683,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "特に、基調的な物価上昇率が2%の物価安定の目標を超えて上振れていくリスクが顕在化し、それがその後の経済に悪影響を及ぼすことがないよう、基調的な物価上昇率を2%程度の水準で安定させていくという観点が重要になると考えています。",
+       "language": "ja",
        "rationale": "Priority on keeping underlying inflation from overshooting 2%.",
        "topics": [
         "inflation_persistence"
@@ -16510,6 +16699,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "こうしたことの私どもの政策への含意ですけれども、基本姿勢を申し上げることにとどまりますけれども、基調的な物価上昇率が2%に近づいている中で、一方で金融環境がいつも申し上げている通り緩和的な状態が続いているということですので、基本的には引き続き政策金利を、経済・物価・金融情勢に応じてですけれども、引き上げて、緩和度合いを調整していくというふうになると考えています。",
+       "language": "ja",
        "rationale": "Governor restating the committee's path (rule 7).",
        "topics": [
         "rate_path"
@@ -16525,6 +16715,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "9月の決定会合後の会見で申し上げたことと重なりますけれども、その際に、基調物価が2%にかなり接近しているという中では、基調物価の上昇率を2%程度で安定させていくという観点がこれまでよりも重要になってくるというふうに考えております。",
+       "language": "ja",
        "rationale": "Stabilising underlying inflation at 2% matters more than before.",
        "topics": [
         "inflation_persistence"
@@ -17914,6 +18105,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -17927,6 +18119,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -17940,6 +18133,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -17953,6 +18147,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -17966,6 +18161,7 @@
        "score": 0,
        "confidence": 0.6,
        "quote": "今後の金融政策運営については、基調的な物価上昇率が2%に近づいている中、現在の金融環境は緩和的であることを踏まえますと、経済・物価・金融情勢に応じて、引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+       "language": "ja",
        "rationale": "Deputy standing in for the Governor, restating the committee's path.",
        "topics": [
         "rate_path"
@@ -17981,6 +18177,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "この間、政府によるエネルギー負担緩和策を始めとする各種政策の効果が今後も見込まれることに加えまして、中東依存度の高い原材料の代替調達が進展していることなどから、経済が大きく下振れるリスクはひと頃よりも低下していると考えられます。",
+       "language": "ja",
        "rationale": "Downside risk to the economy has fallen.",
        "topics": [
         "growth"
@@ -17996,6 +18193,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -18009,6 +18207,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -19396,6 +19595,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -19409,6 +19609,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "th the real interest rate slightly below negative 1 percent, current financial conditions should be considered slightly accommodative if the true natural rate is around negative 1 percent.",
+       "language": "en",
        "rationale": "Conditions only slightly accommodative: mild hawkish lean.",
        "topics": [
         "financial_conditions",
@@ -19425,6 +19626,7 @@
        "score": -1,
        "confidence": 0.5,
        "quote": "Similarly, this makes it difficult to judge when the next rate hike would be appropriate.",
+       "language": "en",
        "rationale": "Uncertainty over timing of the next hike: leans dovish.",
        "topics": [
         "rate_path"
@@ -19440,6 +19642,7 @@
        "score": -1,
        "confidence": 0.5,
        "quote": "そのうえで、緩和的な金融環境もその背景要因の一つにあるということは十分考えられることでありますので、そうした資産価格の動向についてもよく見守っていく必要があると思っておりますけれども、何か現状で金融政策で格段の対応を取らなければならない状況にあるとまでは考えていないところです。",
+       "language": "ja",
        "rationale": "No special policy response needed to asset prices: leans dovish.",
        "topics": [
         "financial_conditions"
@@ -19455,6 +19658,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "私どもとしても、そこはどこまでどういうタイミングで利上げするとどういう影響があるかということは、できるだけ的確に見極めながら判断していきたいと思っておりますけれども、これもさっきの基調とか自然利子率と同じで、各時点において精密に何か特定できるということではありませんので、今日のお話しした中身で言えば、曼荼羅の全体像をみたうえで、特に一つの部分だけ取り上げてこれがここまで来たからこの時点で判断ということではなくて、全体を評価しながら考えていくということにするのがいいのではないかと私は思っております。",
+       "language": "ja",
        "rationale": "Holistic, data-dependent judgement on timing.",
        "topics": [
         "rate_path"
@@ -19470,6 +19674,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -19483,6 +19688,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -19496,6 +19702,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -19509,6 +19716,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -19522,6 +19730,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "Given that underlying inflation has been approaching 2 percent and financial conditions have been accommodative, I believe the Bank should continue to raise the policy interest rate and adjust the degree of monetary accommodation in accordance with developments in economic activity, prices, and financial conditions.",
+       "language": "en",
        "rationale": "Deputy arguing the Bank should keep raising rates (rule 7, deputies treated as board members).",
        "topics": [
         "rate_path",
@@ -19538,6 +19747,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "If underlying inflation deviates upward to a level above the price stability target of 2 percent, that would have an adverse impact on the economy, and we should pay greater attention to the upside risk to prices than in the past.",
+       "language": "en",
        "rationale": "More weight on upside price risk: hawkish tilt.",
        "topics": [
         "inflation_persistence",
@@ -19554,6 +19764,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "特に、現状、基調的な物価上昇率が2%に近づいていることを踏まえますと、これまで以上に物価の上振れリスクを意識する必要があると考えておりまして、こうした基本的な考え方に立って、経済・物価・金融情勢を点検しながら、毎回の決定会合において、しっかり議論してまいりたいと考えております。",
+       "language": "ja",
        "rationale": "More attention to upside price risk than before.",
        "topics": [
         "balance_of_risks"
@@ -19569,6 +19780,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "そのうえで、ご質問のありました利上げのタイミングとかペースにつきましては、中東情勢やAI関連需要の拡大、為替相場の変動の影響を含め、経済・物価の中心的な見通しが実現する確度やリスクを点検しながら検討していきたいというふうに考えております。",
+       "language": "ja",
        "rationale": "Data-dependent on timing and pace.",
        "topics": [
         "rate_path"
@@ -19584,6 +19796,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -20971,6 +21184,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 1% against a majority hold at 0.75%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -20984,6 +21198,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "Therefore, I believe that this latest rate cut, unlike cases seen repeatedly in the past, will not act to constrain rate hikes in Japan.",
+       "language": "en",
        "rationale": "Fed cut will not hold back BoJ hikes: leans hawkish.",
        "topics": [
         "global",
@@ -21000,6 +21215,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "During a policy rate hike cycle, I consider the neutral interest rate as akin to a mountain about to be climbed.",
+       "language": "en",
        "rationale": "Frames neutral as the climb ahead: mild hawkish lean.",
        "topics": [
         "neutral_rate"
@@ -21015,6 +21231,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "今ご指摘頂いた点なのですけれども、私自身はもう去年から物価目標のところは概ね達成というような言い方をしておりますので、そういう意味からしますと、もう既に今年1月の会合のところでも、利上げの提案をさせて頂いてるということでございますので、これからはともかくとして、一応そういうスタンスであるということはまず申し上げておきたいということだと思います。",
+       "language": "ja",
        "rationale": "Target already met; proposed a hike in January.",
        "topics": [
         "rate_path"
@@ -21030,6 +21247,7 @@
        "score": 2,
        "confidence": 0.5,
        "quote": "それから、私も今年1月の段階でも先ほど申し上げたように、利上げをということで申し上げているのですけど、その背景には、海外のところの影響がやはり随分大きいかなというふうに思っておりまして、今回のこちらの講演の中でも、今年2026年は回復に向けた転換局面であるというような現状認識をさせて頂いておりますので、その辺のところの具合もやはり十分に考慮に入れたうえで、国内だけではなくて海外の状況というのでしょうか、よりそちらのところも考えておきながら対応したいというふうに思っております。",
+       "language": "ja",
        "rationale": "Restates his case for hiking given overseas conditions.",
        "topics": [
         "rate_path",
@@ -21046,6 +21264,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 1% against a majority hold at 0.75%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -21059,6 +21278,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 1% against a majority hold at 0.75%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -21072,6 +21292,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -21085,6 +21306,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 1.25% against a majority hold at 1%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -21098,6 +21320,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Since I consider the price stability target to have been almost achieved, I believe it is necessary to bring the policy interest rate closer to the neutral interest rate in preparation for the second-round effects of price rises.",
+       "language": "en",
        "rationale": "Rate should move closer to neutral now to pre-empt second-round effects.",
        "topics": [
         "neutral_rate",
@@ -21114,6 +21337,7 @@
        "score": 1,
        "confidence": 0.6,
        "quote": "With respect to the conduct of monetary policy, my view is that in 2026, Japan's economy has entered a phase that differs from the environment seen up to 2024-2025; on this basis, I consider it necessary for the Bank to adopt a nimble approach.",
+       "language": "en",
        "rationale": "Rubric anchor: nimble approach (+1).",
        "topics": [
         "rate_path"
@@ -21129,6 +21353,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "In regard to further policy interest rate hikes, my view is that the Bank should not aim to reach the expected neutral interest rate, nor should it be bound by particular intervals or ranges anticipated in the markets.",
+       "language": "en",
        "rationale": "Rule 11 anchor: should not aim to reach neutral.",
        "topics": [
         "neutral_rate"
@@ -21144,6 +21369,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "それに対応して、私も7月の段階で利上げの提案をさせて頂いているというのは、そういうものが背景にあったんだということで申し上げた次第であります。",
+       "language": "ja",
        "rationale": "Explains his July proposal to hike.",
        "topics": [
         "rate_path"
@@ -21159,6 +21385,7 @@
        "score": 3,
        "confidence": 0.5,
        "quote": "そういう海外の動向、それから国内における動向、更にそういうものに従って金融緩和的な状況の中での、いろんな意味での金融活動、貸出等の増加というようなものもあるということでありますから、そういう状況ですと、従来の半年に一度という、年に2回というような状況ではなくて、新たな状況に対応した機動的な対応が必要になってくると。",
+       "language": "ja",
        "rationale": "Hikes should come faster than the old pace of one every six months.",
        "topics": [
         "rate_path"
@@ -21174,6 +21401,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -22561,6 +22789,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -22574,6 +22803,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "As I have previously stated, my sense is that the neutral interest rate should be at least around 1 percent.",
+       "language": "en",
        "rationale": "Neutral at least 1% with the rate at 0.75% implies further hikes.",
        "topics": [
         "neutral_rate"
@@ -22589,6 +22819,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "As another topic of relevance, the Bank should carefully follow whether prolonged monetary easing gives rise to problems; for example, how the excessive depreciation of the yen, continued high inflation, and a rise in real estate prices affect the economy and people's livelihoods.",
+       "language": "en",
        "rationale": "Flags costs of prolonged easing (yen, inflation, property): hawkish tilt.",
        "topics": [
         "yen",
@@ -22605,6 +22836,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -22618,6 +22850,7 @@
        "score": 5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "dissent for a hike of 25bp to 1% against a majority hold at 0.75%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -22631,6 +22864,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -22644,6 +22878,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Based on the fundamental premise that monetary policy should be decided by examining developments in economic activity and prices as well as financial conditions, considering the recent increase in upside risks to prices, what I envisage as a baseline path is raising the policy interest rate by 0.",
+       "language": "en",
        "rationale": "Envisages 25bp hikes every few months: tightening sooner than a gradual path.",
        "topics": [
         "rate_path"
@@ -22659,6 +22894,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "In doing so, I believe it is also necessary to bring the policy interest rate closer to the neutral interest rate in a timely and appropriate manner and at a reasonable pace.",
+       "language": "en",
        "rationale": "Move toward neutral in a timely way.",
        "topics": [
         "neutral_rate"
@@ -22674,6 +22910,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "現時点での私自身の考えを申し上げれば、既に2%の物価安定目標は実現されたと考えており、物価の基調が2%を超えて上昇していくのを避けるためには、政策金利を中立金利の近辺まで引き上げる必要があると考えています。",
+       "language": "ja",
        "rationale": "Target met; rate must rise to around neutral.",
        "topics": [
         "neutral_rate",
@@ -22690,6 +22927,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "物価の基調が2%を超えて上昇していった場合、それを押し下げるためには、政策金利を引き締め領域まで急激かつ大幅に引き上げ、それを長期間保持することが必要となってしまいます。",
+       "language": "ja",
        "rationale": "Warns of a sharp, large hike later if inflation overshoots.",
        "topics": [
         "inflation_persistence"
@@ -22705,6 +22943,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -22718,6 +22957,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -24105,6 +24345,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -24118,6 +24359,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -24131,6 +24373,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -24144,6 +24387,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "I therefore believe it is reasonable for the Bank to raise the policy interest rate at an appropriate pace to address high inflation while also considering the trade -offs for the economy.",
+       "language": "en",
        "rationale": "Board member arguing for hikes at an appropriate pace (rule 7).",
        "topics": [
         "rate_path"
@@ -24159,6 +24403,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "I have explained the situation for different entities -- households, firms, and the government -- but overall, I believe Japan's financial conditions have remainedaccommodative, even after policy interest rate hikes.",
+       "language": "en",
        "rationale": "Accommodative financial conditions (glossary: hawkish).",
        "topics": [
         "financial_conditions"
@@ -24174,6 +24419,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "ですので、適度なペースでというのは、適度なペースで政策金利を引き上げて、金融政策でも物価高に対応していくということが、経済へのトレードオフには配慮しつつも、適切な政策となっているというふうに足元ではみています。",
+       "language": "ja",
        "rationale": "Board member arguing for hikes at a moderate pace (rule 7).",
        "topics": [
         "rate_path"
@@ -24189,6 +24435,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "私としては中立金利、もちろんこれは幅を持ってみる必要がございますが、その下限は1%よりは上だというふうに足元では認識しております。",
+       "language": "ja",
        "rationale": "Lower bound of neutral above 1%: room to hike.",
        "topics": [
         "neutral_rate"
@@ -24204,6 +24451,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "物価の上振れ、物価の上昇リスクについては、既に足元顕在化している、特にBtoBのところで顕在化していると思います。",
+       "language": "ja",
        "rationale": "Upside price risks already materialising.",
        "topics": [
         "balance_of_risks"
@@ -24219,6 +24467,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -24232,6 +24481,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -24245,6 +24495,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -24258,6 +24509,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Given that there have been considerable upside risks to prices in addition to continued accommodative financial conditions, the Bank should not become overly cautious about raising the policy interest rate.",
+       "language": "en",
        "rationale": "Bank should not be overly cautious about hiking.",
        "topics": [
         "rate_path",
@@ -24274,6 +24526,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "For these reasons, I believe that the level of the neutral interest rate is considerably above 1 percent, which is roughly the lower bound of the estimated range.",
+       "language": "en",
        "rationale": "Neutral well above 1%: room for further hikes.",
        "topics": [
         "neutral_rate"
@@ -24289,6 +24542,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "I believe that the Bank should adjust the policy interest rate in a timely manner with an eye on the economic and price situation, while keeping in mind the estimated range of the neutral interest rate.",
+       "language": "en",
        "rationale": "Timely adjustment with neutral in mind: leans hawkish.",
        "topics": [
         "rate_path"
@@ -24304,6 +24558,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "二点目の今後の利上げについてのお話だと思いますけれども、現在の立ち位置としては、金融環境は緩和的な状況にあると。",
+       "language": "ja",
        "rationale": "Financial conditions still accommodative (glossary: hawkish).",
        "topics": [
         "financial_conditions"
@@ -24319,6 +24574,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "そういったことを踏まえれば、やはり中立金利の推計レンジは念頭に置きつつも、適時適切に政策金利を調節していくことが、経済・物価・金融環境の状況を点検しつつ、適切だというふうに考えております。",
+       "language": "ja",
        "rationale": "Timely adjustment with neutral in mind.",
        "topics": [
         "rate_path",
@@ -25709,6 +25965,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
@@ -25722,6 +25979,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "I am convinced that continuing with further policy interest rate hikes will be needed to complete the normalization of monetary policy in Japan.",
+       "language": "en",
        "rationale": "Board member arguing for continued hikes, the expected path (rule 7).",
        "topics": [
         "rate_path"
@@ -25737,6 +25995,7 @@
        "score": -1,
        "confidence": 0.6,
        "quote": "In particular, since policy interest rate hikes over the past two years have brought the rate close to the estimated range of the neutral interest rate, the Bank will need to more thoroughly examine factors such as prices, employment, and financial conditions in considering further rate hikes.",
+       "language": "en",
        "rationale": "Near neutral, so further hikes need closer scrutiny: leans dovish.",
        "topics": [
         "neutral_rate",
@@ -25753,6 +26012,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "At the same time, it is critical to make sure that excessive rate hikes do not disrupt the virtuous cycle of a moderate rise in prices and wages that has finally begun to gain momentum in Japan. The Bank will therefore proceed cautiously with rate hikes.",
+       "language": "en",
        "rationale": "Warns against excessive hikes and says the Bank will proceed cautiously (rule 14).",
        "topics": [
         "rate_path",
@@ -25769,6 +26029,7 @@
        "score": -1,
        "confidence": 0.5,
        "quote": "あくまで当然のこととして過度な利上げで経済の腰を折ってはいけないというのは、もう当然のこととしてみているということで申し上げたまででして、今の段階で決して後手に回っているとは私も思っていませんし、当然のことでバランスを両方みながら慎重に進めていくということをやっていきたいということで、言ったまででございます。",
+       "language": "ja",
        "rationale": "Hikes must not break the economy; proceed carefully (rule 14 caveat).",
        "topics": [
         "rate_path",
@@ -25785,6 +26046,7 @@
        "score": 1,
        "confidence": 0.5,
        "quote": "基調的な物価上昇率を2%に抑えるというのは、別に引き締めという意味で言っているんではなくて、2%より高いとこに止まるのは別に望ましいわけじゃないですから、そういう事態になれば、引き締めにいかなきゃいけないということに、そのまま取って頂ければいいと思います。",
+       "language": "ja",
        "rationale": "Would tighten if underlying inflation stuck above 2%.",
        "topics": [
         "inflation_persistence"
@@ -25800,6 +26062,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
@@ -25813,6 +26076,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -25826,6 +26090,7 @@
        "score": 4,
        "confidence": 0.7,
        "quote": "That said, if statistical data do not indicate clear signs of an economic downtu rn, I believe it is desirable to raise the policy rate at the earliest stage possible.",
+       "language": "en",
        "rationale": "Rubric +4 anchor: hike at the earliest stage possible.",
        "topics": [
         "rate_path"
@@ -25841,6 +26106,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "To complete the normalization of monetary policy in Japan, I am convinced that the Bank needs to raise the policy interest rate further, so that it falls solidly within the estimated range of the neutral interest rate, thereby ensuring the flexibility needed to swiftly adjust the policy rate in either direction, depending on economic conditions.",
+       "language": "en",
        "rationale": "Rate should rise solidly into the neutral range.",
        "topics": [
         "neutral_rate",
@@ -25857,6 +26123,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "Given that Japan's economy is no longer in a deflationary period that would require negative interest rates, I believe the negative real interest rate situation should be addressed as soon as possible.",
+       "language": "en",
        "rationale": "Negative real rates should end as soon as possible.",
        "topics": [
         "policy_stance"
@@ -25872,6 +26139,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -25885,6 +26153,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -25898,6 +26167,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "To complete the normalization of monetary policy in Japan, I am convinced that the Bank needs to raise the policy interest rate further, so that it falls solidly within the estimated range of the neutral interes t rate, thereby ensuring the flexibility needed to swiftly adjust the policy rate in either direction, depending on economic conditions.",
+       "language": "en",
        "rationale": "Rate should rise solidly into the neutral range.",
        "topics": [
         "neutral_rate",
@@ -25914,6 +26184,7 @@
        "score": 3,
        "confidence": 0.6,
        "quote": "I therefore believe the negative real interest rate situation should be addressed as soon as possible, since Japan's economy is no longer in deflation.",
+       "language": "en",
        "rationale": "Negative real rates should end as soon as possible.",
        "topics": [
         "policy_stance"
@@ -25929,6 +26200,7 @@
        "score": 2,
        "confidence": 0.6,
        "quote": "If inflation accelerates here, there is a risk that the Bank might inevitably need to implement a rapid policy interest rate hike.",
+       "language": "en",
        "rationale": "Warns of a forced rapid hike if inflation accelerates.",
        "topics": [
         "inflation_persistence"
@@ -25944,6 +26216,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "それから、中立金利の話、必ず聞かれると思ったんですけれども、いくらなのか分からない話ですけれども、これも今のお話と同じですので、その都度じっくりみながらですね、やっていく部分ですから、特別におっしゃったようなかたちで対応するというようなことになるのか、それもちゃんとみながらでなければいけないんですけれども、今までのかたちで、慎重にみていくというかたちで進むことになるかなと思っています。",
+       "language": "ja",
        "rationale": "Case-by-case on neutral; no commitment.",
        "topics": [
         "neutral_rate"
@@ -25959,6 +26232,7 @@
        "score": 2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "majority vote for a hike of 25bp to 1.25% at a split meeting, against dovish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -27006,6 +27280,7 @@
        "score": -2,
        "confidence": 0.6,
        "quote": "その政策を従来から支持して評価しておりましたので、そういう意味でのリフレ派というふうにいわれることについては別に違和感はありません。",
+       "language": "ja",
        "rationale": "Comfortable being called a reflationist: clear dovish tilt.",
        "topics": [
         "policy_stance"
@@ -27021,6 +27296,7 @@
        "score": -1,
        "confidence": 0.5,
        "quote": "その場合は、金融政策でそれに対処する場合はなかなか難しいものがありますね。",
+       "language": "ja",
        "rationale": "Cost-push inflation hard to address with policy: leans dovish.",
        "topics": [
         "energy"
@@ -27036,6 +27312,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 0.75% (hold 6-3).",
+       "language": "en",
        "rationale": "majority vote for a hold at 0.75% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
@@ -27049,6 +27326,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 0.75%; decision 1% (hike 7-1).",
+       "language": "en",
        "rationale": "dissent for a hold at 0.75% against a majority hike of 25bp to 1%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
@@ -27062,6 +27340,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -27075,6 +27354,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "dissent for a hold at 1% against a majority hike of 25bp to 1.25%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
@@ -27672,6 +27952,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "その両方ですね、景気の下振れリスクとインフレの上振れリスクの双方に注意が必要であることは重要なこと、注視していかなくてはならないのだと思います。",
+       "language": "ja",
        "rationale": "Two-sided risks.",
        "topics": [
         "balance_of_risks"
@@ -27687,6 +27968,7 @@
        "score": 0,
        "confidence": 0.5,
        "quote": "二点目につきましては、出口についてですが、現在、日本銀行は金融政策の正常化を行っているところではございますが、インフレかデフレかと申し上げますと、多少のインフレ上振れリスクというのは観察されるところがあるかもしれないですが、まだノルムとしてはそれほど強いものではないのかなというふうなところですが、引き続き事務方の説明もよく聞きまして、私なりにデータを精査して考えていきたいと思っております。",
+       "language": "ja",
        "rationale": "Hedged: some upside inflation risk may be observed.",
        "topics": [
         "balance_of_risks"
@@ -27702,6 +27984,7 @@
        "score": -2,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1% (hold 8-1).",
+       "language": "en",
        "rationale": "majority vote for a hold at 1% at a split meeting, against hawkish dissent",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
@@ -27715,6 +27998,7 @@
        "score": -5,
        "confidence": 1.0,
        "quote": "Voted for the policy rate at 1%; decision 1.25% (hike 7-2).",
+       "language": "en",
        "rationale": "dissent for a hold at 1% against a majority hike of 25bp to 1.25%",
        "topics": [],
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
