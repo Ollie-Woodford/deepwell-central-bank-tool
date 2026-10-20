@@ -27,7 +27,7 @@
 .hd-tabs { display: flex; gap: 4px; }
 .hd-tab { border: 1px solid var(--hd-line); background: transparent; padding: 4px 10px; border-radius: 3px; font-family: var(--hd-mono); font-size: 12px; letter-spacing: .06em; cursor: pointer; }
 .hd-tab[aria-selected="true"] { background: var(--hd-raise); border-color: var(--hd-faint); }
-.hd-tab:disabled { cursor: not-allowed; color: var(--hd-faint); }
+.hd-boe { display: grid; gap: 16px; }
 .hd-asof { font-family: var(--hd-mono); font-size: 12px; color: var(--hd-muted); }
 .hd-take { margin: 0; max-width: 70ch; color: var(--hd-fg); font-size: 15px; }
 .hd-take b { font-family: var(--hd-mono); font-weight: 500; }
@@ -114,10 +114,16 @@
     </div>
     <div class="hd-tabs" role="tablist" aria-label="Bank">
       <button class="hd-tab" role="tab" aria-selected="true" id="tab-boe">BoE</button>
-      <button class="hd-tab" role="tab" aria-selected="false" id="tab-boj" disabled title="Bank of Japan collection comes in Phase 6">BoJ</button>
+      <button class="hd-tab" role="tab" aria-selected="false" id="tab-boj">BoJ</button>
     </div>
   </header>
 
+  <section class="hd-card" id="boj-panel" hidden>
+    <div class="hd-card-head"><h3>Bank of Japan Policy Board</h3></div>
+    <p class="hd-take">No Bank of Japan data yet. Collection for the BoJ (speeches, Statements on Monetary Policy with each dissent, and the Governor's press conferences) is the next build phase. The nine board members are already set up, and the scoring rubric covers both banks.</p>
+  </section>
+
+  <div class="hd-boe" id="boe-view">
   <p class="hd-take" id="takeaway">
     Committee median <b data-source="committee" data-field="median">…</b>.
     <span data-source="committee" data-field="hawk_name">…</span> is the most hawkish at <b class="up" data-source="committee" data-field="hawk_stance">…</b>,
@@ -143,23 +149,6 @@
     </div>
   </section>
 
-  <div class="hd-row">
-    <section class="hd-card" id="votes-card">
-      <div class="hd-card-head">
-        <h3>Last 8 votes</h3>
-        <span class="hd-note">Rate each member voted for; dissents in colour</span>
-      </div>
-      <div class="hd-votes" id="votes" data-source="votes members"></div>
-    </section>
-    <section class="hd-card" id="ticker-card">
-      <div class="hd-card-head">
-        <h3>Newest scored statements</h3>
-        <span class="hd-note">Click to open in the timeline</span>
-      </div>
-      <ul class="hd-tick" id="ticker" data-source="points members"></ul>
-    </section>
-  </div>
-
   <section class="hd-card hd-member" id="member-card">
     <div class="hd-mhead">
       <div class="who"><strong id="m-name">…</strong><span id="m-role">…</span></div>
@@ -172,6 +161,7 @@
       </div>
       <span class="hd-badge" id="m-badge" hidden></span>
     </div>
+    <p class="hd-note" id="m-hint">Click any member on the axis above, or any statement below, to switch.</p>
     <div class="hd-topics" id="topics"><span class="lab">Topic</span></div>
     <div class="hd-chart hd-tl-chart" id="timeline" data-source="series points"></div>
     <div class="hd-legend">
@@ -191,6 +181,26 @@
       <p class="why" id="d-why" data-source="points" data-field="rationale">…</p>
     </div>
   </section>
+
+  <div class="hd-row">
+    <section class="hd-card" id="votes-card">
+      <div class="hd-card-head">
+        <h3>Last 8 votes</h3>
+        <span class="hd-note">Rate each member voted for; dissents in colour</span>
+      </div>
+      <div class="hd-votes" id="votes" data-source="votes members"></div>
+    </section>
+    <section class="hd-card" id="ticker-card">
+      <div class="hd-card-head">
+        <h3>Newest scored statements</h3>
+        <span class="hd-note">Click to open in the timeline</span>
+      </div>
+      <ul class="hd-tick" id="ticker" data-source="points members"></ul>
+    </section>
+  </div>
+
+
+  </div>
 
   <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
 </div>
@@ -283,7 +293,17 @@
     });
     const lanes = Math.max(1, laneEnds.length);
     const top = 26, labelsH = lanes * laneH + (groups.some((o) => o.held) ? 12 : 0);
-    const axisY = top + labelsH + 22;
+    // Stack dots for near-identical stances so each stays visible and clickable.
+    const placed = [];
+    groups.forEach((o) => {
+      let level = 0;
+      while (placed.some((q) => q.level === level && Math.abs(q.cx - o.cx) < 15)) level++;
+      o.level = level;
+      placed.push(o);
+    });
+    const stackH = d3.max(groups, (o) => o.level) * 15 || 0;
+    const axisY = top + labelsH + 22 + stackH;
+    groups.forEach((o) => { o.dotY = axisY - o.level * 15; });
     const H = axisY + 46;
     svg.attr('viewBox', `0 0 ${W} ${H}`).attr('height', H);
     box.style.minHeight = H + 'px';
@@ -319,20 +339,21 @@
       o.name.attr('x', o.left).attr('y', ly);
       o.val.attr('x', o.left).attr('y', ly + 14);
       if (o.held) o.held.attr('x', o.left).attr('y', ly + 26).attr('font-size', 9.5);
+      // Click area covers the label only: a taller one would sit over members in lower lanes.
       o.grp.insert('rect', ':first-child').attr('class', 'm-hit').attr('x', o.left - 4).attr('y', ly - 13)
-        .attr('width', o.w + 8).attr('height', axisY - ly + 20).attr('fill', 'transparent').attr('rx', 3);
-      o.grp.append('line').attr('x1', o.cx).attr('x2', o.cx).attr('y1', ly + (o.held ? 30 : 19)).attr('y2', axisY - 7)
+        .attr('width', o.w + 8).attr('height', (o.held ? 30 : 19) + 15).attr('fill', 'transparent').attr('rx', 3);
+      o.grp.append('line').attr('x1', o.cx).attr('x2', o.cx).attr('y1', ly + (o.held ? 30 : 19)).attr('y2', o.dotY - 7)
         .attr('stroke', COLORS.faint).attr('stroke-width', 1);
       // Momentum arrow: from where the member stood at the start of the window to now.
       if (o.mom !== null && Math.abs(o.mom) >= 0.005) {
-        const x0 = x(o.m.stance - o.mom), y = axisY - 12;
+        const x0 = x(o.m.stance - o.mom), y = o.dotY;
         o.grp.append('circle').attr('cx', x0).attr('cy', y).attr('r', 3).attr('fill', 'none').attr('stroke', COLORS.muted).attr('stroke-dasharray', '2 2');
         const dir = o.mom > 0 ? 1 : -1;
         const x1 = o.cx - dir * 6;
         if (Math.abs(x1 - x0) > 4) o.grp.append('line').attr('x1', x0 + dir * 3).attr('x2', x1).attr('y1', y).attr('y2', y).attr('stroke', scoreColor(o.mom * 4)).attr('stroke-width', 1.5);
         o.grp.append('path').attr('d', `M${o.cx - dir * 6},${y - 3.5} L${o.cx - dir * 1},${y} L${o.cx - dir * 6},${y + 3.5} Z`).attr('fill', scoreColor(o.mom * 4));
       }
-      o.grp.append('circle').attr('class', 'm-dot').attr('cx', o.cx).attr('cy', axisY).attr('r', state.member === o.m.id ? 8 : 6)
+      o.grp.append('circle').attr('class', 'm-dot').attr('cx', o.cx).attr('cy', o.dotY).attr('r', state.member === o.m.id ? 8 : 6)
         .attr('fill', scoreColor(o.m.stance)).attr('stroke', state.member === o.m.id ? '#fff' : COLORS.bg).attr('stroke-width', 2);
       const pick = () => { selectMember(o.m.id, true); };
       o.grp.on('click', pick).on('keydown', (ev) => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); pick(); } });
@@ -381,7 +402,7 @@
       meta.append(el('strong', '', names.get(p.member_id) || p.member_id), el('span', 'mono', shortDay(parse(p.date))), el('span', '', TYPE[p.source_type] || p.source_type));
       li.append(chip, meta, el('div', 'q', p.quote));
       li.tabIndex = 0;
-      const open = () => { state.topic = null; selectMember(p.member_id, true, p.id); document.getElementById('member-card').scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+      const open = () => { state.topic = null; selectMember(p.member_id, true, p.id); };
       li.addEventListener('click', open);
       li.addEventListener('keydown', (ev) => { if (ev.key === 'Enter') open(); });
       box.appendChild(li);
@@ -490,15 +511,29 @@
 
   function selectMember(id, user, pointId) {
     state.member = id; state.point = pointId || null; state.picked = state.picked || !!user;
-    if (user) dash.setLink('member-card');
     redraw();
+    if (user) {
+      dash.setLink('member-card');
+      requestAnimationFrame(() => document.getElementById('member-card').scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    }
   }
 
+  const showBank = (bank) => {
+    document.getElementById('tab-boe').setAttribute('aria-selected', String(bank === 'boe'));
+    document.getElementById('tab-boj').setAttribute('aria-selected', String(bank === 'boj'));
+    document.getElementById('boe-view').hidden = bank !== 'boe';
+    document.getElementById('boj-panel').hidden = bank !== 'boj';
+    document.getElementById('bank-title').textContent = bank === 'boe' ? 'Bank of England MPC' : 'Bank of Japan Policy Board';
+    if (bank === 'boe') redraw();
+  };
+  document.getElementById('tab-boe').addEventListener('click', () => showBank('boe'));
+  document.getElementById('tab-boj').addEventListener('click', () => showBank('boj'));
   document.getElementById('mom-30').addEventListener('click', () => { state.mom = 30; redraw(); });
   document.getElementById('mom-90').addEventListener('click', () => { state.mom = 90; redraw(); });
 
   let last = null;
   function redraw() { if (last) last(); }
+  window.hdRedraw = redraw;
 
   dash.onData(() => {
     const ids = ['members', 'series', 'points', 'votes', 'committee'];
@@ -510,6 +545,7 @@
     const bool = (v) => v === true || v === 'true';
 
     const render = () => {
+      if (document.getElementById('boe-view').hidden) return;
       const members = ok('members') ? got.members.data.map((r) => num({ ...r, held: bool(r.held), stale: bool(r.stale) }, ['stance', 'signal_strength', 'days_since_signal', 'live_points', 'momentum_30d', 'momentum_90d'])) : null;
       const series = ok('series') ? got.series.data.map((r) => num({ ...r, held: bool(r.held) }, ['stance'])) : null;
       const points = ok('points') ? got.points.data.map((r) => num({ ...r, is_vote: bool(r.is_vote) }, ['score', 'confidence'])) : null;
