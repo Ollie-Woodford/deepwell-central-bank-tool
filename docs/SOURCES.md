@@ -47,10 +47,10 @@ rate they voted for, and each member's written statement.
 
 | Source | URL | Format | Cadence | Weight type | Status |
 |---|---|---|---|---|---|
-| Speeches index (English) | https://www.boj.or.jp/en/about/press/koen_YYYY/index.htm | HTML list | Check every run | `speech` | Verified |
+| Speeches index (English) | https://www.boj.or.jp/en/about/press/koen_YYYY/index.htm | HTML list | Check every run | `speech` | Verified, collector built. Speech times are not published; 10:30 Tokyo assumed. Japanese-only speeches are not yet collected |
 | Speech full text (English) | https://www.boj.or.jp/en/about/press/koen_YYYY/data/koYYMMDDa1.pdf | PDF | On new index item | `speech` | Verified |
 | Statement on Monetary Policy | https://www.boj.or.jp/en/mopo/mpmdeci/state_YYYY/index.htm (files: /en/mopo/mpmdeci/mpr_YYYY/kYYMMDDa.pdf) | PDF (occasionally HTML) | 8 meetings a year | Votes; names dissenters and what each proposed | Verified |
-| Governor's press conference | Japanese: https://www.boj.or.jp/about/press/kaiken_YYYY/index.htm (files: /about/press/kaiken_YYYY/kkYYMMDDa.pdf, dated by publication, a few days after the conference) | PDF | After each meeting | `press_conference` | Verified (Japanese). No English index: /en/about/press/kaiken_YYYY/ is 404 for 2024 to 2026. Find any English translation in Phase 6 |
+| Governor's press conference | Japanese: https://www.boj.or.jp/about/press/kaiken_YYYY/index.htm (files: /about/press/kaiken_YYYY/kkYYMMDDa.pdf, dated by publication, a few days after the conference) | PDF | After each meeting | `press_conference` | Verified (Japanese). No English index: /en/about/press/kaiken_YYYY/ is 404 for 2024 to 2026. Collector built for the Japanese PDFs: attributed by surname in the title, timed from the transcript header, scored in Japanese |
 | Board member press conferences after regional speeches | Same Japanese index as the Governor's (e.g. 小枝審議委員記者会見) | PDF | After regional speeches | `press_conference` | Verified (Japanese only) |
 | Summary of Opinions | https://www.boj.or.jp/en/mopo/mpmsche_minu/opinion_YYYY/ | PDF | About 8 working days after each meeting | Not attributed to members. Use for context only, never as a member's data point | Verified (index) |
 | Minutes | https://www.boj.or.jp/en/mopo/mpmsche_minu/minu_YYYY/ | PDF | After the following meeting | Votes and proposals, already captured from the Statement | Verified (index) |

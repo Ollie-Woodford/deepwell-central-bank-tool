@@ -53,6 +53,7 @@
 .hd .m-group text.m-val { font-size: 11.5px; }
 .hd .m-group.sel text.m-name { fill: #fff; }
 .hd .m-group:focus { outline: none; }
+.hd .m-group line, .hd .m-group path, .hd .m-group circle:not(.m-dot) { pointer-events: none; }
 .hd .m-group:focus-visible rect.m-hit { stroke: var(--hd-hawk); stroke-width: 1.5; }
 
 .hd-tip { position: absolute; pointer-events: none; z-index: 5; background: var(--hd-raise); border: 1px solid var(--hd-faint); border-radius: 3px; padding: 6px 8px; font-size: 12px; max-width: 280px; box-shadow: 0 6px 18px rgba(0,0,0,.45); }
@@ -118,12 +119,7 @@
     </div>
   </header>
 
-  <section class="hd-card" id="boj-panel" hidden>
-    <div class="hd-card-head"><h3>Bank of Japan Policy Board</h3></div>
-    <p class="hd-take">No Bank of Japan data yet. Collection for the BoJ (speeches, Statements on Monetary Policy with each dissent, and the Governor's press conferences) is the next build phase. The nine board members are already set up, and the scoring rubric covers both banks.</p>
-  </section>
-
-  <div class="hd-boe" id="boe-view">
+  <div class="hd-boe" id="bank-view">
   <p class="hd-take" id="takeaway">
     Committee median <b data-source="committee" data-field="median">…</b>.
     <span data-source="committee" data-field="hawk_name">…</span> is the most hawkish at <b class="up" data-source="committee" data-field="hawk_stance">…</b>,
@@ -202,14 +198,14 @@
 
   </div>
 
-  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
+  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Bank of Japan press conferences are published in Japanese only; their quotes are shown in Japanese with an English rationale. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
 </div>
 
 <script>
 (function () {
   const COLORS = { hawk: '#f2a93b', dove: '#4c9fff', mid: '#8b96a3', fg: '#d5dde6', muted: '#7f8c9b', faint: '#4b5867', grid: '#18212c', line: '#222d3a', bg: '#0a0e13' };
   const TYPE = { speech: 'Speech', minutes_statement: 'Minutes statement', press_conference: 'Press conference', testimony: 'Testimony', comment: 'Comment', interview: 'Interview', podcast: 'Podcast', dissent_vote: 'Dissenting vote', majority_vote: 'Vote with majority', news_speculation: 'News' };
-  const state = { member: null, point: null, topic: null, mom: 30, picked: false };
+  const state = { bank: 'BoE', member: null, point: null, topic: null, mom: 30, picked: false };
   window.hdState = state;
 
   const fmt = (v, d) => (v === null || v === undefined || isNaN(v)) ? 'n/a' : (v > 0 ? '+' : v < 0 ? '-' : '') + Math.abs(v).toFixed(d);
@@ -223,17 +219,18 @@
   dash.calc('committee', {
     inputs: ['members'],
     title: 'Committee summary',
-    description: 'Median stance, most hawkish and most dovish member, and the biggest 90-day move.',
-    fn: (members) => {
-      const s = members.filter((m) => m.stance !== null).sort((a, b) => a.stance - b.stance);
+    description: 'Per bank: median stance, most hawkish and most dovish member, and the biggest 90-day move.',
+    fn: (members) => [...new Set(members.map((m) => m.bank))].map((bank) => {
+      const s = members.filter((m) => m.bank === bank && m.stance !== null && m.stance !== '')
+        .map((m) => ({ ...m, stance: Number(m.stance), momentum_90d: Number(m.momentum_90d) }))
+        .sort((a, b) => a.stance - b.stance);
       const n = s.length;
-      if (!n) return [];
       const med = n % 2 ? s[(n - 1) / 2].stance : (s[n / 2 - 1].stance + s[n / 2].stance) / 2;
       const mover = [...s].sort((a, b) => Math.abs(b.momentum_90d || 0) - Math.abs(a.momentum_90d || 0))[0];
-      return [{ median: Math.round(med * 100) / 100, hawk_name: s[n - 1].name, hawk_stance: s[n - 1].stance,
+      return { bank, median: Math.round(med * 100) / 100, hawk_name: s[n - 1].name, hawk_stance: s[n - 1].stance,
         dove_name: s[0].name, dove_stance: s[0].stance, mover_name: mover.name, mover_mom90: mover.momentum_90d,
-        as_of: s[0].as_of.slice(0, 10) }];
-    },
+        as_of: s[0].as_of.slice(0, 10) };
+    }),
   });
 
   const tip = document.createElement('div');
@@ -297,7 +294,7 @@
     const placed = [];
     groups.forEach((o) => {
       let level = 0;
-      while (placed.some((q) => q.level === level && Math.abs(q.cx - o.cx) < 15)) level++;
+      while (placed.some((q) => q.level === level && Math.abs(q.cx - o.cx) < 18)) level++;
       o.level = level;
       placed.push(o);
     });
@@ -365,7 +362,7 @@
     const box = document.getElementById('votes');
     box.replaceChildren();
     const dates = [...new Set(votes.map((v) => v.date))].sort().slice(-8);
-    const byKey = new Map(votes.map((v) => [v.date + '|' + v.member_id, v]));
+    const byKey = new Map(votes.map((v) => [v.date + '|' + v.member_id, v]));  // rows are already one bank
     const order = [...members].sort((a, b) => (b.stance ?? -9) - (a.stance ?? -9));
     const grid = el('div', 'hd-vgrid');
     grid.style.gridTemplateColumns = `minmax(6.5rem, auto) repeat(${dates.length}, minmax(2.6rem, 1fr))`;
@@ -518,16 +515,18 @@
     }
   }
 
+  const BANK_TITLE = { BoE: 'Bank of England MPC', BoJ: 'Bank of Japan Policy Board' };
   const showBank = (bank) => {
-    document.getElementById('tab-boe').setAttribute('aria-selected', String(bank === 'boe'));
-    document.getElementById('tab-boj').setAttribute('aria-selected', String(bank === 'boj'));
-    document.getElementById('boe-view').hidden = bank !== 'boe';
-    document.getElementById('boj-panel').hidden = bank !== 'boj';
-    document.getElementById('bank-title').textContent = bank === 'boe' ? 'Bank of England MPC' : 'Bank of Japan Policy Board';
-    if (bank === 'boe') redraw();
+    if (state.bank === bank) return;
+    Object.assign(state, { bank, member: null, point: null, topic: null });
+    document.getElementById('tab-boe').setAttribute('aria-selected', String(bank === 'BoE'));
+    document.getElementById('tab-boj').setAttribute('aria-selected', String(bank === 'BoJ'));
+    document.getElementById('bank-title').textContent = BANK_TITLE[bank];
+    dash.setLink(bank.toLowerCase());
+    redraw();
   };
-  document.getElementById('tab-boe').addEventListener('click', () => showBank('boe'));
-  document.getElementById('tab-boj').addEventListener('click', () => showBank('boj'));
+  document.getElementById('tab-boe').addEventListener('click', () => showBank('BoE'));
+  document.getElementById('tab-boj').addEventListener('click', () => showBank('BoJ'));
   document.getElementById('mom-30').addEventListener('click', () => { state.mom = 30; redraw(); });
   document.getElementById('mom-90').addEventListener('click', () => { state.mom = 90; redraw(); });
 
@@ -545,15 +544,16 @@
     const bool = (v) => v === true || v === 'true';
 
     const render = () => {
-      if (document.getElementById('boe-view').hidden) return;
-      const members = ok('members') ? got.members.data.map((r) => num({ ...r, held: bool(r.held), stale: bool(r.stale) }, ['stance', 'signal_strength', 'days_since_signal', 'live_points', 'momentum_30d', 'momentum_90d'])) : null;
-      const series = ok('series') ? got.series.data.map((r) => num({ ...r, held: bool(r.held) }, ['stance'])) : null;
-      const points = ok('points') ? got.points.data.map((r) => num({ ...r, is_vote: bool(r.is_vote) }, ['score', 'confidence'])) : null;
-      const votes = ok('votes') ? got.votes.data.map((r) => num({ ...r, dissent: bool(r.dissent) }, ['rate', 'decision_rate', 'previous_rate', 'direction'])) : null;
-      const committee = ok('committee') && got.committee.data.length ? got.committee.data[0] : null;
+      const mine = (r) => r.bank === state.bank;
+      const members = ok('members') ? got.members.data.filter(mine).map((r) => num({ ...r, held: bool(r.held), stale: bool(r.stale) }, ['stance', 'signal_strength', 'days_since_signal', 'live_points', 'momentum_30d', 'momentum_90d'])) : null;
+      const series = ok('series') ? got.series.data.filter(mine).map((r) => num({ ...r, held: bool(r.held) }, ['stance'])) : null;
+      const points = ok('points') ? got.points.data.filter(mine).map((r) => num({ ...r, is_vote: bool(r.is_vote) }, ['score', 'confidence'])) : null;
+      const votes = ok('votes') ? got.votes.data.filter(mine).map((r) => num({ ...r, dissent: bool(r.dissent) }, ['rate', 'decision_rate', 'previous_rate', 'direction'])) : null;
+      const committee = ok('committee') ? got.committee.data.find(mine) || null : null;
 
       if (committee) {
         document.querySelectorAll('#takeaway [data-source="committee"]').forEach((e) => {
+          e.setAttribute('data-where', 'bank=' + state.bank);
           const f = e.getAttribute('data-field'); const v = committee[f];
           e.textContent = typeof v === 'number' ? fmt(v, 2) : (v ?? 'n/a');
         });
@@ -575,6 +575,7 @@
     render();
   });
 
+  if (location.hash.slice(1) === 'boj') showBank('BoJ');
   const named = document.getElementById(location.hash.slice(1));
   if (named) setTimeout(() => named.scrollIntoView(), 0);
 })();

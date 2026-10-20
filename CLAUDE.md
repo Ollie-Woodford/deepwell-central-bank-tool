@@ -52,8 +52,9 @@ sites, every run         rubric.md, write JSONL             per member          
 | `data/calibration/scores_v0.json` | Blind test of rubric v0 on the holdout | 78% within 1 point |
 | `tools/calibration-lab.html` | Source of the labelling page (live at https://claude.ai/artifact/NAgbLfJ94jJNGsC1cq45Re) | Live |
 | `tools/bqnt/` | BQNT feasibility notebook | Done |
-| `pipeline/collect.py` | `python -m pipeline.collect [--since YYYY-MM-DD]`: BoE speeches feed and MPC minutes to `data/raw/`, votes scored by rule to `data/scores/` | Built (BoE) |
+| `pipeline/collect.py` | `python -m pipeline.collect [--since YYYY-MM-DD] [--bank BoE\|BoJ\|all]`: BoE speeches and minutes; BoJ decisions, speeches and Japanese press conferences, to `data/raw/`; votes scored by rule to `data/scores/` | Built (both banks) |
 | `pipeline/boe.py` | BoE feed, speech page and minutes parsers | Built, tested on saved pages |
+| `pipeline/boj.py` | BoJ decision, speech and press conference parsers (Japanese text cleanup, surname attribution) | Built, tested on saved pages |
 | `pipeline/votes.py` | Vote scoring rule from `EXTRACTION.md` | Built, tested |
 | `pipeline/report.py` | Markdown list of collected documents and votes | Built |
 | `reports/` | Phase check reports | BoE collection, 19 Jul to 19 Oct 2026 |
@@ -61,14 +62,14 @@ sites, every run         rubric.md, write JSONL             per member          
 | `pipeline/pending.py` | `python -m pipeline.pending`: documents not yet scored under the current rubric, with context blocks | Built |
 | `pipeline/context.py` | Context block per statement (rate, last decision, OIS path, speaker's last vote) | Built |
 | `pipeline/validate.py` | `python -m pipeline.validate [--append FILE]`: schema, verbatim passages, weight shares | Built, tested |
-| `data/decisions/` | Every policy decision with each member's vote | BoE 2026 |
+| `data/decisions/` | Every policy decision with each member's vote | BoE 2026; BoJ Mar 2025 to Sep 2026 |
 | `eval/compare.py` | Scorer vs Ollie: exact, within 1, average gap, bias, rank agreement | Built, tested |
 | `data/calibration/blind_v1_statements.json` | Fresh blind test for rubric v1: 21 BoE, 9 BoJ; labels in `blind_v1_labels.json`, scores in `blind_v1_scores.json` | Scored: 77% within 1, target missed (`reports/blind_v1.md`) |
 | `data/calibration/blind_v2_statements.json` | Fresh blind test for rubric v2: 16 BoE, 4 BoJ; loaded into the Calibration Lab | Waiting for Ollie's labels |
 | `engine/compute.py` | `python -m engine.compute [--as-of DATE]`: stances, momentum, held/stale, daily series, votes strip, ticker to `data/stances.json` | Built (prototype run 19 Oct 2026) |
-| `engine/export_dashboard.py` | Flattens `stances.json` into the dashboard's tables (`data/dashboard/`) | Built |
+| `engine/export_dashboard.py` | Flattens `stances.json` into the dashboard's tables (`data/dashboard/`, both banks, `bank` column) | Built |
 | `tools/dashboard/` | Dashboard page source (`index.html`) and embedded IBM Plex (`fonts.css`) | Prototype |
-| Dashboard artifact | https://claude.ai/artifact/RySoJqZaBNKLy9wMRD31RT (Dashboard type; data in its store, refreshed by uploading new `data/dashboard/*.json` and updating each dataset's `url`) | Prototype, BoE only |
+| Dashboard artifact | https://claude.ai/artifact/RySoJqZaBNKLy9wMRD31RT (Dashboard type; data in its store, refreshed by uploading new `data/dashboard/*.json` and updating each dataset's `url`) | Prototype, both banks |
 
 ## Decisions (do not change without asking Ollie)
 
