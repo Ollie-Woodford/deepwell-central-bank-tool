@@ -51,7 +51,7 @@ def _squash(s: str) -> str:
 
 class Checker:
     def __init__(self):
-        self.members = {m.id: m for m in load_members()}
+        self.members = {m.id: m for m in load_members(include_former=True)}
         self.version = rubric_version()
         self._doc_text: dict[str, str] = {}
 

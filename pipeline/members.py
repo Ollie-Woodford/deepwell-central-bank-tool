@@ -44,6 +44,8 @@ class Member:
     role: str
     full_names: frozenset   # normalised variants with at least two words
     bio_slug: Optional[str] # e.g. "catherine-mann" from the BoE biography URL
+    surname_ja: Optional[str] = None  # BoJ: how Japanese documents name the member
+    former: bool = False              # left the committee; kept so their votes still parse
 
 
 def _bio_slug(url: Optional[str]) -> Optional[str]:
@@ -53,10 +55,15 @@ def _bio_slug(url: Optional[str]) -> Optional[str]:
     return m.group(1) if m else None
 
 
-def load_members(path: Path = MEMBERS_FILE, bank: Optional[str] = None) -> list[Member]:
+def load_members(path: Path = MEMBERS_FILE, bank: Optional[str] = None,
+                 include_former: bool = False) -> list[Member]:
+    """Current members; with include_former, also those listed for backfill."""
     data = json.loads(path.read_text(encoding="utf-8"))
+    rows = [(m, False) for m in data["members"]]
+    if include_former:
+        rows += [(m, True) for m in data.get("former_members_for_backfill", []) if "id" in m]
     out = []
-    for m in data["members"]:
+    for m, former in rows:
         if bank and m["bank"] != bank:
             continue
         names = {normalise_name(v) for v in m["name_variants"] + [m["name"]]}
@@ -64,6 +71,8 @@ def load_members(path: Path = MEMBERS_FILE, bank: Optional[str] = None) -> list[
             id=m["id"], bank=m["bank"], name=m["name"], role=m["role"],
             full_names=frozenset(n for n in names if " " in n),
             bio_slug=_bio_slug(m.get("bio")),
+            surname_ja=m.get("surname_ja"),
+            former=former,
         ))
     return out
 

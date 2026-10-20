@@ -1,0 +1,276 @@
+[
+ {
+  "bank": "BoJ",
+  "date": "2025-03-19",
+  "announced": "2025-03-19T02:18:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250319a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.5,
+  "label": "hold unanimous",
+  "votes": {
+   "ueda": 0.5,
+   "uchida": 0.5,
+   "himino": 0.5,
+   "takata": 0.5,
+   "tamura": 0.5,
+   "noguchi": 0.5,
+   "nakagawa": 0.5,
+   "nakamura": 0.5,
+   "adachi": 0.5
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2025-05-01",
+  "announced": "2025-05-01T02:55:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250501a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.5,
+  "label": "hold unanimous",
+  "votes": {
+   "ueda": 0.5,
+   "uchida": 0.5,
+   "himino": 0.5,
+   "takata": 0.5,
+   "tamura": 0.5,
+   "koeda": 0.5,
+   "noguchi": 0.5,
+   "nakagawa": 0.5,
+   "nakamura": 0.5
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2025-06-17",
+  "announced": "2025-06-17T03:24:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250617a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.5,
+  "label": "hold unanimous",
+  "votes": {
+   "ueda": 0.5,
+   "uchida": 0.5,
+   "himino": 0.5,
+   "takata": 0.5,
+   "tamura": 0.5,
+   "koeda": 0.5,
+   "noguchi": 0.5,
+   "nakagawa": 0.5,
+   "nakamura": 0.5
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2025-07-31",
+  "announced": "2025-07-31T02:50:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250731a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.5,
+  "label": "hold unanimous",
+  "votes": {
+   "ueda": 0.5,
+   "uchida": 0.5,
+   "himino": 0.5,
+   "takata": 0.5,
+   "tamura": 0.5,
+   "koeda": 0.5,
+   "masu": 0.5,
+   "noguchi": 0.5,
+   "nakagawa": 0.5
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2025-09-19",
+  "announced": "2025-09-19T03:40:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250919a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.5,
+  "label": "hold 7-2",
+  "votes": {
+   "ueda": 0.5,
+   "uchida": 0.5,
+   "himino": 0.5,
+   "koeda": 0.5,
+   "masu": 0.5,
+   "noguchi": 0.5,
+   "nakagawa": 0.5,
+   "takata": 0.75,
+   "tamura": 0.75
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2025-10-30",
+  "announced": "2025-10-30T03:08:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k251030a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.5,
+  "label": "hold 7-2",
+  "votes": {
+   "ueda": 0.5,
+   "uchida": 0.5,
+   "himino": 0.5,
+   "koeda": 0.5,
+   "masu": 0.5,
+   "noguchi": 0.5,
+   "nakagawa": 0.5,
+   "takata": 0.75,
+   "tamura": 0.75
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2025-12-19",
+  "announced": "2025-12-19T03:12:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k251219a.htm",
+  "previous_rate": 0.5,
+  "decision_rate": 0.75,
+  "label": "hike unanimous",
+  "votes": {
+   "ueda": 0.75,
+   "uchida": 0.75,
+   "himino": 0.75,
+   "takata": 0.75,
+   "tamura": 0.75,
+   "koeda": 0.75,
+   "masu": 0.75,
+   "noguchi": 0.75,
+   "nakagawa": 0.75
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-01-23",
+  "announced": "2026-01-23T03:00:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm",
+  "previous_rate": 0.75,
+  "decision_rate": 0.75,
+  "label": "hold 8-1",
+  "votes": {
+   "ueda": 0.75,
+   "uchida": 0.75,
+   "himino": 0.75,
+   "tamura": 0.75,
+   "koeda": 0.75,
+   "masu": 0.75,
+   "noguchi": 0.75,
+   "nakagawa": 0.75,
+   "takata": 1.0
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-03-19",
+  "announced": "2026-03-19T02:39:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
+  "previous_rate": 0.75,
+  "decision_rate": 0.75,
+  "label": "hold 8-1",
+  "votes": {
+   "ueda": 0.75,
+   "uchida": 0.75,
+   "himino": 0.75,
+   "tamura": 0.75,
+   "koeda": 0.75,
+   "masu": 0.75,
+   "noguchi": 0.75,
+   "nakagawa": 0.75,
+   "takata": 1.0
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-04-28",
+  "announced": "2026-04-28T02:57:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf",
+  "previous_rate": 0.75,
+  "decision_rate": 0.75,
+  "label": "hold 6-3",
+  "votes": {
+   "ueda": 0.75,
+   "uchida": 0.75,
+   "himino": 0.75,
+   "koeda": 0.75,
+   "masu": 0.75,
+   "asada": 0.75,
+   "takata": 1.0,
+   "tamura": 1.0,
+   "nakagawa": 1.0
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-06-16",
+  "announced": "2026-06-16T03:12:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf",
+  "previous_rate": 0.75,
+  "decision_rate": 1.0,
+  "label": "hike 7-1",
+  "votes": {
+   "uchida": 1.0,
+   "himino": 1.0,
+   "takata": 1.0,
+   "tamura": 1.0,
+   "koeda": 1.0,
+   "masu": 1.0,
+   "nakagawa": 1.0,
+   "asada": 0.75
+  },
+  "absent": [
+   "ueda"
+  ]
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-07-31",
+  "announced": "2026-07-31T03:04:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf",
+  "previous_rate": 1.0,
+  "decision_rate": 1.0,
+  "label": "hold 8-1",
+  "votes": {
+   "ueda": 1.0,
+   "uchida": 1.0,
+   "himino": 1.0,
+   "tamura": 1.0,
+   "koeda": 1.0,
+   "masu": 1.0,
+   "asada": 1.0,
+   "sato": 1.0,
+   "takata": 1.25
+  },
+  "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-09-18",
+  "announced": "2026-09-18T02:47:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
+  "previous_rate": 1.0,
+  "decision_rate": 1.25,
+  "label": "hike 7-2",
+  "votes": {
+   "ueda": 1.25,
+   "uchida": 1.25,
+   "himino": 1.25,
+   "takata": 1.25,
+   "tamura": 1.25,
+   "koeda": 1.25,
+   "masu": 1.25,
+   "asada": 1.0,
+   "sato": 1.0
+  },
+  "absent": []
+ }
+]

@@ -397,6 +397,357 @@
    ],
    "first_seen": "2026-10-19T15:22:20Z",
    "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260126a.htm": {
+   "doc_ids": [
+    "boj-press-2026-01-23-ueda-kk260126a"
+   ],
+   "first_seen": "2026-10-20T07:21:02Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260209a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-02-06-masu-kk260209a"
+   ],
+   "first_seen": "2026-10-20T07:21:01Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260227a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-02-26-takata-kk260227a"
+   ],
+   "first_seen": "2026-10-20T07:21:00Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260303a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-03-02-himino-kk260303a"
+   ],
+   "first_seen": "2026-10-20T07:20:59Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260323a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-03-19-ueda-kk260323a"
+   ],
+   "first_seen": "2026-10-20T07:20:58Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260402a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-04-01-asada-kk260402a"
+   ],
+   "first_seen": "2026-10-20T07:20:57Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260420a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-04-16-ueda-kk260420a"
+   ],
+   "first_seen": "2026-10-20T07:20:56Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260430a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-04-28-ueda-kk260430a"
+   ],
+   "first_seen": "2026-10-20T07:20:55Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260507a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-05-03-himino-kk260507a"
+   ],
+   "first_seen": "2026-10-20T07:20:54Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260522a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-05-21-koeda-kk260522a"
+   ],
+   "first_seen": "2026-10-20T07:20:52Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260522b.pdf": {
+   "doc_ids": [
+    "boj-press-2026-05-19-ueda-kk260522b"
+   ],
+   "first_seen": "2026-10-20T07:20:53Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260617a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-06-16-uchida-kk260617a"
+   ],
+   "first_seen": "2026-10-20T07:20:51Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260626a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-06-25-tamura-kk260626a"
+   ],
+   "first_seen": "2026-10-20T07:20:50Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260701a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-06-30-sato-kk260701a"
+   ],
+   "first_seen": "2026-10-20T07:20:49Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260803a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-07-31-ueda-kk260803a"
+   ],
+   "first_seen": "2026-10-20T07:20:48Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260828a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-08-27-himino-kk260828a"
+   ],
+   "first_seen": "2026-10-20T07:20:47Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260903a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-09-02-takata-kk260903a"
+   ],
+   "first_seen": "2026-10-20T07:20:46Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260904a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-09-01-ueda-kk260904a"
+   ],
+   "first_seen": "2026-10-20T07:20:45Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260911a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-09-10-masu-kk260911a"
+   ],
+   "first_seen": "2026-10-20T07:20:44Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk260924a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-09-18-ueda-kk260924a"
+   ],
+   "first_seen": "2026-10-20T07:20:43Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk261016a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-10-15-koeda-kk261016a"
+   ],
+   "first_seen": "2026-10-20T07:20:42Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk261020a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-10-16-ueda-kk261020a"
+   ],
+   "first_seen": "2026-10-20T07:20:41Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260206a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-02-06-ko260206a"
+   ],
+   "first_seen": "2026-10-20T07:20:39Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260213a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-02-13-ko260213a"
+   ],
+   "first_seen": "2026-10-20T07:20:38Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260217a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:20:39Z",
+   "note": "not a Policy Board member: KAMIYAMA Kazushige"
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260226a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-02-26-ko260226a"
+   ],
+   "first_seen": "2026-10-20T07:20:35Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260302a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-03-02-ko260302a"
+   ],
+   "first_seen": "2026-10-20T07:20:32Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260303a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-03-03-ko260303a"
+   ],
+   "first_seen": "2026-10-20T07:20:29Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260514a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-05-14-ko260514a"
+   ],
+   "first_seen": "2026-10-20T07:20:28Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260515a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:20:25Z",
+   "note": "not a Policy Board member: KAMIYAMA Kazushige"
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260516a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-05-16-ko260516a"
+   ],
+   "first_seen": "2026-10-20T07:20:25Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260521a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-05-21-ko260521a"
+   ],
+   "first_seen": "2026-10-20T07:20:24Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260527a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-05-27-ko260527a"
+   ],
+   "first_seen": "2026-10-20T07:20:21Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260603a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-06-03-ko260603a"
+   ],
+   "first_seen": "2026-10-20T07:20:20Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260611a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:20:20Z",
+   "note": "not a Policy Board member: KAMIYAMA Kazushige"
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260625a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-06-25-ko260625a"
+   ],
+   "first_seen": "2026-10-20T07:20:17Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260827a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-08-27-ko260827a"
+   ],
+   "first_seen": "2026-10-20T07:20:15Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260902a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-09-02-ko260902a"
+   ],
+   "first_seen": "2026-10-20T07:20:13Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko260910a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-09-10-ko260910a"
+   ],
+   "first_seen": "2026-10-20T07:20:09Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261005a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-10-05-ko261005a"
+   ],
+   "first_seen": "2026-10-20T07:20:07Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/about/press/koen_2026/ko261015a.htm": {
+   "doc_ids": [
+    "boj-speech-2026-10-15-ko261015a"
+   ],
+   "first_seen": "2026-10-20T07:20:05Z",
+   "note": ""
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:58Z",
+   "note": "decision 0.75%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260428a.pdf": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:59Z",
+   "note": "decision 0.75%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260616a.pdf": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:20:00Z",
+   "note": "decision 1%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260731a.pdf": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:20:01Z",
+   "note": "decision 1%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:20:02Z",
+   "note": "decision 1.25%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250124a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:22:07Z",
+   "note": "first decision in range is a rate change; previous rate unknown"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250319a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:22:08Z",
+   "note": "decision 0.5%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250501a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:22:09Z",
+   "note": "decision 0.5%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250617a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:21:40Z",
+   "note": "decision 0.5%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250731a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:53Z",
+   "note": "decision 0.5%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250919a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:54Z",
+   "note": "decision 0.5%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k251030a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:55Z",
+   "note": "decision 0.5%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k251219a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:56Z",
+   "note": "decision 0.75%"
+  },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260123a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-20T07:19:56Z",
+   "note": "decision 0.75%"
   }
  }
 }
