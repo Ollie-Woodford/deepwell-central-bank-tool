@@ -1,6 +1,6 @@
 {
- "as_of": "2026-10-20T23:59:00Z",
- "generated_at": "2026-10-20T07:36:34Z",
+ "as_of": "2026-10-27T14:25:02Z",
+ "generated_at": "2026-10-27T14:25:02Z",
  "stale_days": 60,
  "banks": {
   "BoE": {
@@ -9,16 +9,16 @@
      "id": "bailey",
      "name": "Andrew Bailey",
      "role": "Governor",
-     "stance": -1.285,
-     "signal_strength": 44.45,
+     "stance": -1.304,
+     "signal_strength": 42.69,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 33,
+     "days_since_signal": 40,
      "stale": false,
      "live_points": 17,
-     "momentum_30d": -0.067,
-     "momentum_90d": -0.451,
+     "momentum_30d": -0.073,
+     "momentum_90d": -0.458,
      "series": [
       {
        "date": "2026-02-05",
@@ -1309,6 +1309,36 @@
        "date": "2026-10-20",
        "stance": -1.285,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -1.288,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -1.291,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -1.293,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -1.296,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -1.299,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -1.302,
+       "held": false
       }
      ],
      "points": [
@@ -1584,16 +1614,16 @@
      "id": "lombardelli",
      "name": "Clare Lombardelli",
      "role": "Deputy Governor, Monetary Policy",
-     "stance": -0.942,
-     "signal_strength": 47.78,
+     "stance": -0.958,
+     "signal_strength": 45.93,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-24T08:00:00Z",
-     "days_since_signal": 26,
+     "days_since_signal": 33,
      "stale": false,
      "live_points": 20,
-     "momentum_30d": 0.073,
-     "momentum_90d": -0.337,
+     "momentum_30d": -0.062,
+     "momentum_90d": -0.34,
      "series": [
       {
        "date": "2026-02-05",
@@ -2884,6 +2914,36 @@
        "date": "2026-10-20",
        "stance": -0.942,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -0.944,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -0.947,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -0.949,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -0.951,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -0.954,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -0.956,
+       "held": false
       }
      ],
      "points": [
@@ -3210,16 +3270,16 @@
      "id": "breeden",
      "name": "Sarah Breeden",
      "role": "Deputy Governor, Financial Stability",
-     "stance": -1.679,
-     "signal_strength": 45.33,
+     "stance": -1.653,
+     "signal_strength": 43.42,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 33,
+     "days_since_signal": 40,
      "stale": false,
      "live_points": 17,
-     "momentum_30d": 0.093,
-     "momentum_90d": 0.695,
+     "momentum_30d": 0.101,
+     "momentum_90d": 0.708,
      "series": [
       {
        "date": "2026-02-05",
@@ -4510,6 +4570,36 @@
        "date": "2026-10-20",
        "stance": -1.679,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -1.675,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -1.671,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -1.668,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -1.664,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -1.66,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -1.656,
+       "held": false
       }
      ],
      "points": [
@@ -4788,16 +4878,16 @@
      "id": "ramsden",
      "name": "Dave Ramsden",
      "role": "Deputy Governor, Markets and Banking",
-     "stance": -1.711,
-     "signal_strength": 45.11,
+     "stance": -1.686,
+     "signal_strength": 43.22,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 33,
+     "days_since_signal": 40,
      "stale": false,
      "live_points": 17,
-     "momentum_30d": 0.091,
-     "momentum_90d": 0.671,
+     "momentum_30d": 0.098,
+     "momentum_90d": 0.683,
      "series": [
       {
        "date": "2026-02-05",
@@ -6088,6 +6178,36 @@
        "date": "2026-10-20",
        "stance": -1.711,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -1.707,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -1.703,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -1.7,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -1.696,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -1.692,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -1.688,
+       "held": false
       }
      ],
      "points": [
@@ -6360,16 +6480,16 @@
      "id": "pill",
      "name": "Huw Pill",
      "role": "Chief Economist",
-     "stance": 4.477,
-     "signal_strength": 64.85,
+     "stance": 4.489,
+     "signal_strength": 62.44,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 33,
+     "days_since_signal": 40,
      "stale": false,
      "live_points": 20,
-     "momentum_30d": 0.043,
-     "momentum_90d": 0.3,
+     "momentum_30d": 0.046,
+     "momentum_90d": 0.303,
      "series": [
       {
        "date": "2026-02-05",
@@ -7660,6 +7780,36 @@
        "date": "2026-10-20",
        "stance": 4.477,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 4.479,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 4.481,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 4.482,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 4.484,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 4.486,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 4.488,
+       "held": false
       }
      ],
      "points": [
@@ -7981,16 +8131,16 @@
      "id": "mann",
      "name": "Catherine Mann",
      "role": "External member",
-     "stance": 2.889,
-     "signal_strength": 58.37,
+     "stance": 2.914,
+     "signal_strength": 56.25,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-01T12:00:00Z",
-     "days_since_signal": 19,
+     "days_since_signal": 26,
      "stale": false,
      "live_points": 20,
-     "momentum_30d": 0.131,
-     "momentum_90d": 3.338,
+     "momentum_30d": 0.137,
+     "momentum_90d": 3.374,
      "series": [
       {
        "date": "2026-02-05",
@@ -9281,6 +9431,36 @@
        "date": "2026-10-20",
        "stance": 2.889,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 2.893,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 2.897,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 2.9,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 2.904,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 2.908,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 2.912,
+       "held": false
       }
      ],
      "points": [
@@ -9606,16 +9786,16 @@
      "id": "dhingra",
      "name": "Swati Dhingra",
      "role": "External member",
-     "stance": -2.171,
-     "signal_strength": 45.46,
+     "stance": -2.152,
+     "signal_strength": 43.56,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 33,
+     "days_since_signal": 40,
      "stale": false,
      "live_points": 17,
-     "momentum_30d": 0.07,
-     "momentum_90d": 0.468,
+     "momentum_30d": 0.076,
+     "momentum_90d": 0.477,
      "series": [
       {
        "date": "2026-02-05",
@@ -10906,6 +11086,36 @@
        "date": "2026-10-20",
        "stance": -2.171,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -2.169,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -2.166,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -2.163,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -2.16,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -2.157,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -2.154,
+       "held": false
       }
      ],
      "points": [
@@ -11182,16 +11392,16 @@
      "id": "greene",
      "name": "Megan Greene",
      "role": "External member",
-     "stance": 3.81,
-     "signal_strength": 60.48,
+     "stance": 3.711,
+     "signal_strength": 62.32,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 33,
+     "last_signal": "2026-10-20T17:00:00Z",
+     "days_since_signal": 6,
      "stale": false,
-     "live_points": 19,
-     "momentum_30d": 0.082,
-     "momentum_90d": 1.344,
+     "live_points": 21,
+     "momentum_30d": -0.033,
+     "momentum_90d": 1.238,
      "series": [
       {
        "date": "2026-02-05",
@@ -12480,7 +12690,37 @@
       },
       {
        "date": "2026-10-20",
-       "stance": 3.81,
+       "stance": 3.692,
+       "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 3.695,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 3.698,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 3.701,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 3.704,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 3.706,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 3.709,
        "held": false
       }
      ],
@@ -12782,6 +13022,39 @@
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-10-20-megan-greene-speech-at-lse-economics-society-london-p01",
+       "date": "2026-10-20T17:00:00Z",
+       "source_type": "speech",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "I believe the evidence laid out in this speech shows the risk of second-round effects is greater than we thought. Furthermore, staff simulations suggest setting policy as if you were in a stronger second-round effects scenario and then adjusting policy upon learning you are in a minimal second-round effects scenario leads to better outcomes than doing the opposite. I therefore continue to believe we should proactively lean against the risk of second-round effects.",
+       "language": "en",
+       "rationale": "Wants to lean proactively against second-round effects; with about 97bp of hikes priced, this is a hawkish tilt rather than a call beyond the market.",
+       "topics": [
+        "second_round_effects",
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-10-20-megan-greene-speech-at-lse-economics-society-london-p02",
+       "date": "2026-10-20T17:00:00Z",
+       "source_type": "speech",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "It is not obvious to me from this data that our monetary policy stance is meaningfully restrictive.",
+       "language": "en",
+       "rationale": "Doubts policy is restrictive (milder than the +4 anchor), against a market already pricing hikes.",
+       "topics": [
+        "policy_stance"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -12789,16 +13062,16 @@
      "id": "taylor",
      "name": "Alan Taylor",
      "role": "External member",
-     "stance": -2.224,
-     "signal_strength": 48.89,
+     "stance": -2.205,
+     "signal_strength": 46.9,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-29T15:30:00Z",
-     "days_since_signal": 21,
+     "days_since_signal": 27,
      "stale": false,
      "live_points": 20,
-     "momentum_30d": 0.09,
-     "momentum_90d": 0.562,
+     "momentum_30d": 0.095,
+     "momentum_90d": 0.571,
      "series": [
       {
        "date": "2026-02-05",
@@ -14089,6 +14362,36 @@
        "date": "2026-10-20",
        "stance": -2.224,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -2.221,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -2.218,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -2.215,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -2.212,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -2.21,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -2.207,
+       "held": false
       }
      ],
      "points": [
@@ -14413,7 +14716,7 @@
      ]
     }
    ],
-   "median": -1.285,
+   "median": -1.304,
    "votes": [
     {
      "date": "2026-02-05",
@@ -14742,6 +15045,29 @@
    ],
    "ticker": [
     {
+     "member_id": "greene",
+     "date": "2026-10-20T17:00:00Z",
+     "score": 2,
+     "quote": "I believe the evidence laid out in this speech shows the risk of second-round effects is greater than we thought. Furthermore, staff simulations suggest setting policy as if you were in a stronger second-round effects scenario and then adjusting policy upon learning you are in a minimal second-round effects scenario leads to better outcomes than doing the opposite. I therefore continue to believe we should proactively lean against the risk of second-round effects.",
+     "source_type": "speech",
+     "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
+     "topics": [
+      "second_round_effects",
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "greene",
+     "date": "2026-10-20T17:00:00Z",
+     "score": 2,
+     "quote": "It is not obvious to me from this data that our monetary policy stance is meaningfully restrictive.",
+     "source_type": "speech",
+     "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
+     "topics": [
+      "policy_stance"
+     ]
+    },
+    {
      "member_id": "mann",
      "date": "2026-10-01T12:00:00Z",
      "score": 4,
@@ -14946,31 +15272,9 @@
       "rate_path",
       "energy"
      ]
-    },
-    {
-     "member_id": "lombardelli",
-     "date": "2026-09-17T11:00:00Z",
-     "score": 2,
-     "quote": "The balance of risks to inflation has shifted more to the upside since our last policy decision.",
-     "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-     "topics": [
-      "balance_of_risks"
-     ]
-    },
-    {
-     "member_id": "mann",
-     "date": "2026-09-17T11:00:00Z",
-     "score": 4,
-     "quote": "Raising Bank Rate is a better risk-management strategy when faced with uncertainty about inflation dynamics and second-round effects.",
-     "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-     "topics": [
-      "rate_path"
-     ]
     }
    ],
-   "scored_passages": 122,
+   "scored_passages": 124,
    "votes_recorded": 45
   },
   "BoJ": {
@@ -14979,16 +15283,16 @@
      "id": "ueda",
      "name": "Kazuo Ueda",
      "role": "Governor",
-     "stance": -0.175,
-     "signal_strength": 48.51,
+     "stance": -0.154,
+     "signal_strength": 46.48,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-16T09:37:00Z",
-     "days_since_signal": 4,
+     "days_since_signal": 11,
      "stale": false,
      "live_points": 24,
-     "momentum_30d": 0.132,
-     "momentum_90d": 0.921,
+     "momentum_30d": 0.138,
+     "momentum_90d": 0.938,
      "series": [
       {
        "date": "2026-01-23",
@@ -16344,6 +16648,36 @@
        "date": "2026-10-20",
        "stance": -0.175,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -0.172,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -0.168,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -0.165,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -0.162,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -0.159,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -0.156,
+       "held": false
       }
      ],
      "points": [
@@ -16730,16 +17064,16 @@
      "id": "uchida",
      "name": "Shinichi Uchida",
      "role": "Deputy Governor",
-     "stance": -0.025,
-     "signal_strength": 38.23,
+     "stance": 0.001,
+     "signal_strength": 36.59,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 8,
-     "momentum_30d": 0.096,
-     "momentum_90d": 0.523,
+     "momentum_30d": 0.104,
+     "momentum_90d": 0.537,
      "series": [
       {
        "date": "2026-01-23",
@@ -18095,6 +18429,36 @@
        "date": "2026-10-20",
        "stance": -0.025,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -0.021,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -0.017,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -0.013,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -0.009,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -0.005,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -0.001,
+       "held": false
       }
      ],
      "points": [
@@ -18220,16 +18584,16 @@
      "id": "himino",
      "name": "Ryozo Himino",
      "role": "Deputy Governor",
-     "stance": 0.154,
-     "signal_strength": 43.36,
+     "stance": 0.181,
+     "signal_strength": 41.52,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 14,
-     "momentum_30d": 0.099,
-     "momentum_90d": 0.759,
+     "momentum_30d": 0.107,
+     "momentum_90d": 0.775,
      "series": [
       {
        "date": "2026-01-23",
@@ -19585,6 +19949,36 @@
        "date": "2026-10-20",
        "stance": 0.154,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 0.158,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 0.162,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 0.166,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 0.17,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 0.174,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 0.178,
+       "held": false
       }
      ],
      "points": [
@@ -19809,16 +20203,16 @@
      "id": "takata",
      "name": "Hajime Takata",
      "role": "Policy Board member",
-     "stance": 3.554,
-     "signal_strength": 52.86,
+     "stance": 3.536,
+     "signal_strength": 50.48,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 15,
-     "momentum_30d": -0.066,
-     "momentum_90d": -0.492,
+     "momentum_30d": -0.072,
+     "momentum_90d": -0.504,
      "series": [
       {
        "date": "2026-01-23",
@@ -21174,6 +21568,36 @@
        "date": "2026-10-20",
        "stance": 3.554,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 3.552,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 3.549,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 3.546,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 3.543,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 3.541,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 3.538,
+       "held": false
       }
      ],
      "points": [
@@ -21414,16 +21838,16 @@
      "id": "tamura",
      "name": "Naoki Tamura",
      "role": "Policy Board member",
-     "stance": 1.333,
-     "signal_strength": 43.88,
+     "stance": 1.347,
+     "signal_strength": 41.95,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 12,
-     "momentum_30d": 0.051,
-     "momentum_90d": -0.539,
+     "momentum_30d": 0.055,
+     "momentum_90d": -0.541,
      "series": [
       {
        "date": "2026-01-23",
@@ -22779,6 +23203,36 @@
        "date": "2026-10-20",
        "stance": 1.333,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 1.335,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 1.338,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 1.34,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 1.342,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 1.344,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 1.346,
+       "held": false
       }
      ],
      "points": [
@@ -22970,16 +23424,16 @@
      "id": "koeda",
      "name": "Junko Koeda",
      "role": "Policy Board member",
-     "stance": 0.37,
-     "signal_strength": 46.46,
+     "stance": 0.396,
+     "signal_strength": 44.59,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-15T05:30:00Z",
-     "days_since_signal": 5,
+     "days_since_signal": 12,
      "stale": false,
      "live_points": 16,
-     "momentum_30d": 0.328,
-     "momentum_90d": 0.601,
+     "momentum_30d": 0.336,
+     "momentum_90d": 0.614,
      "series": [
       {
        "date": "2026-01-23",
@@ -24335,6 +24789,36 @@
        "date": "2026-10-20",
        "stance": 0.37,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 0.374,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 0.378,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 0.382,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 0.386,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 0.39,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 0.394,
+       "held": false
       }
      ],
      "points": [
@@ -24590,16 +25074,16 @@
      "id": "masu",
      "name": "Kazuyuki Masu",
      "role": "Policy Board member",
-     "stance": 0.275,
-     "signal_strength": 44.84,
+     "stance": 0.301,
+     "signal_strength": 42.91,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 18,
-     "momentum_30d": 0.094,
-     "momentum_90d": 0.562,
+     "momentum_30d": 0.102,
+     "momentum_90d": 0.576,
      "series": [
       {
        "date": "2026-01-23",
@@ -25955,6 +26439,36 @@
        "date": "2026-10-20",
        "stance": 0.275,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": 0.279,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": 0.283,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": 0.287,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": 0.291,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": 0.295,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": 0.299,
+       "held": false
       }
      ],
      "points": [
@@ -26245,16 +26759,16 @@
      "id": "asada",
      "name": "Toichiro Asada",
      "role": "Policy Board member",
-     "stance": -3.908,
-     "signal_strength": 41.47,
+     "stance": -3.916,
+     "signal_strength": 40.09,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 6,
-     "momentum_30d": -0.03,
-     "momentum_90d": -0.153,
+     "momentum_30d": -0.031,
+     "momentum_90d": -0.156,
      "series": [
       {
        "date": "2026-04-01",
@@ -27270,6 +27784,36 @@
        "date": "2026-10-20",
        "stance": -3.908,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -3.909,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -3.91,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -3.912,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -3.913,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -3.914,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -3.915,
+       "held": false
       }
      ],
      "points": [
@@ -27367,16 +27911,16 @@
      "id": "sato",
      "name": "Ayano Sato",
      "role": "Policy Board member",
-     "stance": -3.662,
-     "signal_strength": 26.71,
+     "stance": -3.667,
+     "signal_strength": 25.99,
      "held": false,
      "held_since": null,
      "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 32,
+     "days_since_signal": 39,
      "stale": false,
      "live_points": 4,
-     "momentum_30d": -0.023,
-     "momentum_90d": -3.662,
+     "momentum_30d": -0.024,
+     "momentum_90d": -3.667,
      "series": [
       {
        "date": "2026-06-30",
@@ -27942,6 +28486,36 @@
        "date": "2026-10-20",
        "stance": -3.662,
        "held": false
+      },
+      {
+       "date": "2026-10-21",
+       "stance": -3.663,
+       "held": false
+      },
+      {
+       "date": "2026-10-22",
+       "stance": -3.663,
+       "held": false
+      },
+      {
+       "date": "2026-10-23",
+       "stance": -3.664,
+       "held": false
+      },
+      {
+       "date": "2026-10-24",
+       "stance": -3.665,
+       "held": false
+      },
+      {
+       "date": "2026-10-25",
+       "stance": -3.666,
+       "held": false
+      },
+      {
+       "date": "2026-10-26",
+       "stance": -3.667,
+       "held": false
       }
      ],
      "points": [
@@ -28008,7 +28582,7 @@
      ]
     }
    ],
-   "median": 0.154,
+   "median": 0.181,
    "votes": [
     {
      "date": "2025-10-30",
@@ -28177,7 +28751,7 @@
      "decision_rate": 0.75,
      "previous_rate": 0.75,
      "label": "hold 8-1",
-     "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260319a.pdf",
+     "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2026/k260319a.htm",
      "votes": {
       "ueda": {
        "rate": 0.75,
