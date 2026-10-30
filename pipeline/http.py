@@ -39,7 +39,10 @@ def get(url: str, retries: int = 3, timeout: float = 30) -> requests.Response:
 
 def get_text(url: str) -> str:
     r = get(url)
-    r.encoding = r.encoding or "utf-8"
+    if "charset" not in r.headers.get("content-type", "").lower():
+        # requests assumes ISO-8859-1 for text/html without a charset, which
+        # garbles UTF-8 pages (federalreserve.gov sends none).
+        r.encoding = "utf-8"
     return r.text
 
 

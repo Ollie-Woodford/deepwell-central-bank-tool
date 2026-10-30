@@ -59,33 +59,43 @@ def score_dissent(previous: float, decision: float, voted: float) -> tuple[int, 
     return 5 * side, f"dissent for a {describe_move(previous, voted)} against a majority {describe_move(previous, decision)}"
 
 
-def score_meeting(previous: float, decision: float, votes: list[Vote]) -> list[ScoredVote]:
-    """Score every recordable vote at one meeting."""
+def score_meeting(previous: float, decision: float, votes: list[Vote],
+                  guidance: Optional[dict[str, int]] = None) -> list[ScoredVote]:
+    """Score every recordable vote at one meeting. `guidance` maps members who
+    backed the rate but dissented on the guidance to +1 (hawkish) or -1."""
+    guidance = guidance or {}
     dissents = [v for v in votes if _sign(v.voted_rate - decision) != 0]
     out = []
     for v in dissents:
         score, why = score_dissent(previous, decision, v.voted_rate)
         out.append(ScoredVote(v.member_id, "dissent_vote", score, why, v.voted_rate))
+    for v in votes:
+        side = guidance.get(v.member_id, 0)
+        if side and _sign(v.voted_rate - decision) == 0:
+            out.append(ScoredVote(v.member_id, "dissent_vote", 3 * side,
+                                  f"backed the {describe_move(previous, decision)} but dissented against "
+                                  f"{'dovish' if side > 0 else 'hawkish'} guidance", v.voted_rate))
 
-    if not dissents:
+    sides = {_sign(v.voted_rate - decision) for v in dissents} | {s for s in guidance.values() if s}
+    if not sides:
         return out  # unanimous: majority votes are not recorded
-
-    sides = {_sign(v.voted_rate - decision) for v in dissents}
     if len(sides) != 1:
         return out  # dissent on both sides: the majority backed neither
     dissent_side = sides.pop()
     score = -2 * dissent_side
     for v in votes:
-        if _sign(v.voted_rate - decision) == 0:
+        if _sign(v.voted_rate - decision) == 0 and not guidance.get(v.member_id):
             why = (f"majority vote for a {describe_move(previous, decision)} at a split meeting, "
                    f"against {'hawkish' if dissent_side > 0 else 'dovish'} dissent")
             out.append(ScoredVote(v.member_id, "majority_vote", score, why, v.voted_rate))
     return out
 
 
-def split_label(previous: float, decision: float, votes: list[Vote]) -> str:
+def split_label(previous: float, decision: float, votes: list[Vote],
+                guidance: Optional[dict[str, int]] = None) -> str:
     """Short label such as 'hold 6-3' for the context block."""
+    guidance = guidance or {}
     kind = {1: "hike", -1: "cut", 0: "hold"}[_sign(decision - previous)]
-    n_major = sum(1 for v in votes if _sign(v.voted_rate - decision) == 0)
+    n_major = sum(1 for v in votes if _sign(v.voted_rate - decision) == 0 and not guidance.get(v.member_id))
     n_other = len(votes) - n_major
     return f"{kind} {n_major}-{n_other}" if n_other else f"{kind} unanimous"

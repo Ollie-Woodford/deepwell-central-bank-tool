@@ -16,6 +16,12 @@ access, with the default package-manager list kept on):
 ```
 www.bankofengland.co.uk
 www.boj.or.jp
+www.federalreserve.gov
+www.newyorkfed.org
+www.clevelandfed.org
+www.dallasfed.org
+www.minneapolisfed.org
+www.philadelphiafed.org
 www.bis.org
 committees.parliament.uk
 ```
@@ -66,6 +72,34 @@ dissenter's name and proposal.
   `language: ja`).
 - Speech index URLs can carry codes that don't match the date. Take the date
   from the index entry, not the filename.
+
+## Federal Reserve
+
+Members tracked: the 12 FOMC voters for 2026 (`config/members.json`, bank
+`Fed`). The rotating presidents change each January; 2027 voters are New York,
+Chicago, Richmond, Atlanta and San Francisco, so the Reserve Bank speech
+sources below must be swapped then. All URLs checked 30 Oct 2026.
+
+| Source | URL | Format | Cadence | Weight type | Status |
+|---|---|---|---|---|---|
+| FOMC calendar (statement links) | https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm | HTML | Check every run | Index | Verified, collector built |
+| FOMC statement | https://www.federalreserve.gov/newsevents/pressreleases/monetaryYYYYMMDDa.htm | HTML | 8 meetings a year, 2:00 p.m. ET | Votes. To April 2026 every voter is named; from June 2026 only dissenters, with the tally ("by a 10-2 vote") | Verified, parsed for both formats. Rates stored as the top of the target range |
+| Chair's press conference transcript | https://www.federalreserve.gov/mediacenter/files/FOMCpresconfYYYYMMDD.pdf (page: /monetarypolicy/fomcpresconfYYYYMMDD.htm) | PDF | After each meeting, 2:30 p.m. ET | `press_conference` | Verified. Only the Chair's words are kept; reporters' questions are dropped |
+| Board speeches (all governors) | https://www.federalreserve.gov/json/ne-speeches.json (feed: /feeds/speeches.xml has only the last 15) | JSON list, HTML pages | Check every run | `speech` | Verified, collector built. Covers written statements too (Waller's dissent statement) |
+| New York Fed (Williams) | https://www.newyorkfed.org/newsevents/speeches/index | HTML list | Check every run | `speech` | Verified; links filtered to `wilYYMMDD` |
+| Cleveland Fed (Hammack) | https://www.clevelandfed.org/collections/speeches | List embedded as JSON in the page; PDFs | Check every run | `speech` | Verified; includes her statements explaining dissents |
+| Dallas Fed (Logan) | https://www.dallasfed.org/news/speeches/logan | HTML list | Check every run | `speech` | Verified |
+| Minneapolis Fed (Kashkari) | https://www.minneapolisfed.org/people/neel-kashkari | HTML links | Check every run | `speech` | Verified, but most appearances are video Q&As with no transcript, which are skipped. Kashkari's essays are not collected yet |
+| Philadelphia Fed (Paulson) | https://www.philadelphiafed.org/the-economy/speeches-anna-paulson | HTML list | Check every run | `speech` | Verified |
+| FOMC minutes | https://www.federalreserve.gov/monetarypolicy/fomcminutesYYYYMMDD.htm | HTML | 3 weeks after each meeting | Not attributed to members. Context only | Not collected |
+
+**Notes:**
+- federalreserve.gov sends no charset; pages are read as UTF-8 (`pipeline/http.py`).
+- April 2026: Hammack, Kashkari and Logan backed the hold but dissented
+  against the statement's easing bias. These are recorded as guidance
+  dissents, scored +3 (`pipeline/votes.py`; pending confirmation).
+- No SOFR OIS baseline exists yet, so every Fed statement is scored without the
+  market-implied path.
 
 ## Backfill
 

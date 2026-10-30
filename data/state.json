@@ -770,6 +770,852 @@
    "doc_ids": [],
    "first_seen": "2026-10-27T14:24:31Z",
    "note": "decision 0.75%"
+  },
+  "https://www.clevelandfed.org/collections/speeches/sp-20260210-recipe-for-a-thriving-us-economy": {
+   "doc_ids": [
+    "fed-speech-2026-02-10-hammack-recipe-for-a-thriving-us-economy-strong-banks-patient-policy"
+   ],
+   "first_seen": "2026-10-30T08:38:19Z",
+   "note": ""
+  },
+  "https://www.clevelandfed.org/collections/speeches/sp-20260306-on-the-safe-haven-status-of-the-dollar": {
+   "doc_ids": [
+    "fed-speech-2026-03-06-hammack-remarks-for-the-panel-on-the-safe-haven-status-of-the-dollar"
+   ],
+   "first_seen": "2026-10-30T08:38:18Z",
+   "note": ""
+  },
+  "https://www.clevelandfed.org/collections/speeches/sp-20260501-statement-regarding-april-fomc-meeting-vote": {
+   "doc_ids": [
+    "fed-speech-2026-05-01-hammack-statement-from-federal-reserve-bank-of-cleveland-president-b"
+   ],
+   "first_seen": "2026-10-30T08:38:16Z",
+   "note": ""
+  },
+  "https://www.clevelandfed.org/collections/speeches/sp-20260602-it-takes-two-to-make-an-economy-go-right": {
+   "doc_ids": [
+    "fed-speech-2026-06-02-hammack-it-takes-two-to-make-an-economy-go-right"
+   ],
+   "first_seen": "2026-10-30T08:38:15Z",
+   "note": ""
+  },
+  "https://www.clevelandfed.org/collections/speeches/sp-20260731-statement-regarding-july-fomc-meeting-vote": {
+   "doc_ids": [
+    "fed-speech-2026-07-31-hammack-statement-from-federal-reserve-bank-of-cleveland-president-b"
+   ],
+   "first_seen": "2026-10-30T08:38:13Z",
+   "note": ""
+  },
+  "https://www.clevelandfed.org/collections/speeches/sp-20261012-trimming-the-sails-communicating-my-reaction-function": {
+   "doc_ids": [
+    "fed-speech-2026-10-12-hammack-trimming-the-sails-communicating-my-reaction-function"
+   ],
+   "first_seen": "2026-10-30T08:38:13Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260129": {
+   "doc_ids": [
+    "fed-speech-2026-01-29-logan-president-logan-introduces-fdic-chairman-travis-hill-at-paym"
+   ],
+   "first_seen": "2026-10-30T08:38:29Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260210": {
+   "doc_ids": [
+    "fed-speech-2026-02-10-logan-outlook-for-the-economy-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:38:28Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260402": {
+   "doc_ids": [
+    "fed-speech-2026-04-02-logan-the-banking-system-and-the-demand-for-reserves"
+   ],
+   "first_seen": "2026-10-30T08:38:27Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260510": {
+   "doc_ids": [
+    "fed-speech-2026-05-10-logan-look-up-remarks-at-duke-university-economics-department-comm"
+   ],
+   "first_seen": "2026-10-30T08:38:26Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260527": {
+   "doc_ids": [
+    "fed-speech-2026-05-27-logan-opening-remarks-for-monetary-policy-and-imbalances-panel"
+   ],
+   "first_seen": "2026-10-30T08:38:25Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260603": {
+   "doc_ids": [
+    "fed-speech-2026-06-03-logan-opening-remarks-for-moderated-conversation-at-the-university"
+   ],
+   "first_seen": "2026-10-30T08:38:24Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260709": {
+   "doc_ids": [
+    "fed-speech-2026-07-09-logan-opening-remarks-for-market-liquidity-and-leverage-in-a-digit"
+   ],
+   "first_seen": "2026-10-30T08:38:23Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl260716": {
+   "doc_ids": [
+    "fed-speech-2026-07-16-logan-remarks-on-inflation-employment-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:38:22Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl261001": {
+   "doc_ids": [
+    "fed-speech-2026-10-01-logan-opening-remarks-for-moderated-conversation-at-voices-of-the"
+   ],
+   "first_seen": "2026-10-30T08:38:21Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl261002": {
+   "doc_ids": [
+    "fed-speech-2026-10-02-logan-welcome-remarks-for-the-fifth-annual-workshop-on-the-macroec"
+   ],
+   "first_seen": "2026-10-30T08:38:20Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260128.pdf": {
+   "doc_ids": [
+    "fed-press-2026-01-28-powell"
+   ],
+   "first_seen": "2026-10-30T08:36:43Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260318.pdf": {
+   "doc_ids": [
+    "fed-press-2026-03-18-powell"
+   ],
+   "first_seen": "2026-10-30T08:36:44Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260429.pdf": {
+   "doc_ids": [
+    "fed-press-2026-04-29-powell"
+   ],
+   "first_seen": "2026-10-30T08:36:46Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260617.pdf": {
+   "doc_ids": [
+    "fed-press-2026-06-17-warsh"
+   ],
+   "first_seen": "2026-10-30T08:36:46Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260729.pdf": {
+   "doc_ids": [
+    "fed-press-2026-07-29-warsh"
+   ],
+   "first_seen": "2026-10-30T08:36:47Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260916.pdf": {
+   "doc_ids": [
+    "fed-press-2026-09-16-warsh"
+   ],
+   "first_seen": "2026-10-30T08:36:48Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20261028.pdf": {
+   "doc_ids": [
+    "fed-press-2026-10-28-warsh"
+   ],
+   "first_seen": "2026-10-30T08:36:49Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:36Z",
+   "note": "decision 3.5-3.75%"
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:37Z",
+   "note": "decision 3.5-3.75%"
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:38Z",
+   "note": "decision 3.5-3.75%"
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:39Z",
+   "note": "decision 3.5-3.75%"
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:40Z",
+   "note": "decision 3.5-3.75%"
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:41Z",
+   "note": "decision 3.75-4%"
+  },
+  "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:36:42Z",
+   "note": "decision 3.75-4%"
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260217a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-17-barr-what-will-artificial-intelligence-mean-for-the-labor-market"
+   ],
+   "first_seen": "2026-10-30T08:37:51Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260324a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-24-barr-developing-communities-through-public-private-partnerships"
+   ],
+   "first_seen": "2026-10-30T08:37:43Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260326a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-26-barr-brief-remarks-on-the-economic-outlook-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:37:41Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260331a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-31-barr-brief-remarks-on-stablecoins"
+   ],
+   "first_seen": "2026-10-30T08:37:39Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260414a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-04-14-barr-rural-communities-worth-the-investment"
+   ],
+   "first_seen": "2026-10-30T08:37:36Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260514a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-14-barr-efficient-and-effective-central-banking-beyond-the-balance-s"
+   ],
+   "first_seen": "2026-10-30T08:37:27Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260520a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-20-barr-measuring-financial-health"
+   ],
+   "first_seen": "2026-10-30T08:37:26Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260606a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-06-06-barr-deregulating-in-a-financial-boom-what-could-go-wrong"
+   ],
+   "first_seen": "2026-10-30T08:37:20Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260714a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-14-barr-will-artificial-intelligence-broadly-raise-living-standards"
+   ],
+   "first_seen": "2026-10-30T08:37:12Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260901a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-01-barr-unlocking-opportunities-for-workers-and-entrepreneurs-with-a"
+   ],
+   "first_seen": "2026-10-30T08:37:07Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260923a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-23-barr-a-long-term-view-on-the-costs-of-shelter"
+   ],
+   "first_seen": "2026-10-30T08:37:02Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-29-barr-economic-conditions-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:36:58Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260107a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-01-07-bowman-modernizing-supervision-and-regulation-2025-and-the-path-ahe"
+   ],
+   "first_seen": "2026-10-30T08:38:00Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260116a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-01-16-bowman-outlook-for-the-economy-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:37:57Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260130a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-01-30-bowman-outlook-for-the-economy-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:37:55Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260216a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-16-bowman-revitalizing-bank-mortgage-lending-one-step-with-basel"
+   ],
+   "first_seen": "2026-10-30T08:37:52Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260219a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-19-bowman-opening-remarks"
+   ],
+   "first_seen": "2026-10-30T08:37:50Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260303a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-03-bowman-liquidity-resiliency-financial-stability-and-the-role-of-the"
+   ],
+   "first_seen": "2026-10-30T08:37:46Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260312a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-12-bowman-capital-rules-for-the-real-economy"
+   ],
+   "first_seen": "2026-10-30T08:37:45Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260331a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-31-bowman-supporting-small-businesses"
+   ],
+   "first_seen": "2026-10-30T08:37:38Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260501a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-01-bowman-artificial-intelligence-in-the-financial-system"
+   ],
+   "first_seen": "2026-10-30T08:37:33Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260505a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-05-bowman-a-coordinated-approach-to-consumer-fraud-protection"
+   ],
+   "first_seen": "2026-10-30T08:37:32Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260508a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-08-bowman-when-regulation-reshapes-markets-the-migration-of-corporate"
+   ],
+   "first_seen": "2026-10-30T08:37:30Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-14-bowman-opening-remarks"
+   ],
+   "first_seen": "2026-10-30T08:37:28Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260529a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-29-bowman-a-framework-for-practical-monetary-policy-decision-making"
+   ],
+   "first_seen": "2026-10-30T08:37:22Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260707a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-07-bowman-opening-remarks-on-sound-practices-for-artificial-intelligen"
+   ],
+   "first_seen": "2026-10-30T08:37:16Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260713a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-13-bowman-modernizing-financial-regulation"
+   ],
+   "first_seen": "2026-10-30T08:37:15Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260714a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-14-bowman-responsible-innovation-and-financial-inclusion"
+   ],
+   "first_seen": "2026-10-30T08:37:13Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260918a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-18-bowman-the-final-chapter-on-modernizing-bank-regulatory-stress-test"
+   ],
+   "first_seen": "2026-10-30T08:37:05Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260918b.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-18-bowman-initial-findings-from-independent-review-of-silicon-valley-b"
+   ],
+   "first_seen": "2026-10-30T08:37:04Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20260929a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-29-bowman-opening-remarks"
+   ],
+   "first_seen": "2026-10-30T08:37:00Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20261001a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-10-01-bowman-modernizing-financial-regulation-initial-observations-from-e"
+   ],
+   "first_seen": "2026-10-30T08:36:55Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20261006a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-10-06-bowman-modernizing-the-regulatory-and-supervisory-landscape"
+   ],
+   "first_seen": "2026-10-30T08:36:53Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/bowman20261014a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-10-14-bowman-supervisory-modernization-after-silicon-valley-bank"
+   ],
+   "first_seen": "2026-10-30T08:36:51Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260204a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-04-cook-economic-outlook"
+   ],
+   "first_seen": "2026-10-30T08:37:54Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260224a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-24-cook-opening-remarks-for-the-ai-and-productivity-across-the-econo"
+   ],
+   "first_seen": "2026-10-30T08:37:47Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260326a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-26-cook-reflections-on-financial-stability"
+   ],
+   "first_seen": "2026-10-30T08:37:40Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260508a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-08-cook-perspectives-on-tokenization-and-implications-for-the-financ"
+   ],
+   "first_seen": "2026-10-30T08:37:31Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260527a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-27-cook-the-opportunities-and-risks-ai-presents-for-the-economy-and"
+   ],
+   "first_seen": "2026-10-30T08:37:24Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260624a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-06-24-cook-welcome-remarks"
+   ],
+   "first_seen": "2026-10-30T08:37:18Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260715a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-15-cook-economic-outlook"
+   ],
+   "first_seen": "2026-10-30T08:37:11Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260805a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-08-05-cook-outlook-for-the-u-s-and-alaskan-economies"
+   ],
+   "first_seen": "2026-10-30T08:37:09Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260928a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-28-cook-an-update-on-ai-and-the-economy"
+   ],
+   "first_seen": "2026-10-30T08:37:01Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/cook20260930a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-30-cook-the-dual-mandate-in-rural-america"
+   ],
+   "first_seen": "2026-10-30T08:36:57Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260116a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-01-16-jefferson-economic-outlook-and-monetary-policy-implementation"
+   ],
+   "first_seen": "2026-10-30T08:37:58Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260206a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-06-jefferson-economic-outlook-and-supply-side-dis-inflation-dynamics"
+   ],
+   "first_seen": "2026-10-30T08:37:53Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260326a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-26-jefferson-economic-outlook-and-energy-effects"
+   ],
+   "first_seen": "2026-10-30T08:37:42Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260407a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-04-07-jefferson-economic-outlook-and-the-labor-market"
+   ],
+   "first_seen": "2026-10-30T08:37:37Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260527a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-27-jefferson-global-economic-developments-and-the-u-s-economy"
+   ],
+   "first_seen": "2026-10-30T08:37:23Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260716a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-16-jefferson-navigating-economic-shocks-a-monetary-policymaker-s-perspect"
+   ],
+   "first_seen": "2026-10-30T08:37:10Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20260922a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-22-jefferson-discount-window-modernization-and-treasury-market-functionin"
+   ],
+   "first_seen": "2026-10-30T08:37:03Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-10-01-jefferson-the-u-s-economy-and-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:36:54Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/miran20260114a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:37:58Z",
+   "note": "not a 2026 FOMC voter: Governor Stephen I. Miran"
+  },
+  "https://www.federalreserve.gov/newsevents/speech/miran20260326a.htm": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:37:40Z",
+   "note": "not a 2026 FOMC voter: Governor Stephen I. Miran"
+  },
+  "https://www.federalreserve.gov/newsevents/speech/powell20260111a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-01-11-powell-statement-from-federal-reserve-chair-jerome-h-powell"
+   ],
+   "first_seen": "2026-10-30T08:37:59Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/powell20260321a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-03-21-powell-acceptance-remarks"
+   ],
+   "first_seen": "2026-10-30T08:37:44Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/powell20260531a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-31-powell-acceptance-remarks"
+   ],
+   "first_seen": "2026-10-30T08:37:21Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260130a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-01-30-waller-statement-by-governor-christopher-j-waller"
+   ],
+   "first_seen": "2026-10-30T08:37:56Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260223a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-23-waller-labor-market-data-signal-or-noise"
+   ],
+   "first_seen": "2026-10-30T08:37:49Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260224a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-02-24-waller-operationalizing-ai-at-the-federal-reserve"
+   ],
+   "first_seen": "2026-10-30T08:37:48Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260417a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-04-17-waller-one-transitory-shock-after-another"
+   ],
+   "first_seen": "2026-10-30T08:37:35Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260421a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-04-21-waller-modernizing-federal-reserve-operations-in-the-21st-century"
+   ],
+   "first_seen": "2026-10-30T08:37:34Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260508a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-08-waller-update-on-federal-reserve-bank-operations"
+   ],
+   "first_seen": "2026-10-30T08:37:29Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260522a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-05-22-waller-policy-risks-have-changed"
+   ],
+   "first_seen": "2026-10-30T08:37:25Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260622a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-06-22-waller-welcoming-remarks-on-the-international-role-of-the-u-s-dolla"
+   ],
+   "first_seen": "2026-10-30T08:37:19Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260706a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-06-waller-two-thoughts-on-the-transmission-of-monetary-policy"
+   ],
+   "first_seen": "2026-10-30T08:37:17Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260713a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-07-13-waller-monetary-policy-at-a-crossroads"
+   ],
+   "first_seen": "2026-10-30T08:37:14Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260903a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-03-waller-the-economic-outlook-and-some-comments-on-my-policy-communic"
+   ],
+   "first_seen": "2026-10-30T08:37:06Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20260928a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-09-29-waller-payments-in-the-age-of-ai-agents"
+   ],
+   "first_seen": "2026-10-30T08:36:59Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20261001a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-10-01-waller-the-data-version-of-godzilla-versus-kong-fred-takes-on-ai"
+   ],
+   "first_seen": "2026-10-30T08:36:56Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/waller20261008a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-10-08-waller-the-signaling-value-of-the-summary-of-economic-projections"
+   ],
+   "first_seen": "2026-10-30T08:36:52Z",
+   "note": ""
+  },
+  "https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm": {
+   "doc_ids": [
+    "fed-speech-2026-08-28-warsh-in-our-time"
+   ],
+   "first_seen": "2026-10-30T08:37:08Z",
+   "note": ""
+  },
+  "https://www.minneapolisfed.org/speeches/2026/conversation-with-neel-kashkari-at-the-2026-bloomberg-invest-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:36Z",
+   "note": "no transcript on the page (261 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-at-2026-bank-of-korea-international-conference": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:33Z",
+   "note": "no transcript on the page (155 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-at-the-aspen-ideas-festival-2026": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:32Z",
+   "note": "no transcript on the page (291 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-at-the-midwest-economic-outlook-summit": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:37Z",
+   "note": "no transcript on the page (0 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-participates-in-2026-assa-session-lessons-from-bill-spriggs-contributions-to-economics-and-economic-policy": {
+   "doc_ids": [
+    "fed-speech-2026-01-04-kashkari-neel-kashkari-participates-in-2026-assa-session-lessons-from"
+   ],
+   "first_seen": "2026-10-30T08:38:39Z",
+   "note": ""
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-participates-in-a-virtual-town-hall-with-the-wisconsin-bankers-association": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:39Z",
+   "note": "no transcript on the page (0 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-qa-at-the-2026-investup-ceo-summit": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:36Z",
+   "note": "no transcript on the page (227 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/neel-kashkari-qa-at-the-council-on-foreign-relations": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:32Z",
+   "note": "no transcript on the page (161 characters); video only?"
+  },
+  "https://www.minneapolisfed.org/speeches/2026/qa-with-neel-kashkari-at-the-st-paul-area-chamber": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:34Z",
+   "note": "no transcript on the page (243 characters); video only?"
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260112": {
+   "doc_ids": [
+    "fed-speech-2026-01-12-williams-a-few-words-for-the-new-year"
+   ],
+   "first_seen": "2026-10-30T08:38:10Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260303": {
+   "doc_ids": [
+    "fed-speech-2026-03-03-williams-two-sides-of-a-coin"
+   ],
+   "first_seen": "2026-10-30T08:38:09Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260330": {
+   "doc_ids": [
+    "fed-speech-2026-03-30-williams-ferrying-through-the-crosscurrents"
+   ],
+   "first_seen": "2026-10-30T08:38:08Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260416": {
+   "doc_ids": [
+    "fed-speech-2026-04-16-williams-the-cosmos"
+   ],
+   "first_seen": "2026-10-30T08:38:07Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260504": {
+   "doc_ids": [
+    "fed-speech-2026-05-04-williams-there-is-no-try"
+   ],
+   "first_seen": "2026-10-30T08:38:06Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260528": {
+   "doc_ids": [
+    "fed-speech-2026-05-28-williams-productivity-growth-and-the-challenge-of-real-time-policymak"
+   ],
+   "first_seen": "2026-10-30T08:38:05Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260715": {
+   "doc_ids": [
+    "fed-speech-2026-07-15-williams-stability-of-thy-times"
+   ],
+   "first_seen": "2026-10-30T08:38:04Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260922": {
+   "doc_ids": [
+    "fed-speech-2026-09-22-williams-do-you-remember"
+   ],
+   "first_seen": "2026-10-30T08:38:03Z",
+   "note": ""
+  },
+  "https://www.newyorkfed.org/newsevents/speeches/2026/wil260929": {
+   "doc_ids": [
+    "fed-speech-2026-09-29-williams-unwavering-dedication"
+   ],
+   "first_seen": "2026-10-30T08:38:02Z",
+   "note": ""
+  },
+  "https://www.philadelphiafed.org/the-economy/monetary-policy/260103-does-experiencing-high-inflation-change-economic-behavior": {
+   "doc_ids": [],
+   "first_seen": "2026-10-30T08:38:46Z",
+   "note": "no transcript on the page (312 characters); video only?"
+  },
+  "https://www.philadelphiafed.org/the-economy/monetary-policy/260103-thoughts-on-the-us-economy-and-the-year-ahead": {
+   "doc_ids": [
+    "fed-speech-2026-01-03-paulson-thoughts-on-the-u-s-economy-and-the-year-ahead"
+   ],
+   "first_seen": "2026-10-30T08:38:45Z",
+   "note": ""
+  },
+  "https://www.philadelphiafed.org/the-economy/monetary-policy/260306-2026-us-monetary-policy-forum": {
+   "doc_ids": [
+    "fed-speech-2026-03-06-paulson-discussion-points-on-private-canaries-the-value-of-private-s"
+   ],
+   "first_seen": "2026-10-30T08:38:44Z",
+   "note": ""
+  },
+  "https://www.philadelphiafed.org/the-economy/monetary-policy/260327-macroeconomics-and-monetary-policy-conference": {
+   "doc_ids": [
+    "fed-speech-2026-03-27-paulson-monetary-policy-and-productivity"
+   ],
+   "first_seen": "2026-10-30T08:38:44Z",
+   "note": ""
+  },
+  "https://www.philadelphiafed.org/the-economy/monetary-policy/260519-2026-financial-markets-conference": {
+   "doc_ids": [
+    "fed-speech-2026-05-19-paulson-navigating-uncertainty-inflation-labor-markets-and-the-stanc"
+   ],
+   "first_seen": "2026-10-30T08:38:42Z",
+   "note": ""
+  },
+  "https://www.philadelphiafed.org/the-economy/monetary-policy/260924-10th-annual-fintech-conference-speech": {
+   "doc_ids": [
+    "fed-speech-2026-09-24-paulson-opening-remarks"
+   ],
+   "first_seen": "2026-10-30T08:38:42Z",
+   "note": ""
   }
  }
 }

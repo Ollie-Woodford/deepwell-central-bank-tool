@@ -4,7 +4,7 @@ Flatten data/stances.json into the tables the dashboard reads.
     python -m engine.export_dashboard
 
 Writes data/dashboard/{members,series,points,votes}.json, each an array of row
-objects covering both banks (a `bank` column tells them apart). The dashboard
+objects covering every bank (a `bank` column tells them apart). The dashboard
 artifact holds these as its datasets; a routine refreshes them by uploading new
 copies (see CLAUDE.md, Phase 4).
 """
@@ -48,7 +48,8 @@ def export(bank: str) -> dict[str, list[dict]]:
             votes.append({"key": f"{bank}|{d['date']}|{mid}", "bank": bank, "date": d["date"], "member_id": mid,
                           "rate": v["rate"], "decision_rate": d["decision_rate"],
                           "previous_rate": d["previous_rate"], "dissent": v["dissent"],
-                          "direction": v["direction"], "label": d["label"], "url": d["url"]})
+                          "direction": v["direction"], "guidance": v.get("guidance", False),
+                          "label": d["label"], "url": d["url"]})
     return {"members": members, "series": series, "points": points, "votes": votes}
 
 
@@ -56,7 +57,7 @@ def main(argv=None) -> None:
     argparse.ArgumentParser(description=__doc__).parse_args(argv)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     tables: dict[str, list[dict]] = {}
-    for bank in ("BoE", "BoJ"):
+    for bank in json.loads(STANCES.read_text())["banks"]:
         for name, rows in export(bank).items():
             tables.setdefault(name, []).extend(rows)
     missing = [p["id"] for p in tables["points"] if p["language"] != "en" and not p["quote_en"]]

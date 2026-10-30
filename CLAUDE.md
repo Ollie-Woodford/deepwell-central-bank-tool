@@ -1,8 +1,8 @@
 # Central Bank Hawk/Dove Monitor
 
-A live dashboard placing each voting member of the Bank of England MPC and the
-Bank of Japan Policy Board on a hawk/dove scale, updated as they speak and
-vote. Clicking a member opens a timeline of their scored statements and votes.
+A live dashboard placing each voting member of the Bank of England MPC, the
+Bank of Japan Policy Board and the Federal Reserve FOMC (2026 voters) on a
+hawk/dove scale, updated as they speak and vote. Clicking a member opens a timeline of their scored statements and votes.
 
 **Owner:** Ollie. **Audience for v1:** internal at Deepwell (not clients).
 **Runs on:** Claude Code routines on Ollie's Claude plan. There is no separate
@@ -42,8 +42,8 @@ sites, every run         rubric.md, write JSONL             per member          
 | `docs/WEIGHTING.md` | Source weights and how to classify each data point | Done |
 | `docs/EXTRACTION.md` | Raw document to scored passages; vote scoring rules | Done, 2 decisions open |
 | `docs/SOURCES.md` | Every source, URL, format, cadence, network allowlist | Done, all URLs checked 19 Oct 2026 |
-| `config/members.json` | 18 members: roles, terms, name variants, Japanese names | Done, all terms verified 19 Oct 2026 |
-| `config/calendar.json` | Meeting dates 2026 and 2027, both banks | Verified |
+| `config/members.json` | 30 members (BoE 9, BoJ 9, Fed 12): roles, terms, name variants, Japanese names | BoE/BoJ verified 19 Oct 2026; Fed Board terms 30 Oct 2026, Reserve Bank presidents' term ends to verify |
+| `config/calendar.json` | Meeting dates 2026 and 2027, all three banks | Verified |
 | `engine/decay.py` | Time decay (linear to zero over 10 months, hold when silent), weights, stance, momentum, timeline | Built, 16 tests pass |
 | `engine/test_decay.py` | Tests, including that weights match the agreed ratios | Passing |
 | `engine/baseline.py` | Bloomberg OIS CSV to market-implied path | Built |
@@ -52,8 +52,9 @@ sites, every run         rubric.md, write JSONL             per member          
 | `data/calibration/scores_v0.json` | Blind test of rubric v0 on the holdout | 78% within 1 point |
 | `tools/calibration-lab.html` | Source of the labelling page (live at https://claude.ai/artifact/NAgbLfJ94jJNGsC1cq45Re) | Live |
 | `tools/bqnt/` | BQNT feasibility notebook | Done |
-| `pipeline/collect.py` | `python -m pipeline.collect [--since YYYY-MM-DD] [--bank BoE\|BoJ\|all]`: BoE speeches and minutes; BoJ decisions, speeches and Japanese press conferences, to `data/raw/`; votes scored by rule to `data/scores/` | Built (both banks) |
+| `pipeline/collect.py` | `python -m pipeline.collect [--since YYYY-MM-DD] [--bank BoE\|BoJ\|Fed\|all]`: BoE speeches and minutes; BoJ decisions, speeches and Japanese press conferences, to `data/raw/`; Fed decisions, Chair's press conferences and speeches; votes scored by rule to `data/scores/` | Built (three banks) |
 | `pipeline/boe.py` | BoE feed, speech page and minutes parsers | Built, tested on saved pages |
+| `pipeline/fed.py` | FOMC statement parser (both vote formats, guidance dissents), Chair's press conference transcripts, Board and Reserve Bank speech lists | Built, tested on saved pages |
 | `pipeline/boj.py` | BoJ decision, speech and press conference parsers (Japanese text cleanup, surname attribution) | Built, tested on saved pages |
 | `pipeline/votes.py` | Vote scoring rule from `EXTRACTION.md` | Built, tested |
 | `pipeline/report.py` | Markdown list of collected documents and votes | Built |
@@ -62,14 +63,14 @@ sites, every run         rubric.md, write JSONL             per member          
 | `pipeline/pending.py` | `python -m pipeline.pending`: documents not yet scored under the current rubric, with context blocks | Built |
 | `pipeline/context.py` | Context block per statement (rate, last decision, OIS path, speaker's last vote) | Built |
 | `pipeline/validate.py` | `python -m pipeline.validate [--append FILE]`: schema, verbatim passages, weight shares | Built, tested |
-| `data/decisions/` | Every policy decision with each member's vote | BoE 2026; BoJ Mar 2025 to Sep 2026 |
+| `data/decisions/` | Every policy decision with each member's vote | BoE 2026; BoJ Mar 2025 to Sep 2026; Fed Jan to Oct 2026 |
 | `eval/compare.py` | Scorer vs Ollie: exact, within 1, average gap, bias, rank agreement | Built, tested |
 | `data/calibration/blind_v1_statements.json` | Fresh blind test for rubric v1: 21 BoE, 9 BoJ; labels in `blind_v1_labels.json`, scores in `blind_v1_scores.json` | Scored: 77% within 1, target missed (`reports/blind_v1.md`) |
 | `data/calibration/blind_v2_statements.json` | Fresh blind test for rubric v2: 16 BoE, 4 BoJ; loaded into the Calibration Lab | Waiting for Ollie's labels |
 | `engine/compute.py` | `python -m engine.compute [--as-of DATE]`: stances, momentum, held/stale, daily series, votes strip, ticker to `data/stances.json` | Built (prototype run 19 Oct 2026) |
-| `engine/export_dashboard.py` | Flattens `stances.json` into the dashboard's tables (`data/dashboard/`, both banks, `bank` column) | Built |
+| `engine/export_dashboard.py` | Flattens `stances.json` into the dashboard's tables (`data/dashboard/`, all banks, `bank` column) | Built |
 | `tools/dashboard/` | Dashboard page source (`index.html`) and embedded IBM Plex (`fonts.css`) | Prototype |
-| Dashboard artifact | https://claude.ai/artifact/RySoJqZaBNKLy9wMRD31RT (Dashboard type; data in its store, refreshed by uploading new `data/dashboard/*.json` and updating each dataset's `url`) | Prototype, both banks |
+| Dashboard artifact | https://claude.ai/artifact/RySoJqZaBNKLy9wMRD31RT (Dashboard type; data in its store, refreshed by uploading new `data/dashboard/*.json` and updating each dataset's `url`; the page itself is the store document `files/index.html`, field `text`) | Prototype, BoE, BoJ and Fed tabs |
 
 ## Decisions (do not change without asking Ollie)
 
@@ -165,9 +166,15 @@ Work through these in order. Each ends with something Ollie can check.
   purposes") is confirmed for internal use at a commercial firm. It can be used
   to cross-check coverage.
 
+**Phase 8: Federal Reserve (prototype, added 30 Oct 2026)**
+- 2026 FOMC voters, statements, Chair's press conferences, Board and
+  voting-president speeches, scored Jan to Oct 2026 with rubric v2.
+- Still to do: a SOFR OIS baseline from BQNT; swap the Reserve Bank sources for
+  the 2027 rotation in January; Kashkari's essays; a Fed glossary in the rubric.
+
 **Later, not v1:** news tier (weight 1) from Google News RSS and GDELT; a BQNT
 app view for Terminal users (first test whether files can be uploaded into
-BQNT); more banks (Fed next, then ECB).
+BQNT); more banks (ECB next).
 
 ## Open questions
 
@@ -190,6 +197,14 @@ Settle these with Ollie when the phase that needs them comes up:
     statement is scored with "market-implied path: not available". Backfill
     weekly pulls from BQNT for the scoring window (at least 2026, ideally the
     two-year backfill window).
+11. Fed: should a guidance dissent (backing the rate but voting against the
+    statement's easing bias, April 2026) score +/-3 as in `pipeline/votes.py`?
+    And open question 9's majority rule weighs more at the Fed: at the October
+    hold, Logan and Kashkari score -2 for voting with the majority although
+    Logan is publicly asking for 50bp more.
+12. Fed OIS baseline: add SOFR OIS to the weekly BQNT pull.
+13. Rubric v2 was calibrated on BoE and BoJ only. A Fed glossary ("easing
+    bias", "recalibrate", "risk management cuts") needs Ollie's labels.
 
 ## Working with Ollie
 

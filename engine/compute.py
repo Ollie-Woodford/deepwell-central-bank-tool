@@ -28,7 +28,7 @@ from pipeline.members import load_members
 from pipeline.store import DATA, SCORES, load_decisions
 
 OUT = DATA / "stances.json"
-BANKS = ("BoE", "BoJ")
+BANKS = ("BoE", "BoJ", "Fed")
 STALE_DAYS = 60       # no new signal for this long: shown faded
 SERIES_START_DAYS = 300
 TICKER_SIZE = 20
@@ -114,11 +114,13 @@ def vote_strip(bank: str, as_of: datetime) -> list[dict]:
     out = []
     for d in rows:
         prev, rate = d["previous_rate"], d["decision_rate"]
+        guidance = d.get("guidance_dissents") or {}  # Fed: backed the rate, dissented on guidance
         out.append({
             "date": d["date"], "decision_rate": rate, "previous_rate": prev,
             "label": d.get("label"), "url": d.get("url"),
-            "votes": {m: {"rate": r, "dissent": abs(r - rate) > 1e-9,
-                          "direction": (r > rate) - (r < rate)} for m, r in d["votes"].items()},
+            "votes": {m: {"rate": r, "dissent": abs(r - rate) > 1e-9 or bool(guidance.get(m)),
+                          "direction": ((r > rate) - (r < rate)) or guidance.get(m, 0),
+                          "guidance": bool(guidance.get(m))} for m, r in d["votes"].items()},
         })
     return out
 
@@ -159,13 +161,16 @@ def main(argv=None) -> None:
         as_of = datetime.now(timezone.utc).replace(microsecond=0)
     result = compute(as_of)
     OUT.write_text(json.dumps(result, indent=1, ensure_ascii=False) + "\n")
-    boe = result["banks"]["BoE"]
-    print(f"Wrote {OUT.name} as of {result['as_of']}: BoE median {boe['median']}, "
-          f"{boe['scored_passages']} passages, {boe['votes_recorded']} votes")
-    for m in sorted(boe["members"], key=lambda m: m["stance"] if m["stance"] is not None else -99):
-        print(f"  {m['name']:<20} {m['stance']:+.2f}  30d {m['momentum_30d'] or 0:+.2f}  "
-              f"90d {m['momentum_90d'] or 0:+.2f}  strength {m['signal_strength']:.1f}"
-              f"{'  STALE' if m['stale'] else ''}{'  HELD' if m['held'] else ''}")
+    print(f"Wrote {OUT.name} as of {result['as_of']}")
+    for bank, b in result["banks"].items():
+        print(f"{bank}: median {b['median']}, {b['scored_passages']} passages, {b['votes_recorded']} votes")
+        for m in sorted(b["members"], key=lambda m: m["stance"] if m["stance"] is not None else -99):
+            if m["stance"] is None:
+                print(f"  {m['name']:<20}   n/a")
+                continue
+            print(f"  {m['name']:<20} {m['stance']:+.2f}  30d {m['momentum_30d'] or 0:+.2f}  "
+                  f"90d {m['momentum_90d'] or 0:+.2f}  strength {m['signal_strength']:.1f}"
+                  f"{'  STALE' if m['stale'] else ''}{'  HELD' if m['held'] else ''}")
 
 
 if __name__ == "__main__":

@@ -122,6 +122,7 @@
     <div class="hd-tabs" role="tablist" aria-label="Bank">
       <button class="hd-tab" role="tab" aria-selected="true" id="tab-boe">BoE</button>
       <button class="hd-tab" role="tab" aria-selected="false" id="tab-boj">BoJ</button>
+      <button class="hd-tab" role="tab" aria-selected="false" id="tab-fed">Fed</button>
     </div>
   </header>
 
@@ -205,7 +206,7 @@
 
   </div>
 
-  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Bank of Japan press conferences are published in Japanese only; their quotes are shown in English translation by default (use the 日本語 switch for the original), and scores are based on the Japanese. Weights: dissent 18, vote 12, speech and minutes statement 6; each point fades to zero over 304 days.</p>
+  <p class="hd-foot" id="foot">Prototype. Passages scored with rubric v2, which has not yet passed its blind test; votes scored by rule. No OIS baseline exists before 16 Oct 2026, so earlier statements were scored without the market-implied path. Bank of Japan press conferences are published in Japanese only; their quotes are shown in English translation by default (use the 日本語 switch for the original), and scores are based on the Japanese. Federal Reserve: the 12 FOMC voters for 2026; vote rates are the top of the target range, and a vote marked * backed the rate but dissented on the statement's guidance. The rubric was calibrated on BoE and BoJ statements only, and there is no Fed (SOFR) OIS baseline yet. Weights: dissent 18, vote 12, speech, press conference and minutes statement 6; each point fades to zero over 304 days.</p>
 </div>
 
 <script>
@@ -388,7 +389,9 @@
       dates.forEach((d) => {
         const v = byKey.get(d + '|' + m.id);
         const c = el('div', 'vc' + (!v ? ' none' : v.dissent ? (v.direction > 0 ? ' d-up' : ' d-down') : ''), v ? v.rate.toFixed(2) : '');
-        if (v) c.setAttribute('aria-label', `${m.name} ${shortDay(parse(d))}: voted ${v.rate.toFixed(2)}%${v.dissent ? ', dissent' : ''}`);
+        const note = v && v.guidance ? ', backed the rate but dissented on the guidance' : v && v.dissent ? ', dissent' : '';
+        if (v) c.setAttribute('aria-label', `${m.name} ${shortDay(parse(d))}: voted ${v.rate.toFixed(2)}%${note}`);
+        if (v && v.guidance) { c.title = 'Backed the rate, dissented on the guidance'; c.textContent += '*'; }
         grid.appendChild(c);
       });
     });
@@ -529,12 +532,12 @@
     }
   }
 
-  const BANK_TITLE = { BoE: 'Bank of England MPC', BoJ: 'Bank of Japan Policy Board' };
+  const BANK_TITLE = { BoE: 'Bank of England MPC', BoJ: 'Bank of Japan Policy Board', Fed: 'Federal Reserve FOMC (2026 voters)' };
+  const BANKS = Object.keys(BANK_TITLE);
   const showBank = (bank) => {
     if (state.bank === bank) return;
     Object.assign(state, { bank, member: null, point: null, topic: null });
-    document.getElementById('tab-boe').setAttribute('aria-selected', String(bank === 'BoE'));
-    document.getElementById('tab-boj').setAttribute('aria-selected', String(bank === 'BoJ'));
+    BANKS.forEach((b) => document.getElementById('tab-' + b.toLowerCase()).setAttribute('aria-selected', String(bank === b)));
     document.getElementById('bank-title').textContent = BANK_TITLE[bank];
     document.getElementById('lang-seg').hidden = bank !== 'BoJ';
     dash.setLink(bank.toLowerCase());
@@ -548,8 +551,7 @@
   };
   document.getElementById('lang-en').addEventListener('click', () => setLang('en'));
   document.getElementById('lang-ja').addEventListener('click', () => setLang('ja'));
-  document.getElementById('tab-boe').addEventListener('click', () => showBank('BoE'));
-  document.getElementById('tab-boj').addEventListener('click', () => showBank('BoJ'));
+  BANKS.forEach((b) => document.getElementById('tab-' + b.toLowerCase()).addEventListener('click', () => showBank(b)));
   document.getElementById('mom-30').addEventListener('click', () => { state.mom = 30; redraw(); });
   document.getElementById('mom-90').addEventListener('click', () => { state.mom = 90; redraw(); });
 
@@ -571,7 +573,7 @@
       const members = ok('members') ? got.members.data.filter(mine).map((r) => num({ ...r, held: bool(r.held), stale: bool(r.stale) }, ['stance', 'signal_strength', 'days_since_signal', 'live_points', 'momentum_30d', 'momentum_90d'])) : null;
       const series = ok('series') ? got.series.data.filter(mine).map((r) => num({ ...r, held: bool(r.held) }, ['stance'])) : null;
       const points = ok('points') ? got.points.data.filter(mine).map((r) => num({ ...r, is_vote: bool(r.is_vote) }, ['score', 'confidence'])) : null;
-      const votes = ok('votes') ? got.votes.data.filter(mine).map((r) => num({ ...r, dissent: bool(r.dissent) }, ['rate', 'decision_rate', 'previous_rate', 'direction'])) : null;
+      const votes = ok('votes') ? got.votes.data.filter(mine).map((r) => num({ ...r, dissent: bool(r.dissent), guidance: bool(r.guidance) }, ['rate', 'decision_rate', 'previous_rate', 'direction'])) : null;
       const committee = ok('committee') ? got.committee.data.find(mine) || null : null;
 
       if (committee) {
@@ -598,7 +600,8 @@
     render();
   });
 
-  if (location.hash.slice(1) === 'boj') showBank('BoJ');
+  const hashBank = BANKS.find((b) => b.toLowerCase() === location.hash.slice(1));
+  if (hashBank) showBank(hashBank);
   const named = document.getElementById(location.hash.slice(1));
   if (named) setTimeout(() => named.scrollIntoView(), 0);
 })();

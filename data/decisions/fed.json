@@ -1,0 +1,209 @@
+[
+ {
+  "bank": "Fed",
+  "date": "2026-01-28",
+  "announced": "2026-01-28T19:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260128a.htm",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "range": [
+   3.5,
+   3.75
+  ],
+  "label": "hold 10-2",
+  "votes": {
+   "miran": 3.5,
+   "waller": 3.5,
+   "powell": 3.75,
+   "williams": 3.75,
+   "barr": 3.75,
+   "bowman": 3.75,
+   "cook": 3.75,
+   "hammack": 3.75,
+   "jefferson": 3.75,
+   "kashkari": 3.75,
+   "logan": 3.75,
+   "paulson": 3.75
+  },
+  "guidance_dissents": {},
+  "absent": []
+ },
+ {
+  "bank": "Fed",
+  "date": "2026-03-18",
+  "announced": "2026-03-18T18:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260318a.htm",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "range": [
+   3.5,
+   3.75
+  ],
+  "label": "hold 11-1",
+  "votes": {
+   "miran": 3.5,
+   "powell": 3.75,
+   "williams": 3.75,
+   "barr": 3.75,
+   "bowman": 3.75,
+   "cook": 3.75,
+   "hammack": 3.75,
+   "jefferson": 3.75,
+   "kashkari": 3.75,
+   "logan": 3.75,
+   "paulson": 3.75,
+   "waller": 3.75
+  },
+  "guidance_dissents": {},
+  "absent": []
+ },
+ {
+  "bank": "Fed",
+  "date": "2026-04-29",
+  "announced": "2026-04-29T18:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "range": [
+   3.5,
+   3.75
+  ],
+  "label": "hold 8-4",
+  "votes": {
+   "miran": 3.5,
+   "hammack": 3.75,
+   "kashkari": 3.75,
+   "logan": 3.75,
+   "powell": 3.75,
+   "williams": 3.75,
+   "barr": 3.75,
+   "bowman": 3.75,
+   "cook": 3.75,
+   "jefferson": 3.75,
+   "paulson": 3.75,
+   "waller": 3.75
+  },
+  "guidance_dissents": {
+   "hammack": 1,
+   "kashkari": 1,
+   "logan": 1
+  },
+  "absent": []
+ },
+ {
+  "bank": "Fed",
+  "date": "2026-06-17",
+  "announced": "2026-06-17T18:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "range": [
+   3.5,
+   3.75
+  ],
+  "label": "hold unanimous",
+  "votes": {
+   "warsh": 3.75,
+   "jefferson": 3.75,
+   "bowman": 3.75,
+   "powell": 3.75,
+   "waller": 3.75,
+   "barr": 3.75,
+   "cook": 3.75,
+   "williams": 3.75,
+   "hammack": 3.75,
+   "kashkari": 3.75,
+   "logan": 3.75,
+   "paulson": 3.75
+  },
+  "guidance_dissents": {},
+  "absent": []
+ },
+ {
+  "bank": "Fed",
+  "date": "2026-07-29",
+  "announced": "2026-07-29T18:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+  "previous_rate": 3.75,
+  "decision_rate": 3.75,
+  "range": [
+   3.5,
+   3.75
+  ],
+  "label": "hold 9-3",
+  "votes": {
+   "hammack": 4.0,
+   "kashkari": 4.0,
+   "logan": 4.0,
+   "warsh": 3.75,
+   "jefferson": 3.75,
+   "bowman": 3.75,
+   "powell": 3.75,
+   "waller": 3.75,
+   "barr": 3.75,
+   "cook": 3.75,
+   "williams": 3.75,
+   "paulson": 3.75
+  },
+  "guidance_dissents": {},
+  "absent": []
+ },
+ {
+  "bank": "Fed",
+  "date": "2026-09-16",
+  "announced": "2026-09-16T18:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "range": [
+   3.75,
+   4.0
+  ],
+  "label": "hike unanimous",
+  "votes": {
+   "warsh": 4.0,
+   "jefferson": 4.0,
+   "bowman": 4.0,
+   "powell": 4.0,
+   "waller": 4.0,
+   "barr": 4.0,
+   "cook": 4.0,
+   "williams": 4.0,
+   "hammack": 4.0,
+   "kashkari": 4.0,
+   "logan": 4.0,
+   "paulson": 4.0
+  },
+  "guidance_dissents": {},
+  "absent": []
+ },
+ {
+  "bank": "Fed",
+  "date": "2026-10-28",
+  "announced": "2026-10-28T18:00:00Z",
+  "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
+  "previous_rate": 4.0,
+  "decision_rate": 4.0,
+  "range": [
+   3.75,
+   4.0
+  ],
+  "label": "hold 10-2",
+  "votes": {
+   "cook": 4.25,
+   "hammack": 4.25,
+   "warsh": 4.0,
+   "jefferson": 4.0,
+   "bowman": 4.0,
+   "powell": 4.0,
+   "waller": 4.0,
+   "barr": 4.0,
+   "williams": 4.0,
+   "kashkari": 4.0,
+   "logan": 4.0,
+   "paulson": 4.0
+  },
+  "guidance_dissents": {},
+  "absent": []
+ }
+]

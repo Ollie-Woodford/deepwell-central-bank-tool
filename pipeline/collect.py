@@ -5,6 +5,7 @@ data/scores/, and record what has been seen in data/state.json.
     python -m pipeline.collect                 # new items from the last 92 days
     python -m pipeline.collect --since 2026-01-01
     python -m pipeline.collect --bank BoJ
+    python -m pipeline.collect --bank Fed
 
 Items that fail to fetch or parse are reported and left unseen, so the next
 run tries them again.
@@ -16,12 +17,12 @@ import argparse
 import json
 import sys
 import traceback
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 
 import requests
 
-from . import boe, boj, http
-from .members import load_members
+from . import boe, boj, fed, http
+from .members import find_name_in_text, load_members
 from .store import ROOT, State, append_scores, iso_utc, load_decisions, save_decision, utc_now_iso, write_raw
 from .votes import VOTE_RULE_VERSION, Vote, score_meeting, split_label
 
@@ -56,12 +57,13 @@ def collect_boe_speeches(state: State, since: date, log: list) -> None:
 
 
 def vote_records(bank: str, meeting: date, url: str, previous: float, decision: float,
-                 rates: dict[str, float], ts: str, rate_name: str) -> list[dict]:
+                 rates: dict[str, float], ts: str, rate_name: str,
+                 guidance: dict[str, int] | None = None) -> list[dict]:
     """Votes scored by rule (pipeline/votes.py), as records for data/scores."""
     votes = [Vote(mid, r) for mid, r in rates.items()]
-    label = split_label(previous, decision, votes)
+    label = split_label(previous, decision, votes, guidance)
     out = []
-    for sv in score_meeting(previous, decision, votes):
+    for sv in score_meeting(previous, decision, votes, guidance):
         out.append({
             "id": f"{bank.lower()}-{meeting.isoformat()}-vote-{sv.member_id}",
             "member_id": sv.member_id,
@@ -69,7 +71,8 @@ def vote_records(bank: str, meeting: date, url: str, previous: float, decision: 
             "timestamp": ts,
             "source_type": sv.source_type,
             "document_url": url,
-            "passage": f"Voted for {rate_name} at {sv.voted_rate:g}%; decision {decision:g}% ({label}).",
+            "passage": (f"Voted for {rate_name} at {sv.voted_rate:g}%; decision {decision:g}% ({label})."
+                        + (" Dissented on the statement's guidance." if (guidance or {}).get(sv.member_id) else "")),
             "language": "en",
             "context": {"policy_rate": previous, "last_decision": label},
             "vote": {"previous_rate": previous, "decision_rate": decision, "voted_rate": sv.voted_rate},
@@ -295,11 +298,166 @@ def collect_boj_press(state: State, since: date, today: date, log: list) -> None
                 traceback.print_exc(file=sys.stderr)
 
 
+# ----------------------------------------------------------------------- Fed
+
+def collect_fed_decisions(state: State, since: date, today: date, log: list) -> None:
+    """FOMC statements from the calendar page; votes recorded for meetings on or after `since`."""
+    members = load_members(bank="Fed", include_former=True)
+    stored = {d["date"] for d in load_decisions("Fed")}
+    for d, url in sorted(fed.statement_urls(http.get_text(fed.CALENDAR_URL)).items()):
+        if d < since or d > today or (state.seen(url) and d.isoformat() in stored):
+            continue
+        try:
+            st = fed.parse_statement(http.get_text(url))
+            mv = fed.meeting_votes(st, d, members)
+        except Exception as e:
+            log.append(f"ERROR     {url}: {e}")
+            traceback.print_exc(file=sys.stderr)
+            continue
+        if mv.unmatched:
+            log.append(f"ERROR     {url}: {mv.unmatched}; update config/members.json")
+            continue
+        label = split_label(st.previous_rate, st.decision_rate, [Vote(m, r) for m, r in mv.rates.items()],
+                            mv.guidance)
+        announced = iso_utc(fed.statement_time(d))
+        save_decision({
+            "bank": "Fed", "date": d.isoformat(), "announced": announced, "url": url,
+            "previous_rate": st.previous_rate, "decision_rate": st.decision_rate,
+            "range": [st.low, st.decision_rate], "label": label,
+            "votes": mv.rates, "guidance_dissents": mv.guidance, "absent": [],
+        })
+        n = append_scores(vote_records("Fed", d, url, st.previous_rate, st.decision_rate, mv.rates, announced,
+                                       "the top of the fed funds target range", mv.guidance))
+        state.mark(url, note=f"decision {st.low:g}-{st.decision_rate:g}%")
+        log.append(f"decision  {d}  Fed {st.low:g}-{st.decision_rate:g}%  {label:<16} {n} votes recorded")
+
+
+def collect_fed_press(state: State, since: date, today: date, log: list) -> None:
+    """The Chair's post-meeting press conference: the Chair's words from the transcript PDF."""
+    cal = json.loads(CALENDAR_FILE.read_text())["Fed"]["decisions"]
+    members = {m.id: m for m in load_members(bank="Fed", include_former=True)}
+    for d in map(date.fromisoformat, cal):
+        pdf = fed.press_pdf_url(d)
+        if d < since or d > today or state.seen(pdf):
+            continue
+        try:
+            transcript = _get_pdf_or_none(pdf)
+            if transcript is None:
+                log.append(f"press     {d}  transcript not published yet")
+                continue
+            chair = members[fed.chair_on(d)]
+            text = fed.chair_remarks(transcript)
+            if len(text) < 1000:
+                raise ValueError(f"only {len(text)} characters of the Chair's remarks found")
+            doc = {
+                "id": f"fed-press-{d.isoformat()}-{chair.id}", "bank": "Fed", "kind": "press_conference",
+                "member_id": chair.id, "speaker_name": chair.name,
+                "title": f"FOMC press conference, {d:%-d %B %Y}",
+                "description": "Chair's opening statement and answers (reporters' questions removed)",
+                "url": fed.press_page_url(d), "text_url": pdf,
+                "published": iso_utc(datetime.combine(d, fed.PRESS_TIME, tzinfo=fed.EASTERN)),
+                "delivered_date": d.isoformat(), "source_type_hint": "press_conference", "language": "en",
+                "text_source": "pdf", "text": text, "collected_at": utc_now_iso(),
+            }
+            write_raw(doc)
+            state.mark(pdf, [doc["id"]])
+            log.append(f"press     {d}  {chair.id:<12} {doc['title']}")
+        except Exception as e:
+            log.append(f"ERROR     {pdf}: {e}")
+            traceback.print_exc(file=sys.stderr)
+
+
+def _get_pdf_or_none(url: str):
+    try:
+        return http.pdf_text(url)
+    except requests.HTTPError as e:
+        if e.response is not None and e.response.status_code == 404:
+            return None
+        raise
+
+
+_FED_TITLES = ("Vice Chair for Supervision ", "Vice Chair ", "Chairman ", "Chair ", "Governor ")
+
+
+def _board_speaker(speaker: str, members):
+    for t in _FED_TITLES:
+        if speaker.startswith(t):
+            speaker = speaker[len(t):]
+            break
+    return find_name_in_text(speaker, members)
+
+
+def _fed_speech_items() -> list:
+    """(source name, index fetcher) for the Board and each voting Reserve Bank."""
+    return [
+        ("Board", lambda: fed.parse_board_speeches(http.get_text(fed.BOARD_SPEECHES_JSON))),
+        ("New York", lambda: fed.parse_ny_index(http.get_text(fed.NY_INDEX))),
+        ("Cleveland", lambda: fed.parse_cleveland_index(http.get_text(fed.CLEVELAND_INDEX))),
+        ("Dallas", lambda: fed.parse_dallas_index(http.get_text(fed.DALLAS_INDEX))),
+        ("Minneapolis", lambda: fed.parse_minneapolis_index(http.get_text(fed.MINNEAPOLIS_INDEX))),
+        ("Philadelphia", lambda: fed.parse_philadelphia_index(http.get_text(fed.PHILADELPHIA_INDEX))),
+    ]
+
+
+def collect_fed_speeches(state: State, since: date, today: date, log: list) -> None:
+    members = load_members(bank="Fed")
+    for source, fetch in _fed_speech_items():
+        try:
+            items = fetch()
+        except Exception as e:
+            log.append(f"ERROR     Fed speeches ({source}): {e}")
+            traceback.print_exc(file=sys.stderr)
+            continue
+        for item in items:
+            # Minneapolis items carry only the year until the page is read.
+            undated = source == "Minneapolis"
+            if state.seen(item.url) or item.when.date() > today:
+                continue
+            if (item.when.year < since.year) if undated else (item.when.date() < since):
+                continue
+            member = (_board_speaker(item.speaker, members) if source == "Board"
+                      else find_name_in_text(item.speaker, members))
+            if member is None:
+                state.mark(item.url, note=f"not a 2026 FOMC voter: {item.speaker}")
+                continue
+            try:
+                page = http.get_text(item.url)
+                if source == "Board":
+                    title, text, when = item.title, fed.board_speech_text(page), item.when
+                else:
+                    title, text, published = fed.reserve_bank_text(page)
+                    title = title or item.title
+                    when = item.when if not undated else (published or item.when)
+                    if source == "Cleveland" and len(text) < 1500 and item.pdf_url:
+                        text = http.pdf_text(item.pdf_url)
+                if when.date() < since:
+                    state.mark(item.url, note="before the collection window")
+                    continue
+                if len(text) < 500:
+                    state.mark(item.url, note=f"no transcript on the page ({len(text)} characters); video only?")
+                    log.append(f"skipped   {when.date()}  {member.id:<12} no transcript: {title[:60]}")
+                    continue
+                doc = {
+                    "id": fed.speech_doc_id(member.id, when.date(), title), "bank": "Fed", "kind": "speech",
+                    "member_id": member.id, "speaker_name": member.name, "title": title,
+                    "description": item.location or source, "url": item.url, "text_url": item.pdf_url or item.url,
+                    "published": iso_utc(when), "delivered_date": when.date().isoformat(),
+                    "source_type_hint": "speech", "language": "en", "text_source": "html",
+                    "text": text, "collected_at": utc_now_iso(),
+                }
+                write_raw(doc)
+                state.mark(item.url, [doc["id"]])
+                log.append(f"speech    {when.date()}  {member.id:<12} {title[:70]}")
+            except Exception as e:
+                log.append(f"ERROR     {item.url}: {e}")
+                traceback.print_exc(file=sys.stderr)
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--since", type=date.fromisoformat,
                     default=date.today() - timedelta(days=DEFAULT_LOOKBACK_DAYS))
-    ap.add_argument("--bank", choices=["BoE", "BoJ", "all"], default="all")
+    ap.add_argument("--bank", choices=["BoE", "BoJ", "Fed", "all"], default="all")
     args = ap.parse_args(argv)
 
     state = State()
@@ -313,6 +471,10 @@ def main(argv=None) -> int:
         steps += [("BoJ decisions", lambda: collect_boj_decisions(state, args.since, today, log)),
                   ("BoJ speeches", lambda: collect_boj_speeches(state, args.since, today, log)),
                   ("BoJ press conferences", lambda: collect_boj_press(state, args.since, today, log))]
+    if args.bank in ("Fed", "all"):
+        steps += [("Fed decisions", lambda: collect_fed_decisions(state, args.since, today, log)),
+                  ("Fed press conferences", lambda: collect_fed_press(state, args.since, today, log)),
+                  ("Fed speeches", lambda: collect_fed_speeches(state, args.since, today, log))]
     for name, step in steps:
         try:
             step()
