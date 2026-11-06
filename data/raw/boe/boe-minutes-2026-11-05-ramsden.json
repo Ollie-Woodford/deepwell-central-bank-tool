@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-ramsden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "ramsden",
+ "speaker_name": "Dave Ramsden",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The outlook for inflation has deteriorated, with higher energy prices following re-escalation of the conflict since July. I have also become somewhat less confident about the domestic disinflation process, the degree of slack, and how restrictive the policy stance has been to date. Activity has proved more resilient than expected (Box C), slack in the labour market is levelling off, and private sector wage growth has stopped declining. These less favourable starting conditions increase the risk of second-round effects (Box A). Indirect effects have been smaller and slower to build than anticipated in July, but looking ahead, are projected to be larger and more protracted. Risks around the inflation outlook have shifted further to the upside. Nevertheless, households and firms’ resilience could weaken, with adjustment occurring through employment losses or business failures rather than prices. A 25-basis point increase in Bank Rate is necessary now to ensure the appropriate degree of restrictiveness. I will continue to assess the evidence at each meeting, in particular how likely high energy prices are to feed through to other prices and the economy more broadly, by monitoring the evolution of pay, pricing behaviour, and slack.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

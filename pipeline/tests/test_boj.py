@@ -109,3 +109,11 @@ def test_japanese_text_cleanup_and_time():
     assert boj.press_datetime(t) == datetime(2026, 10, 15, 14, 30, tzinfo=boj.TOKYO)
     assert "頂きます。一点は、本日" in t        # stray spaces inside sentences removed
     assert "\n\n(答)" in t                        # question and answer blocks kept apart
+
+
+def test_vote_in_item_heading_october_2026():
+    # From October 2026 the tally sits in the item heading, not the decision sentence.
+    d = boj.parse_decision(fixture("boj_decision_2026-10.txt"), ALL)
+    assert d.rate == 1.25 and d.split == (8, 1)
+    assert ids(d.voting_against) == ["takata"]
+    assert d.proposals == {"takata": 1.5}

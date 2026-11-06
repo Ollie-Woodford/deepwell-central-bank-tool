@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-dhingra",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "dhingra",
+ "speaker_name": "Swati Dhingra",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Even as underlying inflation normalised in line with peer countries, previous votes to maintain Bank Rate in restrictive territory guarded against immediate inflation risks from the unfolding energy shock. The scale and persistence of the rise in wholesale energy prices imply that households and businesses will continue to face higher energy costs in the near term. Broad-based price pressures remain subdued, however, and we cannot yet distinguish between delayed pass-through and weaker pass-through on the evidence available (Box A). Growth has been firmer than anticipated (Box C), partly reflecting an AI-driven sectoral and investment boost that presents two-sided risks to the inflation outlook. Set against this, the combined drag from energy prices and higher mortgage rates continues to weigh on real disposable incomes, limiting consumption growth and weakening activity in consumer-facing services. Raising Bank Rate by 25 basis points provides additional insurance against upside risks from stronger pass-through and firmer growth in demand. To support maintaining Bank Rate at a higher level for an extended period, I would need to see clear evidence of a recovery in firms’ pricing power and households’ purchasing power alongside signs of mutually reinforcing wage and price pressures.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

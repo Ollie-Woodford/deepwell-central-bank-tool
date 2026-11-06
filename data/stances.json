@@ -1,6 +1,6 @@
 {
- "as_of": "2026-10-30T08:46:53Z",
- "generated_at": "2026-10-30T08:46:53Z",
+ "as_of": "2026-11-06T13:40:29Z",
+ "generated_at": "2026-11-06T13:40:29Z",
  "stale_days": 60,
  "banks": {
   "BoE": {
@@ -9,16 +9,16 @@
      "id": "bailey",
      "name": "Andrew Bailey",
      "role": "Governor",
-     "stance": -1.312,
-     "signal_strength": 41.95,
+     "stance": -1.328,
+     "signal_strength": 58.88,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 17,
-     "momentum_30d": -0.075,
-     "momentum_90d": -0.276,
+     "live_points": 25,
+     "momentum_30d": -0.076,
+     "momentum_90d": -0.281,
      "series": [
       {
        "date": "2026-02-05",
@@ -1247,112 +1247,147 @@
       },
       {
        "date": "2026-10-08",
-       "stance": -1.256,
+       "stance": -1.14,
        "held": false
       },
       {
        "date": "2026-10-09",
-       "stance": -1.258,
+       "stance": -1.142,
        "held": false
       },
       {
        "date": "2026-10-10",
-       "stance": -1.26,
+       "stance": -1.144,
        "held": false
       },
       {
        "date": "2026-10-11",
-       "stance": -1.263,
+       "stance": -1.146,
        "held": false
       },
       {
        "date": "2026-10-12",
-       "stance": -1.265,
+       "stance": -1.148,
        "held": false
       },
       {
        "date": "2026-10-13",
-       "stance": -1.268,
+       "stance": -1.15,
        "held": false
       },
       {
        "date": "2026-10-14",
-       "stance": -1.27,
+       "stance": -1.152,
        "held": false
       },
       {
        "date": "2026-10-15",
-       "stance": -1.273,
+       "stance": -1.154,
        "held": false
       },
       {
        "date": "2026-10-16",
-       "stance": -1.275,
+       "stance": -1.156,
        "held": false
       },
       {
        "date": "2026-10-17",
-       "stance": -1.278,
+       "stance": -1.158,
        "held": false
       },
       {
        "date": "2026-10-18",
-       "stance": -1.28,
+       "stance": -1.16,
        "held": false
       },
       {
        "date": "2026-10-19",
-       "stance": -1.283,
+       "stance": -1.163,
        "held": false
       },
       {
        "date": "2026-10-20",
-       "stance": -1.285,
+       "stance": -1.165,
        "held": false
       },
       {
        "date": "2026-10-21",
-       "stance": -1.288,
+       "stance": -1.167,
        "held": false
       },
       {
        "date": "2026-10-22",
-       "stance": -1.291,
+       "stance": -1.169,
        "held": false
       },
       {
        "date": "2026-10-23",
-       "stance": -1.293,
+       "stance": -1.171,
        "held": false
       },
       {
        "date": "2026-10-24",
-       "stance": -1.296,
+       "stance": -1.174,
        "held": false
       },
       {
        "date": "2026-10-25",
-       "stance": -1.299,
+       "stance": -1.176,
        "held": false
       },
       {
        "date": "2026-10-26",
-       "stance": -1.302,
+       "stance": -1.178,
        "held": false
       },
       {
        "date": "2026-10-27",
-       "stance": -1.305,
+       "stance": -1.181,
        "held": false
       },
       {
        "date": "2026-10-28",
-       "stance": -1.308,
+       "stance": -1.183,
        "held": false
       },
       {
        "date": "2026-10-29",
-       "stance": -1.311,
+       "stance": -1.186,
+       "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -1.188,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -1.191,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -1.193,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -1.196,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -1.198,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -1.201,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.327,
        "held": false
       }
      ],
@@ -1622,6 +1657,135 @@
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-10-08-andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbu-p01",
+       "date": "2026-10-08T12:15:00Z",
+       "source_type": "speech",
+       "score": 1,
+       "confidence": 0.5,
+       "quote": "The textbook response is to look through a one-off increase in the price level. Interest rates cannot produce more oil or gas, and monetary policy affects the economy with long lags. But looking through a shock is possible only if inflation expectations remain well anchored.",
+       "language": "en",
+       "rationale": "Looking through the shock only works while expectations stay anchored.",
+       "topics": [
+        "energy",
+        "inflation_expectations"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-10-08-andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbu-p02",
+       "date": "2026-10-08T12:15:00Z",
+       "source_type": "speech",
+       "score": 1,
+       "confidence": 0.5,
+       "quote": "If households and businesses begin to incorporate higher inflation into wage demands and pricing decisions, a temporary shock can become persistent. These second-round effects are slower to emerge.",
+       "language": "en",
+       "rationale": "Watch for second-round effects turning the shock persistent.",
+       "topics": [
+        "second_round_effects"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-10-08-andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbu-p03",
+       "date": "2026-10-08T12:15:00Z",
+       "source_type": "speech",
+       "score": 1,
+       "confidence": 0.4,
+       "quote": "Interest rates may need to rise even as economic activity weakens.",
+       "language": "en",
+       "rationale": "Rates may have to rise despite weaker activity.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-10-08-andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbu-p04",
+       "date": "2026-10-08T12:15:00Z",
+       "source_type": "speech",
+       "score": 0,
+       "confidence": 0.6,
+       "quote": "I remain sceptical of unconditional promises about future interest rates. The world is too uncertain. But central banks should explain clearly how policy would respond under different economic conditions.",
+       "language": "en",
+       "rationale": "Against forward guidance; no direction.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-bailey",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-bailey-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 1,
+       "confidence": 0.7,
+       "quote": "Absent this, risks to energy prices, and so to inflation, are to the upside.",
+       "language": "en",
+       "rationale": "Upside risks to inflation unless the conflict eases.",
+       "topics": [
+        "energy",
+        "balance_of_risks"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-bailey-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -1,
+       "confidence": 0.7,
+       "quote": "Without news which softens the risks to inflationary pressures, I can see the argument for a further increase in rates and thereafter taking a more conditional approach, dependent on the evidence on energy prices and inflation dynamics.",
+       "language": "en",
+       "rationale": "Sees a case for one more hike then a conditional approach, short of the roughly 100bp the market prices.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-bailey-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -2,
+       "confidence": 0.7,
+       "quote": "Recognising that some of the upward slope in the curve is explained by risk premia and not expected rates, the current level of restrictiveness is broadly appropriate.",
+       "language": "en",
+       "rationale": "Current restrictiveness broadly appropriate and the curve partly risk premia: less tightening than priced.",
+       "topics": [
+        "policy_stance",
+        "financial_conditions"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
       }
      ]
     },
@@ -1629,16 +1793,16 @@
      "id": "lombardelli",
      "name": "Clare Lombardelli",
      "role": "Deputy Governor, Monetary Policy",
-     "stance": -0.964,
-     "signal_strength": 45.16,
+     "stance": -1.002,
+     "signal_strength": 59.29,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-24T08:00:00Z",
-     "days_since_signal": 36,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 20,
-     "momentum_30d": -0.064,
-     "momentum_90d": -0.083,
+     "live_points": 24,
+     "momentum_30d": -0.088,
+     "momentum_90d": -0.108,
      "series": [
       {
        "date": "2026-02-05",
@@ -2974,6 +3138,41 @@
        "date": "2026-10-29",
        "stance": -0.964,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.966,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.969,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.971,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.974,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.977,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.979,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.0,
+       "held": false
       }
      ],
      "points": [
@@ -3293,6 +3492,68 @@
        "url": "https://www.bankofengland.co.uk/speech/2026/september/clare-lombardelli-speech-at-the-sixth-biennial-conference-poland",
        "institutional": true,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-lombardelli",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-lombardelli-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "Cost pressures have remained elevated for sufficiently long that there is now a greater risk of second-round effects becoming embedded in price and wage-setting (Box A).",
+       "language": "en",
+       "rationale": "Greater risk of second-round effects becoming embedded.",
+       "topics": [
+        "second_round_effects"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-lombardelli-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "But overall I view the balance of risks to the inflation path as upside to our forecast given the ongoing energy price uncertainty and limited evidence of slack.",
+       "language": "en",
+       "rationale": "Inflation risks to the upside.",
+       "topics": [
+        "balance_of_risks"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-lombardelli-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 1,
+       "confidence": 0.7,
+       "quote": "In the absence of evidence of weaker inflation pressures, there is likely to be a case for a further increase in rates in the near term.",
+       "language": "en",
+       "rationale": "Likely another hike soon, then conditional: about in line with pricing.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
       }
      ]
     },
@@ -3300,16 +3561,16 @@
      "id": "breeden",
      "name": "Sarah Breeden",
      "role": "Deputy Governor, Financial Stability",
-     "stance": -1.642,
-     "signal_strength": 42.63,
+     "stance": -1.558,
+     "signal_strength": 56.5,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 17,
-     "momentum_30d": 0.104,
-     "momentum_90d": 0.519,
+     "live_points": 21,
+     "momentum_30d": 0.166,
+     "momentum_90d": 0.59,
      "series": [
       {
        "date": "2026-02-05",
@@ -4645,6 +4906,41 @@
        "date": "2026-10-29",
        "stance": -1.644,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -1.639,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -1.635,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -1.631,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -1.626,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -1.622,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -1.618,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.56,
+       "held": false
       }
      ],
      "points": [
@@ -4916,6 +5212,71 @@
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-breeden",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-breeden-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "But with inflation expected to be above the threshold for non-linear effects, and little sign of a rapid or durable resolution to the conflict, the degree of inflationary pressure in the pipeline is now sufficient to warrant an increase in Bank Rate.",
+       "language": "en",
+       "rationale": "Pipeline inflation pressure now warrants a hike.",
+       "topics": [
+        "rate_path",
+        "inflation_persistence"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-breeden-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 1,
+       "confidence": 0.6,
+       "quote": "The longer energy prices remain high the more likely persistent inflationary effects take hold, which would require further tightening in Bank Rate. But this will also depend on how energy prices propagate, especially given the risk that demand weakens.",
+       "language": "en",
+       "rationale": "Further tightening if energy stays high, but demand may weaken.",
+       "topics": [
+        "energy",
+        "second_round_effects"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-breeden-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -2,
+       "confidence": 0.7,
+       "quote": "For now, I judge the current restrictiveness of financial conditions as sufficient to balance these.",
+       "language": "en",
+       "rationale": "Current restrictiveness sufficient: no further hikes signalled against market pricing.",
+       "topics": [
+        "policy_stance",
+        "financial_conditions"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
       }
      ]
     },
@@ -4923,16 +5284,16 @@
      "id": "ramsden",
      "name": "Dave Ramsden",
      "role": "Deputy Governor, Markets and Banking",
-     "stance": -1.675,
-     "signal_strength": 42.43,
+     "stance": -1.462,
+     "signal_strength": 59.61,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 17,
-     "momentum_30d": 0.102,
-     "momentum_90d": 0.484,
+     "live_points": 26,
+     "momentum_30d": 0.187,
+     "momentum_90d": 0.684,
      "series": [
       {
        "date": "2026-02-05",
@@ -6111,162 +6472,197 @@
       },
       {
        "date": "2026-09-28",
-       "stance": -1.78,
+       "stance": -1.674,
        "held": false
       },
       {
        "date": "2026-09-29",
-       "stance": -1.778,
+       "stance": -1.671,
        "held": false
       },
       {
        "date": "2026-09-30",
-       "stance": -1.775,
+       "stance": -1.668,
        "held": false
       },
       {
        "date": "2026-10-01",
-       "stance": -1.772,
+       "stance": -1.665,
        "held": false
       },
       {
        "date": "2026-10-02",
-       "stance": -1.769,
+       "stance": -1.662,
        "held": false
       },
       {
        "date": "2026-10-03",
-       "stance": -1.766,
+       "stance": -1.66,
        "held": false
       },
       {
        "date": "2026-10-04",
-       "stance": -1.763,
+       "stance": -1.657,
        "held": false
       },
       {
        "date": "2026-10-05",
-       "stance": -1.76,
+       "stance": -1.654,
        "held": false
       },
       {
        "date": "2026-10-06",
-       "stance": -1.757,
+       "stance": -1.65,
        "held": false
       },
       {
        "date": "2026-10-07",
-       "stance": -1.754,
+       "stance": -1.647,
        "held": false
       },
       {
        "date": "2026-10-08",
-       "stance": -1.751,
+       "stance": -1.644,
        "held": false
       },
       {
        "date": "2026-10-09",
-       "stance": -1.748,
+       "stance": -1.641,
        "held": false
       },
       {
        "date": "2026-10-10",
-       "stance": -1.745,
+       "stance": -1.638,
        "held": false
       },
       {
        "date": "2026-10-11",
-       "stance": -1.741,
+       "stance": -1.635,
        "held": false
       },
       {
        "date": "2026-10-12",
-       "stance": -1.738,
+       "stance": -1.631,
        "held": false
       },
       {
        "date": "2026-10-13",
-       "stance": -1.735,
+       "stance": -1.628,
        "held": false
       },
       {
        "date": "2026-10-14",
-       "stance": -1.732,
+       "stance": -1.625,
        "held": false
       },
       {
        "date": "2026-10-15",
-       "stance": -1.728,
+       "stance": -1.621,
        "held": false
       },
       {
        "date": "2026-10-16",
-       "stance": -1.725,
+       "stance": -1.618,
        "held": false
       },
       {
        "date": "2026-10-17",
-       "stance": -1.721,
+       "stance": -1.615,
        "held": false
       },
       {
        "date": "2026-10-18",
-       "stance": -1.718,
+       "stance": -1.611,
        "held": false
       },
       {
        "date": "2026-10-19",
-       "stance": -1.714,
+       "stance": -1.607,
        "held": false
       },
       {
        "date": "2026-10-20",
-       "stance": -1.711,
+       "stance": -1.604,
        "held": false
       },
       {
        "date": "2026-10-21",
-       "stance": -1.707,
+       "stance": -1.6,
        "held": false
       },
       {
        "date": "2026-10-22",
-       "stance": -1.703,
+       "stance": -1.597,
        "held": false
       },
       {
        "date": "2026-10-23",
-       "stance": -1.7,
+       "stance": -1.593,
        "held": false
       },
       {
        "date": "2026-10-24",
-       "stance": -1.696,
+       "stance": -1.589,
        "held": false
       },
       {
        "date": "2026-10-25",
-       "stance": -1.692,
+       "stance": -1.585,
        "held": false
       },
       {
        "date": "2026-10-26",
-       "stance": -1.688,
+       "stance": -1.581,
        "held": false
       },
       {
        "date": "2026-10-27",
-       "stance": -1.684,
+       "stance": -1.577,
        "held": false
       },
       {
        "date": "2026-10-28",
-       "stance": -1.68,
+       "stance": -1.573,
        "held": false
       },
       {
        "date": "2026-10-29",
-       "stance": -1.676,
+       "stance": -1.569,
+       "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -1.565,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -1.561,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -1.557,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -1.553,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -1.548,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -1.544,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.464,
        "held": false
       }
      ],
@@ -6533,6 +6929,150 @@
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-09-28-dave-ramsden-speech-on-quantitative-tightening-p01",
+       "date": "2026-09-28T10:00:00Z",
+       "source_type": "speech",
+       "score": -3,
+       "confidence": 0.7,
+       "quote": "Indeed, with evidence that the disinflation process was on track at the time (and subsequently confirmed from my perspective with the data outturns we have seen this year) I would have expected at least two cuts by now, such that Bank Rate would be at least 0.5% below where it is today, and slightly below the UK OIS curve at the time (shown in Chart 8).",
+       "language": "en",
+       "rationale": "Absent the conflict he would have expected two cuts by now: holding only because of the shock.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/september/dave-ramsden-speech-on-quantitative-tightening",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-09-28-dave-ramsden-speech-on-quantitative-tightening-p02",
+       "date": "2026-09-28T10:00:00Z",
+       "source_type": "speech",
+       "score": -1,
+       "confidence": 0.6,
+       "quote": "I think the tightening we have seen in financial conditions since the outbreak of the conflict, shown by the increase in the OIS curve since February, has helped to limit the potential for some of the direct effects from the energy shock to propagate through to second round effects.",
+       "language": "en",
+       "rationale": "Market tightening has helped limit second-round effects.",
+       "topics": [
+        "financial_conditions"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/september/dave-ramsden-speech-on-quantitative-tightening",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-09-28-dave-ramsden-speech-on-quantitative-tightening-p03",
+       "date": "2026-09-28T10:00:00Z",
+       "source_type": "speech",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "But, as I set out in my individual paragraph in the September meeting minutes, I think the risks to the inflation outlook, whether external or domestically generated, have tilted more to the upside.",
+       "language": "en",
+       "rationale": "Risks tilted to the upside.",
+       "topics": [
+        "balance_of_risks"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/september/dave-ramsden-speech-on-quantitative-tightening",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-speech-2026-09-28-dave-ramsden-speech-on-quantitative-tightening-p04",
+       "date": "2026-09-28T10:00:00Z",
+       "source_type": "speech",
+       "score": 1,
+       "confidence": 0.6,
+       "quote": "Whilst the policy stance continues to provide restrictiveness, were upside pressures on the inflation outlook to continue to build, there could be a case for increasing Bank Rate.",
+       "language": "en",
+       "rationale": "Could be a case for a hike if pressure builds.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/speech/2026/september/dave-ramsden-speech-on-quantitative-tightening",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-ramsden",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-ramsden-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.6,
+       "quote": "I have also become somewhat less confident about the domestic disinflation process, the degree of slack, and how restrictive the policy stance has been to date.",
+       "language": "en",
+       "rationale": "Less confident on disinflation, slack and how restrictive policy is.",
+       "topics": [
+        "inflation_persistence",
+        "policy_stance"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-ramsden-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "Risks around the inflation outlook have shifted further to the upside.",
+       "language": "en",
+       "rationale": "Upside inflation risks.",
+       "topics": [
+        "balance_of_risks"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-ramsden-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -1,
+       "confidence": 0.6,
+       "quote": "Nevertheless, households and firms’ resilience could weaken, with adjustment occurring through employment losses or business failures rather than prices.",
+       "language": "en",
+       "rationale": "Adjustment could come through job losses instead.",
+       "topics": [
+        "growth",
+        "labour_market"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-ramsden-p04",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 1,
+       "confidence": 0.7,
+       "quote": "A 25-basis point increase in Bank Rate is necessary now to ensure the appropriate degree of restrictiveness. I will continue to assess the evidence at each meeting, in particular how likely high energy prices are to feed through to other prices and the economy more broadly, by monitoring the evolution of pay, pricing behaviour, and slack.",
+       "language": "en",
+       "rationale": "Hike now, no commitment to more.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": true,
+       "is_vote": false
       }
      ]
     },
@@ -6540,16 +7080,16 @@
      "id": "pill",
      "name": "Huw Pill",
      "role": "Chief Economist",
-     "stance": 4.494,
-     "signal_strength": 61.42,
+     "stance": 3.356,
+     "signal_strength": 75.23,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 20,
-     "momentum_30d": 0.047,
-     "momentum_90d": 0.146,
+     "live_points": 23,
+     "momentum_30d": -1.101,
+     "momentum_90d": -1.0,
      "series": [
       {
        "date": "2026-02-05",
@@ -7885,6 +8425,41 @@
        "date": "2026-10-29",
        "stance": 4.493,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 4.495,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 4.497,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 4.499,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 4.501,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 4.503,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 4.505,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 3.356,
+       "held": false
       }
      ],
      "points": [
@@ -8199,6 +8774,52 @@
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-pill",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-pill-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "Raising Bank Rate by 25 basis points at this meeting represents a significant step towards attaining the monetary policy stance needed to address current threats to price stability, including those stemming from uncertainty surrounding events in the Middle East and their influence over energy prices in the medium term.",
+       "language": "en",
+       "rationale": "The hike is a step toward the needed stance.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-pill-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 3,
+       "confidence": 0.8,
+       "quote": "Nonetheless, of itself, a single 25-basis point hike is unlikely to be sufficient. Achieving the level of Bank Rate necessary to confront challenges and risks to lasting achievement of the 2% inflation target is likely to require more policy tightening, including in the near term.",
+       "language": "en",
+       "rationale": "More tightening needed, including in the near term.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -8206,16 +8827,16 @@
      "id": "mann",
      "name": "Catherine Mann",
      "role": "External member",
-     "stance": 2.926,
-     "signal_strength": 55.35,
+     "stance": 2.999,
+     "signal_strength": 75.55,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-10-01T12:00:00Z",
-     "days_since_signal": 28,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 20,
-     "momentum_30d": 0.139,
-     "momentum_90d": 1.255,
+     "live_points": 24,
+     "momentum_30d": 0.156,
+     "momentum_90d": 1.319,
      "series": [
       {
        "date": "2026-02-05",
@@ -9551,6 +10172,41 @@
        "date": "2026-10-29",
        "stance": 2.924,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 2.928,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 2.932,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 2.937,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 2.941,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 2.945,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 2.95,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 2.997,
+       "held": false
       }
      ],
      "points": [
@@ -9869,6 +10525,70 @@
        "url": "https://www.bankofengland.co.uk/speech/2026/october/catherine-mann-nomura-investor-conference",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-mann",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "dissent_vote",
+       "score": 3,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4.25%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "dissent for a larger move than the majority",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-mann-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "This projection is conditioned on a significant decline in energy prices; similar futures curves earlier this year have not eventuated. My policy strategy importantly is informed by research, which points to non-linear inflation risks.",
+       "language": "en",
+       "rationale": "Inflation projection relies on energy prices falling, which has not happened before.",
+       "topics": [
+        "energy",
+        "inflation_persistence"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-mann-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 3,
+       "confidence": 0.7,
+       "quote": "With CPI inflation at 3.5% in September, the economy has crossed the estimated statistical threshold into a high inflation-tight labour market regime where the asymmetric behavioural responses of households and firms support more robust second-round effects.",
+       "language": "en",
+       "rationale": "Economy in a high inflation regime with stronger second-round effects.",
+       "topics": [
+        "second_round_effects",
+        "inflation_expectations"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-mann-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 5,
+       "confidence": 0.9,
+       "quote": "Therefore, from a risk management and credibility perspective, a 50-basis point hike in Bank Rate is ‘good policy’.",
+       "language": "en",
+       "rationale": "Explicit call for an immediate 50bp hike, larger than the committee and the market.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -9876,16 +10596,16 @@
      "id": "dhingra",
      "name": "Swati Dhingra",
      "role": "External member",
-     "stance": -2.144,
-     "signal_strength": 42.76,
+     "stance": -2.002,
+     "signal_strength": 56.43,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-17T11:00:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 17,
-     "momentum_30d": 0.078,
-     "momentum_90d": 0.289,
+     "live_points": 21,
+     "momentum_30d": 0.204,
+     "momentum_90d": 0.421,
      "series": [
       {
        "date": "2026-02-05",
@@ -11221,6 +11941,41 @@
        "date": "2026-10-29",
        "stance": -2.145,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -2.142,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -2.139,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -2.135,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -2.132,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -2.129,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -2.125,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -2.003,
+       "held": false
       }
      ],
      "points": [
@@ -11490,6 +12245,68 @@
        "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-dhingra",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-dhingra-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -1,
+       "confidence": 0.6,
+       "quote": "Broad-based price pressures remain subdued, however, and we cannot yet distinguish between delayed pass-through and weaker pass-through on the evidence available (Box A).",
+       "language": "en",
+       "rationale": "Broad price pressures subdued.",
+       "topics": [
+        "second_round_effects"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-dhingra-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 1,
+       "confidence": 0.6,
+       "quote": "Raising Bank Rate by 25 basis points provides additional insurance against upside risks from stronger pass-through and firmer growth in demand.",
+       "language": "en",
+       "rationale": "Backs the hike as insurance.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-dhingra-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -2,
+       "confidence": 0.7,
+       "quote": "To support maintaining Bank Rate at a higher level for an extended period, I would need to see clear evidence of a recovery in firms’ pricing power and households’ purchasing power alongside signs of mutually reinforcing wage and price pressures.",
+       "language": "en",
+       "rationale": "Sets a high bar for keeping rates higher for long, signalling a short-lived hike.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -11497,16 +12314,16 @@
      "id": "greene",
      "name": "Megan Greene",
      "role": "External member",
-     "stance": 3.719,
-     "signal_strength": 61.33,
+     "stance": 2.749,
+     "signal_strength": 74.9,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-10-20T17:00:00Z",
-     "days_since_signal": 9,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 21,
-     "momentum_30d": -0.031,
-     "momentum_90d": 0.46,
+     "live_points": 25,
+     "momentum_30d": -1.021,
+     "momentum_90d": -0.522,
      "series": [
       {
        "date": "2026-02-05",
@@ -12842,6 +13659,41 @@
        "date": "2026-10-29",
        "stance": 3.718,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 3.721,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 3.724,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 3.727,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 3.731,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 3.734,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 3.737,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 2.749,
+       "held": false
       }
      ],
      "points": [
@@ -13175,6 +14027,70 @@
        "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-greene",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-greene-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "Evidence of second-round effects has remained scant as expected, but the risks have clearly shifted to the upside.",
+       "language": "en",
+       "rationale": "Risks shifted clearly to the upside.",
+       "topics": [
+        "second_round_effects",
+        "balance_of_risks"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-greene-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 2,
+       "confidence": 0.6,
+       "quote": "I believe the output gap is smaller than we think and has likely peaked.",
+       "language": "en",
+       "rationale": "Less slack than assumed.",
+       "topics": [
+        "growth",
+        "labour_market"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-greene-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": 3,
+       "confidence": 0.8,
+       "quote": "We continue to face Knightian uncertainty, but a rate hike now is appropriate based on the central outlook rather than just risk management considerations. Additional hikes will likely be required going forward, though further out this will depend on pay, pricing behaviour and slack.",
+       "language": "en",
+       "rationale": "Hike on the central outlook, and more hikes likely needed.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -13182,16 +14098,16 @@
      "id": "taylor",
      "name": "Alan Taylor",
      "role": "External member",
-     "stance": -2.196,
-     "signal_strength": 46.07,
+     "stance": -2.205,
+     "signal_strength": 60.25,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-29T15:30:00Z",
-     "days_since_signal": 30,
+     "last_signal": "2026-11-05T12:00:00Z",
+     "days_since_signal": 1,
      "stale": false,
-     "live_points": 20,
-     "momentum_30d": 0.078,
-     "momentum_90d": 0.34,
+     "live_points": 24,
+     "momentum_30d": 0.053,
+     "momentum_90d": 0.32,
      "series": [
       {
        "date": "2026-02-05",
@@ -14527,6 +15443,41 @@
        "date": "2026-10-29",
        "stance": -2.197,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -2.194,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -2.191,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -2.188,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -2.185,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -2.181,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -2.178,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -2.207,
+       "held": false
       }
      ],
      "points": [
@@ -14847,11 +15798,75 @@
        "url": "https://www.bankofengland.co.uk/speech/2026/september/searching-for-signposts-speech-by-alan-taylor",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boe-2026-11-05-vote-taylor",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for Bank Rate at 4%; decision 4% (hike 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hike of 25bp to 4% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boe-minutes-2026-11-05-taylor-p01",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -4,
+       "confidence": 0.8,
+       "quote": "It is essential to communicate, and for markets to understand, that, as of now, this is not the start of a hiking cycle: policy isn’t on a pre-set, unconditional path. The risk is curve dislocation and unwarranted tightening in financial conditions.",
+       "language": "en",
+       "rationale": "Not the start of a hiking cycle: argues against the path the market prices.",
+       "topics": [
+        "rate_path",
+        "financial_conditions"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-taylor-p02",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -3,
+       "confidence": 0.8,
+       "quote": "Rather, from an already restrictive position, this is a risk-management ‘one-for-now’ insurance hike.",
+       "language": "en",
+       "rationale": "A one-for-now insurance hike from a restrictive stance.",
+       "topics": [
+        "rate_path",
+        "policy_stance"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "boe-minutes-2026-11-05-taylor-p03",
+       "date": "2026-11-05T12:00:00Z",
+       "source_type": "minutes_statement",
+       "score": -2,
+       "confidence": 0.6,
+       "quote": "The next move could be up, down, or sideways.",
+       "language": "en",
+       "rationale": "Open to a cut next, against priced hikes.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     }
    ],
-   "median": -1.312,
+   "median": -1.328,
    "votes": [
     {
      "date": "2026-02-05",
@@ -15230,241 +16245,304 @@
        "guidance": false
       }
      }
+    },
+    {
+     "date": "2026-11-05",
+     "decision_rate": 4.0,
+     "previous_rate": 3.75,
+     "label": "hike 8-1",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "votes": {
+      "bailey": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "breeden": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "dhingra": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "greene": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "lombardelli": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "pill": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "ramsden": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "taylor": {
+       "rate": 4.0,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "mann": {
+       "rate": 4.25,
+       "dissent": true,
+       "direction": 1,
+       "guidance": false
+      }
+     }
     }
    ],
    "ticker": [
     {
-     "member_id": "greene",
-     "date": "2026-10-20T17:00:00Z",
-     "score": 2,
-     "quote": "I believe the evidence laid out in this speech shows the risk of second-round effects is greater than we thought. Furthermore, staff simulations suggest setting policy as if you were in a stronger second-round effects scenario and then adjusting policy upon learning you are in a minimal second-round effects scenario leads to better outcomes than doing the opposite. I therefore continue to believe we should proactively lean against the risk of second-round effects.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
+     "member_id": "bailey",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 1,
+     "quote": "Absent this, risks to energy prices, and so to inflation, are to the upside.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
-      "second_round_effects",
-      "rate_path"
-     ]
-    },
-    {
-     "member_id": "greene",
-     "date": "2026-10-20T17:00:00Z",
-     "score": 2,
-     "quote": "It is not obvious to me from this data that our monetary policy stance is meaningfully restrictive.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/october/megan-greene-speech-at-lse-economics-society-london",
-     "topics": [
-      "policy_stance"
-     ]
-    },
-    {
-     "member_id": "mann",
-     "date": "2026-10-01T12:00:00Z",
-     "score": 4,
-     "quote": "In my view, our current monetary policy stance is not sufficiently tight, which is why I voted in the last two meetings for a 25 basis point increase in Bank Rate.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/october/catherine-mann-nomura-investor-conference",
-     "topics": [
-      "policy_stance",
-      "rate_path"
-     ]
-    },
-    {
-     "member_id": "mann",
-     "date": "2026-10-01T12:00:00Z",
-     "score": 3,
-     "quote": "At some point, we need to follow-through with Bank Rate rises – to maintain credibility, and to avoid policy expectations repricing downwards and inflation expectations repricing further upwards.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/october/catherine-mann-nomura-investor-conference",
-     "topics": [
-      "rate_path",
-      "inflation_expectations"
-     ]
-    },
-    {
-     "member_id": "mann",
-     "date": "2026-10-01T12:00:00Z",
-     "score": 3,
-     "quote": "Given rising upside risks to inflation, a risk management strategy to monetary policy is appropriate.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/october/catherine-mann-nomura-investor-conference",
-     "topics": [
+      "energy",
       "balance_of_risks"
      ]
     },
     {
-     "member_id": "taylor",
-     "date": "2026-09-29T15:30:00Z",
-     "score": -2,
-     "quote": "My view is that the current stance is also sufficiently restrictive, given the initial conditions of the economy in which the shock is hitting.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/september/searching-for-signposts-speech-by-alan-taylor",
-     "topics": [
-      "policy_stance"
-     ]
-    },
-    {
-     "member_id": "taylor",
-     "date": "2026-09-29T15:30:00Z",
-     "score": -2,
-     "quote": "However, it does suggest, to me, that the burden of proof for additional tightening should rest on evidence that second-round effects are actually gaining traction, rather than on the existence of the energy shock alone.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/september/searching-for-signposts-speech-by-alan-taylor",
-     "topics": [
-      "rate_path",
-      "second_round_effects"
-     ]
-    },
-    {
-     "member_id": "taylor",
-     "date": "2026-09-29T15:30:00Z",
-     "score": -2,
-     "quote": "But symmetrically, if the economy evolves broadly as expected, with demand weakening and underlying domestic inflationary pressures continuing to moderate, then at some point, once energy risks abate, policy will need to move in the other direction",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/september/searching-for-signposts-speech-by-alan-taylor",
+     "member_id": "bailey",
+     "date": "2026-11-05T12:00:00Z",
+     "score": -1,
+     "quote": "Without news which softens the risks to inflationary pressures, I can see the argument for a further increase in rates and thereafter taking a more conditional approach, dependent on the evidence on energy prices and inflation dynamics.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
       "rate_path"
      ]
     },
     {
-     "member_id": "lombardelli",
-     "date": "2026-09-24T08:00:00Z",
-     "score": 2,
-     "quote": "On that basis, policy is increasingly likely to need to tighten if elevated energy prices persist, absent clear evidence of disinflation or weaker activity.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/september/clare-lombardelli-speech-at-the-sixth-biennial-conference-poland",
-     "topics": [
-      "rate_path",
-      "energy"
-     ]
-    },
-    {
-     "member_id": "lombardelli",
-     "date": "2026-09-24T08:00:00Z",
-     "score": 2,
-     "quote": "Finally, monetary policy should lean strongly against second-round effects, which risk de-anchoring inflation and preventing it from returning sustainably to target.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/september/clare-lombardelli-speech-at-the-sixth-biennial-conference-poland",
-     "topics": [
-      "second_round_effects"
-     ]
-    },
-    {
-     "member_id": "lombardelli",
-     "date": "2026-09-24T08:00:00Z",
-     "score": -1,
-     "quote": "But this is by no means suggesting that monetary policy should respond mechanically to movements in energy prices.",
-     "source_type": "speech",
-     "url": "https://www.bankofengland.co.uk/speech/2026/september/clare-lombardelli-speech-at-the-sixth-biennial-conference-poland",
-     "topics": [
-      "energy"
-     ]
-    },
-    {
      "member_id": "bailey",
-     "date": "2026-09-17T11:00:00Z",
-     "score": 2,
-     "quote": "But if the conflict in the Middle East persists for an extended period, as appears to be the case, and the risk of second-round effects emerging increases, it is likely that policy may have to tighten.",
+     "date": "2026-11-05T12:00:00Z",
+     "score": -2,
+     "quote": "Recognising that some of the upward slope in the curve is explained by risk premia and not expected rates, the current level of restrictiveness is broadly appropriate.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
-      "rate_path",
-      "energy"
-     ]
-    },
-    {
-     "member_id": "bailey",
-     "date": "2026-09-17T11:00:00Z",
-     "score": -1,
-     "quote": "Financial conditions will continue to work to push down on inflation, and holding Bank Rate is appropriate at this meeting.",
-     "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-     "topics": [
+      "policy_stance",
       "financial_conditions"
      ]
     },
     {
      "member_id": "breeden",
-     "date": "2026-09-17T11:00:00Z",
+     "date": "2026-11-05T12:00:00Z",
      "score": 2,
-     "quote": "Material uncertainty is likely to continue, but if risks to the outlook for second-round effects crystallise, it becomes increasingly appropriate for Bank Rate to respond.",
+     "quote": "But with inflation expected to be above the threshold for non-linear effects, and little sign of a rapid or durable resolution to the conflict, the degree of inflationary pressure in the pipeline is now sufficient to warrant an increase in Bank Rate.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
       "rate_path",
+      "inflation_persistence"
+     ]
+    },
+    {
+     "member_id": "breeden",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 1,
+     "quote": "The longer energy prices remain high the more likely persistent inflationary effects take hold, which would require further tightening in Bank Rate. But this will also depend on how energy prices propagate, especially given the risk that demand weakens.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "energy",
       "second_round_effects"
      ]
     },
     {
      "member_id": "breeden",
-     "date": "2026-09-17T11:00:00Z",
-     "score": 2,
-     "quote": "These make material second-round effects more likely, particularly if inflation approaches levels associated with non-linear effects.",
+     "date": "2026-11-05T12:00:00Z",
+     "score": -2,
+     "quote": "For now, I judge the current restrictiveness of financial conditions as sufficient to balance these.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "policy_stance",
+      "financial_conditions"
+     ]
+    },
+    {
+     "member_id": "dhingra",
+     "date": "2026-11-05T12:00:00Z",
+     "score": -1,
+     "quote": "Broad-based price pressures remain subdued, however, and we cannot yet distinguish between delayed pass-through and weaker pass-through on the evidence available (Box A).",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
       "second_round_effects"
      ]
     },
     {
      "member_id": "dhingra",
-     "date": "2026-09-17T11:00:00Z",
-     "score": -2,
-     "quote": "I therefore continue to see value in waiting for a clearer read on the durable scale of the shock over the coming months, including evidence on first-round energy effects and the conditions for 2027 wage and price-setting.",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 1,
+     "quote": "Raising Bank Rate by 25 basis points provides additional insurance against upside risks from stronger pass-through and firmer growth in demand.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
       "rate_path"
      ]
     },
     {
      "member_id": "dhingra",
-     "date": "2026-09-17T11:00:00Z",
+     "date": "2026-11-05T12:00:00Z",
      "score": -2,
-     "quote": "With consumption subdued, vacancies below pre-pandemic levels and margins not expanding, the domestic economy appears unlikely to sustain second-round effects that would magnify the initial impulse.",
+     "quote": "To support maintaining Bank Rate at a higher level for an extended period, I would need to see clear evidence of a recovery in firms’ pricing power and households’ purchasing power alongside signs of mutually reinforcing wage and price pressures.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
-     "topics": [
-      "second_round_effects",
-      "labour_market"
-     ]
-    },
-    {
-     "member_id": "greene",
-     "date": "2026-09-17T11:00:00Z",
-     "score": 3,
-     "quote": "Waiting for definitive evidence of second-round effects before acting would leave policy behind the curve, and we cannot rely on premia to do our work for us.",
-     "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
       "rate_path"
      ]
     },
     {
      "member_id": "greene",
-     "date": "2026-09-17T11:00:00Z",
+     "date": "2026-11-05T12:00:00Z",
      "score": 2,
-     "quote": "But resilience in labour demand and activity suggest slack may have already peaked.",
+     "quote": "Evidence of second-round effects has remained scant as expected, but the risks have clearly shifted to the upside.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
+      "second_round_effects",
+      "balance_of_risks"
+     ]
+    },
+    {
+     "member_id": "greene",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 2,
+     "quote": "I believe the output gap is smaller than we think and has likely peaked.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "growth",
       "labour_market"
      ]
     },
     {
-     "member_id": "lombardelli",
-     "date": "2026-09-17T11:00:00Z",
-     "score": 2,
-     "quote": "The outlook for energy prices is uncertain and could change in the coming weeks, but the case for raising Bank Rate is building the longer the conflict continues without lasting resolution.",
+     "member_id": "greene",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 3,
+     "quote": "We continue to face Knightian uncertainty, but a rate hike now is appropriate based on the central outlook rather than just risk management considerations. Additional hikes will likely be required going forward, though further out this will depend on pay, pricing behaviour and slack.",
      "source_type": "minutes_statement",
-     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
      "topics": [
-      "rate_path",
-      "energy"
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "lombardelli",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 2,
+     "quote": "Cost pressures have remained elevated for sufficiently long that there is now a greater risk of second-round effects becoming embedded in price and wage-setting (Box A).",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "second_round_effects"
+     ]
+    },
+    {
+     "member_id": "lombardelli",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 2,
+     "quote": "But overall I view the balance of risks to the inflation path as upside to our forecast given the ongoing energy price uncertainty and limited evidence of slack.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "balance_of_risks"
+     ]
+    },
+    {
+     "member_id": "lombardelli",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 1,
+     "quote": "In the absence of evidence of weaker inflation pressures, there is likely to be a case for a further increase in rates in the near term.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "pill",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 2,
+     "quote": "Raising Bank Rate by 25 basis points at this meeting represents a significant step towards attaining the monetary policy stance needed to address current threats to price stability, including those stemming from uncertainty surrounding events in the Middle East and their influence over energy prices in the medium term.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "pill",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 3,
+     "quote": "Nonetheless, of itself, a single 25-basis point hike is unlikely to be sufficient. Achieving the level of Bank Rate necessary to confront challenges and risks to lasting achievement of the 2% inflation target is likely to require more policy tightening, including in the near term.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "ramsden",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 2,
+     "quote": "I have also become somewhat less confident about the domestic disinflation process, the degree of slack, and how restrictive the policy stance has been to date.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "inflation_persistence",
+      "policy_stance"
+     ]
+    },
+    {
+     "member_id": "ramsden",
+     "date": "2026-11-05T12:00:00Z",
+     "score": 2,
+     "quote": "Risks around the inflation outlook have shifted further to the upside.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "balance_of_risks"
+     ]
+    },
+    {
+     "member_id": "ramsden",
+     "date": "2026-11-05T12:00:00Z",
+     "score": -1,
+     "quote": "Nevertheless, households and firms’ resilience could weaken, with adjustment occurring through employment losses or business failures rather than prices.",
+     "source_type": "minutes_statement",
+     "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+     "topics": [
+      "growth",
+      "labour_market"
      ]
     }
    ],
-   "scored_passages": 124,
-   "votes_recorded": 45
+   "scored_passages": 159,
+   "votes_recorded": 54
   },
   "BoJ": {
    "members": [
@@ -15472,16 +16550,16 @@
      "id": "ueda",
      "name": "Kazuo Ueda",
      "role": "Governor",
-     "stance": -0.144,
-     "signal_strength": 45.63,
+     "stance": -0.469,
+     "signal_strength": 58.64,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-10-16T09:37:00Z",
-     "days_since_signal": 13,
+     "last_signal": "2026-10-30T06:30:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 24,
-     "momentum_30d": 0.14,
-     "momentum_90d": 1.055,
+     "live_points": 29,
+     "momentum_30d": -0.203,
+     "momentum_90d": 0.728,
      "series": [
       {
        "date": "2026-01-23",
@@ -16882,6 +17960,41 @@
        "date": "2026-10-29",
        "stance": -0.146,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.481,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.479,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.477,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.476,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.474,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.472,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.47,
+       "held": false
       }
      ],
      "points": [
@@ -17261,6 +18374,87 @@
        "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261020a.pdf",
        "institutional": true,
        "is_vote": false
+      },
+      {
+       "id": "boj-2026-10-30-vote-ueda",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
+      },
+      {
+       "id": "boj-press-2026-10-30-ueda-kk261102a-p01",
+       "date": "2026-10-30T06:30:00Z",
+       "source_type": "press_conference",
+       "score": 1,
+       "confidence": 0.6,
+       "quote": "基調的な物価上昇率が2%の物価安定の目標と概ね整合的な水準となる中、企業の賃金・価格設定行動が積極化していることや、様々な物価上振れ要因を踏まえますと、中長期的な予想物価上昇率が上昇し、基調的な物価上昇率が2%の物価安定の目標を超えて上振れていくリスクがあります。",
+       "language": "ja",
+       "rationale": "Risk that underlying inflation overshoots 2 percent as expectations rise.",
+       "topics": [
+        "inflation_expectations",
+        "balance_of_risks"
+       ],
+       "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boj-press-2026-10-30-ueda-kk261102a-p02",
+       "date": "2026-10-30T06:30:00Z",
+       "source_type": "press_conference",
+       "score": 0,
+       "confidence": 0.7,
+       "quote": "私どもとしては、基調的な物価上昇率が2%の物価安定の目標と概ね整合的な水準となる中、現在の金融環境が緩和的であることを踏まえますと、経済・物価・金融情勢に応じて、引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+       "language": "ja",
+       "rationale": "The Governor restates the path: keep raising rates as conditions allow.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boj-press-2026-10-30-ueda-kk261102a-p03",
+       "date": "2026-10-30T06:30:00Z",
+       "source_type": "press_conference",
+       "score": -1,
+       "confidence": 0.5,
+       "quote": "それから、どういうときに、well positionedというふうに言えるかという二番目のご質問ですが、抽象的には概ね政策金利が中立金利に達して上下両方向のショックに機動的に対応できるという状態ということだと思いますけれども、それがいつどういうふうに判断できるかという点に関しては、現実にはなかなかそう簡単に今そこに達したという判断が難しいということは、これまでお話してきた通りでございまして、これまで何回か利上げをしてきておりますが、その累積的な影響を確認、および何度も申し上げてるような、同時に金融環境をよくみるということを、その一部が累積的な影響を確認していく作業であるわけですけれども、みながら少しずつ確認していくしかないなというふうに思っています。",
+       "language": "ja",
+       "rationale": "Hard to tell when neutral is reached; will check step by step.",
+       "topics": [
+        "neutral_rate",
+        "rate_path"
+       ],
+       "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+       "institutional": true,
+       "is_vote": false
+      },
+      {
+       "id": "boj-press-2026-10-30-ueda-kk261102a-p04",
+       "date": "2026-10-30T06:30:00Z",
+       "source_type": "press_conference",
+       "score": 1,
+       "confidence": 0.6,
+       "quote": "私どもの考え方としては、機動的に利上げできるかどうかということよりも、これまでは基調物価が2[%]を下回ってる中で、基調物価が少し上昇するということは、ある種容認されることで、2[%]に上がっていくことがある種狙いですので、これからはもう2[%]に達してますので、ある程度目にみえて上がるということは望ましくないことであると。従ってそういうことを考えますと、上振れリスクには適宜対応しないといけないということが導かれるという考え方でございます。",
+       "language": "ja",
+       "rationale": "With underlying inflation at 2 percent, further rises are unwelcome, so upside risks must be met.",
+       "topics": [
+        "inflation_persistence",
+        "rate_path"
+       ],
+       "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+       "institutional": true,
+       "is_vote": false
       }
      ]
     },
@@ -17268,16 +18462,16 @@
      "id": "uchida",
      "name": "Shinichi Uchida",
      "role": "Deputy Governor",
-     "stance": 0.013,
-     "signal_strength": 35.91,
+     "stance": -0.476,
+     "signal_strength": 45.83,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 8,
-     "momentum_30d": 0.108,
-     "momentum_90d": 0.94,
+     "live_points": 9,
+     "momentum_30d": -0.404,
+     "momentum_90d": 0.444,
      "series": [
       {
        "date": "2026-01-23",
@@ -18678,6 +19872,41 @@
        "date": "2026-10-29",
        "stance": 0.012,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.49,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.488,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.486,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.484,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.482,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.48,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.478,
+       "held": false
       }
      ],
      "points": [
@@ -18796,6 +20025,20 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-uchida",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -18803,16 +20046,16 @@
      "id": "himino",
      "name": "Ryozo Himino",
      "role": "Deputy Governor",
-     "stance": 0.193,
-     "signal_strength": 40.75,
+     "stance": -0.29,
+     "signal_strength": 50.44,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 14,
-     "momentum_30d": 0.111,
-     "momentum_90d": 1.161,
+     "live_points": 15,
+     "momentum_30d": -0.395,
+     "momentum_90d": 0.672,
      "series": [
       {
        "date": "2026-01-23",
@@ -20213,6 +21456,41 @@
        "date": "2026-10-29",
        "stance": 0.191,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.304,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.302,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.3,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.298,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.296,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.294,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.291,
+       "held": false
       }
      ],
      "points": [
@@ -20430,6 +21708,20 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-himino",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -20437,16 +21729,16 @@
      "id": "takata",
      "name": "Hajime Takata",
      "role": "Policy Board member",
-     "stance": 3.528,
-     "signal_strength": 49.48,
+     "stance": 3.912,
+     "signal_strength": 64.45,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 15,
-     "momentum_30d": -0.075,
-     "momentum_90d": -0.795,
+     "live_points": 16,
+     "momentum_30d": 0.325,
+     "momentum_90d": -0.41,
      "series": [
       {
        "date": "2026-01-23",
@@ -21847,6 +23139,41 @@
        "date": "2026-10-29",
        "stance": 3.529,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 3.92,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 3.918,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 3.917,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 3.916,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 3.915,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 3.914,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 3.913,
+       "held": false
       }
      ],
      "points": [
@@ -22080,6 +23407,20 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-takata",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "dissent_vote",
+       "score": 5,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.5%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "dissent for a hike of 25bp to 1.5% against a majority hold at 1.25%",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -22087,16 +23428,16 @@
      "id": "tamura",
      "name": "Naoki Tamura",
      "role": "Policy Board member",
-     "stance": 1.354,
-     "signal_strength": 41.15,
+     "stance": 0.594,
+     "signal_strength": 50.75,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 12,
-     "momentum_30d": 0.057,
-     "momentum_90d": 0.328,
+     "live_points": 13,
+     "momentum_30d": -0.715,
+     "momentum_90d": -0.437,
      "series": [
       {
        "date": "2026-01-23",
@@ -23497,6 +24838,41 @@
        "date": "2026-10-29",
        "stance": 1.353,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 0.597,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 0.596,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 0.596,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 0.595,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 0.595,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 0.594,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 0.594,
+       "held": false
       }
      ],
      "points": [
@@ -23681,6 +25057,20 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-tamura",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -23688,16 +25078,16 @@
      "id": "koeda",
      "name": "Junko Koeda",
      "role": "Policy Board member",
-     "stance": 0.408,
-     "signal_strength": 43.81,
+     "stance": -0.094,
+     "signal_strength": 53.48,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-10-15T05:30:00Z",
-     "days_since_signal": 15,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 16,
-     "momentum_30d": 0.34,
-     "momentum_90d": 1.075,
+     "live_points": 17,
+     "momentum_30d": -0.183,
+     "momentum_90d": 0.566,
      "series": [
       {
        "date": "2026-01-23",
@@ -25098,6 +26488,41 @@
        "date": "2026-10-29",
        "stance": 0.406,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.109,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.106,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.104,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.102,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.1,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.098,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.096,
+       "held": false
       }
      ],
      "points": [
@@ -25346,6 +26771,20 @@
        "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261016a.pdf",
        "institutional": false,
        "is_vote": false
+      },
+      {
+       "id": "boj-2026-10-30-vote-koeda",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -25353,16 +26792,16 @@
      "id": "masu",
      "name": "Kazuyuki Masu",
      "role": "Policy Board member",
-     "stance": 0.313,
-     "signal_strength": 42.1,
+     "stance": -0.186,
+     "signal_strength": 51.7,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 18,
-     "momentum_30d": 0.106,
-     "momentum_90d": 1.022,
+     "live_points": 19,
+     "momentum_30d": -0.415,
+     "momentum_90d": 0.518,
      "series": [
       {
        "date": "2026-01-23",
@@ -26763,6 +28202,41 @@
        "date": "2026-10-29",
        "stance": 0.311,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.199,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.197,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.195,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.193,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.191,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.189,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.187,
+       "held": false
       }
      ],
      "points": [
@@ -27046,6 +28520,20 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-masu",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -27053,16 +28541,16 @@
      "id": "asada",
      "name": "Toichiro Asada",
      "role": "Policy Board member",
-     "stance": -3.919,
-     "signal_strength": 39.52,
+     "stance": -3.475,
+     "signal_strength": 49.72,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 6,
-     "momentum_30d": -0.032,
-     "momentum_90d": -0.72,
+     "live_points": 7,
+     "momentum_30d": 0.419,
+     "momentum_90d": -0.274,
      "series": [
       {
        "date": "2026-04-01",
@@ -28123,6 +29611,41 @@
        "date": "2026-10-29",
        "stance": -3.919,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -3.473,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -3.473,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -3.473,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -3.473,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -3.474,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -3.474,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -3.474,
+       "held": false
       }
      ],
      "points": [
@@ -28213,6 +29736,20 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-asada",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     },
@@ -28220,16 +29757,16 @@
      "id": "sato",
      "name": "Ayano Sato",
      "role": "Policy Board member",
-     "stance": -3.67,
-     "signal_strength": 25.69,
+     "stance": -3.141,
+     "signal_strength": 36.62,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-09-18T02:47:00Z",
-     "days_since_signal": 42,
+     "last_signal": "2026-10-30T02:55:00Z",
+     "days_since_signal": 7,
      "stale": false,
-     "live_points": 4,
-     "momentum_30d": -0.024,
-     "momentum_90d": -2.037,
+     "live_points": 5,
+     "momentum_30d": 0.51,
+     "momentum_90d": -1.507,
      "series": [
       {
        "date": "2026-06-30",
@@ -28840,6 +30377,41 @@
        "date": "2026-10-29",
        "stance": -3.67,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -3.139,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -3.139,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -3.139,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -3.14,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -3.14,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -3.14,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -3.14,
+       "held": false
       }
      ],
      "points": [
@@ -28902,75 +30474,26 @@
        "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k260918a.pdf",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "boj-2026-10-30-vote-sato",
+       "date": "2026-10-30T02:55:00Z",
+       "source_type": "majority_vote",
+       "score": -2,
+       "confidence": 1.0,
+       "quote": "Voted for the policy rate at 1.25%; decision 1.25% (hold 8-1).",
+       "language": "en",
+       "rationale": "majority vote for a hold at 1.25% at a split meeting, against hawkish dissent",
+       "topics": [],
+       "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+       "institutional": false,
+       "is_vote": true
       }
      ]
     }
    ],
-   "median": 0.193,
+   "median": -0.29,
    "votes": [
-    {
-     "date": "2025-10-30",
-     "decision_rate": 0.5,
-     "previous_rate": 0.5,
-     "label": "hold 7-2",
-     "url": "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k251030a.htm",
-     "votes": {
-      "ueda": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "uchida": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "himino": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "koeda": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "masu": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "noguchi": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "nakagawa": {
-       "rate": 0.5,
-       "dissent": false,
-       "direction": 0,
-       "guidance": false
-      },
-      "takata": {
-       "rate": 0.75,
-       "dissent": true,
-       "direction": 1,
-       "guidance": false
-      },
-      "tamura": {
-       "rate": 0.75,
-       "dissent": true,
-       "direction": 1,
-       "guidance": false
-      }
-     }
-    },
     {
      "date": "2025-12-19",
      "decision_rate": 0.75,
@@ -29405,9 +30928,119 @@
        "guidance": false
       }
      }
+    },
+    {
+     "date": "2026-10-30",
+     "decision_rate": 1.25,
+     "previous_rate": 1.25,
+     "label": "hold 8-1",
+     "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+     "votes": {
+      "ueda": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "uchida": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "himino": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "tamura": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "koeda": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "masu": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "asada": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "sato": {
+       "rate": 1.25,
+       "dissent": false,
+       "direction": 0,
+       "guidance": false
+      },
+      "takata": {
+       "rate": 1.5,
+       "dissent": true,
+       "direction": 1,
+       "guidance": false
+      }
+     }
     }
    ],
    "ticker": [
+    {
+     "member_id": "ueda",
+     "date": "2026-10-30T06:30:00Z",
+     "score": 1,
+     "quote": "基調的な物価上昇率が2%の物価安定の目標と概ね整合的な水準となる中、企業の賃金・価格設定行動が積極化していることや、様々な物価上振れ要因を踏まえますと、中長期的な予想物価上昇率が上昇し、基調的な物価上昇率が2%の物価安定の目標を超えて上振れていくリスクがあります。",
+     "source_type": "press_conference",
+     "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+     "topics": [
+      "inflation_expectations",
+      "balance_of_risks"
+     ]
+    },
+    {
+     "member_id": "ueda",
+     "date": "2026-10-30T06:30:00Z",
+     "score": 0,
+     "quote": "私どもとしては、基調的な物価上昇率が2%の物価安定の目標と概ね整合的な水準となる中、現在の金融環境が緩和的であることを踏まえますと、経済・物価・金融情勢に応じて、引き続き政策金利を引き上げ、金融緩和の度合いを調整していくことになると考えています。",
+     "source_type": "press_conference",
+     "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+     "topics": [
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "ueda",
+     "date": "2026-10-30T06:30:00Z",
+     "score": -1,
+     "quote": "それから、どういうときに、well positionedというふうに言えるかという二番目のご質問ですが、抽象的には概ね政策金利が中立金利に達して上下両方向のショックに機動的に対応できるという状態ということだと思いますけれども、それがいつどういうふうに判断できるかという点に関しては、現実にはなかなかそう簡単に今そこに達したという判断が難しいということは、これまでお話してきた通りでございまして、これまで何回か利上げをしてきておりますが、その累積的な影響を確認、および何度も申し上げてるような、同時に金融環境をよくみるということを、その一部が累積的な影響を確認していく作業であるわけですけれども、みながら少しずつ確認していくしかないなというふうに思っています。",
+     "source_type": "press_conference",
+     "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+     "topics": [
+      "neutral_rate",
+      "rate_path"
+     ]
+    },
+    {
+     "member_id": "ueda",
+     "date": "2026-10-30T06:30:00Z",
+     "score": 1,
+     "quote": "私どもの考え方としては、機動的に利上げできるかどうかということよりも、これまでは基調物価が2[%]を下回ってる中で、基調物価が少し上昇するということは、ある種容認されることで、2[%]に上がっていくことがある種狙いですので、これからはもう2[%]に達してますので、ある程度目にみえて上がるということは望ましくないことであると。従ってそういうことを考えますと、上振れリスクには適宜対応しないといけないということが導かれるという考え方でございます。",
+     "source_type": "press_conference",
+     "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf",
+     "topics": [
+      "inflation_persistence",
+      "rate_path"
+     ]
+    },
     {
      "member_id": "ueda",
      "date": "2026-10-16T09:37:00Z",
@@ -29587,54 +31220,10 @@
       "neutral_rate",
       "second_round_effects"
      ]
-    },
-    {
-     "member_id": "takata",
-     "date": "2026-09-02T01:30:00Z",
-     "score": 1,
-     "quote": "With respect to the conduct of monetary policy, my view is that in 2026, Japan's economy has entered a phase that differs from the environment seen up to 2024-2025; on this basis, I consider it necessary for the Bank to adopt a nimble approach.",
-     "source_type": "speech",
-     "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko260902a.htm",
-     "topics": [
-      "rate_path"
-     ]
-    },
-    {
-     "member_id": "takata",
-     "date": "2026-09-02T01:30:00Z",
-     "score": -2,
-     "quote": "In regard to further policy interest rate hikes, my view is that the Bank should not aim to reach the expected neutral interest rate, nor should it be bound by particular intervals or ranges anticipated in the markets.",
-     "source_type": "speech",
-     "url": "https://www.boj.or.jp/en/about/press/koen_2026/ko260902a.htm",
-     "topics": [
-      "neutral_rate"
-     ]
-    },
-    {
-     "member_id": "ueda",
-     "date": "2026-09-01T10:31:00Z",
-     "score": 0,
-     "quote": "そのうえで、もう一度そのときお話ししたような基本的な考え方を繰り返させて頂きますと、そのとき申し上げた通りですが、金融緩和度合いの調整のタイミング、あるいはペースについては、そのとき申し上げた三つのポイント、中東情勢とそれからAI関連の動き、そして為替相場の変動の影響、これらを特に重視しつつ、経済・物価の中心的な見通しが実現する確度、あるいはその周りのリスクを点検しながら検討していくという基本的な考え方です。",
-     "source_type": "press_conference",
-     "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk260904a.pdf",
-     "topics": [
-      "rate_path"
-     ]
-    },
-    {
-     "member_id": "himino",
-     "date": "2026-08-27T05:00:00Z",
-     "score": 2,
-     "quote": "特に、現状、基調的な物価上昇率が2%に近づいていることを踏まえますと、これまで以上に物価の上振れリスクを意識する必要があると考えておりまして、こうした基本的な考え方に立って、経済・物価・金融情勢を点検しながら、毎回の決定会合において、しっかり議論してまいりたいと考えております。",
-     "source_type": "press_conference",
-     "url": "https://www.boj.or.jp/about/press/kaiken_2026/kk260828a.pdf",
-     "topics": [
-      "balance_of_risks"
-     ]
     }
    ],
-   "scored_passages": 70,
-   "votes_recorded": 53
+   "scored_passages": 74,
+   "votes_recorded": 62
   },
   "Fed": {
    "members": [
@@ -29642,16 +31231,16 @@
      "id": "warsh",
      "name": "Kevin Warsh",
      "role": "Chair",
-     "stance": -0.944,
-     "signal_strength": 33.8,
+     "stance": -0.946,
+     "signal_strength": 32.83,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:30:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 17,
-     "momentum_30d": -0.495,
-     "momentum_90d": 0.066,
+     "momentum_30d": -0.497,
+     "momentum_90d": 0.065,
      "series": [
       {
        "date": "2026-06-17",
@@ -30327,6 +31916,41 @@
        "date": "2026-10-29",
        "stance": -0.944,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.944,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.945,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.945,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.945,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.946,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.946,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.946,
+       "held": false
       }
      ],
      "points": [
@@ -30609,16 +32233,16 @@
      "id": "jefferson",
      "name": "Philip N. Jefferson",
      "role": "Vice Chair",
-     "stance": -0.868,
-     "signal_strength": 33.54,
+     "stance": -0.916,
+     "signal_strength": 31.87,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 26,
-     "momentum_30d": -0.715,
-     "momentum_90d": -0.912,
+     "momentum_30d": -0.795,
+     "momentum_90d": -0.943,
      "series": [
       {
        "date": "2026-01-16",
@@ -32054,6 +33678,41 @@
        "date": "2026-10-29",
        "stance": -0.866,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.872,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.878,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.885,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.892,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.898,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.905,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.912,
+       "held": false
       }
      ],
      "points": [
@@ -32481,16 +34140,16 @@
      "id": "bowman",
      "name": "Michelle W. Bowman",
      "role": "Vice Chair for Supervision",
-     "stance": -1.32,
-     "signal_strength": 27.05,
+     "stance": -1.373,
+     "signal_strength": 25.63,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 14,
-     "momentum_30d": -0.731,
-     "momentum_90d": -0.933,
+     "momentum_30d": -0.746,
+     "momentum_90d": -0.968,
      "series": [
       {
        "date": "2026-01-16",
@@ -33926,6 +35585,41 @@
        "date": "2026-10-29",
        "stance": -1.318,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -1.325,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -1.332,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -1.339,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -1.346,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -1.353,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -1.361,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.368,
+       "held": false
       }
      ],
      "points": [
@@ -34159,16 +35853,16 @@
      "id": "powell",
      "name": "Jerome H. Powell",
      "role": "Governor",
-     "stance": -1.167,
-     "signal_strength": 27.06,
+     "stance": -1.231,
+     "signal_strength": 25.67,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 15,
-     "momentum_30d": -0.902,
-     "momentum_90d": -1.159,
+     "momentum_30d": -0.919,
+     "momentum_90d": -1.201,
      "series": [
       {
        "date": "2026-01-28",
@@ -35544,6 +37238,41 @@
        "date": "2026-10-29",
        "stance": -1.164,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -1.172,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -1.181,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -1.19,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -1.198,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -1.207,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -1.216,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.226,
+       "held": false
       }
      ],
      "points": [
@@ -35794,16 +37523,16 @@
      "id": "waller",
      "name": "Christopher J. Waller",
      "role": "Governor",
-     "stance": -0.912,
-     "signal_strength": 38.01,
+     "stance": -0.882,
+     "signal_strength": 36.12,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 28,
-     "momentum_30d": 0.096,
-     "momentum_90d": 0.297,
+     "momentum_30d": 0.092,
+     "momentum_90d": 0.31,
      "series": [
       {
        "date": "2026-01-28",
@@ -37179,6 +38908,41 @@
        "date": "2026-10-29",
        "stance": -0.913,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.909,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.905,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.901,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.897,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.893,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.889,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.884,
+       "held": false
       }
      ],
      "points": [
@@ -37643,16 +39407,16 @@
      "id": "barr",
      "name": "Michael S. Barr",
      "role": "Governor",
-     "stance": -0.319,
-     "signal_strength": 36.33,
+     "stance": -0.356,
+     "signal_strength": 34.74,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 16,
-     "momentum_30d": -0.919,
-     "momentum_90d": -0.525,
+     "momentum_30d": -0.936,
+     "momentum_90d": -0.536,
      "series": [
       {
        "date": "2026-01-28",
@@ -39028,6 +40792,41 @@
        "date": "2026-10-29",
        "stance": -0.317,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.322,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.327,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.332,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.337,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.342,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.348,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.353,
+       "held": false
       }
      ],
      "points": [
@@ -39288,16 +41087,16 @@
      "id": "cook",
      "name": "Lisa D. Cook",
      "role": "Governor",
-     "stance": 2.26,
-     "signal_strength": 44.85,
+     "stance": 2.277,
+     "signal_strength": 42.98,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 25,
-     "momentum_30d": 1.788,
-     "momentum_90d": 1.912,
+     "momentum_30d": 1.766,
+     "momentum_90d": 1.813,
      "series": [
       {
        "date": "2026-01-28",
@@ -40673,6 +42472,41 @@
        "date": "2026-10-29",
        "stance": 2.259,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 2.261,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 2.264,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 2.266,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 2.268,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 2.271,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 2.273,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 2.275,
+       "held": false
       }
      ],
      "points": [
@@ -41081,16 +42915,16 @@
      "id": "williams",
      "name": "John C. Williams",
      "role": "President, New York Fed (FOMC Vice Chair)",
-     "stance": -1.049,
-     "signal_strength": 34.6,
+     "stance": -1.095,
+     "signal_strength": 32.87,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 27,
-     "momentum_30d": -0.654,
-     "momentum_90d": -0.828,
+     "momentum_30d": -0.67,
+     "momentum_90d": -0.858,
      "series": [
       {
        "date": "2026-01-12",
@@ -42546,6 +44380,41 @@
        "date": "2026-10-29",
        "stance": -1.047,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -1.053,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -1.059,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -1.066,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -1.072,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -1.078,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -1.085,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -1.091,
+       "held": false
       }
      ],
      "points": [
@@ -42987,16 +44856,16 @@
      "id": "hammack",
      "name": "Beth M. Hammack",
      "role": "President, Cleveland Fed",
-     "stance": 3.986,
-     "signal_strength": 53.75,
+     "stance": 3.897,
+     "signal_strength": 55.32,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "last_signal": "2026-11-05T13:50:00Z",
+     "days_since_signal": 0,
      "stale": false,
-     "live_points": 24,
-     "momentum_30d": 0.491,
-     "momentum_90d": 0.625,
+     "live_points": 27,
+     "momentum_30d": 0.378,
+     "momentum_90d": 0.523,
      "series": [
       {
        "date": "2026-01-28",
@@ -44372,6 +46241,41 @@
        "date": "2026-10-29",
        "stance": 3.985,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 3.989,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 3.993,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 3.997,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 4.001,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 4.006,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 4.01,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 3.894,
+       "held": false
       }
      ],
      "points": [
@@ -44755,6 +46659,55 @@
        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "fed-speech-2026-11-05-hammack-reserve-currencies-and-stablecoins-p01",
+       "date": "2026-11-05T13:50:00Z",
+       "source_type": "speech",
+       "score": 2,
+       "confidence": 0.7,
+       "quote": "Since I spoke about this topic in early March, inflation has moved in the wrong direction.",
+       "language": "en",
+       "rationale": "Inflation moving the wrong way.",
+       "topics": [
+        "inflation_persistence"
+       ],
+       "url": "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "fed-speech-2026-11-05-hammack-reserve-currencies-and-stablecoins-p02",
+       "date": "2026-11-05T13:50:00Z",
+       "source_type": "speech",
+       "score": 2,
+       "confidence": 0.6,
+       "quote": "Inflation has now been above our goal for nearly six years, and the pressures I’m seeing appear to be relatively broad based, reflecting both supply and demand.",
+       "language": "en",
+       "rationale": "Broad-based pressures from supply and demand.",
+       "topics": [
+        "inflation_persistence"
+       ],
+       "url": "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "fed-speech-2026-11-05-hammack-reserve-currencies-and-stablecoins-p03",
+       "date": "2026-11-05T13:50:00Z",
+       "source_type": "speech",
+       "score": 3,
+       "confidence": 0.7,
+       "quote": "I expect that monetary policy will need to move to a restrictive stance to bring inflation back to 2 percent in a timely manner. I prefer getting to that stance through more frequent smaller adjustments when possible, something which would be less disruptive to households, businesses, and financial markets.",
+       "language": "en",
+       "rationale": "Policy must become restrictive via frequent smaller hikes.",
+       "topics": [
+        "rate_path",
+        "policy_stance"
+       ],
+       "url": "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -44762,16 +46715,16 @@
      "id": "kashkari",
      "name": "Neel Kashkari",
      "role": "President, Minneapolis Fed",
-     "stance": 1.914,
-     "signal_strength": 35.84,
+     "stance": 1.893,
+     "signal_strength": 34.13,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
      "live_points": 5,
-     "momentum_30d": -1.822,
-     "momentum_90d": -1.67,
+     "momentum_30d": -1.87,
+     "momentum_90d": -1.704,
      "series": [
       {
        "date": "2026-01-28",
@@ -46147,6 +48100,41 @@
        "date": "2026-10-29",
        "stance": 1.915,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 1.913,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 1.91,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 1.907,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 1.904,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 1.901,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 1.898,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 1.895,
+       "held": false
       }
      ],
      "points": [
@@ -46226,16 +48214,16 @@
      "id": "logan",
      "name": "Lorie K. Logan",
      "role": "President, Dallas Fed",
-     "stance": 1.958,
-     "signal_strength": 44.47,
+     "stance": 1.906,
+     "signal_strength": 46.69,
      "held": false,
      "held_since": null,
-     "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "last_signal": "2026-10-30T16:00:00Z",
+     "days_since_signal": 6,
      "stale": false,
-     "live_points": 19,
-     "momentum_30d": -1.518,
-     "momentum_90d": -1.39,
+     "live_points": 22,
+     "momentum_30d": -1.439,
+     "momentum_90d": -1.454,
      "series": [
       {
        "date": "2026-01-28",
@@ -47611,6 +49599,41 @@
        "date": "2026-10-29",
        "stance": 1.959,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": 1.92,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": 1.918,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": 1.916,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": 1.914,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": 1.912,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": 1.909,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": 1.907,
+       "held": false
       }
      ],
      "points": [
@@ -47912,6 +49935,56 @@
        "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
        "institutional": false,
        "is_vote": true
+      },
+      {
+       "id": "fed-speech-2026-10-30-logan-remarks-to-davidson-college-students-p01",
+       "date": "2026-10-30T16:00:00Z",
+       "source_type": "speech",
+       "score": 3,
+       "confidence": 0.8,
+       "quote": "I anticipate that without any monetary policy restraint, inflation will continue to trend above target unless unexpected shocks occur. I currently estimate that the fed funds target range is at least 50 basis points—half a percentage point—below the level that would create some modest restriction and begin to bring the inflation trend back to target.",
+       "language": "en",
+       "rationale": "Rates at least 50bp below a modestly restrictive level.",
+       "topics": [
+        "rate_path",
+        "policy_stance"
+       ],
+       "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "fed-speech-2026-10-30-logan-remarks-to-davidson-college-students-p02",
+       "date": "2026-10-30T16:00:00Z",
+       "source_type": "speech",
+       "score": -1,
+       "confidence": 0.6,
+       "quote": "In such an environment, adjusting policy more gradually can help households, businesses and market participants adapt to higher rates and reduce the risk that economic activity deteriorates more sharply than necessary.",
+       "language": "en",
+       "rationale": "Gradual pace helps the economy adapt.",
+       "topics": [
+        "rate_path",
+        "financial_conditions"
+       ],
+       "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030",
+       "institutional": false,
+       "is_vote": false
+      },
+      {
+       "id": "fed-speech-2026-10-30-logan-remarks-to-davidson-college-students-p03",
+       "date": "2026-10-30T16:00:00Z",
+       "source_type": "speech",
+       "score": 2,
+       "confidence": 0.8,
+       "quote": "It remains clear to me, given the current outlook, that the FOMC needs to implement at least two more 25-basis-point rate increases. After that, it would make sense in my view to pause and examine economic and financial developments to determine what further action may be appropriate.",
+       "language": "en",
+       "rationale": "At least two more hikes, then pause: about the 50bp the market prices.",
+       "topics": [
+        "rate_path"
+       ],
+       "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030",
+       "institutional": false,
+       "is_vote": false
       }
      ]
     },
@@ -47919,52 +49992,17 @@
      "id": "paulson",
      "name": "Anna Paulson",
      "role": "President, Philadelphia Fed",
-     "stance": -0.862,
-     "signal_strength": 30.32,
+     "stance": -0.909,
+     "signal_strength": 28.88,
      "held": false,
      "held_since": null,
      "last_signal": "2026-10-28T18:00:00Z",
-     "days_since_signal": 1,
+     "days_since_signal": 8,
      "stale": false,
-     "live_points": 17,
-     "momentum_30d": -0.882,
-     "momentum_90d": -0.822,
+     "live_points": 14,
+     "momentum_30d": -0.901,
+     "momentum_90d": -0.849,
      "series": [
-      {
-       "date": "2026-01-03",
-       "stance": -1.333,
-       "held": false
-      },
-      {
-       "date": "2026-01-04",
-       "stance": -1.333,
-       "held": false
-      },
-      {
-       "date": "2026-01-05",
-       "stance": -1.333,
-       "held": false
-      },
-      {
-       "date": "2026-01-06",
-       "stance": -1.333,
-       "held": false
-      },
-      {
-       "date": "2026-01-07",
-       "stance": -1.333,
-       "held": false
-      },
-      {
-       "date": "2026-01-08",
-       "stance": -1.333,
-       "held": false
-      },
-      {
-       "date": "2026-01-09",
-       "stance": -1.333,
-       "held": false
-      },
       {
        "date": "2026-01-10",
        "stance": -1.333,
@@ -49429,6 +51467,41 @@
        "date": "2026-10-29",
        "stance": -0.86,
        "held": false
+      },
+      {
+       "date": "2026-10-30",
+       "stance": -0.866,
+       "held": false
+      },
+      {
+       "date": "2026-10-31",
+       "stance": -0.872,
+       "held": false
+      },
+      {
+       "date": "2026-11-01",
+       "stance": -0.879,
+       "held": false
+      },
+      {
+       "date": "2026-11-02",
+       "stance": -0.885,
+       "held": false
+      },
+      {
+       "date": "2026-11-03",
+       "stance": -0.892,
+       "held": false
+      },
+      {
+       "date": "2026-11-04",
+       "stance": -0.898,
+       "held": false
+      },
+      {
+       "date": "2026-11-05",
+       "stance": -0.905,
+       "held": false
       }
      ],
      "points": [
@@ -49705,7 +51778,7 @@
      ]
     }
    ],
-   "median": -0.865,
+   "median": -0.895,
    "votes": [
     {
      "date": "2026-01-28",
@@ -50277,6 +52350,75 @@
    ],
    "ticker": [
     {
+     "member_id": "hammack",
+     "date": "2026-11-05T13:50:00Z",
+     "score": 2,
+     "quote": "Since I spoke about this topic in early March, inflation has moved in the wrong direction.",
+     "source_type": "speech",
+     "url": "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins",
+     "topics": [
+      "inflation_persistence"
+     ]
+    },
+    {
+     "member_id": "hammack",
+     "date": "2026-11-05T13:50:00Z",
+     "score": 2,
+     "quote": "Inflation has now been above our goal for nearly six years, and the pressures I’m seeing appear to be relatively broad based, reflecting both supply and demand.",
+     "source_type": "speech",
+     "url": "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins",
+     "topics": [
+      "inflation_persistence"
+     ]
+    },
+    {
+     "member_id": "hammack",
+     "date": "2026-11-05T13:50:00Z",
+     "score": 3,
+     "quote": "I expect that monetary policy will need to move to a restrictive stance to bring inflation back to 2 percent in a timely manner. I prefer getting to that stance through more frequent smaller adjustments when possible, something which would be less disruptive to households, businesses, and financial markets.",
+     "source_type": "speech",
+     "url": "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins",
+     "topics": [
+      "rate_path",
+      "policy_stance"
+     ]
+    },
+    {
+     "member_id": "logan",
+     "date": "2026-10-30T16:00:00Z",
+     "score": 3,
+     "quote": "I anticipate that without any monetary policy restraint, inflation will continue to trend above target unless unexpected shocks occur. I currently estimate that the fed funds target range is at least 50 basis points—half a percentage point—below the level that would create some modest restriction and begin to bring the inflation trend back to target.",
+     "source_type": "speech",
+     "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030",
+     "topics": [
+      "rate_path",
+      "policy_stance"
+     ]
+    },
+    {
+     "member_id": "logan",
+     "date": "2026-10-30T16:00:00Z",
+     "score": -1,
+     "quote": "In such an environment, adjusting policy more gradually can help households, businesses and market participants adapt to higher rates and reduce the risk that economic activity deteriorates more sharply than necessary.",
+     "source_type": "speech",
+     "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030",
+     "topics": [
+      "rate_path",
+      "financial_conditions"
+     ]
+    },
+    {
+     "member_id": "logan",
+     "date": "2026-10-30T16:00:00Z",
+     "score": 2,
+     "quote": "It remains clear to me, given the current outlook, that the FOMC needs to implement at least two more 25-basis-point rate increases. After that, it would make sense in my view to pause and examine economic and financial developments to determine what further action may be appropriate.",
+     "source_type": "speech",
+     "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030",
+     "topics": [
+      "rate_path"
+     ]
+    },
+    {
      "member_id": "warsh",
      "date": "2026-10-28T18:30:00Z",
      "score": 0,
@@ -50432,77 +52574,9 @@
       "rate_path",
       "policy_stance"
      ]
-    },
-    {
-     "member_id": "logan",
-     "date": "2026-10-01T16:00:00Z",
-     "score": -1,
-     "quote": "But higher term premiums can slow the economy, reducing the need to tighten monetary policy.",
-     "source_type": "speech",
-     "url": "https://www.dallasfed.org/news/speeches/logan/2026/lkl261001",
-     "topics": [
-      "financial_conditions"
-     ]
-    },
-    {
-     "member_id": "cook",
-     "date": "2026-09-30T19:25:00Z",
-     "score": 1,
-     "quote": "Regardless of whether you are in a rural or urban area, the fact remains that inflation has been too high for too long.",
-     "source_type": "speech",
-     "url": "https://www.federalreserve.gov/newsevents/speech/cook20260930a.htm",
-     "topics": [
-      "inflation_persistence"
-     ]
-    },
-    {
-     "member_id": "barr",
-     "date": "2026-09-29T16:40:00Z",
-     "score": 2,
-     "quote": "Risks to achieving our inflation target have increased, while risks to the labor market have receded, so we need to recalibrate policy to get us in a better position that more evenly balances risks to both components of our dual mandate.",
-     "source_type": "speech",
-     "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
-     "topics": [
-      "balance_of_risks",
-      "rate_path"
-     ]
-    },
-    {
-     "member_id": "barr",
-     "date": "2026-09-29T16:40:00Z",
-     "score": 2,
-     "quote": "In my base case, further policy adjustments are likely to be needed to ensure inflation comes down to target in a timely fashion.",
-     "source_type": "speech",
-     "url": "https://www.federalreserve.gov/newsevents/speech/barr20260929a.htm",
-     "topics": [
-      "rate_path"
-     ]
-    },
-    {
-     "member_id": "williams",
-     "date": "2026-09-29T16:00:00Z",
-     "score": 1,
-     "quote": "At 3.7 percent, inflation is unquestionably too high.",
-     "source_type": "speech",
-     "url": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260929",
-     "topics": [
-      "inflation_persistence"
-     ]
-    },
-    {
-     "member_id": "williams",
-     "date": "2026-09-29T16:00:00Z",
-     "score": 1,
-     "quote": "At the same time, the risk to achieving price stability has increased. In particular, the inflationary impact of the AI-related demand shock is increasingly salient, and I now expect somewhat larger and longer-lasting effects from energy prices on inflation.",
-     "source_type": "speech",
-     "url": "https://www.newyorkfed.org/newsevents/speeches/2026/wil260929",
-     "topics": [
-      "balance_of_risks",
-      "energy"
-     ]
     }
    ],
-   "scored_passages": 184,
+   "scored_passages": 190,
    "votes_recorded": 52
   }
  }

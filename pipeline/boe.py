@@ -220,7 +220,7 @@ class Minutes:
 _SUMMARY = re.compile(
     r"voted (?:by a majority of (\d+)\D(\d+)|unanimously) to (maintain|increase|reduce) Bank Rate "
     r"(?:at|(?:by ([\d.]+) percentage points?,? )?to) ([\d.]+)%", re.I)
-_GROUP = re.compile(r"^Votes? to (maintain|increase|reduce) Bank Rate\b.*?([\d.]+)%\s*$", re.I)
+_GROUP = re.compile(r"^Votes? to (maintain|increase|reduce) Bank Rate\b.*?([\d.]+)%\.?\s*$", re.I)
 _MEETING_END = re.compile(r"meeting ending on (\d{1,2} \w+ \d{4})", re.I)
 
 
@@ -256,7 +256,12 @@ def parse_minutes(html: str, members: list[Member]) -> Minutes:
     current = None
     for el in heading.find_all_next():
         if el.name in ("h2", "h3"):
-            break
+            # From November 2026 each vote group is its own h3 heading.
+            g = _GROUP.match(_clean(el.get_text(" ")))
+            if not g:
+                break
+            group_rate, current = float(g.group(2)), None
+            continue
         if el.name != "p":
             continue
         strong = el.find("strong")

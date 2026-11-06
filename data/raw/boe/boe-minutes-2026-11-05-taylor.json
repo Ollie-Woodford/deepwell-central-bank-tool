@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-taylor",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "taylor",
+ "speaker_name": "Alan Taylor",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "It is essential to communicate, and for markets to understand, that, as of now, this is not the start of a hiking cycle: policy isn’t on a pre-set, unconditional path. The risk is curve dislocation and unwarranted tightening in financial conditions. Rather, from an already restrictive position, this is a risk-management ‘one-for-now’ insurance hike. What has changed since July, and even September, is the magnitude of the energy disruption. A second, larger shock has roughly doubled the inflationary impulse; gas is beyond April’s worst scenario, while refined-product prices have risen sharply. The case for holding rested on avoiding such a shock and seeing no sign of second-round effects. The first condition has now failed. We lack evidence of second-round effects, but the larger shock raises the risk. That motivates insurance now. Further tightening, however, depends on continued energy price pressure (a function of stochastic geopolitics that we are ill-equipped to predict) as well as unfolding evidence of propagation into domestic wages, price-setting and expectations, particularly through the 2027 pay round. The next move could be up, down, or sideways. Telling data will arrive soon.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

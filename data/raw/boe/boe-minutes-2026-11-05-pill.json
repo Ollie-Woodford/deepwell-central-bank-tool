@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-pill",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "pill",
+ "speaker_name": "Huw Pill",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Raising Bank Rate by 25 basis points at this meeting represents a significant step towards attaining the monetary policy stance needed to address current threats to price stability, including those stemming from uncertainty surrounding events in the Middle East and their influence over energy prices in the medium term. That uncertainty and its impact remains potentially considerable and of indeterminate duration. Nonetheless, of itself, a single 25-basis point hike is unlikely to be sufficient. Achieving the level of Bank Rate necessary to confront challenges and risks to lasting achievement of the 2% inflation target is likely to require more policy tightening, including in the near term. Looking into next year, monetary policy decisions should then become more dependent on evidence of inflation persistence and second-round effects, were it to emerge in the data flow. At each meeting, a broad-based interpretation of new data and surveys will support the extraction of the policy-relevant underlying signal from a range of indicators. Developments in domestic pay and pricing dynamics (Box A) deserve particular focus since they offer insight into the potential strength of second-round effects and, as such, inform the assessment of lasting threats to price stability.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

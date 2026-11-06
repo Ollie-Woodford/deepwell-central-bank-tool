@@ -123,3 +123,13 @@ def test_non_member_with_member_surname_is_dropped():
 def test_source_type_hint():
     assert boe.source_type_hint("Slides from Huw Pill's fireside chat", "") == "comment"
     assert boe.source_type_hint("The outlook for inflation", "") == "speech"
+
+
+def test_november_minutes_vote_groups_as_headings():
+    # From November 2026 each vote group is an h3 heading ending with a full stop.
+    m = boe.parse_minutes(fixture("boe_minutes_2026-11.html"), MEMBERS)
+    assert (m.previous_rate, m.decision_rate) == (3.75, 4.0)
+    v = votes_by_member(m)
+    assert len(v) == 9 and v["mann"] == 4.25
+    assert all(r == 4.0 for k, r in v.items() if k != "mann")
+    assert all(len(x.statement) > 500 for x in m.votes)

@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-bailey",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "bailey",
+ "speaker_name": "Andrew Bailey",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "There has been a material further increase in energy prices. UK economic activity has strengthened and the labour market appears to be stabilising (Box C). Domestic services price inflation has flattened off. Meanwhile, indirect and second-round effects have not emerged yet (Box A). Firms are cutting costs and their margins are being compressed, while they are also benefiting from longer fixed-price energy contracts and cost hedging mechanisms. To varying degrees, these approaches can only be temporary. The central projection and weaker demand scenario require an alleviation of the factors that have pushed up energy prices to validate the slope of energy futures curves. Put simply, it requires real progress towards settling the conflict in the Middle East. Absent this, risks to energy prices, and so to inflation, are to the upside. In view of the news, the case is clear for a 25-basis point rise now. Without news which softens the risks to inflationary pressures, I can see the argument for a further increase in rates and thereafter taking a more conditional approach, dependent on the evidence on energy prices and inflation dynamics. Recognising that some of the upward slope in the curve is explained by risk premia and not expected rates, the current level of restrictiveness is broadly appropriate.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

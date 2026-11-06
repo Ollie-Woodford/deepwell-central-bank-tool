@@ -123,6 +123,11 @@ class Decision:
 _DECIDED = re.compile(
     r"decided,bya(?:n)?(?:(\d+)-(\d+)majority|unanimous)vote,tosetthefollowingguidelineformoneymarketoperations"
     r".*?remainataround([\d.]+)percent")
+# From October 2026 the vote is in the item heading:
+# "1. Guideline for money market operations (an 8-1 majority vote) ... decided to set the following guideline"
+_DECIDED_HEADED = re.compile(
+    r"Guidelineformoneymarketoperations\((?:an?)(?:(\d+)-(\d+)majority|unanimous)vote\)"
+    r".*?decidedtosetthefollowingguidelineformoneymarketoperations.*?remainataround([\d.]+)percent")
 _PROPOSAL = re.compile(r"(?:He|She|They)proposedthattheBank.*?remainataround([\d.]+)percent")
 
 
@@ -141,7 +146,7 @@ def _names_in_list(seg: str) -> list[str]:
 
 def parse_decision(text: str, members: list[Member]) -> Decision:
     sq = squash(text)
-    m = _DECIDED.search(sq)
+    m = _DECIDED.search(sq) or _DECIDED_HEADED.search(sq)
     if not m:
         raise ValueError("guideline decision sentence not found")
     split = (int(m.group(1)), int(m.group(2))) if m.group(1) else None

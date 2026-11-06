@@ -75,6 +75,21 @@
    "first_seen": "2026-10-19T15:29:26Z",
    "note": ""
   },
+  "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026": {
+   "doc_ids": [
+    "boe-minutes-2026-11-05-bailey",
+    "boe-minutes-2026-11-05-breeden",
+    "boe-minutes-2026-11-05-dhingra",
+    "boe-minutes-2026-11-05-greene",
+    "boe-minutes-2026-11-05-lombardelli",
+    "boe-minutes-2026-11-05-pill",
+    "boe-minutes-2026-11-05-ramsden",
+    "boe-minutes-2026-11-05-taylor",
+    "boe-minutes-2026-11-05-mann"
+   ],
+   "first_seen": "2026-11-06T13:38:18Z",
+   "note": ""
+  },
   "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/september-2026": {
    "doc_ids": [
     "boe-minutes-2026-09-17-bailey",
@@ -311,6 +326,11 @@
    "doc_ids": [],
    "first_seen": "2026-10-19T15:29:50Z",
    "note": "not an MPC member: Victoria Cleland"
+  },
+  "https://www.bankofengland.co.uk/speech/2026/november/ben-martin-speech-at-data-ai-conference-europe-2026": {
+   "doc_ids": [],
+   "first_seen": "2026-11-06T13:37:06Z",
+   "note": "not an MPC member: Ben Martin"
   },
   "https://www.bankofengland.co.uk/speech/2026/october/andrew-bailey-speech-at-the-istanbul-economic-forum-central-bank-of-the-republic-of-turkey-istanbul": {
    "doc_ids": [
@@ -569,6 +589,13 @@
    "first_seen": "2026-10-20T07:20:41Z",
    "note": ""
   },
+  "https://www.boj.or.jp/about/press/kaiken_2026/kk261102a.pdf": {
+   "doc_ids": [
+    "boj-press-2026-10-30-ueda-kk261102a"
+   ],
+   "first_seen": "2026-11-06T13:37:14Z",
+   "note": ""
+  },
   "https://www.boj.or.jp/en/about/press/koen_2026/ko260206a.htm": {
    "doc_ids": [
     "boj-speech-2026-02-06-ko260206a"
@@ -721,9 +748,14 @@
    "first_seen": "2026-10-20T07:20:02Z",
    "note": "decision 1.25%"
   },
+  "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf": {
+   "doc_ids": [],
+   "first_seen": "2026-11-06T13:38:23Z",
+   "note": "decision 1.25%"
+  },
   "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250124a.htm": {
    "doc_ids": [],
-   "first_seen": "2026-10-27T14:24:30Z",
+   "first_seen": "2026-11-06T13:38:22Z",
    "note": "first decision in range is a rate change; previous rate unknown"
   },
   "https://www.boj.or.jp/en/mopo/mpmdeci/state_2025/k250319a.htm": {
@@ -813,6 +845,13 @@
    "first_seen": "2026-10-30T08:38:13Z",
    "note": ""
   },
+  "https://www.clevelandfed.org/collections/speeches/sp-20261105-reserve-currencies-and-stablecoins": {
+   "doc_ids": [
+    "fed-speech-2026-11-05-hammack-reserve-currencies-and-stablecoins"
+   ],
+   "first_seen": "2026-11-06T13:37:19Z",
+   "note": ""
+  },
   "https://www.dallasfed.org/news/speeches/logan/2026/lkl260129": {
    "doc_ids": [
     "fed-speech-2026-01-29-logan-president-logan-introduces-fdic-chairman-travis-hill-at-paym"
@@ -881,6 +920,13 @@
     "fed-speech-2026-10-02-logan-welcome-remarks-for-the-fifth-annual-workshop-on-the-macroec"
    ],
    "first_seen": "2026-10-30T08:38:20Z",
+   "note": ""
+  },
+  "https://www.dallasfed.org/news/speeches/logan/2026/lkl261030": {
+   "doc_ids": [
+    "fed-speech-2026-10-30-logan-remarks-to-davidson-college-students"
+   ],
+   "first_seen": "2026-11-06T13:37:20Z",
    "note": ""
   },
   "https://www.federalreserve.gov/mediacenter/files/FOMCpresconf20260128.pdf": {

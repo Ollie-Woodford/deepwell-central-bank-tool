@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-greene",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "greene",
+ "speaker_name": "Megan Greene",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Since September, we have had a more prolonged shock, a further leg up in energy prices and there is evidence of less benign initial conditions when the shock hit. Evidence of second-round effects has remained scant as expected, but the risks have clearly shifted to the upside. Underlying services inflation has been flat since spring and underlying wage growth is stuck around 3.5%, above target-consistent levels. GDP growth has surprised to the upside and aggregate credit volumes remain stronger than expected. Staff analysis shows we may have been marginally in a low inflation, loose labour market regime when the Iran conflict emerged, but we’ve since entered a high inflation, loose labour market regime. We project inflation will remain above the threshold in which expectations are more sensitive to outturns for most of the outlook period, likely buoying pay settlements in 2027 and 2028. I believe the output gap is smaller than we think and has likely peaked. We continue to face Knightian uncertainty, but a rate hike now is appropriate based on the central outlook rather than just risk management considerations. Additional hikes will likely be required going forward, though further out this will depend on pay, pricing behaviour and slack.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

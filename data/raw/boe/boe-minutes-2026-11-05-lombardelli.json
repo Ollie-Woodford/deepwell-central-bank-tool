@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-lombardelli",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "lombardelli",
+ "speaker_name": "Clare Lombardelli",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "The conflict has lasted longer than expected. This has kept oil, gas and refined product prices elevated, making the inflationary effects of the energy shock larger and more persistent. Cost pressures have remained elevated for sufficiently long that there is now a greater risk of second-round effects becoming embedded in price and wage-setting (Box A). Despite this, economic activity appears more resilient than previously expected (Box C). And recent data suggest that underlying disinflation may have stalled. There are some downside risks to the outlook for inflation, either from a more benign path for energy prices or a slowdown in economic activity. But overall I view the balance of risks to the inflation path as upside to our forecast given the ongoing energy price uncertainty and limited evidence of slack. Current circumstances warrant a 25-basis point increase in Bank Rate at this meeting. In the absence of evidence of weaker inflation pressures, there is likely to be a case for a further increase in rates in the near term. Beyond that, the path for rates is conditional on the interaction of the underlying economy, higher energy prices, the nature of their transmission and any further shocks.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

@@ -118,5 +118,25 @@
    "greene": 4.0,
    "pill": 4.0
   }
+ },
+ {
+  "bank": "BoE",
+  "date": "2026-11-05",
+  "announced": "2026-11-05T12:00:00Z",
+  "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "label": "hike 8-1",
+  "votes": {
+   "bailey": 4.0,
+   "breeden": 4.0,
+   "dhingra": 4.0,
+   "greene": 4.0,
+   "lombardelli": 4.0,
+   "pill": 4.0,
+   "ramsden": 4.0,
+   "taylor": 4.0,
+   "mann": 4.25
+  }
  }
 ]

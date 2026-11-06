@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-mann",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "mann",
+ "speaker_name": "Catherine L Mann",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "My recent votes to increase Bank Rate by 25 basis points represented a ‘down payment’ to lean against second-round effects, reinforce credibility, and uphold ‘good policy’ (in the language of my Great Moderation speech). The challenge: projected CPI inflation reaches 4.9% by mid-2027 and would be some 25 basis points higher absent the measures announced at the latest Budget. This projection is conditioned on a significant decline in energy prices; similar futures curves earlier this year have not eventuated. My policy strategy importantly is informed by research, which points to non-linear inflation risks. Households are particularly attentive to energy and food price inflation, which may be reflected in 2027 wage demands. With CPI inflation at 3.5% in September, the economy has crossed the estimated statistical threshold into a high inflation-tight labour market regime where the asymmetric behavioural responses of households and firms support more robust second-round effects. A different research approach estimates that the economy may well have breached the policy credibility threshold, which worsens the policy trade-off. Moreover, a substantial inflation risk premium is in the UK yield curve, reflecting five years of above-target inflation, where it has averaged 4.7%. Therefore, from a risk management and credibility perspective, a 50-basis point hike in Bank Rate is ‘good policy’.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.25
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}

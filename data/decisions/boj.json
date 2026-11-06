@@ -272,5 +272,26 @@
    "sato": 1.0
   },
   "absent": []
+ },
+ {
+  "bank": "BoJ",
+  "date": "2026-10-30",
+  "announced": "2026-10-30T02:55:00Z",
+  "url": "https://www.boj.or.jp/en/mopo/mpmdeci/mpr_2026/k261030a.pdf",
+  "previous_rate": 1.25,
+  "decision_rate": 1.25,
+  "label": "hold 8-1",
+  "votes": {
+   "ueda": 1.25,
+   "uchida": 1.25,
+   "himino": 1.25,
+   "tamura": 1.25,
+   "koeda": 1.25,
+   "masu": 1.25,
+   "asada": 1.25,
+   "sato": 1.25,
+   "takata": 1.5
+  },
+  "absent": []
  }
 ]

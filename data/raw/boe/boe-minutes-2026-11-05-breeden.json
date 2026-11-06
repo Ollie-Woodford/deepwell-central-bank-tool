@@ -1,0 +1,23 @@
+{
+ "id": "boe-minutes-2026-11-05-breeden",
+ "bank": "BoE",
+ "kind": "minutes_statement",
+ "member_id": "breeden",
+ "speaker_name": "Sarah Breeden",
+ "title": "MPC minutes November 2026: written statement",
+ "description": "Meeting ending 2026-11-04; decision hike 8-1",
+ "url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "text_url": "https://www.bankofengland.co.uk/monetary-policy-summary-and-minutes/2026/november-2026",
+ "published": "2026-11-05T12:00:00Z",
+ "delivered_date": "2026-11-05",
+ "source_type_hint": "minutes_statement",
+ "language": "en",
+ "text_source": "html",
+ "text": "Increased energy prices have further materially raised the near-term inflation outlook. Activity and the labour market have been more resilient than expected, but slack remains (Box C). Consistent with this and firm intelligence, little evidence has emerged so far of material second-round effects and indirect pass-through has been weaker than expected. While some measures of domestic inflation have flattened, I do not yet conclude that the earlier disinflation has stalled, given overlapping energy shocks and the seasonal pattern of wage negotiations. Slack will be leaning against the risk of material second-round effects (Box A). But with inflation expected to be above the threshold for non-linear effects, and little sign of a rapid or durable resolution to the conflict, the degree of inflationary pressure in the pipeline is now sufficient to warrant an increase in Bank Rate. The longer energy prices remain high the more likely persistent inflationary effects take hold, which would require further tightening in Bank Rate. But this will also depend on how energy prices propagate, especially given the risk that demand weakens. I will continue to assess the balance of risks at each meeting. For now, I judge the current restrictiveness of financial conditions as sufficient to balance these.",
+ "vote": {
+  "previous_rate": 3.75,
+  "decision_rate": 4.0,
+  "voted_rate": 4.0
+ },
+ "collected_at": "2026-11-06T13:38:18Z"
+}
